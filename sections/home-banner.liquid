@@ -1,0 +1,47 @@
+{{ 'section-home-banner.css' | asset_url | stylesheet_tag }}
+
+<div id="Banner-{{ section.id }}" class="home-banner">
+  {% if settings.image %}
+    <img src="{{ settings.image | file_url }}" alt="home banner">
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Home banner",
+    "settings": [
+      {
+        "id": "image",
+        "type": "image_picker",
+        "label": "Image"
+      },
+      {
+        "id": "height",
+        "type": "text",
+        "label": "Height value",
+        "default": "50"
+      },
+      {
+        "id": "unit",
+        "type": "select",
+        "label": "Height unit",
+        "options": [
+          {
+            "value": "vh",
+            "label": "VH (viewport height)"
+          },
+          {
+            "value": "px",
+            "label": "PX (pixels)"
+          }
+        ],
+        "default": "vh"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Home banner"
+      }
+    ]
+  }
+  {% endschema %}
