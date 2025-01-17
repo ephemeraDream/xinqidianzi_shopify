@@ -13,43 +13,38 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <div class="home-banner-box-heading">
-            <h2>
-              {{ block.settings.heading }}
-            </h2>
-            {% if block.settings.icon != blank %}
-              <img
-                src={{ block.settings.icon | image_url }}
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-              <img
-                src={{ block.settings.icon | image_url }}
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-              <img
-                src={{ block.settings.icon | image_url }}
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-              <img
-                src={{ block.settings.icon | image_url }}
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-            {% endif %}
-          </div>
-        {%- when 'text' -%}
-          <div class="home-banner-box-text">
-            {{ block.settings.text }}
+          <div>
+            <div class="home-banner-box-heading">
+              <h2>
+                {{ block.settings.heading }}
+              </h2>
+              {% if block.settings.icon != blank %}
+                <img
+                  src={{ block.settings.icon | image_url }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+                <img
+                  src={{ block.settings.icon | image_url }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+                <img
+                  src={{ block.settings.icon | image_url }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+                <img
+                  src={{ block.settings.icon | image_url }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+              {% endif %}
+            </div>
+            <div class="home-banner-box-text">
+              {{ block.settings.text }}
+            </div>
           </div>
         {%- when 'buttons' -%}
           <div class="home-banner-box-button">
             {%- if block.settings.button_label != blank -%}
-              <a
-                {% if block.settings.button_link == blank %}
-                role="link"
-                aria-disabled="true"
-                {% else %}
-                href="{{ block.settings.button_link }}"
-                {% endif %}>
+              <a href="{{ block.settings.button_link }}">
                 {{- block.settings.button_label | escape -}}
               </a>
             {%- endif -%}
@@ -82,23 +77,11 @@
             "type": "inline_richtext",
             "id": "heading",
             "label": "home banner heading"
-          }
-        ]
-      }, {
-        "type": "image",
-        "name": "home banner heading icon",
-        "settings": [
-          {
+          }, {
             "type": "image_picker",
             "id": "icon",
             "label": "home banner heading icon"
-          }
-        ]
-      }, {
-        "type": "text",
-        "name": "home banner text",
-        "settings": [
-          {
+          }, {
             "type": "inline_richtext",
             "id": "text",
             "label": "home banner text"
@@ -126,10 +109,6 @@
         "blocks": [
           {
             "type": "heading"
-          }, {
-            "type": "image"
-          }, {
-            "type": "text"
           }, {
             "type": "buttons"
           }

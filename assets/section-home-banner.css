@@ -25,7 +25,7 @@
   border-radius: 0 120px 0 120px;
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-content: space-between;
   padding-top: 6rem;
   padding-bottom: 4rem;
   z-index: 1;
@@ -35,12 +35,14 @@
 .home-banner-box-heading {
   display: flex;
   align-items: baseline;
+  justify-content: center;
+  flex: 1;
 }
 
 .home-banner-box-heading h2 {
   font-size: 5.2rem;
   font-weight: 600;
-  line-height: normal;
+  line-height: 6.2rem;
   text-transform: capitalize;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
@@ -53,7 +55,7 @@
   height: 3.3rem;
 }
 
-.home-banner-box-heading-icon:first-child {
+.home-banner-box-heading h2+.home-banner-box-heading-icon {
   margin-left: 3.2rem;
 }
 
