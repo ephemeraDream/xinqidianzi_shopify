@@ -9,47 +9,47 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "home_banner_pV6qGH": {
+      "type": "home-banner",
       "blocks": {
-        "heading": {
+        "heading_UFqXrw": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h2"
+            "heading": "Lorem Ipsum"
           }
         },
-        "button": {
+        "image_hVCCjm": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify://shop_images/icon-arrow-right.webp"
+          }
+        },
+        "text_GpATcp": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+          }
+        },
+        "buttons_aWBN7j": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label": "DISCOVER",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading_UFqXrw",
+        "image_hVCCjm",
+        "text_GpATcp",
+        "buttons_aWBN7j"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "image": "shopify://shop_images/home-banner.webp"
       }
     }
   },
   "order": [
-    "image_banner"
+    "home_banner_pV6qGH"
   ]
 }
