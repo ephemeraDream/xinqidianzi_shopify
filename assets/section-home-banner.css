@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .home-banner-bg {
@@ -14,6 +15,7 @@
   object-position: center center;
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 
 .home-banner-box {
@@ -25,6 +27,7 @@
   align-items: space-between;
   padding-top: 6rem;
   padding-bottom: 4rem;
+  z-index: 1;
 }
 
 .home-banner-box-heading {
