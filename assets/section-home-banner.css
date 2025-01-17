@@ -20,14 +20,16 @@
 
 .home-banner-box {
   width: 57.91vw;
+  min-height: 36.48vh;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 0 120px 0 120px;
   display: flex;
   justify-content: center;
-  align-items: space-between;
+  align-items: stretch;
   padding-top: 6rem;
   padding-bottom: 4rem;
   z-index: 1;
+  flex-wrap: wrap;
 }
 
 .home-banner-box-heading {
