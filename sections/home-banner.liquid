@@ -18,22 +18,24 @@
               <h2>
                 {{ block.settings.heading }}
               </h2>
-              <img
-                src="../assets/icon-arrow-right.webp"
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-              <img
-                src="../assets/icon-arrow-right.webp"
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-              <img
-                src="../assets/icon-arrow-right.webp"
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
-              <img
-                src="../assets/icon-arrow-right.webp"
-                alt="icon-arrow-righ"
-                class="home-banner-box-heading-icon">
+              {% if block.settings.icon != blank %}
+                <img
+                  src={{ block.settings.icon }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+                <img
+                  src={{ block.settings.icon }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+                <img
+                  src={{ block.settings.icon }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+                <img
+                  src={{ block.settings.icon }}
+                  alt="icon-arrow-righ"
+                  class="home-banner-box-heading-icon">
+              {% endif %}
             </div>
           {%- when 'text' -%}
             <div class="home-banner-box-text">
@@ -86,6 +88,16 @@
           }
         ]
       }, {
+        "type": "image",
+        "name": "home banner heading icon",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "home banner heading icon"
+          }
+        ]
+      }, {
         "type": "text",
         "name": "home banner text",
         "settings": [
@@ -117,6 +129,8 @@
         "blocks": [
           {
             "type": "heading"
+          }, {
+            "type": "image"
           }, {
             "type": "text"
           }, {
