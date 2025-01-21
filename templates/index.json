@@ -35,9 +35,28 @@
       "settings": {
         "image": "shopify://shop_images/home-banner.webp"
       }
+    },
+    "best_sellers_qXtxbG": {
+      "type": "best-sellers",
+      "blocks": {
+        "heading_kWXmyd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Best Sellers",
+            "text": "Welcome to learn about the latest products"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kWXmyd"
+      ],
+      "settings": {
+        "collection": "frontpage"
+      }
     }
   },
   "order": [
-    "home_banner_pV6qGH"
+    "home_banner_pV6qGH",
+    "best_sellers_qXtxbG"
   ]
 }
