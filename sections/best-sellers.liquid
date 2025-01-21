@@ -1,0 +1,92 @@
+{{ 'section-best-sellers.css' | asset_url | stylesheet_tag }}
+
+  <div id="section-{{ section.id }}" class="best-sellers">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'heading' -%}
+        <h2 class="best-sellers-heading">
+          {{ block.settings.heading }}</h2>
+        <div class="best-sellers-text">
+          {{ block.settings.text }}
+        </div>
+    {%- endcase -%}
+  {%- endfor -%}
+
+  <!-- Slider main container -->
+  <div class="swiper best-sellers-swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for product in section.settings.collection.products limit: 10 %}
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | image_url: 'large' }}" alt="{{ product.title }}">
+            </a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">
+              <a href="{{ product.url }}">{{ product.title }}</a>
+            </h3>
+            <p class="product-price">{{ product.price | money }}</p>
+          </div>
+        </div>
+      {% endfor %}
+      ...
+    </div>
+    <!-- If we need pagination -->
+    {% comment %} <div class="swiper-pagination"></div> {% endcomment %}
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "best sellers",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "choose products"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "heading",
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "heading",
+            "label": "heading"
+          }, {
+            "type": "inline_richtext",
+            "id": "text",
+            "label": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "best sellers",
+        "blocks": [
+          {
+            "type": "heading"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

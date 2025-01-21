@@ -24,13 +24,13 @@ class CustomerAddresses {
     const container = document.querySelector(selectors.customerAddresses);
     return container
       ? {
-          container,
-          addressContainer: container.querySelector(selectors.addressContainer),
-          toggleButtons: document.querySelectorAll(selectors.toggleAddressButton),
-          cancelButtons: container.querySelectorAll(selectors.cancelAddressButton),
-          deleteButtons: container.querySelectorAll(selectors.deleteAddressButton),
-          countrySelects: container.querySelectorAll(selectors.addressCountrySelect),
-        }
+        container,
+        addressContainer: container.querySelector(selectors.addressContainer),
+        toggleButtons: document.querySelectorAll(selectors.toggleAddressButton),
+        cancelButtons: container.querySelectorAll(selectors.cancelAddressButton),
+        deleteButtons: container.querySelectorAll(selectors.deleteAddressButton),
+        countrySelects: container.querySelectorAll(selectors.addressCountrySelect),
+      }
       : {};
   }
 
@@ -83,3 +83,28 @@ class CustomerAddresses {
     }
   };
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper('.best-sellers-swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+    slidesPerView: 2,
+
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+});
