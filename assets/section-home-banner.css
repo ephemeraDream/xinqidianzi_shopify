@@ -22,7 +22,7 @@
   width: 57.91vw;
   min-height: 36.48vh;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 0 120px 0 120px;
+  border-radius: 0 10rem 0 10rem;
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -40,6 +40,7 @@
 }
 
 .home-banner-box-heading h2 {
+  font-family: Blinker;
   font-size: 5.2rem;
   font-weight: 600;
   line-height: 6.2rem;
@@ -64,6 +65,7 @@
 }
 
 .home-banner-box-text {
+  font-family: Blinker;
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;
@@ -74,6 +76,7 @@
   font-feature-settings: "kern" on;
   color: #FFFFFF;
   margin-top: 4.2rem;
+  padding: 0 7.29vw;
 }
 
 .home-banner-box-button {
@@ -83,6 +86,10 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #FFFFFF;
+}
+
+.home-banner-box-button:hover {
+  background-color: #EBB069;
 }
 
 .home-banner-box-button a {
