@@ -1,11 +1,12 @@
 {{ 'section-best-sellers.css' | asset_url | stylesheet_tag }}
 
-  <div id="section-{{ section.id }}" class="best-sellers">
+<div id="section-{{ section.id }}" class="best-sellers">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'heading' -%}
         <h2 class="best-sellers-heading">
-          {{ block.settings.heading }}</h2>
+          {{ block.settings.heading }}
+        </h2>
         <div class="best-sellers-text">
           {{ block.settings.text }}
         </div>
@@ -38,55 +39,83 @@
     {% comment %} <div class="swiper-pagination"></div> {% endcomment %}
 
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev">{{- 'left.svg' | inline_asset_content -}}</div>
+    <div class="swiper-button-next">{{- 'right.svg' | inline_asset_content -}}</div>
 
-  <!-- If we need scrollbar -->
-  {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
+    <!-- If we need scrollbar -->
+    {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
   </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.best-sellers-swiper', {
+      // Optional parameters
+      autoplay: true,
+      loop: true,
+      slidesPerView: 2,
+
+      // If we need pagination
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+    });
+  });
+</script>
+
 {% schema %}
-  {
-    "name": "best sellers",
-    "tag": "section",
-    "class": "section",
-    "disabled_on": {
-      "groups": ["header", "footer"]
-    },
-    "settings": [
-      {
-        "type": "collection",
-        "id": "collection",
-        "label": "choose products"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "name": "heading",
-        "settings": [
-          {
-            "type": "inline_richtext",
-            "id": "heading",
-            "label": "heading"
-          }, {
-            "type": "inline_richtext",
-            "id": "text",
-            "label": "text"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "best sellers",
-        "blocks": [
-          {
-            "type": "heading"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "best sellers",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "choose products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "best sellers",
+      "blocks": [
+        {
+          "type": "heading"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

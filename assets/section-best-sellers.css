@@ -26,3 +26,13 @@
   margin-top: 2.6rem;
   text-align: center;
 }
+
+.best-sellers-swiper {
+  width: 144rem;
+  height: 71rem;
+  --swiper-navigation-size: 0;
+}
+
+.best-sellers-swiper .product-card {
+  width: 50%;
+}
