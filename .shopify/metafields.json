@@ -9,7 +9,28 @@
   "market": [],
   "order": [],
   "page": [],
-  "product": [],
+  "product": [
+    {
+      "key": "tag",
+      "namespace": "custom",
+      "name": "Tag",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "custom",
+      "name": "Rating",
+      "description": "",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    }
+  ],
   "variant": [],
   "shop": []
 }

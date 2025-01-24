@@ -22,14 +22,27 @@
         <div class="swiper-slide product-card">
           <div class="product-image">
             <a href="{{ product.url }}">
-              <img src="{{ product.featured_image | image_url: 'large' }}" alt="{{ product.title }}">
+              <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
             </a>
           </div>
           <div class="product-info">
-            <h3 class="product-title">
-              <a href="{{ product.url }}">{{ product.title }}</a>
-            </h3>
-            <p class="product-price">{{ product.price | money }}</p>
+            <div>
+              <h3 class="product-title">
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </h3>
+              <div>
+                {% for i in (1..product.metafields.custom.rating.value) %}
+                  {{- 'star.svg' | inline_asset_content -}}
+                {% endfor %}
+              </div>
+            </div>
+            <div>
+              <div>
+                <span class="product-price">{{ product.price | money }}</span>
+                <span class="product-price">{{ product.compare_at_price | money }}</span>
+              </div>
+              <div class="product-btn">Learn more</div>
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -54,6 +67,7 @@
       autoplay: true,
       loop: true,
       slidesPerView: 2,
+      spaceBetween: 24,
 
       // If we need pagination
       // pagination: {

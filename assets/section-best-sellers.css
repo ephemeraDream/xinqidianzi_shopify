@@ -29,10 +29,22 @@
 
 .best-sellers-swiper {
   width: 144rem;
-  height: 71rem;
   --swiper-navigation-size: 0;
+}
+
+.best-sellers-swiper .swiper-button-prev svg,
+.best-sellers-swiper .swiper-button-next svg {
+  width: 6rem;
+  height: 6rem;
 }
 
 .best-sellers-swiper .product-card {
   width: 50%;
+}
+
+.best-sellers-swiper .product-card .product-image img{
+  width: 100%;
+  height: 58.4rem;
+  object-fit: cover;
+  object-position: center center;
 }
