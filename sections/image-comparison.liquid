@@ -1,13 +1,15 @@
 {{ 'section-image-comparison.css' | asset_url | stylesheet_tag }}
 
 <div id="section-{{ section.id }}" class="image-comparison">
-  <div class="image-left">
+  <div class="image-wrapper image-left">
     <img src="{{ section.settings.left_image | image_url }}" alt="Left Image">
   </div>
-  <div class="image-right">
+  <div class="image-wrapper image-right">
     <img src="{{ section.settings.right_image | image_url }}" alt="Right Image">
   </div>
-  <div class="divider"></div>
+  <div class="divider">
+    {{- 'drag-btn.svg' | inline_asset_content -}}
+  </div>
 </div>
 
 <script>
@@ -19,7 +21,7 @@
 
     let isDragging = false;
 
-    divider.addEventListener('mousedown', (e) => {
+    divider.addEventListener('mousedown', () => {
       isDragging = true;
       document.body.style.cursor = 'ew-resize';
     });
@@ -31,11 +33,11 @@
       const offsetX = e.clientX - rect.left;
       const percentage = (offsetX / rect.width) * 100;
 
-      // 设置左右区域的宽度
-      if (percentage > 10 && percentage < 90) {
-        leftImage.style.width = `${percentage}%`;
-        rightImage.style.width = `${100 - percentage}%`;
-        divider.style.left = `${percentage}%`;
+      if (percentage > 1 && percentage < 98) {
+        // 调整左侧图片显示区域变大，右侧图片显示区域变小
+        leftImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`; // 右侧减小
+        rightImage.style.clipPath = `inset(0 0 0 ${percentage}%)`; // 左侧增大
+        divider.style.left = `${percentage}%`; // 更新分隔线的位置
       }
     });
 

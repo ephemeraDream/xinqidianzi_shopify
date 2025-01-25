@@ -1,33 +1,48 @@
 .image-comparison {
-  display: flex;
   position: relative;
-  height: 400px; /* 调整高度 */
-  overflow: hidden;
-  border: 1px solid #ccc;
-}
-
-.image-left,
-.image-right {
-  position: relative;
-  width: 50%; /* 初始宽度各占一半 */
-  height: 100%;
+  height: 69rem;
   overflow: hidden;
 }
 
-.image-left img,
-.image-right img {
+.image-comparison .image-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.image-comparison .image-left {
+  left: 0;
+  clip-path: inset(0 50% 0 0);
+}
+
+.image-comparison .image-right {
+  right: 0;
+  clip-path: inset(0 0 0 50%);
+}
+
+.image-comparison .image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.divider {
+.image-comparison .divider {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%; /* 初始位置 */
-  width: 4px; /* 分隔线宽度 */
-  background: #000;
-  cursor: ew-resize; /* 改变鼠标样式 */
+  left: 50%;
+  width: 1.2rem;
+  background: #fff;
+  cursor: col-resize;
   z-index: 10;
+}
+
+.image-comparison .divider svg {
+  position: absolute;
+  top: calc(50% - 3.4rem);
+  left: -1.35rem;
 }
