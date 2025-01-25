@@ -169,7 +169,8 @@
       ],
       "settings": {
         "heading": "Unique Selling Points",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "image": "shopify://shop_images/unique_sellers.webp"
       }
     }
   },
