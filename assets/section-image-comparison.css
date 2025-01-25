@@ -1,0 +1,33 @@
+.image-comparison {
+  display: flex;
+  position: relative;
+  height: 400px; /* 调整高度 */
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.image-left,
+.image-right {
+  position: relative;
+  width: 50%; /* 初始宽度各占一半 */
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-left img,
+.image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* 初始位置 */
+  width: 4px; /* 分隔线宽度 */
+  background: #000;
+  cursor: ew-resize; /* 改变鼠标样式 */
+  z-index: 10;
+}

@@ -1,0 +1,65 @@
+{{ 'section-image-comparison.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="image-comparison">
+  <div class="image-left">
+    <img src="{{ section.settings.left_image | image_url }}" alt="Left Image">
+  </div>
+  <div class="image-right">
+    <img src="{{ section.settings.right_image | image_url }}" alt="Right Image">
+  </div>
+  <div class="divider"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.image-comparison');
+    const divider = document.querySelector('.divider');
+    const leftImage = document.querySelector('.image-left');
+    const rightImage = document.querySelector('.image-right');
+
+    let isDragging = false;
+
+    divider.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      document.body.style.cursor = 'ew-resize';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+
+      const rect = container.getBoundingClientRect();
+      const offsetX = e.clientX - rect.left;
+      const percentage = (offsetX / rect.width) * 100;
+
+      // 设置左右区域的宽度
+      if (percentage > 10 && percentage < 90) {
+        leftImage.style.width = `${percentage}%`;
+        rightImage.style.width = `${100 - percentage}%`;
+        divider.style.left = `${percentage}%`;
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      document.body.style.cursor = 'default';
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Image Comparison Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Image"
+    }
+  ]
+}
+{% endschema %}
