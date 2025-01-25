@@ -78,11 +78,19 @@
       "settings": {
         "collection": "new-arrivals"
       }
+    },
+    "image_comparison_PCE8ze": {
+      "type": "image-comparison",
+      "settings": {
+        "left_image": "shopify://shop_images/image-comparison-1.webp",
+        "right_image": "shopify://shop_images/image-comparison-2.webp"
+      }
     }
   },
   "order": [
     "home_banner_pV6qGH",
     "best_sellers_qXtxbG",
-    "new_arrivals_RwMRGd"
+    "new_arrivals_RwMRGd",
+    "image_comparison_PCE8ze"
   ]
 }
