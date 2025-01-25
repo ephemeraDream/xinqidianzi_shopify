@@ -96,12 +96,45 @@
             "title": "category01",
             "heading": "Lorem Ipsum",
             "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
-            "collection": ""
+            "product": "product-name-copy-1"
+          }
+        },
+        "category_UwmEfq": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/image-comparison-1.webp",
+            "title": "category01",
+            "heading": "Lorem Ipsum",
+            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
+            "product": "product-name-copy-1"
+          }
+        },
+        "category_PztF9G": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/image-comparison-1.webp",
+            "title": "category01",
+            "heading": "Lorem Ipsum",
+            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
+            "product": "product-name-copy-1"
+          }
+        },
+        "category_Ppt9RR": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/image-comparison-1.webp",
+            "title": "category01",
+            "heading": "Lorem Ipsum",
+            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
+            "product": "product-name-copy-1"
           }
         }
       },
       "block_order": [
-        "category_LiDChJ"
+        "category_LiDChJ",
+        "category_UwmEfq",
+        "category_PztF9G",
+        "category_Ppt9RR"
       ],
       "settings": {}
     }
