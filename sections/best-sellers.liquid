@@ -13,50 +13,58 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <!-- Slider main container -->
-  <div class="swiper best-sellers-swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      {% for product in section.settings.collection.products limit: 10 %}
-        <div class="swiper-slide product-card">
-          <div class="product-image">
-            <a href="{{ product.url }}">
-              <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
-            </a>
-          </div>
-          <div class="product-info">
-            <div>
-              <h3 class="product-title">
-                <a href="{{ product.url }}">{{ product.title }}</a>
-              </h3>
-              <div>
-                {% for i in (1..product.metafields.custom.rating.value) %}
-                  {{- 'star.svg' | inline_asset_content -}}
-                {% endfor %}
+  <div class="swiper-father">
+    <!-- Slider main container -->
+    <div class="swiper best-sellers-swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for product in section.settings.collection.products limit: 10 %}
+          <div class="swiper-slide product-card">
+            <div class="product-image">
+              <a href="{{ product.url }}">
+                <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
+              </a>
+              {% if product.metafields.custom.tag.value != blank %}
+                <div class="product-tag">{{ product.metafields.custom.tag.value }}</div>
+              {% endif %}
+            </div>
+            <div class="product-info">
+              <div class="flex-center">
+                <h3 class="product-title">
+                  <a href="{{ product.url }}">{{ product.title }}</a>
+                </h3>
+                <div class="flex-center product-star">
+                  {% liquid
+                    assign rating = product.metafields.custom.rating.value.rating | times: 1 | floor
+                  %}
+                  {% for i in (1..rating) %}
+                    {{- 'star.svg' | inline_asset_content -}}
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="flex-start">
+                <div>
+                  <span class="product-price">{{ product.price | money }}</span>
+                  <span class="product-compareprice">{{ product.compare_at_price | money }}</span>
+                </div>
+                <a href="{{ product.url }}" class="product-btn">Learn more</a>
               </div>
             </div>
-            <div>
-              <div>
-                <span class="product-price">{{ product.price | money }}</span>
-                <span class="product-price">{{ product.compare_at_price | money }}</span>
-              </div>
-              <div class="product-btn">Learn more</div>
-            </div>
           </div>
-        </div>
-      {% endfor %}
-      ...
-    </div>
-    <!-- If we need pagination -->
-    {% comment %} <div class="swiper-pagination"></div> {% endcomment %}
+        {% endfor %}
+        ...
+      </div>
+      <!-- If we need pagination -->
+      {% comment %} <div class="swiper-pagination"></div> {% endcomment %}
 
-    <!-- If we need navigation buttons -->
+      <!-- If we need navigation buttons -->
+
+      <!-- If we need scrollbar -->
+      {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
+    </div>
     <div class="swiper-button-prev">{{- 'left.svg' | inline_asset_content -}}</div>
     <div class="swiper-button-next">{{- 'right.svg' | inline_asset_content -}}</div>
-
-    <!-- If we need scrollbar -->
-    {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
   </div>
 </div>
 

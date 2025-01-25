@@ -27,24 +27,127 @@
   text-align: center;
 }
 
+.swiper-father {
+  width: 144rem;
+  position: relative;
+  --swiper-navigation-size: 0;
+  margin: 6.7rem auto 0 auto;
+}
+
 .best-sellers-swiper {
   width: 144rem;
   --swiper-navigation-size: 0;
 }
 
-.best-sellers-swiper .swiper-button-prev svg,
-.best-sellers-swiper .swiper-button-next svg {
+.swiper-father .swiper-button-prev svg,
+.swiper-father .swiper-button-next svg {
   width: 6rem;
   height: 6rem;
+}
+
+.swiper-father .swiper-button-prev,
+.swiper-father .swiper-button-next {
+  --swiper-navigation-sides-offset: -12rem;
 }
 
 .best-sellers-swiper .product-card {
   width: 50%;
 }
 
-.best-sellers-swiper .product-card .product-image img{
+.best-sellers-swiper .product-card .product-image img {
   width: 100%;
   height: 58.4rem;
   object-fit: cover;
   object-position: center center;
+}
+
+.product-star svg + svg {
+  margin-left: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+
+.product-info {
+  margin-top: 2.4rem;
+}
+
+.product-title a {
+  font-family: Blinker;
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+}
+
+.product-price {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #1a1a1a;
+}
+
+.product-compareprice {
+  font-family: Blinker;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-decoration: line-through;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #767676;
+  margin-left: 2rem;
+}
+
+.product-btn {
+  font-family: Blinker;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-decoration: underline;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #000000;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-tag {
+  position: absolute;
+  border-radius: 70.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdcc5d;
+  padding: 0.2rem 1rem;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+  top: 2.4rem;
+  left: 2.4rem;
 }
