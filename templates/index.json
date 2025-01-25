@@ -51,12 +51,38 @@
         "heading_kWXmyd"
       ],
       "settings": {
-        "collection": "frontpage"
+        "collection": "best-sellers"
+      }
+    },
+    "new_arrivals_RwMRGd": {
+      "type": "new-arrivals",
+      "blocks": {
+        "heading_JEdJkz": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Arrivals"
+          }
+        },
+        "buttons_trrjcg": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "View collection",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JEdJkz",
+        "buttons_trrjcg"
+      ],
+      "settings": {
+        "collection": "new-arrivals"
       }
     }
   },
   "order": [
     "home_banner_pV6qGH",
-    "best_sellers_qXtxbG"
+    "best_sellers_qXtxbG",
+    "new_arrivals_RwMRGd"
   ]
 }
