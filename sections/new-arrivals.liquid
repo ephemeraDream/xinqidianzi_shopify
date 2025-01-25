@@ -15,7 +15,7 @@
       <div class="product-card">
         <div class="product-image">
           <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
-          <a href="{{ product.url }}"> </a>
+          <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
         </div>
         <div class="product-info">
           <h3 class="product-title">
