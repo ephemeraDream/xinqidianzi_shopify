@@ -1,0 +1,34 @@
+.unique-selling {
+  padding-top: 12rem;
+}
+
+.unique-selling-heading {
+  font-family: Blinker;
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #000000;
+  text-align: center;
+}
+
+.unique-selling-text {
+  font-family: Blinker;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #767676;
+  margin-top: 2.6rem;
+  text-align: center;
+}
+
+.unique-selling-contain {
+  margin-top: 6.6rem;
+  display: flex;
+}
