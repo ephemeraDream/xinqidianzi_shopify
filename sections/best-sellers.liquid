@@ -70,7 +70,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.best-sellers-swiper', {
+    const bestSellersSwiper = new Swiper('.best-sellers-swiper', {
       // Optional parameters
       autoplay: true,
       loop: true,
@@ -84,8 +84,8 @@
 
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-father .swiper-button-next',
+        prevEl: '.swiper-father .swiper-button-prev',
       },
 
       // And if we need scrollbar

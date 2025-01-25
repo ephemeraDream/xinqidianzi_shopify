@@ -50,7 +50,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.hot-selling-swiper', {
+    const hotSellingSwiper = new Swiper('.hot-selling-swiper', {
       loop: true,
       allowTouchMove: false,
     });
@@ -61,7 +61,7 @@
         categoryBtns.forEach((button) => button.classList.remove('active'));
 
         btn.classList.add('active');
-        swiper.slideTo(index);
+        hotSellingSwiper.slideTo(index);
       });
     });
   });

@@ -11,35 +11,73 @@
       <img
         src="{{ section.settings.image | image_url }}"
         alt="unique selling"
-        width="100%"
-        height="100%"
         class="left-side-bg"
       >
-      {% for block in section.blocks %}
-        <div class="left-side-dot" data-product-id="{{ block.settings.product_id }}">
-          {{- 'circle.svg' | inline_asset_content -}}
-        </div>
-      {% endfor %}
+      <div>
+        {% for block in section.blocks %}
+          <div class="left-side-dot" data-product-id="{{ block.settings.product.id }}">
+            {% comment %} {{- 'circle.svg' | inline_asset_content -}} {% endcomment %}
+          </div>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="right-side">
-      <div class="swiper-container">
+      <div class="swiper unique-selling-swiper">
         <div class="swiper-wrapper">
           {% for block in section.blocks %}
-            <div class="swiper-slide" data-product-id="{{ block.settings.product_id }}">
-              <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Product Image">
-              <h3>{{ block.settings.product_name }}</h3>
-              <p>{{ block.settings.product_description }}</p>
+            <div class="swiper-slide product-card" data-product-id="{{ block.settings.product.id }}">
+              <div class="product-image">
+                <img
+                  src="{{ block.settings.product.featured_media | image_url }}"
+                  alt="{{ block.settings.product.title }}"
+                >
+                <a href="{{ block.settings.product.url }}" class="product-btn">
+                  {{- 'shopping.svg' | inline_asset_content -}}
+                </a>
+              </div>
+              <h3 class="product-title">
+                <a href="{{ block.settings.product.url }}">{{ block.settings.product.title }}</a>
+              </h3>
+              <div class="product-price">{{ block.settings.product.price | money }}</div>
             </div>
           {% endfor %}
         </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev">{{- 'left.svg' | inline_asset_content -}}</div>
+      <div class="swiper-button-next">{{- 'right.svg' | inline_asset_content -}}</div>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const uniqueSellingSwiper = new Swiper('.unique-selling-swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.right-side .swiper-button-next',
+        prevEl: '.right-side .swiper-button-prev',
+      },
+      pagination: {
+        el: '.right-side .swiper-pagination',
+        type: 'fraction',
+      },
+    });
+
+    document.querySelectorAll('.left-side-dot').forEach(function (dot, index) {
+      dot.addEventListener('click', function () {
+        var productId = dot.getAttribute('data-product-id');
+
+        var correspondingSlide = document.querySelector('.swiper-slide[data-product-id="' + productId + '"]');
+
+        if (correspondingSlide) {
+          uniqueSellingSwiper.slideTo(index);
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {

@@ -1,5 +1,6 @@
 .unique-selling {
   padding-top: 12rem;
+  padding-bottom: 16rem;
 }
 
 .unique-selling-heading {
@@ -29,6 +30,162 @@
 }
 
 .unique-selling-contain {
-  margin-top: 6.6rem;
+  width: 144rem;
+  margin: 6.6rem auto 0 auto;
   display: flex;
+  gap: 4.2rem;
+  align-items: flex-start;
+}
+
+.unique-selling-contain .left-side {
+  flex: 1;
+  position: relative;
+}
+
+.unique-selling-contain .right-side {
+  width: 41.2rem;
+  padding-top: 9.4rem;
+  position: relative;
+}
+
+.unique-selling-contain .left-side .left-side-bg {
+  width: 100%;
+  height: 73.5rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.unique-selling-contain .left-side .left-side-dot {
+  position: absolute;
+  cursor: pointer;
+  width: 6.5rem;
+  height: 6.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.unique-selling-contain .left-side .left-side-dot::after {
+  content: "";
+  width: 4.3rem;
+  height: 4.3rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  top: 1.1rem;
+  left: 1.1rem;
+}
+
+.unique-selling-contain .left-side .left-side-dot:first-child {
+  top: 15.4rem;
+  left: 53.2rem;
+}
+
+.unique-selling-contain .left-side .left-side-dot:nth-child(2n) {
+  bottom: 23.3rem;
+  left: 25.5rem;
+}
+
+.unique-selling-contain .left-side .left-side-dot:last-child {
+  bottom: 20rem;
+  right: 9.2rem;
+}
+
+.unique-selling-swiper .product-image {
+  height: 50rem;
+  border-radius: 1.6rem;
+  background: #f0f2f3;
+  box-sizing: border-box;
+  border: 0.1rem solid #aaaaaa;
+  position: relative;
+}
+
+.unique-selling-swiper .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.unique-selling-swiper .product-btn {
+  width: 6rem;
+  height: 6rem;
+  background: #ffffff;
+  box-shadow: 0px 0.231rem 0.615rem 0px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unique-selling-swiper .product-btn svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.unique-selling-swiper .product-btn:hover {
+  background-color: #ebb069;
+}
+
+.unique-selling-swiper .product-btn:hover svg path {
+  fill: #fff;
+}
+
+.unique-selling-swiper .product-title {
+  margin-top: 1.6rem;
+}
+
+.unique-selling-swiper .product-title a {
+  font-family: Blinker;
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #1a1a1a;
+}
+
+.unique-selling-swiper .product-price {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #1a1a1a;
+  margin-top: 1.6rem;
+}
+
+.unique-selling-contain .right-side {
+  --swiper-navigation-size: 0;
+}
+
+.unique-selling-contain .right-side .swiper-button-prev svg,
+.unique-selling-contain .right-side .swiper-button-next svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.unique-selling-contain .right-side .swiper-button-prev,
+.unique-selling-contain .right-side .swiper-button-next {
+  width: 3.2rem;
+  height: 3.2rem;
+  --swiper-navigation-sides-offset: 2.4rem;
+  --swiper-navigation-top-offset: 2.1rem;
+}
+
+.unique-selling-contain .right-side .swiper-pagination {
+  font-family: Blinker;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: -0.2rem;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #3d3d3d;
+  --swiper-pagination-top: 1.8rem;
+  z-index: 0;
 }
