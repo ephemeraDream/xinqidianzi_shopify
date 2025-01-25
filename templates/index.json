@@ -85,12 +85,32 @@
         "left_image": "shopify://shop_images/image-comparison-1.webp",
         "right_image": "shopify://shop_images/image-comparison-2.webp"
       }
+    },
+    "hot_selling_qpWptB": {
+      "type": "hot-selling",
+      "blocks": {
+        "category_LiDChJ": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/image-comparison-1.webp",
+            "title": "category01",
+            "heading": "Lorem Ipsum",
+            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_LiDChJ"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "home_banner_pV6qGH",
     "best_sellers_qXtxbG",
     "new_arrivals_RwMRGd",
-    "image_comparison_PCE8ze"
+    "image_comparison_PCE8ze",
+    "hot_selling_qpWptB"
   ]
 }
