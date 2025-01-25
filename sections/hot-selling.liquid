@@ -50,7 +50,10 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.hot-selling-swiper', {});
+    const swiper = new Swiper('.hot-selling-swiper', {
+      loop: true,
+      allowTouchMove: false,
+    });
     const categoryBtns = document.querySelectorAll('.category-btn');
 
     categoryBtns.forEach((btn, index) => {

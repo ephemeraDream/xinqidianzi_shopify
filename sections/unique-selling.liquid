@@ -1,0 +1,76 @@
+{{ 'section-unique-selling.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="unique-selling">
+  <div class="left-side">
+    <div class="dots">
+      {% for block in section.blocks %}
+        <div class="dot" data-product-id="{{ block.settings.product_id }}">
+          <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Dot Image">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="right-side">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide" data-product-id="{{ block.settings.product_id }}">
+            <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Product Image">
+            <h3>{{ block.settings.product_name }}</h3>
+            <p>{{ block.settings.product_description }}</p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "unique selling",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "choose product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "unique selling",
+      "blocks": [
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
