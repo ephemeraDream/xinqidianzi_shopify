@@ -139,6 +139,38 @@
       "settings": {
         "heading": "Hot selling product"
       }
+    },
+    "unique_selling_ci9cAL": {
+      "type": "unique-selling",
+      "blocks": {
+        "product_mHgJFV": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy-1"
+          }
+        },
+        "product_f3tKk3": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy-2"
+          }
+        },
+        "product_xTRhYr": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy-3"
+          }
+        }
+      },
+      "block_order": [
+        "product_mHgJFV",
+        "product_f3tKk3",
+        "product_xTRhYr"
+      ],
+      "settings": {
+        "heading": "Unique Selling Points",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
     }
   },
   "order": [
@@ -146,6 +178,7 @@
     "best_sellers_qXtxbG",
     "new_arrivals_RwMRGd",
     "image_comparison_PCE8ze",
-    "hot_selling_qpWptB"
+    "hot_selling_qpWptB",
+    "unique_selling_ci9cAL"
   ]
 }
