@@ -228,6 +228,7 @@
         ".image-with-text__media-item {width: 70.8rem; height: 58.3rem;}",
         ".image-with-text__media-item img {width: 70.8rem; height: 58.3rem;}",
         ".image-with-text__text-item {flex: 0 0 auto; padding-right: 13.5rem;}",
+        ".image-with-text__content{padding: 0;}",
         ".image-with-text__text-item .image-with-text__heading {font-family: Blinker; font-size: 5.2rem; font-weight: 600; line-height: normal; letter-spacing: 0em; font-variation-settings: \"opsz\" auto; font-feature-settings: \"kern\" on; color: #000000;}"
       ],
       "settings": {
