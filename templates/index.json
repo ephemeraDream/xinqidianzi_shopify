@@ -244,6 +244,52 @@
       "settings": {
         "blog": "news"
       }
+    },
+    "user_feedback_tjLKzK": {
+      "type": "user-feedback",
+      "blocks": {
+        "product_Lx9mtw": {
+          "type": "product",
+          "settings": {
+            "product": "product-name"
+          }
+        },
+        "product_9UKmMQ": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy"
+          }
+        },
+        "product_nCGWEz": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy-1"
+          }
+        },
+        "product_8FjTfL": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy-2"
+          }
+        },
+        "product_PFV74R": {
+          "type": "product",
+          "settings": {
+            "product": "product-name-copy-3"
+          }
+        }
+      },
+      "block_order": [
+        "product_Lx9mtw",
+        "product_9UKmMQ",
+        "product_nCGWEz",
+        "product_8FjTfL",
+        "product_PFV74R"
+      ],
+      "settings": {
+        "heading": "User Feedback",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
     }
   },
   "order": [
@@ -255,6 +301,7 @@
     "unique_selling_ci9cAL",
     "video_KwY9a9",
     "image_with_text_home_HeT87b",
-    "home_news_cNMLwW"
+    "home_news_cNMLwW",
+    "user_feedback_tjLKzK"
   ]
 }
