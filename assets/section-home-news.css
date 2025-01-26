@@ -1,0 +1,62 @@
+.home-news {
+  width: 144rem;
+  margin: 0 auto;
+}
+
+.home-news .blog-list {
+  display: flex;
+  gap: 6.8rem 2.4rem;
+  flex-wrap: wrap;
+}
+
+.home-news .blog-list .blog-item {
+  flex: 0 0 calc((100% - 4.8rem) / 3);
+}
+
+.home-news .blog-list .blog-item .blog-img {
+  width: 100%;
+  height: 37.3rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.home-news .blog-list .blog-item .flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.home-news .blog-list .blog-item .blog-title {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #000000;
+}
+
+.home-news .blog-list .blog-item .blog-date {
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #777777;
+  flex: 0 0 auto;
+}
+
+.home-news .blog-list .blog-item .blog-excerpt {
+  font-family: Blinker;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #767676;
+  margin-top: 1.6rem;
+}
