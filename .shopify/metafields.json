@@ -29,6 +29,26 @@
         "name": "rating",
         "category": "RATING"
       }
+    },
+    {
+      "key": "comment",
+      "namespace": "custom",
+      "name": "Comment",
+      "description": "",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    },
+    {
+      "key": "feedback",
+      "namespace": "custom",
+      "name": "Feedback",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [],
