@@ -176,7 +176,7 @@
     "video_KwY9a9": {
       "type": "video",
       "custom_css": [
-        ".deferred-media__poster-button svg path {fill: #fff;}",
+        ".deferred-media__poster-button {opacity: 0;}",
         ".video-section {height: 74.2rem;}"
       ],
       "settings": {
