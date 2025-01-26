@@ -177,7 +177,7 @@
       "type": "video",
       "custom_css": [
         ".deferred-media__poster-button {opacity: 0;}",
-        ".video-section {height: 74.2rem;}"
+        ".video-section__media.deferred-media{--ratio-percent: 39%!important;}"
       ],
       "settings": {
         "heading": "",
