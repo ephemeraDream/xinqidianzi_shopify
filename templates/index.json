@@ -191,61 +191,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "image_with_text_M3DHXm": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_TKUjAG": {
-          "type": "heading",
-          "settings": {
-            "heading": "Lorem Ipsum",
-            "heading_size": "h1"
-          }
-        },
-        "text_gJmdgW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam</p>",
-            "text_style": "body"
-          }
-        },
-        "button_eQq7bA": {
-          "type": "button",
-          "settings": {
-            "button_label": "click",
-            "button_link": "",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_TKUjAG",
-        "text_gJmdgW",
-        "button_eQq7bA"
-      ],
-      "custom_css": [
-        ".image-with-text__grid {flex-wrap: nowrap;}",
-        ".image-with-text__media-item {width: 70.8rem; height: 58.3rem;}",
-        ".image-with-text__media-item img {width: 70.8rem; height: 58.3rem;}",
-        ".image-with-text__text-item {flex: 0 0 auto; padding-right: 13.5rem;}",
-        ".image-with-text__content{padding: 0;}",
-        ".image-with-text__text-item .image-with-text__heading {font-family: Blinker; font-size: 5.2rem; font-weight: 600; line-height: normal; letter-spacing: 0em; font-variation-settings: \"opsz\" auto; font-feature-settings: \"kern\" on; color: #000000;}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/img_1.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 100
-      }
     }
   },
   "order": [
@@ -255,7 +200,6 @@
     "image_comparison_PCE8ze",
     "hot_selling_qpWptB",
     "unique_selling_ci9cAL",
-    "video_KwY9a9",
-    "image_with_text_M3DHXm"
+    "video_KwY9a9"
   ]
 }
