@@ -172,6 +172,25 @@
         "text": "This is a placeholder copy This is a placeholder copy",
         "image": "shopify://shop_images/unique_sellers.webp"
       }
+    },
+    "video_KwY9a9": {
+      "type": "video",
+      "custom_css": [
+        ".deferred-media__poster-button svg path {fill: #fff;}",
+        ".video-section {height: 74.2rem;}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=6Mak7cPyG2c",
+        "cover_image": "shopify://shop_images/video_cover.webp",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -180,6 +199,7 @@
     "new_arrivals_RwMRGd",
     "image_comparison_PCE8ze",
     "hot_selling_qpWptB",
-    "unique_selling_ci9cAL"
+    "unique_selling_ci9cAL",
+    "video_KwY9a9"
   ]
 }
