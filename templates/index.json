@@ -290,6 +290,14 @@
         "heading": "User Feedback",
         "text": "This is a placeholder copy This is a placeholder copy"
       }
+    },
+    "home_blog_yKBWMM": {
+      "type": "home-blog",
+      "settings": {
+        "heading": "Blog",
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "blog": "home-news"
+      }
     }
   },
   "order": [
@@ -302,6 +310,7 @@
     "video_KwY9a9",
     "image_with_text_home_HeT87b",
     "home_news_cNMLwW",
-    "user_feedback_tjLKzK"
+    "user_feedback_tjLKzK",
+    "home_blog_yKBWMM"
   ]
 }
