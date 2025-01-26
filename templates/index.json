@@ -238,6 +238,12 @@
         "padding_top": 60,
         "padding_bottom": 100
       }
+    },
+    "home_news_cNMLwW": {
+      "type": "home-news",
+      "settings": {
+        "blog": "news"
+      }
     }
   },
   "order": [
@@ -248,6 +254,7 @@
     "hot_selling_qpWptB",
     "unique_selling_ci9cAL",
     "video_KwY9a9",
-    "image_with_text_home_HeT87b"
+    "image_with_text_home_HeT87b",
+    "home_news_cNMLwW"
   ]
 }
