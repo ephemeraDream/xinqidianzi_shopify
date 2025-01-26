@@ -1,6 +1,51 @@
 {{ 'section-user-feedback.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="user-feedback"></div>
+<div id="section-{{ section.id }}" class="user-feedback">
+  <div class="swiper user-feedback-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide user-feedback-info">
+        <h2>{{ section.settings.heading }}</h2>
+        <div>{{ section.settings.text }}</div>
+      </div>
+      {% for block in section.blocks %}
+        <div class="swiper-slide product-card">
+          <div class="feedback-info">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0913/4207/8236/files/logo-head.webp?v=1737878466"
+              alt="logo-head"
+              class="logo-head"
+            >
+            <div class="feedback-info-text">{{ block.settings.product.metafields.custom.feedback }}</div>
+          </div>
+          <div class="product-box">
+            <div class="product-info">
+              <img
+                src="{{ block.settings.product.featured_media | image_url }}"
+                alt="{{ block.settings.product.title }}"
+                class="product-image"
+              >
+              <div>
+                <h3>{{ block.settings.product.title }}</h3>
+                <div class="product-price">{{ block.settings.product.price | money }}</div>
+              </div>
+            </div>
+            <a class="product-btn" href="{{ block.settings.product.url }}">Learn more</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.user-feedback-swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      freeMode: true,
+    });
+  });
+</script>
 
 {% schema %}
 {
