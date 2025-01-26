@@ -1,0 +1,36 @@
+{{ 'section-home-blog.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="home-blog"></div>
+
+{% schema %}
+{
+  "name": "home blog",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "text"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
+    }
+  ],
+  "presets": [
+    {
+      "name": "home blog"
+    }
+  ]
+}
+{% endschema %}
