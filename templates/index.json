@@ -224,8 +224,10 @@
         "button_eQq7bA"
       ],
       "custom_css": [
+        ".image-with-text__grid {flex-wrap: nowrap;}",
         ".image-with-text__media-item {width: 70.8rem; height: 58.3rem;}",
-        ".image-with-text__media-item img {width: 70.8rem; height: 58.3rem;}"
+        ".image-with-text__media-item img {width: 70.8rem; height: 58.3rem;}",
+        ".image-with-text__text-item{flex: 0 0 auto;}"
       ],
       "settings": {
         "image": "shopify://shop_images/img_1.webp",
