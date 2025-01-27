@@ -9,9 +9,43 @@
  */
 {
   "sections": {
-
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "home_banner_kKRwgU": {
+      "type": "home-banner",
+      "blocks": {
+        "heading_BttCLX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lorem Ipsum",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+          }
+        },
+        "buttons_w3QGRG": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "DISCOVER",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_BttCLX",
+        "buttons_w3QGRG"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/home-banner.webp"
+      }
+    }
   },
   "order": [
-
+    "main",
+    "home_banner_kKRwgU"
   ]
 }
