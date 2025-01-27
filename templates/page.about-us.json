@@ -103,11 +103,82 @@
         "title": "Title placeholder",
         "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text"
       }
+    },
+    "about_history_Vc7XLQ": {
+      "type": "about-history",
+      "blocks": {
+        "category_kaK7dz": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_1.webp",
+            "year": "1958",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_MEUfxQ": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_2.webp",
+            "year": "1983",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_KmK9cK": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_1.webp",
+            "year": "1992",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_DfUyA3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_2.webp",
+            "year": "1996",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_WVabb4": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_1.webp",
+            "year": "1998",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_Fig6Qh": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_2.webp",
+            "year": "2014",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        }
+      },
+      "block_order": [
+        "category_kaK7dz",
+        "category_MEUfxQ",
+        "category_KmK9cK",
+        "category_DfUyA3",
+        "category_WVabb4",
+        "category_Fig6Qh"
+      ],
+      "settings": {
+        "heading": "History"
+      }
     }
   },
   "order": [
     "home_banner_kKRwgU",
     "company_vision_4BbKeg",
-    "design_team_zwfj3W"
+    "design_team_zwfj3W",
+    "about_history_Vc7XLQ"
   ]
 }
