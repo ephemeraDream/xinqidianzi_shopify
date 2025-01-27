@@ -28,7 +28,7 @@
 }
 
 .swiper-father {
-  width: 144rem;
+  max-width: 144rem;
   position: relative;
   --swiper-navigation-size: 0;
   margin: 6.7rem auto 0 auto;

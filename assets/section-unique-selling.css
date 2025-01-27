@@ -30,7 +30,7 @@
 }
 
 .unique-selling-contain {
-  width: 144rem;
+  max-width: 144rem;
   margin: 6.6rem auto 0 auto;
   display: flex;
   gap: 4.2rem;

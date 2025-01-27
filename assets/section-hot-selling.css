@@ -16,7 +16,7 @@
 }
 
 .hot-selling-swiper {
-  width: 144rem;
+  max-width: 144rem;
   margin: 7rem auto 0 auto;
 }
 

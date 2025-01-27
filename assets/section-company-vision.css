@@ -1,0 +1,77 @@
+.company-vision {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  gap: 6.6rem;
+}
+
+.company-vision .company-vision-left {
+  width: 42.2rem;
+}
+
+.company-vision .company-vision-left .company-vision-heading {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.company-vision .company-vision-left .company-vision-sec_heading {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 2rem;
+}
+
+.company-vision .company-vision-left .company-vision-text {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 3.2rem;
+}
+
+.company-vision .company-vision-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  height: 104.4rem;
+}
+
+.company-vision .company-vision-right img {
+  width: calc((100% - 2.4rem) / 2);
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0.8rem;
+}
+
+.company-vision .company-vision-right img:first-child {
+  height: 33.1rem;
+  margin-top: 3.4rem;
+}
+
+.company-vision .company-vision-right img:nth-child(2n) {
+  height: 57rem;
+}
+
+.company-vision .company-vision-right img:nth-child(3n) {
+  height: 68.9rem;
+}
+
+.company-vision .company-vision-right img:last-child {
+  height: 33.1rem;
+}

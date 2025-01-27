@@ -1,6 +1,22 @@
 {{ 'section-company-vision.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="company-vision"></div>
+<div id="section-{{ section.id }}" class="company-vision">
+  <div class="company-vision-left">
+    <h2 class="company-vision-heading">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="company-vision-sec_heading">{{ section.settings.sec_heading }}</div>
+    <div class="company-vision-text">{{ section.settings.text }}</div>
+  </div>
+  <div class="company-vision-right">
+    {% for block in section.blocks %}
+      <img
+        src="{{ block.settings.image | image_url }}"
+        alt="company-vision"
+      >
+    {% endfor %}
+  </div>
+</div>
 
 {% schema %}
 {

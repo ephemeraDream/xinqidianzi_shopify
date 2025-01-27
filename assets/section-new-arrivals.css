@@ -17,7 +17,7 @@
 }
 
 .new-arrivals-contain {
-  width: 144rem;
+  max-width: 144rem;
   display: flex;
   align-items: center;
   margin: 7rem auto 0 auto;

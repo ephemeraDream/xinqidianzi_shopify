@@ -1,5 +1,5 @@
 .contact-form {
-  width: 144rem;
+  max-width: 144rem;
   margin: 0 auto;
   padding-bottom: 15.3rem;
 }

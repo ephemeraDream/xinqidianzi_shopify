@@ -1,5 +1,5 @@
 .contact-card {
-  width: 144rem;
+  max-width: 144rem;
   padding: 6rem 0;
   margin: 0 auto;
   display: flex;
