@@ -75,10 +75,39 @@
         "sec_heading": "This position contains the description text",
         "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
       }
+    },
+    "design_team_zwfj3W": {
+      "type": "design-team",
+      "blocks": {
+        "category_NDbBmL": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_6.webp"
+          }
+        },
+        "category_64mkmK": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "category_NDbBmL",
+        "category_64mkmK"
+      ],
+      "settings": {
+        "heading": "Design team",
+        "sec_heading": "This position contains the description text",
+        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+        "title": "Title placeholder",
+        "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text"
+      }
     }
   },
   "order": [
     "home_banner_kKRwgU",
-    "company_vision_4BbKeg"
+    "company_vision_4BbKeg",
+    "design_team_zwfj3W"
   ]
 }
