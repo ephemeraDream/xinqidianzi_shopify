@@ -1,0 +1,64 @@
+{{ 'section-contact-card.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="contact-card"></div>
+
+{% schema %}
+{
+  "name": "contact card",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "text"
+    },
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "contact",
+      "name": "contact",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "contact card",
+      "blocks": [
+        {
+          "type": "contact"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
