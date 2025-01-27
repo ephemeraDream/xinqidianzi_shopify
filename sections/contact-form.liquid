@@ -1,6 +1,70 @@
 {{ 'section-contact-form-new.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="contact-form"></div>
+<div id="section-{{ section.id }}" class="contact-form">
+  <h2 class="contact-form-heading">
+    {{ section.settings.heading }}
+  </h2>
+  <div class="contact-form-text">{{ section.settings.text }}</div>
+  <div class="contact-form-line"></div>
+  {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+    <div class="flex-center">
+      <div class="contact-form-field">
+        <label class="field-label" for="ContactForm-name">Name</label>
+        <input
+          class="field-input"
+          autocomplete="name"
+          type="text"
+          id="ContactForm-name"
+          name="contact[Name]"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          placeholder="Name"
+        >
+      </div>
+      <div class="contact-form-field">
+        <label class="field-label" for="ContactForm-email">Email</label>
+        <input
+          autocomplete="email"
+          type="email"
+          id="ContactForm-email"
+          class="field-input"
+          name="contact[Email]"
+          spellcheck="false"
+          autocapitalize="off"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+          placeholder="Email"
+        >
+      </div>
+    </div>
+    <div class="contact-form-field">
+      <label class="field-label" for="ContactForm-phone">Phone number</label>
+      <input
+        type="tel"
+        id="ContactForm-phone"
+        class="field-input"
+        autocomplete="tel"
+        name="contact[Phone]"
+        pattern="[0-9\-]*"
+        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+        placeholder="Phone number"
+      >
+    </div>
+    <div class="contact-form-field">
+      <label class="field-label" for="ContactForm-body">Message</label>
+      <textarea
+        rows="6"
+        id="ContactForm-body"
+        class="field-input"
+        name="contact[Message]"
+        placeholder="Message"
+      >
+        {{- form.body -}}
+      </textarea>
+    </div>
+    <div class="contact-btn">
+      <button type="submit" class="button">Send message</button>
+    </div>
+  {%- endform -%}
+</div>
 
 {% schema %}
 {
