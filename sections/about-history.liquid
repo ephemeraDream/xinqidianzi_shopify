@@ -1,6 +1,58 @@
 {{ 'section-about-history.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="about-history"></div>
+<div id="section-{{ section.id }}" class="about-history">
+  <div class="about-history-swiperBox">
+    <h2 class="about-history-heading">{{ section.settings.heading }}</h2>
+    <div class="swiper about-history-swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide history-card">
+            <img
+              src="{{ block.settings.image | image_url }}"
+              alt="{{ block.settings.heading }}"
+              class="history-image"
+            >
+            <div class="history-box">
+              <h3 class="history-year">{{ block.settings.year }}</h3>
+              <div class="history-heading">{{ block.settings.heading }}</div>
+              <div class="history-description">{{ block.settings.description }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="about-history-navigation">
+    {% for block in section.blocks %}
+      <div class="navigation-btn">
+        <div class="navigation-btn-circle"></div>
+        <div class="navigation-btn-title">{{ block.settings.year }}</div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="navigation-line"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const aboutHistorySwiper = new Swiper('.about-history-swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      freeMode: true,
+    });
+
+    const categoryBtns = document.querySelectorAll('.navigation-btn');
+
+    categoryBtns.forEach((btn, index) => {
+      btn.addEventListener('click', function () {
+        {% comment %} categoryBtns.forEach((button) => button.classList.remove('active'));
+
+        btn.classList.add('active'); {% endcomment %}
+        aboutHistorySwiper.slideTo(index);
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
