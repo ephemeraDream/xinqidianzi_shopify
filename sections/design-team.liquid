@@ -1,6 +1,28 @@
 {{ 'section-design-team.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="design-team"></div>
+<div id="section-{{ section.id }}" class="design-team">
+  <div class="design-team-main">
+    <div class="design-team-left">
+      {% for block in section.blocks %}
+        <img
+          src="{{ block.settings.image | image_url }}"
+          alt="design-team"
+        >
+      {% endfor %}
+    </div>
+    <div class="design-team-right">
+      <h2 class="design-team-heading">
+        {{ section.settings.heading }}
+      </h2>
+      {%- if section.settings.sec_heading != blank -%}
+        <div class="design-team-sec_heading">{{ section.settings.sec_heading }}</div>
+      {%- endif -%}
+      <div class="design-team-text">{{ section.settings.text }}</div>
+    </div>
+  </div>
+  <h2 class="design-team-title">{{ section.settings.title }}</h2>
+  <div class="design-team-description">{{ section.settings.description }}</div>
+</div>
 
 {% schema %}
 {
