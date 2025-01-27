@@ -35,9 +35,50 @@
       "settings": {
         "image": "shopify://shop_images/home-banner.webp"
       }
+    },
+    "company_vision_4BbKeg": {
+      "type": "company-vision",
+      "blocks": {
+        "category_GpKceh": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_1.webp"
+          }
+        },
+        "category_rTfVqX": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_3.webp"
+          }
+        },
+        "category_gHnKKt": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_2.webp"
+          }
+        },
+        "category_3XbbJX": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "category_GpKceh",
+        "category_rTfVqX",
+        "category_gHnKKt",
+        "category_3XbbJX"
+      ],
+      "settings": {
+        "heading": "Company Vision",
+        "sec_heading": "This position contains the description text",
+        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+      }
     }
   },
   "order": [
-    "home_banner_kKRwgU"
+    "home_banner_kKRwgU",
+    "company_vision_4BbKeg"
   ]
 }
