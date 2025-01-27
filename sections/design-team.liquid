@@ -1,29 +1,11 @@
-{{ 'section-company-vision.css' | asset_url | stylesheet_tag }}
+{{ 'section-design-team.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="company-vision">
-  <div class="company-vision-left">
-    <h2 class="company-vision-heading">
-      {{ section.settings.heading }}
-    </h2>
-    {%- if section.settings.sec_heading != blank -%}
-      <div class="company-vision-sec_heading">{{ section.settings.sec_heading }}</div>
-    {%- endif -%}
-    <div class="company-vision-text">{{ section.settings.text }}</div>
-  </div>
-  <div class="company-vision-right">
-    {% for block in section.blocks %}
-      <img
-        src="{{ block.settings.image | image_url }}"
-        alt="company-vision"
-      >
-    {% endfor %}
-  </div>
-</div>
+<div id="section-{{ section.id }}" class="design-team"></div>
 
 {% schema %}
 {
-  "name": "company vision",
-  "max_blocks": 4,
+  "name": "design team",
+  "max_blocks": 2,
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -44,6 +26,16 @@
       "type": "inline_richtext",
       "id": "text",
       "label": "text"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "description"
     }
   ],
   "blocks": [
@@ -61,7 +53,7 @@
   ],
   "presets": [
     {
-      "name": "company vision",
+      "name": "design team",
       "blocks": [
         {
           "type": "category"
