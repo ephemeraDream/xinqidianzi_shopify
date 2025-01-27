@@ -9,15 +9,49 @@
  */
 {
   "sections": {
+    "contact_card_zyiVdJ": {
+      "type": "contact-card",
+      "blocks": {
+        "contact_fiq7Tx": {
+          "type": "contact",
+          "settings": {
+            "icon": "shopify://shop_images/icon-address.svg",
+            "text": "ROOM 5031, 5/F, YAU LEE CENTRE, NO. 45, HOI YUEN ROAD, KWUN TONG, KOWLOON, HONGKONG",
+            "link": "https://www.google.com/maps/search/ROOM+5031,+5%2FF,+YAU+LEE+CENTRE,+NO.+45,+HOI+YUEN+ROAD,+KWUN+TONG,+KOWLOON,+HONGKONG/@22.3100409,114.2208341,17z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
+          }
+        },
+        "contact_idjyxC": {
+          "type": "contact",
+          "settings": {
+            "icon": "shopify://shop_images/icon-tel.svg",
+            "text": "Phone: +86 18688937526",
+            "link": "tel:+86 18688937526"
+          }
+        }
+      },
+      "block_order": [
+        "contact_fiq7Tx",
+        "contact_idjyxC"
+      ],
+      "settings": {
+        "heading": "Title placeholder",
+        "text": "This position contains the description text This position contains the description text This position",
+        "image": "shopify://shop_images/contact_card.webp"
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
         "heading": "",
-        "text": ""
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
+    "contact_card_zyiVdJ",
     "form"
   ]
 }
