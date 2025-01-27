@@ -1,6 +1,28 @@
 {{ 'section-contact-card.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="contact-card"></div>
+<div id="section-{{ section.id }}" class="contact-card">
+  <img
+    src="{{ section.settings.image | image_url }}"
+    alt="contact card"
+    class="contact-card-left"
+  >
+  <div class="contact-card-right">
+    <h2 class="contact-card-heading">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="contact-card-text">{{ section.settings.text }}</div>
+    <div class="contact-card-line"></div>
+    {% for block in section.blocks %}
+      <div class="contact-box">
+        <img
+          src="{{ block.settings.icon | image_url }}"
+          alt="contact icon"
+        >
+        <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
 {% schema %}
 {

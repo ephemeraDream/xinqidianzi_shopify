@@ -40,7 +40,7 @@
       }
     },
     "form": {
-      "type": "contact-form",
+      "type": "contact-form-backup",
       "settings": {
         "heading": "",
         "heading_size": "h1",
