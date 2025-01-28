@@ -105,10 +105,17 @@
   justify-content: space-between;
   z-index: 1;
   position: relative;
+  --swiper-pagination-bottom: 4.1rem;
 }
 
 .about-history-navigation .navigation-btn {
   cursor: pointer;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  --swiper-pagination-bullet-horizontal-gap: 0;
+  background: #ffffff;
+  position: relative;
 }
 
 .about-history-navigation .navigation-btn-title {
@@ -119,16 +126,7 @@
   text-align: center;
   letter-spacing: 0px;
   color: #767676;
-  margin-top: 1.4rem;
-}
-
-.about-history-navigation .navigation-btn-circle {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50%;
-  background: #ffffff;
-  margin: 0 auto;
-  position: relative;
+  margin-top: 2.2rem;
 }
 
 .about-history .navigation-line {
@@ -141,7 +139,9 @@
   z-index: 0;
 }
 
-.about-history-navigation .navigation-btn:hover .navigation-btn-circle::before {
+.about-history-navigation .navigation-btn:hover::before,
+.about-history-navigation
+  .swiper-pagination-bullet-active.navigation-btn::before {
   content: "";
   width: 1.3rem;
   height: 1.3rem;
@@ -153,7 +153,9 @@
   z-index: 1;
 }
 
-.about-history-navigation .navigation-btn:hover .navigation-btn-circle::after {
+.about-history-navigation .navigation-btn:hover::after,
+.about-history-navigation
+  .swiper-pagination-bullet-active.navigation-btn::after {
   content: "";
   width: 3.2rem;
   height: 3.2rem;

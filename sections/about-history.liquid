@@ -1,6 +1,16 @@
 {{ 'section-about-history.css' | asset_url | stylesheet_tag }}
 
 <div id="section-{{ section.id }}" class="about-history">
+  <div id="section-data" data-blocks='[
+    {% for block in section.blocks %}
+      {
+        "id": "{{ block.id }}",
+        "settings": {
+          "year": "{{ block.settings.year | escape }}"
+        }
+      }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ]'></div>
   <div class="about-history-swiperBox">
     <h2 class="about-history-heading">{{ section.settings.heading }}</h2>
     <div class="swiper about-history-swiper">
@@ -23,25 +33,42 @@
     </div>
   </div>
   <div class="about-history-navigation">
-    {% for block in section.blocks %}
-      <div class="navigation-btn">
-        <div class="navigation-btn-circle"></div>
-        <div class="navigation-btn-title">{{ block.settings.year }}</div>
-      </div>
-    {% endfor %}
+    {% comment %}
+      {% for block in section.blocks %}
+        <div class="navigation-btn">
+          <div class="navigation-btn-circle"></div>
+          <div class="navigation-btn-title">{{ block.settings.year }}</div>
+        </div>
+      {% endfor %}
+    {% endcomment %}
   </div>
   <div class="navigation-line"></div>
 </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    const sectionData = document.getElementById("section-data");
+    const blocks = JSON.parse(sectionData.getAttribute("data-blocks"));
+
     const aboutHistorySwiper = new Swiper('.about-history-swiper', {
       slidesPerView: 'auto',
       spaceBetween: 24,
       freeMode: true,
+      pagination: {
+        el: ".about-history-navigation",
+        clickable: true,
+        renderBullet: function (index, className) {
+          const block = blocks[index];
+          return `
+            <div class="${className} navigation-btn">
+              <div class="navigation-btn-title">${block.settings.year}</div>
+            </div>
+          `;
+        },
+      },
     });
 
-    const categoryBtns = document.querySelectorAll('.navigation-btn');
+    {% comment %} const categoryBtns = document.querySelectorAll('.navigation-btn');
 
     categoryBtns.forEach((btn, index) => {
       btn.addEventListener('click', function () {
@@ -50,7 +77,7 @@
         btn.classList.add('active'); {% endcomment %}
         aboutHistorySwiper.slideTo(index);
       });
-    });
+    }); {% endcomment %}
   });
 </script>
 
