@@ -35,9 +35,14 @@
       "settings": {
         "image": "shopify://shop_images/home-banner.webp"
       }
+    },
+    "product_collection_XJ9R94": {
+      "type": "product-collection",
+      "settings": {}
     }
   },
   "order": [
-    "home_banner_3meiHC"
+    "home_banner_3meiHC",
+    "product_collection_XJ9R94"
   ]
 }
