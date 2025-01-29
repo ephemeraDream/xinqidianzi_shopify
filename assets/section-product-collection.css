@@ -1,0 +1,249 @@
+.product-collection {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.product-collection .product-collection-filters {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.product-collection
+  .product-collection-filters
+  .product-collection-filters-btn {
+  width: 29.7rem;
+  height: 6.8rem;
+  border-radius: 56.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid #000000;
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #3d3d3d;
+  cursor: pointer;
+}
+
+.product-collection
+  .product-collection-filters
+  .product-collection-filters-btn
+  svg {
+  margin-right: 2rem;
+}
+
+.product-collection
+  .product-collection-filters
+  .product-collection-filters-btn:hover {
+  border: none;
+  background-color: #ebb069;
+  color: #fff;
+}
+
+.product-collection
+  .product-collection-filters
+  .product-collection-filters-btn:hover
+  svg
+  path {
+  fill: #fff;
+}
+
+.product-collection .categorize-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.4rem 6rem;
+  margin-top: 1.3rem;
+}
+
+.product-collection .categorize-group .categorize-group-btn {
+  font-family: Blinker;
+  font-size: 3.4rem;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.product-collection .categorize-group .categorize-group-btn:hover,
+.product-collection .categorize-group .categorize-group-btn.active {
+  color: #ebb069;
+}
+
+.product-collection .product-grid {
+  padding: 10rem 0 6rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.product-collection .product-grid .product-item {
+  flex: 0 0 calc((100% - 7.2rem) / 4);
+}
+
+.product-collection .product-grid .product-item .product-image {
+  height: 34.4rem;
+  border-radius: 0.8rem;
+  background: #f0f2f3;
+  box-shadow: 0px 0.3rem 0.8rem 0px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+
+.product-collection .product-grid .product-item .product-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0.8rem;
+}
+
+.product-collection .product-grid .product-item .product-image .product-btn {
+  width: 7.8rem;
+  height: 7.8rem;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0.3rem 0.8rem 0px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-collection
+  .product-grid
+  .product-item
+  .product-image
+  .product-btn:hover {
+  background-color: #ebb069;
+}
+
+.product-collection
+  .product-grid
+  .product-item
+  .product-image
+  .product-btn:hover
+  svg
+  path {
+  fill: #fff;
+}
+
+.product-collection .product-grid .product-item .product-info {
+  height: calc(100% - 34.4rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 2rem 1.2rem 0 1.2rem;
+  gap: 1.2rem;
+}
+
+.product-collection .product-grid .product-item .product-info .product-desc {
+  font-family: Blinker;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #aaaaaa;
+}
+
+.product-collection .product-grid .product-item .product-info .product-desc p {
+  margin: 0;
+}
+
+.product-collection .product-grid .product-item .product-info .flex-center {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.product-collection
+  .product-grid
+  .product-item
+  .product-info
+  .flex-center
+  .product-title
+  a {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #000000;
+}
+
+.product-collection
+  .product-grid
+  .product-item
+  .product-info
+  .flex-center
+  .product-price {
+  font-family: Blinker;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #3d3d3d;
+  flex: 0 0 auto;
+  margin-top: 0.3rem;
+}
+
+.product-collection .custom-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.product-collection .custom-pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-collection .custom-pagination .page {
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+}
+
+.product-collection .custom-pagination .current-page {
+  color: #fff;
+  width: 6rem;
+  height: 6rem;
+  background: #ebb069;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-collection .custom-pagination .ajax-pagination:hover {
+  color: #ebb069;
+}
+
+.product-collection .custom-pagination .ajax-pagination:hover svg path {
+  fill: #ebb069;
+}
