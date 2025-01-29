@@ -1,6 +1,90 @@
 {{ 'section-product-list.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-list"></div>
+<div id="section-{{ section.id }}" class="product-list">
+  <h2 class="product-list-heading">{{ section.settings.heading }}</h2>
+  <div class="product-list-text">{{ section.settings.text }}</div>
+  <div class="swiper product-list-swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <div
+              class="product-variant-swiper-{{ block.settings.product.id }} swiper"
+              data-id="{{ block.settings.product.id }}"
+            >
+              <div class="swiper-wrapper">
+                {% for variant in block.settings.product.variants %}
+                  {% if variant.featured_image %}
+                    <div
+                      class="swiper-slide"
+                      data-color="{{ variant.metafields.custom.color }}"
+                    >
+                      <img
+                        src="{{ variant.featured_image | image_url }}"
+                        alt="{{ variant.title }}"
+                      >
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+
+            <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
+          </div>
+
+          <div class="product-info">
+            <div class="flex-center">
+              <h3 class="product-title">{{ block.settings.product.title }}</h3>
+              <div class="flex-center">
+                <span class="product-price">{{ block.settings.product.price | money }}</span>
+                <span class="product-compare_at_price">{{ block.settings.product.compare_at_price | money }}</span>
+              </div>
+            </div>
+            <div class="flex-center">
+              <div class="product-description">{{ block.settings.product.description }}</div>
+              <div class="swiper-navigation product-variant-navigation-{{ block.settings.product.id }}"></div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    {% comment %} const sectionData = document.getElementById("section-data");
+    const blocks = JSON.parse(sectionData.getAttribute("data-blocks")); {% endcomment %}
+
+   new Swiper('.product-list-swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      freeMode: true,
+    });
+
+   document.querySelectorAll('[class^="product-variant-swiper-"]').forEach(function (swiperElement) {
+      const productSwiperId = swiperElement.classList[0]; 
+      const productId = swiperElement.getAttribute('data-id');
+
+      new Swiper(`.${productSwiperId}`, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        allowTouchMove: false,
+        pagination: {
+          el: `.product-variant-navigation-${productId}`,
+          clickable: true,
+          renderBullet: function (index, className) {
+            const variant = swiperElement.querySelectorAll('.swiper-slide')[index];
+            const color = variant.getAttribute('data-color') || '#000000';
+            const borderClass = (color.toLowerCase() === '#ffffff' || color.toLowerCase() === 'rgb(255,255,255)') ? 'border-black' : '';
+
+            return `<span class="${className} ${borderClass}" style="background-color: ${color};"></span>`;
+          }
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {

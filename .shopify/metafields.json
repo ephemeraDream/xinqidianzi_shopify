@@ -51,6 +51,17 @@
       }
     }
   ],
-  "variant": [],
+  "variant": [
+    {
+      "key": "color",
+      "namespace": "custom",
+      "name": "Color",
+      "description": "",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    }
+  ],
   "shop": []
 }
