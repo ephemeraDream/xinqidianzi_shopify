@@ -1,0 +1,49 @@
+{{ 'section-product-list.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-list"></div>
+
+{% schema %}
+{
+  "name": "product list",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "choose product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "product list",
+      "blocks": [
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
