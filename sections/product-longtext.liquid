@@ -1,0 +1,49 @@
+{{ 'section-product-longtext.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-longtext"></div>
+
+{% schema %}
+{
+  "name": "product longtext",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "subtitle",
+          "label": "Subtitle"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "product longtext",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
