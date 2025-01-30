@@ -114,12 +114,71 @@
         "heading": "FAQ",
         "text": "This is a placeholder copy This is a placeholder copy"
       }
+    },
+    "product_longtext_FjMcUk": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_WEiHcc": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Title placeholder",
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+          }
+        },
+        "text_xkeVc6": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Title placeholder",
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+          }
+        },
+        "text_VrAzQ4": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Title placeholder",
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+          }
+        },
+        "text_JjiUKJ": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Title placeholder",
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+          }
+        },
+        "text_MENKH7": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Title placeholder",
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+          }
+        },
+        "text_prxnVb": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Title placeholder",
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+          }
+        }
+      },
+      "block_order": [
+        "text_WEiHcc",
+        "text_xkeVc6",
+        "text_VrAzQ4",
+        "text_JjiUKJ",
+        "text_MENKH7",
+        "text_prxnVb"
+      ],
+      "settings": {
+        "heading": "Title placeholder"
+      }
     }
   },
   "order": [
     "home_banner_3meiHC",
     "product_collection_XJ9R94",
     "product_list_mqnFFM",
-    "product_faq_yjrbia"
+    "product_faq_yjrbia",
+    "product_longtext_FjMcUk"
   ]
 }
