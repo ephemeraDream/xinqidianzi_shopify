@@ -71,11 +71,55 @@
         "heading": "Product List",
         "text": "This is a placeholder copy This is a placeholder copy"
       }
+    },
+    "product_faq_yjrbia": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_YKypfp": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        },
+        "faq_zcPRAr": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        },
+        "faq_4U83G4": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        },
+        "faq_b3MKU9": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        }
+      },
+      "block_order": [
+        "faq_YKypfp",
+        "faq_zcPRAr",
+        "faq_4U83G4",
+        "faq_b3MKU9"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
     }
   },
   "order": [
     "home_banner_3meiHC",
     "product_collection_XJ9R94",
-    "product_list_mqnFFM"
+    "product_list_mqnFFM",
+    "product_faq_yjrbia"
   ]
 }
