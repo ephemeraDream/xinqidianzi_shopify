@@ -1,0 +1,92 @@
+.product-faq {
+  background: #fcf4e2;
+  padding: 6rem 0 13.3rem 0;
+}
+
+.product-faq-contain {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.product-faq-contain .product-faq-heading {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+}
+
+.product-faq-contain .product-faq-text {
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+  margin-top: 1.6rem;
+}
+
+.product-faq-contain .faq-list {
+  margin-top: 2.8rem;
+}
+
+.product-faq-contain .faq-list .flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6.5rem;
+  padding: 3.2rem 0;
+  border-bottom: 0.1rem solid #000;
+}
+
+.product-faq-contain .faq-list .flex-start .faq-icon {
+  display: flex;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.product-faq-contain .faq-list .flex-start .faq-icon:hover svg path {
+  fill: #ebb069;
+}
+
+.product-faq-contain .faq-list .flex-start .faq-question {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+}
+
+.product-faq-contain .faq-list .faq-answer {
+  background: #fae4c9;
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 1.6rem 3.2rem;
+  margin-top: 2.4rem;
+  max-height: 50rem;
+  opacity: 1;
+  visibility: visible;
+}

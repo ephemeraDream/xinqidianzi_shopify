@@ -1,6 +1,49 @@
 {{ 'section-product-faq.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-faq"></div>
+<div id="section-{{ section.id }}" class="product-faq">
+  <div class="product-faq-contain">
+    <h2 class="product-faq-heading">
+      {{ section.settings.heading }}
+    </h2>
+    <div class="product-faq-text">
+      {{ section.settings.text }}
+    </div>
+    <div class="faq-list">
+      {% for block in section.blocks %}
+        <div class="faq-item">
+          <div class="flex-start">
+            <div class="faq-question">{{ block.settings.question }}</div>
+            <div class="faq-icon">{{- 'icon-plus.svg' | inline_asset_content -}}</div>
+          </div>
+          <div class="faq-answer">{{ block.settings.answer }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item) => {
+      const icon = item.querySelector('.faq-icon');
+      const answer = item.querySelector('.faq-answer');
+
+      icon.addEventListener('click', function () {
+        const isActive = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach((i) => {
+          i.classList.remove('active');
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
