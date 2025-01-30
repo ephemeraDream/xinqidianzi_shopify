@@ -1,0 +1,87 @@
+.product-longtext {
+  max-width: 144rem;
+  padding: 10rem 0 7.5rem 0;
+  margin: 0 auto;
+}
+
+.product-longtext .product-longtext-heading {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.product-longtext .long-text-list .long-text-item {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.product-longtext .long-text-list .long-text-item:not(.long-text-hidden) {
+  max-height: 50rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-longtext .long-text-list .long-text-item .long-text-subtitle {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 3.2rem;
+}
+
+.product-longtext .long-text-list .long-text-item .long-text-content {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 2.5rem;
+}
+
+.product-longtext .show-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #3d3d3d;
+  cursor: pointer;
+}
+
+.product-longtext .show-more-btn:hover {
+  color: #ebb069;
+}
+
+.product-longtext .show-more-btn:hover svg path {
+  fill: #ebb069;
+}
+
+.product-longtext .flex-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.2rem;
+}
+
+.product-longtext .show-more-btn svg {
+  transition: transform 0.4s ease;
+}
+
+.product-longtext .show-more-btn.active svg {
+  transform: rotate(180deg);
+}

@@ -1,6 +1,58 @@
 {{ 'section-product-longtext.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-longtext"></div>
+<div id="section-{{ section.id }}" class="product-longtext">
+  <h2 class="product-longtext-heading">{{ section.settings.heading }}</h2>
+
+  <div class="long-text-list">
+    {% assign max_visible = 3 %}
+    {% assign total_blocks = section.blocks.size %}
+
+    {% for block in section.blocks %}
+      <div class="long-text-item{% if forloop.index > max_visible %} long-text-hidden{% endif %}">
+        <h3 class="long-text-subtitle">{{ block.settings.subtitle }}</h3>
+        <div class="long-text-content">{{ block.settings.content }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="flex-center">
+    <div class="show-more-btn" id="show-more-btn">
+      <span>Show More</span>
+      {{- 'arrow-down.svg' | inline_asset_content -}}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const showMoreBtn = document.getElementById('show-more-btn');
+
+    showMoreBtn.addEventListener('click', function () {
+      if ( document.querySelectorAll('.long-text-hidden').length > 0) {
+        document.querySelectorAll('.long-text-hidden').forEach((item) => {
+          {% comment %} item.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
+          item.style.maxHeight = item.scrollHeight + 'px';
+          item.style.opacity = 1;
+          item.style.visibility = 'visible'; {% endcomment %}
+          item.classList.remove('long-text-hidden');
+        });
+        showMoreBtn.classList.add('active');
+      } else {
+        document.querySelectorAll('.long-text-item').forEach((item, index) => {
+          if (index >= 3) {
+            {% comment %} item.style.transition = 'max-height 0.5s ease, opacity 0.5s ease';
+            item.style.maxHeight = 0;
+            item.style.opacity = 0;
+            item.style.visibility = 'hidden'; {% endcomment %}
+
+            item.classList.add('long-text-hidden');
+          }
+        });
+        showMoreBtn.classList.remove('active');
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {
