@@ -1,6 +1,279 @@
 {{ 'section-product-detail.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-detail"></div>
+<div id="section-{{ section.id }}" class="product-detail">
+  <div class="product-detail-left">
+    <div class="product-detail-imgbox">
+      <div class="swiper imgbox-swiper">
+        <div class="swiper-wrapper">
+          {%- if product.selected_or_first_available_variant.featured_image != null -%}
+            <div class="swiper-slide">
+              <img
+                src="{{ product.selected_or_first_available_variant.featured_image | image_url }}"
+                alt="{{ product.title }}"
+              >
+            </div>
+          {%- endif -%}
+          {% for image in product.images %}
+            {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
+            {% if variant_images contains image.src %}
+              {% continue %}
+            {% endif %}
+
+            {%- unless image.id == product.selected_or_first_available_variant.featured_image.id -%}
+              <div class="swiper-slide">
+                <img
+                  src="{{ image | image_url }}"
+                  alt="{{ product.title }}"
+                >
+              </div>
+            {%- endunless -%}
+          {% endfor -%}
+        </div>
+      </div>
+    </div>
+    <div class="imgthumb-swiper-box">
+      <div class="swiper imgthumb-swiper">
+        <div class="swiper-wrapper">
+          {%- if product.selected_or_first_available_variant.featured_image != null -%}
+            <div class="swiper-slide">
+              <img
+                src="{{ product.selected_or_first_available_variant.featured_image | image_url }}"
+                alt="{{ product.title }}"
+              >
+            </div>
+          {%- endif -%}
+          {% for image in product.images %}
+            {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
+            {% if variant_images contains image.src %}
+              {% continue %}
+            {% endif %}
+
+            {%- unless image.id == product.selected_or_first_available_variant.featured_image.id -%}
+              <div class="swiper-slide">
+                <img
+                  src="{{ image | image_url }}"
+                  alt="{{ product.title }}"
+                >
+              </div>
+            {%- endunless -%}
+          {% endfor -%}
+        </div>
+      </div>
+      <div class="imgthumb-swiper-prev">{{- 'left-circle.svg' | inline_asset_content -}}</div>
+      <div class="imgthumb-swiper-next">{{- 'right-circle.svg' | inline_asset_content -}}</div>
+    </div>
+  </div>
+  <div class="product-detail-right">
+    {%- assign product_form_id = 'product-form-' | append: section.id -%}
+
+    <div class="product-detail-vendor">{{ product.vendor }}</div>
+    <div class="flex-box">
+      <div class="product-detail-title">{{ product.title }}</div>
+      <div class="product-detail-compare_at_price">{{ product.compare_at_price | money }}</div>
+    </div>
+    <div class="flex-box">
+      <div class="product-detail-star">
+        {% liquid
+          assign rating = product.metafields.custom.rating.value.rating | times: 1 | floor
+        %}
+        {% for i in (1..rating) %}
+          {{- 'star.svg' | inline_asset_content -}}
+        {% endfor %}
+        <span class="product-detail-star_value">{{ product.metafields.custom.rating.value.rating }}</span>
+      </div>
+      <div class="product-detail-price">{{ product.price | money }}</div>
+    </div>
+    <div class="product-detail-description">{{ product.description }}</div>
+    {%- unless product.has_only_default_variant -%}
+      <div class="product-detail-label">Color ：</div>
+      <div class="product-detail-content">
+        {% for variant in product.variants %}
+          <div class="product-detail-color{% if product.selected_or_first_available_variant.metafields.custom.color == variant.metafields.custom.color %} active{% endif %}">
+            <a
+              href="{{ variant.url }}"
+              class="product-detail-color-circle"
+              style="background-color: {{ variant.metafields.custom.color }};"
+            ></a>
+          </div>
+        {% endfor %}
+      </div>
+    {%- endunless -%}
+    <div class="product-detail-buybox">
+      {%- form 'product',
+        product,
+        id: product_form_id,
+        class: 'form',
+        novalidate: 'novalidate',
+        data-type: 'add-to-cart-form'
+      -%}
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+          <quantity-input class="product-detail-quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
+            <button class="quantity__button" name="minus" type="button">
+              {{- 'left.svg' | inline_asset_content -}}
+            </button>
+            <input
+              class="quantity__input"
+              type="number"
+              name="quantity"
+              data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+              min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+              {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+                data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+              {% endif %}
+              step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+              value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+              {% comment %} form="{{ product_form_id }}" {% endcomment %}
+            >
+            <button class="quantity__button" name="plus" type="button">
+              {{- 'right.svg' | inline_asset_content -}}
+            </button>
+          </quantity-input>
+          {%- liquid
+            assign check_against_inventory = true
+            if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+              assign quantity_rule_soldout = true
+            endif
+          -%}
+          <button
+            class="product-detail-add_cart_btn"
+            type="submit"
+            {% if product.selected_or_first_available_variant.available == false
+              or quantity_rule_soldout
+              or product.selected_or_first_available_variant == null
+            %}
+              disabled
+            {% endif %}
+          >
+            <span>
+              {%- if product.selected_or_first_available_variant == null -%}
+                Unavailable
+              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                Sold out
+              {%- else -%}
+                Add to cart
+              {%- endif -%}
+            </span>
+          </button>
+
+          {{ form | payment_button }}
+        </form>
+      {%- endform -%}
+    </div>
+    <div
+      class="product-recommendations"
+      data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related"
+    >
+      {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+        {% comment %}
+          {% if recommendations.intent == 'related' %}
+            <h2>You may also like</h2>
+          {% elsif recommendations.intent == 'complementary' %}
+            <h2>Pair it with</h2>
+          {% endif %}
+        {% endcomment %}
+        <div class="product-recommendations-head">
+          <span>Pair it with</span>
+          <div class="flex-center">
+            <div class="recommendations-complementary-swiper-prev">{{- 'left.svg' | inline_asset_content -}}</div>
+            <div class="recommendations-complementary-swiper-next">{{- 'right.svg' | inline_asset_content -}}</div>
+          </div>
+        </div>
+        <div class="swiper recommendations-complementary-swiper">
+          <div class="swiper-wrapper">
+            {%- for product in recommendations.products -%}
+              <div class="recommendations-product-box swiper-slide">
+                <div class="recommendations-product-info">
+                  <img
+                    src="{{ product.featured_media | image_url }}"
+                    alt="{{ product.title }}"
+                  >
+                  <div>
+                    <h3>{{ product.title }}</h3>
+                    <div class="recommendations-product-price">{{ product.price | money }}</div>
+                  </div>
+                </div>
+                <a class="recommendations-product-btn" href="{{ product.url }}">
+                  {{- 'icon-plus.svg' | inline_asset_content -}}
+                  View</a
+                >
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const imgthumbSwiper = new Swiper('.imgthumb-swiper', {
+      loop: true,
+      spaceBetween: 24,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    const imgboxSwiper = new Swiper('.imgbox-swiper', {
+      loop: true,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: '.imgthumb-swiper-next',
+        prevEl: '.imgthumb-swiper-prev',
+      },
+      thumbs: {
+        swiper: imgthumbSwiper,
+      },
+    });
+
+    const handleIntersection = (entries, observer) => {
+      if (!entries[0].isIntersecting) return;
+
+      observer.unobserve(productRecommendationsSection);
+
+      const url = productRecommendationsSection.dataset.url;
+
+      fetch(url)
+        .then((response) => response.text())
+        .then((text) => {
+          const html = document.createElement('div');
+          html.innerHTML = text;
+          const recommendations = html.querySelector('.product-recommendations');
+
+          if (recommendations && recommendations.innerHTML.trim().length) {
+            productRecommendationsSection.innerHTML = recommendations.innerHTML;
+
+            initializeSwiper();
+          }
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+    };
+
+    const initializeSwiper = () => {
+      setTimeout(() => {
+        new Swiper('.recommendations-complementary-swiper', {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 12,
+          navigation: {
+            nextEl: '.recommendations-complementary-swiper-next',
+            prevEl: '.recommendations-complementary-swiper-prev',
+          },
+        });
+      }, 0);
+    };
+
+    const productRecommendationsSection = document.querySelector('.product-recommendations');
+    const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 200px 0px' });
+
+    observer.observe(productRecommendationsSection);
+  });
+</script>
 
 {% schema %}
 {
