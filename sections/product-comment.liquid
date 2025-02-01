@@ -1,0 +1,20 @@
+{{ 'section-product-comment.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-comment"></div>
+
+{% schema %}
+{
+  "name": "product comment",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "product comment"
+    }
+  ]
+}
+{% endschema %}
