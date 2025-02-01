@@ -1,6 +1,48 @@
 {{ 'section-product-introduce.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-introduce"></div>
+<div id="section-{{ section.id }}" class="product-introduce">
+  {% if product.metafields.custom.video_or_image.value != blank %}
+    {% assign file = product.metafields.custom.video_or_image.value %}
+
+    {% if file.media_type contains 'image' %}
+      <img class="product-introduce-media" src="{{ file | image_url }}" alt="product-introduce-image">
+    {% elsif file.media_type contains 'video' %}
+      {{ file | video_tag: class: 'product-introduce-media', autoplay: true, loop: true, muted: true, controls: true }}
+    {% endif %}
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_one_text.value != blank
+    or product.metafields.custom.image_with_text_one_image.value != blank
+  %}
+    <div class="image_with_text_one">
+      <div class="image_with_text_one-left">
+        {{ product.metafields.custom.image_with_text_one_text | metafield_tag }}
+      </div>
+      <div class="image_with_text_one-right">
+        {% for image in product.metafields.custom.image_with_text_one_image.value %}
+          <img
+            src="{{ image | image_url }}"
+            alt="image_with_text_one"
+          >
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_two_text.value != blank
+    or product.metafields.custom.image_with_text_two_image.value != blank
+  %}
+    <div class="image_with_text_two">
+      <div class="image_with_text_two-left">
+        <img
+          src="{{ product.metafields.custom.image_with_text_two_image.value | image_url }}"
+          alt="image_with_text_two"
+        >
+      </div>
+      <div class="image_with_text_two-right">
+        {{ product.metafields.custom.image_with_text_two_text | metafield_tag }}
+      </div>
+    </div>
+  {% endif %}
+</div>
 
 {% schema %}
 {

@@ -1,0 +1,109 @@
+.product-introduce .product-introduce-media {
+  width: 100%;
+  height: 91.4rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-introduce .image_with_text_one {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.product-introduce .image_with_text_one-left {
+  width: 42.2rem;
+}
+
+.product-introduce .image_with_text_one-left h2,
+.product-introduce .image_with_text_two-right h2 {
+  font-family: Blinker;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.product-introduce .image_with_text_one-left h4,
+.product-introduce .image_with_text_two-right h4 {
+  font-family: Blinker;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 3.4rem;
+}
+
+.product-introduce .image_with_text_one-left p,
+.product-introduce .image_with_text_two-right p {
+  font-family: Blinker;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #767676;
+  margin-top: 5.2rem;
+}
+
+.product-introduce .image_with_text_one-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  height: 101rem;
+}
+
+.product-introduce .image_with_text_one-right img {
+  width: calc((100% - 2.4rem) / 2);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-introduce .image_with_text_one-right img:first-child {
+  height: 33.1rem;
+}
+
+.product-introduce .image_with_text_one-right img:nth-child(2n) {
+  height: 57rem;
+}
+
+.product-introduce .image_with_text_one-right img:nth-child(3n) {
+  height: 65.5rem;
+}
+
+.product-introduce .image_with_text_one-right img:last-child {
+  height: 33.1rem;
+}
+
+.product-introduce .image_with_text_two {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.product-introduce .image_with_text_two .image_with_text_two-left {
+  flex: 0 0 calc(100% - 73.2rem);
+}
+
+.product-introduce .image_with_text_two .image_with_text_two-left img {
+  width: 100%;
+  height: 57.2rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-introduce .image_with_text_two .image_with_text_two-right {
+  width: 67.2rem;
+}
