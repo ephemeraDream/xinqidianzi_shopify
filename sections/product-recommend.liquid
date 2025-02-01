@@ -1,0 +1,20 @@
+{{ 'section-product-recommend.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-recommend"></div>
+
+{% schema %}
+{
+  "name": "product recommend",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "product recommend"
+    }
+  ]
+}
+{% endschema %}
