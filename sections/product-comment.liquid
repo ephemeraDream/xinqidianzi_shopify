@@ -1,6 +1,137 @@
 {{ 'section-product-comment.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-comment"></div>
+<div id="section-{{ section.id }}" class="product-comment">
+  <div id="comment-data" style="display: none;">
+    {{ product.metafields.custom.comment.value | json }}
+  </div>
+  <div class="product-comment-head">
+    <span>Reviews（{{ product.metafields.custom.comment.value.size }}）</span>
+    <div class="product-comment-btn">
+      {{- 'icon-message.svg' | inline_asset_content -}}
+      comment
+    </div>
+  </div>
+  <div id="comments-container">
+    <div id="comments-list"></div>
+    <div class="comments-pagination">
+      <div id="prev-page">{{- 'arrow-left.svg' | inline_asset_content -}}</div>
+      <div id="page-numbers"></div>
+      <div id="next-page">{{- 'arrow-right.svg' | inline_asset_content -}}</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const commentDataElement = document.getElementById('comment-data');
+    const commentsData = JSON.parse(commentDataElement.textContent);
+
+    const commentsPerPage = 3;
+    let currentPage = 1;
+    const totalPages = Math.ceil(commentsData.length / commentsPerPage);
+
+    function renderComments(page) {
+      const startIndex = (page - 1) * commentsPerPage;
+      const endIndex = page * commentsPerPage;
+
+      const commentsToDisplay = commentsData.slice(startIndex, endIndex);
+      const commentsList = document.getElementById('comments-list');
+      commentsList.innerHTML = '';
+
+      commentsToDisplay.forEach((comment) => {
+        const commentItem = document.createElement('div');
+        commentItem.classList.add('comments-item');
+
+        const images = comment.images.map((image) => `<img src="${image}" alt="Comment image">`).join('');
+
+        commentItem.innerHTML = `<div class="flex-center"><div class="flex-center"><img
+                  src="https://cdn.shopify.com/s/files/1/0913/4207/8236/files/logo-head.webp?v=1737878466"
+                  alt="logo-head"
+                  class="logo-head"
+                ><span>${comment.name}</span></div><div class="flex-center comment-images">${images}</div></div><div class="comment-content">${comment.content}</div>`;
+
+        commentsList.appendChild(commentItem);
+      });
+    }
+
+    function renderPagination() {
+      const pageNumbersContainer = document.getElementById('page-numbers');
+      pageNumbersContainer.innerHTML = '';
+
+      for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement('div');
+        pageButton.classList.add('page-number-btn');
+        pageButton.textContent = i;
+        pageButton.addEventListener('click', function () {
+          if (i === currentPage) return;
+
+          currentPage = i;
+          renderComments(currentPage);
+          updateActivePage();
+          updatePaginationControls();
+        });
+        pageNumbersContainer.appendChild(pageButton);
+      }
+
+      updateActivePage();
+      updatePaginationControls();
+    }
+
+    function updateActivePage() {
+      const pageButtons = document.querySelectorAll('#page-numbers .page-number-btn');
+      pageButtons.forEach((button, index) => {
+        button.classList.remove('active');
+        if (index + 1 === currentPage) {
+          button.classList.add('active');
+        }
+      });
+    }
+
+    function updatePaginationControls() {
+      const prevButton = document.getElementById('prev-page');
+      const nextButton = document.getElementById('next-page');
+
+      if (currentPage === 1) {
+        prevButton.style.display = 'none';
+      } else {
+        prevButton.style.display = 'flex';
+      }
+
+      if (currentPage === totalPages) {
+        nextButton.style.display = 'none';
+      } else {
+        nextButton.style.display = 'flex';
+      }
+    }
+
+    function setupPaginationControls() {
+      const prevButton = document.getElementById('prev-page');
+      const nextButton = document.getElementById('next-page');
+
+      prevButton.addEventListener('click', function () {
+        if (currentPage > 1) {
+          currentPage--;
+          renderComments(currentPage);
+          updateActivePage();
+          updatePaginationControls();
+        }
+      });
+
+      nextButton.addEventListener('click', function () {
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderComments(currentPage);
+          updateActivePage();
+          updatePaginationControls();
+        }
+      });
+    }
+
+    renderComments(currentPage);
+    renderPagination();
+    setupPaginationControls();
+  });
+</script>
 
 {% schema %}
 {

@@ -49,6 +49,56 @@
         "name": "multi_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "video_or_image",
+      "namespace": "custom",
+      "name": "video_or_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text_one_text",
+      "namespace": "custom",
+      "name": "image_with_text_one_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "image_with_text_one_image",
+      "namespace": "custom",
+      "name": "image_with_text_one_image",
+      "description": "",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text_two_text",
+      "namespace": "custom",
+      "name": "image_with_text_two_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "image_with_text_two_image",
+      "namespace": "custom",
+      "name": "image_with_text_two_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
