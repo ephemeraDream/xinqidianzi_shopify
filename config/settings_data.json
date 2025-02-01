@@ -8,5 +8,13 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {}
+  "current": {
+    "brand_description": "<p>This position contains the description text This position contains the description text </p>",
+    "brand_image": "shopify://shop_images/logo-footer.webp",
+    "social_facebook_link": "www.baidu.com",
+    "social_instagram_link": "www.baidu.com",
+    "social_youtube_link": "www.baidu.com",
+    "social_twitter_link": "www.baidu.com",
+    "content_for_index": []
+  }
 }

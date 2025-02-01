@@ -13,6 +13,25 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "brand_information_UqzacG": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "link_list_J8mijc": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_UqzacG",
+        "link_list_J8mijc"
+      ],
       "custom_css": [],
       "settings": {
         "color_scheme": "scheme-1",
