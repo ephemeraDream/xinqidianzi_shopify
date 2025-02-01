@@ -1,0 +1,20 @@
+{{ 'section-product-introduce.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-introduce"></div>
+
+{% schema %}
+{
+  "name": "product introduce",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "product introduce"
+    }
+  ]
+}
+{% endschema %}
