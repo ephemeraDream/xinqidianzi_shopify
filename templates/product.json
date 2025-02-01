@@ -26,12 +26,20 @@
       "settings": {
         "blog": "news"
       }
+    },
+    "product_recommend_kRfdJq": {
+      "type": "product-recommend",
+      "settings": {
+        "heading": "You May Also Like",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
     }
   },
   "order": [
     "product_detail_UfijdK",
     "product_introduce_yeeCkt",
     "product_comment_kF7Hjf",
-    "home_news_xA3BDm"
+    "home_news_xA3BDm",
+    "product_recommend_kRfdJq"
   ]
 }
