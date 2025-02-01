@@ -16,10 +16,22 @@
     "product_introduce_yeeCkt": {
       "type": "product-introduce",
       "settings": {}
+    },
+    "product_comment_kF7Hjf": {
+      "type": "product-comment",
+      "settings": {}
+    },
+    "home_news_xA3BDm": {
+      "type": "home-news",
+      "settings": {
+        "blog": "news"
+      }
     }
   },
   "order": [
     "product_detail_UfijdK",
-    "product_introduce_yeeCkt"
+    "product_introduce_yeeCkt",
+    "product_comment_kF7Hjf",
+    "home_news_xA3BDm"
   ]
 }
