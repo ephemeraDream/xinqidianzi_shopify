@@ -12,9 +12,14 @@
     "product_detail_UfijdK": {
       "type": "product-detail",
       "settings": {}
+    },
+    "product_introduce_yeeCkt": {
+      "type": "product-introduce",
+      "settings": {}
     }
   },
   "order": [
     "product_detail_UfijdK",
+    "product_introduce_yeeCkt"
   ]
 }
