@@ -127,8 +127,7 @@
 
 .footer-block--newsletter {
   display: flex;
-  align-items: flex-end;
-  margin-top: 3rem;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -181,7 +180,41 @@
 }
 
 .newsletter-form__field-wrapper {
-  max-width: 36rem;
+  max-width: 95.5rem;
+}
+
+.newsletter-form__field-wrapper .field__button > .svg-wrapper {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.newsletter-form__field-wrapper .field__input {
+  height: 5.6rem;
+  padding: 1.2rem;
+  padding-left: 4.2rem;
+}
+
+.newsletter-form__field-wrapper .field__input:focus {
+  padding: 2.2rem 9rem 0.8rem 4.2rem;
+}
+
+.newsletter-form__field-wrapper .field__label {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+  top: 1.3rem;
+  left: 4.2rem;
+}
+
+.newsletter-form__field-wrapper
+  .field__input:not(:placeholder-shown)
+  ~ .field__label,
+.newsletter-form__field-wrapper .field__input:focus ~ .field__label {
+  left: 4.2rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -196,7 +229,8 @@
     margin: 0;
   }
 
-  .footer-block__newsletter:not(:only-child) .newsletter-form__message--success {
+  .footer-block__newsletter:not(:only-child)
+    .newsletter-form__message--success {
     left: auto;
   }
 
@@ -296,7 +330,8 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center) .footer__copyright {
+  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center)
+    .footer__copyright {
     text-align: right;
   }
 }
@@ -420,7 +455,9 @@
   text-align: center;
 }
 
-.footer-block:only-child > .footer-block__brand-info > .footer-block__image-wrapper {
+.footer-block:only-child
+  > .footer-block__brand-info
+  > .footer-block__image-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
@@ -430,7 +467,9 @@
   height: auto;
 }
 
-.footer-block:only-child .footer-block__brand-info .footer__list-social.list-social {
+.footer-block:only-child
+  .footer-block__brand-info
+  .footer__list-social.list-social {
   justify-content: center;
 }
 
@@ -462,7 +501,7 @@
 }
 
 .policies li::before {
-  content: '\00B7';
+  content: "\00B7";
   padding: 0 0.8rem;
 }
 
