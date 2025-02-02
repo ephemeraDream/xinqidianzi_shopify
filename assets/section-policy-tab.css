@@ -46,3 +46,10 @@
 .policy-tab .policy-tab-left .policy-tab-list-item:hover {
   color: #1a1a1a;
 }
+
+.policy-tab .policy-tab-left .policy-tab-list-item.active {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #ebb069;
+  text-underline-offset: 1.4rem;
+}
