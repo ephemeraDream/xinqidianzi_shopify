@@ -15,9 +15,34 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "policy_tab_qbXWgQ": {
+      "type": "policy-tab",
+      "blocks": {
+        "tab_awyjHU": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping Policy",
+            "content": "<h1>Product Warranty</h1><p>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.<br/><br/>Sit possimus dolorum qui porro doloremque et incidunt commodi et debitis dicta non unde aliquid. Eos commodi recusandae est architecto perspiciatis et cupiditate reiciendis. Non dignissimos dignissimos et Quis provident eos internos voluptatem in blanditiis voluptatum sit sint reprehenderit.<br/><br/>Nam dolor voluptatem eos eius quos non necessitatibus delectus! Est ullam voluptatum sed soluta internos qui error dolore. Non molestiae itaque sit internos nihil ex quod inventore sed cupiditate iusto?<br/>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.<br/><br/>Sit possimus dolorum qui porro doloremque et incidunt commodi et debitis dicta non unde aliquid. Eos commodi recusandae est architecto perspiciatis et cupiditate reiciendis. Non dignissimos dignissimos et Quis provident eos internos voluptatem in blanditiis voluptatum sit sint reprehenderit.<br/><br/>Nam dolor voluptatem eos eius quos non necessitatibus delectus! Est ullam voluptatum sed soluta internos qui error dolore. Non molestiae itaque sit internos nihil ex quod inventore sed cupiditate iusto?<br/>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.<br/><br/>Sit possimus dolorum qui porro doloremque et incidunt commodi et debitis dicta non unde aliquid. Eos commodi recusandae est architecto perspiciatis et cupiditate reiciendis. Non dignissimos dignissimos et Quis provident eos internos voluptatem in blanditiis voluptatum sit sint reprehenderit.<br/><br/>Nam dolor voluptatem eos eius quos non necessitatibus delectus! Est ullam voluptatum sed soluta internos qui error dolore. Non molestiae itaque sit internos nihil ex quod inventore sed cupiditate iusto?</p>"
+          }
+        },
+        "tab_fgtVRc": {
+          "type": "tab",
+          "settings": {
+            "title": "Warranty Policy",
+            "content": "<h1>Product Warranty</h1><p>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.<br/><br/>Sit possimus dolorum qui porro doloremque et incidunt commodi et debitis dicta non unde aliquid. Eos commodi recusandae est architecto perspiciatis et cupiditate reiciendis. Non dignissimos dignissimos et Quis provident eos internos voluptatem in blanditiis voluptatum sit sint reprehenderit.<br/><br/>Nam dolor voluptatem eos eius quos non necessitatibus delectus! Est ullam voluptatum sed soluta internos qui error dolore. Non molestiae itaque sit internos nihil ex quod inventore sed cupiditate iusto?<br/>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.<br/><br/>Sit possimus dolorum qui porro doloremque et incidunt commodi et debitis dicta non unde aliquid. Eos commodi recusandae est architecto perspiciatis et cupiditate reiciendis. Non dignissimos dignissimos et Quis provident eos internos voluptatem in blanditiis voluptatum sit sint reprehenderit.<br/><br/>Nam dolor voluptatem eos eius quos non necessitatibus delectus! Est ullam voluptatum sed soluta internos qui error dolore. Non molestiae itaque sit internos nihil ex quod inventore sed cupiditate iusto?<br/>Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.<br/><br/>Sit possimus dolorum qui porro doloremque et incidunt commodi et debitis dicta non unde aliquid. Eos commodi recusandae est architecto perspiciatis et cupiditate reiciendis. Non dignissimos dignissimos et Quis provident eos internos voluptatem in blanditiis voluptatum sit sint reprehenderit.<br/><br/>Nam dolor voluptatem eos eius quos non necessitatibus delectus! Est ullam voluptatum sed soluta internos qui error dolore. Non molestiae itaque sit internos nihil ex quod inventore sed cupiditate iusto?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_awyjHU",
+        "tab_fgtVRc"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "policy_tab_qbXWgQ"
   ]
 }
