@@ -38,6 +38,38 @@
     },
     "recipe_collection_T4WqVQ": {
       "type": "recipe-collection",
+      "blocks": {
+        "blogs_b3zCir": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "recipe"
+          }
+        },
+        "blogs_QpJwaX": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "cooking-ingredients"
+          }
+        },
+        "blogs_6NX7Bk": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "by-season-and-festival"
+          }
+        },
+        "blogs_kHqhTm": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "popular-recipes"
+          }
+        }
+      },
+      "block_order": [
+        "blogs_b3zCir",
+        "blogs_QpJwaX",
+        "blogs_6NX7Bk",
+        "blogs_kHqhTm"
+      ],
       "settings": {}
     }
   },
