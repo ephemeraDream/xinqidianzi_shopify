@@ -241,6 +241,27 @@
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
+                  {%- when 'contact_us' -%}
+                    <div class="footer-block__details-content footer-block-contact">
+                      <div class="contact-box">
+                        {{- 'icon-address.svg' | inline_asset_content -}}
+                        <a
+                          href="{{ block.settings.address_link }}"
+                          class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                        >
+                          {{- block.settings.address -}}
+                        </a>
+                      </div>
+                      <div class="contact-box">
+                        {{- 'icon-tel.svg' | inline_asset_content -}}
+                        <a
+                          href="{{ block.settings.phone_link }}"
+                          class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                        >
+                          {{- block.settings.phone -}}
+                        </a>
+                      </div>
+                    </div>
                 {%- endcase -%}
               </div>
             {%- endfor -%}
@@ -251,12 +272,12 @@
   {%- endif -%}
 
   <div
-    class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="footer__content-bottom page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}
   >
-    <div class="footer__content-bottom-wrapper page-width">
+    {% comment %} <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form>
@@ -296,7 +317,7 @@
           </div>
         {%- endif -%}
       </div>
-    </div>
+    </div> {% endcomment %}
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"

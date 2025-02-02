@@ -41,7 +41,7 @@
 }
 
 .footer__content-bottom {
-  border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
+  border-top: solid 0.1rem #d8d8d8;
   padding-top: 3rem;
 }
 
@@ -51,6 +51,7 @@
 
 .footer__content-bottom-wrapper {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -149,7 +150,7 @@
 }
 
 .footer-block__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
@@ -437,7 +438,8 @@
 }
 
 .footer-block__image-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 5.5rem;
+  margin-top: 1.2rem;
   overflow: hidden !important;
 }
 
@@ -482,7 +484,13 @@
 }
 
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
 }
 
 .copyright__content a {
@@ -544,4 +552,76 @@
       padding-left: 3rem;
     }
   }
+}
+
+.footer-block-contact .contact-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8rem;
+}
+
+.footer-block-contact .contact-box + .contact-box {
+  margin-top: 2.4rem;
+}
+
+.footer-block-contact .contact-box svg {
+  flex: 0 0 auto;
+  margin-top: 0.4rem;
+}
+
+.footer-block-contact .contact-box svg path {
+  fill: #adadad;
+}
+
+.footer__blocks-wrapper.grid {
+  margin-top: 10.3rem;
+}
+
+.footer-block__brand-info {
+  max-width: 29.2rem;
+}
+
+.footer-block__brand-info .rte {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+}
+
+.footer-block__heading {
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+}
+
+.footer-block__details-content .list-menu__item--link {
+  opacity: 0.8;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 250%;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #adadad;
+  padding-bottom: 0;
+}
+
+.footer-block__details-content .list-menu__item--link:hover,
+.footer-block__details-content .list-menu__item--link.list-menu__item--active {
+  opacity: 1;
+  color: #fff;
+}
+
+.footer-block-contact.footer-block__details-content .list-menu__item--link {
+  opacity: 1;
+  line-height: normal;
+  padding-top: 0;
 }
