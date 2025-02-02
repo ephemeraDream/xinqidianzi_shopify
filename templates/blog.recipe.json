@@ -35,9 +35,14 @@
       "settings": {
         "image": "shopify://shop_images/recipe_banner.webp"
       }
+    },
+    "recipe_collection_T4WqVQ": {
+      "type": "recipe-collection",
+      "settings": {}
     }
   },
   "order": [
-    "home_banner_QhdzDr"
+    "home_banner_QhdzDr",
+    "recipe_collection_T4WqVQ"
   ]
 }
