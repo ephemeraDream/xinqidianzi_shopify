@@ -1,0 +1,29 @@
+.recipe-collection {
+  padding: 7.5rem 0 10rem 0;
+  margin-top: -3.5rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 5.4rem;
+}
+
+.recipe-collection .recipe-collection-left {
+  flex: 0 0 31.2rem;
+}
+
+.recipe-collection .recipe-collection-left .recipe-collection-left_head {
+  font-family: Blinker;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #1a1a1a;
+  padding-bottom: 2.4rem;
+  border-bottom: 0.1rem solid #e2e2e2;
+}
+
+.recipe-collection .recipe-collection-right {
+  flex: 1;
+}
