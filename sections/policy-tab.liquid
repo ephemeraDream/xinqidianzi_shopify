@@ -1,0 +1,43 @@
+{{ 'section-policy-tab.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="policy-tab"></div>
+
+{% schema %}
+{
+  "name": "policy tab",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "policy tab",
+      "blocks": [
+        {
+          "type": "tab"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
