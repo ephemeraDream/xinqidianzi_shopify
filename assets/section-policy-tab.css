@@ -1,0 +1,48 @@
+.policy-tab {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 8rem 0 9rem 0;
+  gap: 6rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.policy-tab .policy-tab-left {
+  width: 31.2rem;
+  margin-top: 2rem;
+}
+
+.policy-tab .policy-tab-right {
+  flex: 1;
+}
+
+.policy-tab .policy-tab-left .policy-tab-left-title {
+  font-family: Blinker;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #1a1a1a;
+  padding-bottom: 2.4rem;
+  border-bottom: 0.1rem solid #e2e2e2;
+}
+
+.policy-tab .policy-tab-left .policy-tab-list-item {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #767676;
+  padding: 2.4rem 0 1.2rem 0;
+  cursor: pointer;
+}
+
+.policy-tab .policy-tab-left .policy-tab-list-item:hover {
+  color: #1a1a1a;
+}
