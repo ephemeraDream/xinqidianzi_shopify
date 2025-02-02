@@ -40,3 +40,8 @@
 .list-social__link:hover .icon {
   transform: scale(1.07);
 }
+
+.list-social__link .svg-wrapper {
+  width: 2.8rem;
+  height: 2.8rem;
+}
