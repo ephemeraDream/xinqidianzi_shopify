@@ -221,3 +221,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.mega-menu__flex-box .product-item:hover .flex-end svg path {
+  fill: #ebb069;
+}

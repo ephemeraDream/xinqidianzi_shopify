@@ -662,9 +662,9 @@ summary {
 
 summary .icon-caret {
   position: absolute;
-  height: 0.6rem;
+  height: 1rem;
   right: 1.5rem;
-  top: calc(50% - 0.2rem);
+  top: calc(50% - 0.4rem);
 }
 
 summary::-webkit-details-marker {
@@ -2423,7 +2423,7 @@ input[type="checkbox"] {
 
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr auto;
     column-gap: 2rem;
   }
 
@@ -2600,7 +2600,7 @@ input[type="checkbox"] {
 
 .header__icon--cart {
   position: relative;
-  margin-right: -1.2rem;
+  margin-right: 0rem;
 }
 
 .header__icon--menu[aria-expanded="true"]::before {
@@ -2917,7 +2917,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-  right: 0.8rem;
+  right: 0.2rem;
 }
 
 .header__submenu .icon-caret {

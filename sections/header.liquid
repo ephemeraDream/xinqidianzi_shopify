@@ -43,8 +43,9 @@
   }
 
   .list-menu--inline {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   summary.list-menu__item {
@@ -55,6 +56,14 @@
     display: flex;
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 0em;
+    font-variation-settings: "opsz" auto;
+    color: #1A1A1A;
   }
 
   .list-menu__item--link {
