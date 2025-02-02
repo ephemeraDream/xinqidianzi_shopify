@@ -31,7 +31,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Navigation Title",
-            "menu": "footer"
+            "menu": "main-menu"
           }
         },
         "contact_us_8ryPmr": {
