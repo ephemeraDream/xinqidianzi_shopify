@@ -34,10 +34,9 @@
       const percentage = (offsetX / rect.width) * 100;
 
       if (percentage > 1 && percentage < 98) {
-        // 调整左侧图片显示区域变大，右侧图片显示区域变小
-        leftImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`; // 右侧减小
-        rightImage.style.clipPath = `inset(0 0 0 ${percentage}%)`; // 左侧增大
-        divider.style.left = `${percentage}%`; // 更新分隔线的位置
+        leftImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+        rightImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+        divider.style.left = `${percentage}%`;
       }
     });
 

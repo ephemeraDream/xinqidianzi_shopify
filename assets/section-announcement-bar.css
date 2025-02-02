@@ -1,0 +1,14 @@
+.announcement-bar__message {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #ebb069;
+  padding: 1.6rem 0;
+}
+
+.utility-bar.gradient {
+  background: #fcf4e2;
+}

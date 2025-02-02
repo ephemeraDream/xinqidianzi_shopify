@@ -28,30 +28,24 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // 获取所有 tab 列表项
     const tabListItems = document.querySelectorAll('.policy-tab-list-item');
     const tabContents = document.querySelectorAll('.policy-tab-content');
 
-    // 监听 tab 点击事件
     tabListItems.forEach((item) => {
       item.addEventListener('click', function () {
         const targetTab = this.getAttribute('data-tab');
 
-        // 隐藏所有 tab 内容
         tabContents.forEach((content) => {
           content.style.display = 'none';
         });
 
-        // 显示当前点击的 tab 内容
         document.getElementById(targetTab).style.display = 'block';
 
-        // 更新 tab 列表项的选中状态
         tabListItems.forEach((i) => i.classList.remove('active'));
         this.classList.add('active');
       });
     });
 
-    // 初始化第一个 tab 为 active
     tabListItems[0].classList.add('active');
   });
 </script>

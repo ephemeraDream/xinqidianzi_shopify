@@ -1,25 +1,27 @@
 {{ 'section-product-comment.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-comment">
-  <div id="comment-data" style="display: none;">
-    {{ product.metafields.custom.comment.value | json }}
-  </div>
-  <div class="product-comment-head">
-    <span>Reviews（{{ product.metafields.custom.comment.value.size }}）</span>
-    <div class="product-comment-btn">
-      {{- 'icon-message.svg' | inline_asset_content -}}
-      comment
+{%- if product.metafields.custom.comment != blank -%}
+  <div id="section-{{ section.id }}" class="product-comment">
+    <div id="comment-data" style="display: none;">
+      {{ product.metafields.custom.comment.value | json }}
+    </div>
+    <div class="product-comment-head">
+      <span>Reviews（{{ product.metafields.custom.comment.value.size }}）</span>
+      <div class="product-comment-btn">
+        {{- 'icon-message.svg' | inline_asset_content -}}
+        comment
+      </div>
+    </div>
+    <div id="comments-container">
+      <div id="comments-list"></div>
+      <div class="comments-pagination">
+        <div id="prev-page">{{- 'arrow-left.svg' | inline_asset_content -}}</div>
+        <div id="page-numbers"></div>
+        <div id="next-page">{{- 'arrow-right.svg' | inline_asset_content -}}</div>
+      </div>
     </div>
   </div>
-  <div id="comments-container">
-    <div id="comments-list"></div>
-    <div class="comments-pagination">
-      <div id="prev-page">{{- 'arrow-left.svg' | inline_asset_content -}}</div>
-      <div id="page-numbers"></div>
-      <div id="next-page">{{- 'arrow-right.svg' | inline_asset_content -}}</div>
-    </div>
-  </div>
-</div>
+{%- endif -%}
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
