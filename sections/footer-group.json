@@ -33,12 +33,23 @@
             "heading": "Navigation Title",
             "menu": "footer"
           }
+        },
+        "contact_us_8ryPmr": {
+          "type": "contact_us",
+          "settings": {
+            "heading": "",
+            "address": "",
+            "address_link": "",
+            "phone": "",
+            "phone_link": ""
+          }
         }
       },
       "block_order": [
         "brand_information_UqzacG",
         "link_list_J8mijc",
-        "link_list_jnkrBc"
+        "link_list_jnkrBc",
+        "contact_us_8ryPmr"
       ],
       "custom_css": [],
       "settings": {
