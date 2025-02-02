@@ -16,7 +16,7 @@
     </div>
   </div>
   <div id="product-container">
-    {% paginate collection.products by 2 %}
+    {% paginate collection.products by 8 %}
       <div id="product-list" class="product-grid">
         {% for product in collection.products %}
           <div class="product-item" data-type="{{ product.type | handleize }}">

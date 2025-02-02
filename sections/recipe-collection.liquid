@@ -3,9 +3,139 @@
 <div id="section-{{ section.id }}" class="recipe-collection">
   <div class="recipe-collection-left">
     <div class="recipe-collection-left_head">Are You Looking for</div>
+    {% for block in section.blocks %}
+      {% assign blog_item = blogs[block.settings.blog_handle] %}
+      {% if blog_item %}
+        <div class="recipe-collection-item">
+          <div class="recipe-collection-item-head" data-blog-handle="{{ block.settings.blog_handle }}">
+            <h3>{{ blog_item.title }}</h3>
+            {{- 'icon-plus.svg' | inline_asset_content -}}
+          </div>
+          {% for article in blog_item.articles limit: 7 %}
+            <div class="recipe-collection-item-article">
+              <a href="{{ article.url }}">— {{ article.title }}</a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
-  <div class="recipe-collection-right">1</div>
+  <div class="recipe-collection-right">
+    {% paginate blog.articles by 6 %}
+      <div class="blog-content">
+        <div class="blog-content-title">{{ blog.title | escape }}</div>
+        <div class="blog-content-grid">
+          {%- for article in blog.articles -%}
+            <div class="blog-content-grid_item">
+              <a href="{{ article.url }}">
+                <img src="{{ article.image.src | image_url }}" alt="{{ article.image.src.alt | escape }}">
+                <div class="article-published_at">{{ article.published_at | time_tag: '%Y.%m.%d' }}</div>
+                <div class="article-title">{{ article.title | truncate: 50 | escape }}</div>
+              </a>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      {% if paginate.pages > 1 %}
+        <div class="custom-pagination">
+          {% if paginate.previous %}
+            <a href="{{ paginate.previous.url }}" class="ajax-pagination prev">
+              {{- 'arrow-left.svg' | inline_asset_content -}}
+            </a>
+          {% endif %}
+
+          {% for i in (1..paginate.pages) %}
+            {% if i == paginate.current_page %}
+              <span class="current-page page">{{ i }}</span>
+            {% else %}
+              <a
+                href="{{ request.path }}?page={{ i }}"
+                class="ajax-pagination page"
+                data-page="{{ i }}"
+              >
+                {{ i }}
+              </a>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginate.next %}
+            <a href="{{ paginate.next.url }}" class="ajax-pagination next">
+              {{- 'arrow-right.svg' | inline_asset_content -}}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endpaginate %}
+  </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.recipe-collection-item-head');
+    let activeBlogHandle = items[0].getAttribute('data-blog-handle');
+
+    function bindPaginationLinks() {
+      document.querySelectorAll('.ajax-pagination.page').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const page = this.getAttribute('data-page');
+          const url = `/blogs/${activeBlogHandle}?page=${page}`;
+          fetchBlogs(url);
+        });
+      });
+
+      document.querySelectorAll('.ajax-pagination.prev, .ajax-pagination.next').forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+          event.preventDefault();
+          const url = this.getAttribute('href');
+          fetchBlogs(url);
+        });
+      });
+    }
+
+    function fetchBlogs(url) {
+      fetch(url)
+        .then((response) => response.text())
+        .then((data) => {
+          const parser = new DOMParser();
+          const html = parser.parseFromString(data, 'text/html');
+
+          document.querySelector('.blog-content').innerHTML = html.querySelector('.blog-content')?.innerHTML || '';
+          document.querySelector('.custom-pagination').innerHTML =
+            html.querySelector('.custom-pagination')?.innerHTML || '';
+
+          bindPaginationLinks();
+
+          document.querySelectorAll('.ajax-pagination.page').forEach(function (link) {
+            let page = link.getAttribute('data-page');
+            const newHref = `/blogs/${activeBlogHandle}?page=${page}`;
+            link.setAttribute('href', newHref);
+          });
+        });
+    }
+
+    function bindCategoryFilters() {
+      document.querySelectorAll('.recipe-collection-item-head').forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          {% comment %} document.querySelectorAll('.categorize-group-btn').forEach((el) => el.classList.remove('active'));
+          this.classList.add('active'); {% endcomment %}
+
+          activeBlogHandle = this.getAttribute('data-blog-handle');
+
+          const url = `/blogs/${activeBlogHandle}?page=1`;
+
+          fetchBlogs(url);
+        });
+      });
+    }
+
+    bindPaginationLinks();
+    bindCategoryFilters();
+  });
+</script>
 
 <style>
   #shopify-section-{{ section.id }} {
