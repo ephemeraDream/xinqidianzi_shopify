@@ -71,10 +71,30 @@
         "blogs_kHqhTm"
       ],
       "settings": {}
+    },
+    "product_comparison_4fHC9d": {
+      "type": "product-comparison",
+      "blocks": {
+        "product_d4NKTd": {
+          "type": "product",
+          "settings": {
+            "title": "title",
+            "product": "product-name"
+          }
+        }
+      },
+      "block_order": [
+        "product_d4NKTd"
+      ],
+      "settings": {
+        "heading": "Product Comparison",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
     }
   },
   "order": [
     "home_banner_QhdzDr",
-    "recipe_collection_T4WqVQ"
+    "recipe_collection_T4WqVQ",
+    "product_comparison_4fHC9d"
   ]
 }
