@@ -47,7 +47,7 @@
     "image_banner_hFbC4G": {
       "type": "image-banner",
       "custom_css": [
-        ".banner--medium:not(.banner--adapt){height: 46.8rem;}"
+        ".banner--medium:not(.banner--adapt) {min-height: 46.8rem; height: 46.8rem;}"
       ],
       "settings": {
         "image": "shopify://shop_images/recipe_post_banner.webp",
