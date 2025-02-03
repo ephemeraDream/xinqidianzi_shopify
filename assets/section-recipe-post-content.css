@@ -1,0 +1,196 @@
+.recipe-post-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 6.5rem 0 10rem 0;
+}
+
+.recipe-post-content .flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.8rem;
+}
+
+.recipe-post-content .flex-center .step-box {
+  font-family: Poppins;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #3d3d3d;
+  text-align: center;
+}
+
+.recipe-post-content .flex-center .step-box img {
+  height: 4rem;
+}
+
+.recipe-post-content .recipe-post-image {
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: 12.3rem;
+}
+
+.recipe-post-content .recipe-post-title {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.recipe-post-content .recipe-post-content_info {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.recipe-post-content .step_content_box {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.recipe-post-content .step_content_box + .step_content_box {
+  margin-top: 10rem;
+}
+
+.recipe-post-content .step_content_box:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.recipe-post-content .step_content_box .step_content_box-media {
+  flex: 1;
+  height: 41rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.recipe-post-content .step_content_box .step_content_box-right {
+  flex: 0 0 69.7rem;
+  padding-left: 4.6rem;
+}
+
+.recipe-post-content .step_content_box:nth-child(2n) .step_content_box-right {
+  padding-right: 4.6rem;
+  padding-left: 0;
+}
+
+.recipe-post-content
+  .step_content_box
+  .step_content_box-right
+  .step_content_box-text
+  h2 {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-bottom: 3.8rem;
+}
+
+.recipe-post-content
+  .step_content_box
+  .step_content_box-right
+  .step_content_box-text
+  p {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.recipe-post-content .step_content_box-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 0.4rem 1rem 0px rgba(0, 0, 0, 0.1);
+  min-height: 10rem;
+  margin-top: 4rem;
+}
+
+.recipe-post-content .step_content_box-product img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0.4rem;
+  background: #ffffff;
+  box-shadow: 0px 0.4rem 1rem 0px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.recipe-post-content .step_content_box-product_info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.recipe-post-content .step_content_box-product_info h3 {
+  opacity: 0.8;
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+}
+
+.recipe-post-content
+  .step_content_box-product_info
+  .step_content_box-product_info-price {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #3d3d3d;
+  margin-top: 1.6rem;
+}
+
+.recipe-post-content .step_content_box-product_info-btn {
+  width: 9.8rem;
+  height: 3.7rem;
+  border-radius: 73.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebb069;
+  gap: 1rem;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+  margin-right: 5.7rem;
+  flex: 0 0 auto;
+}
+
+.recipe-post-content .step_content_box-product_info-btn svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.recipe-post-content .step_content_box-product_info-btn svg path {
+  fill: #fff;
+}

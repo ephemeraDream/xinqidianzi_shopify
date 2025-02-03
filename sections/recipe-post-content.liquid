@@ -1,6 +1,252 @@
 {{ 'section-recipe-post-content.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="recipe-post-content"></div>
+<div id="section-{{ section.id }}" class="recipe-post-content">
+  <div class="flex-center">
+    {% assign img_thumb = 'icon-step.webp' | asset_url %}
+    {% if article.metafields.custom.step_one_text != blank %}
+      <div class="step-box">
+        <span>STEP1</span>
+        <img src="{{ img_thumb }}" alt="step icon">
+      </div>
+    {% endif %}
+    {% if article.metafields.custom.step_two_text != blank %}
+      {{- 'arrow-right.svg' | inline_asset_content -}}
+      <div class="step-box">
+        <span>STEP2</span>
+        <img src="{{ img_thumb }}" alt="step icon">
+      </div>
+    {% endif %}
+    {% if article.metafields.custom.step_three_text != blank %}
+      {{- 'arrow-right.svg' | inline_asset_content -}}
+      <div class="step-box">
+        <span>STEP3</span>
+        <img src="{{ img_thumb }}" alt="step icon">
+      </div>
+    {% endif %}
+    {% if article.metafields.custom.step_four_text != blank %}
+      {{- 'arrow-right.svg' | inline_asset_content -}}
+      <div class="step-box">
+        <span>STEP4</span>
+        <img src="{{ img_thumb }}" alt="step icon">
+      </div>
+    {% endif %}
+    {% if article.metafields.custom.step_five_text != blank %}
+      {{- 'arrow-right.svg' | inline_asset_content -}}
+      <div class="step-box">
+        <span>STEP5</span>
+        <img src="{{ img_thumb }}" alt="step icon">
+      </div>
+    {% endif %}
+  </div>
+  <img src="{{ article.image | image_url }}" alt="{{ article.title }}" class="recipe-post-image">
+  <div class="recipe-post-title">{{ article.title }}</div>
+  <div class="recipe-post-content_info">{{ article.content }}</div>
+  {% if article.metafields.custom.step_one_text != blank %}
+    <div class="step_content_box">
+      {% if article.metafields.custom.step_one_file != blank %}
+        {% assign step_one_file = article.metafields.custom.step_one_file.value %}
+
+        {% if step_one_file.media_type contains 'image' %}
+          <img class="step_content_box-media" src="{{ step_one_file | image_url }}" alt="step_content_box-image">
+        {% elsif step_one_file.media_type contains 'video' %}
+          {{
+            step_one_file
+            | video_tag: class: 'step_content_box-media', autoplay: true, loop: true, muted: true, controls: true
+          }}
+        {% endif %}
+      {% endif %}
+      <div class="step_content_box-right">
+        <div class="step_content_box-text">
+          {{ article.metafields.custom.step_one_text | metafield_tag }}
+        </div>
+        {% if article.metafields.custom.step_one_product != blank %}
+          {% assign step_one_product = article.metafields.custom.step_one_product.value %}
+
+          <div class="step_content_box-product">
+            <div class="step_content_box-product_info">
+              <img
+                src="{{ step_one_product.featured_media | image_url }}"
+                alt="{{ step_one_product.title }}"
+              >
+              <div>
+                <h3>{{ step_one_product.title }}</h3>
+                <div class="step_content_box-product_info-price">{{ step_one_product.price | money }}</div>
+              </div>
+            </div>
+            <a class="step_content_box-product_info-btn" href="{{ step_one_product.url }}">
+              {{- 'icon-plus.svg' | inline_asset_content -}}
+              View</a
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if article.metafields.custom.step_two_text != blank %}
+    <div class="step_content_box">
+      {% if article.metafields.custom.step_two_file != blank %}
+        {% assign step_two_file = article.metafields.custom.step_two_file.value %}
+
+        {% if step_two_file.media_type contains 'image' %}
+          <img class="step_content_box-media" src="{{ step_two_file | image_url }}" alt="step_content_box-image">
+        {% elsif step_two_file.media_type contains 'video' %}
+          {{
+            step_two_file
+            | video_tag: class: 'step_content_box-media', autoplay: true, loop: true, muted: true, controls: true
+          }}
+        {% endif %}
+      {% endif %}
+      <div class="step_content_box-right">
+        <div class="step_content_box-text">
+          {{ article.metafields.custom.step_two_text | metafield_tag }}
+        </div>
+        {% if article.metafields.custom.step_two_product != blank %}
+          {% assign step_two_product = article.metafields.custom.step_two_product.value %}
+
+          <div class="step_content_box-product">
+            <div class="step_content_box-product_info">
+              <img
+                src="{{ step_two_product.featured_media | image_url }}"
+                alt="{{ step_two_product.title }}"
+              >
+              <div>
+                <h3>{{ step_two_product.title }}</h3>
+                <div class="step_content_box-product_info-price">{{ step_two_product.price | money }}</div>
+              </div>
+            </div>
+            <a class="step_content_box-product_info-btn" href="{{ step_two_product.url }}">
+              {{- 'icon-plus.svg' | inline_asset_content -}}
+              View</a
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if article.metafields.custom.step_three_text != blank %}
+    <div class="step_content_box">
+      {% if article.metafields.custom.step_three_file != blank %}
+        {% assign step_three_file = article.metafields.custom.step_three_file.value %}
+
+        {% if step_three_file.media_type contains 'image' %}
+          <img class="step_content_box-media" src="{{ step_three_file | image_url }}" alt="step_content_box-image">
+        {% elsif step_three_file.media_type contains 'video' %}
+          {{
+            step_three_file
+            | video_tag: class: 'step_content_box-media', autoplay: true, loop: true, muted: true, controls: true
+          }}
+        {% endif %}
+      {% endif %}
+      <div class="step_content_box-right">
+        <div class="step_content_box-text">
+          {{ article.metafields.custom.step_three_text | metafield_tag }}
+        </div>
+        {% if article.metafields.custom.step_three_product != blank %}
+          {% assign step_three_product = article.metafields.custom.step_three_product.value %}
+
+          <div class="step_content_box-product">
+            <div class="step_content_box-product_info">
+              <img
+                src="{{ step_three_product.featured_media | image_url }}"
+                alt="{{ step_three_product.title }}"
+              >
+              <div>
+                <h3>{{ step_three_product.title }}</h3>
+                <div class="step_content_box-product_info-price">{{ step_three_product.price | money }}</div>
+              </div>
+            </div>
+            <a class="step_content_box-product_info-btn" href="{{ step_three_product.url }}">
+              {{- 'icon-plus.svg' | inline_asset_content -}}
+              View</a
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if article.metafields.custom.step_four_text != blank %}
+    <div class="step_content_box">
+      {% if article.metafields.custom.step_four_file != blank %}
+        {% assign step_four_file = article.metafields.custom.step_four_file.value %}
+
+        {% if step_four_file.media_type contains 'image' %}
+          <img class="step_content_box-media" src="{{ step_four_file | image_url }}" alt="step_content_box-image">
+        {% elsif step_four_file.media_type contains 'video' %}
+          {{
+            step_four_file
+            | video_tag: class: 'step_content_box-media', autoplay: true, loop: true, muted: true, controls: true
+          }}
+        {% endif %}
+      {% endif %}
+      <div class="step_content_box-right">
+        <div class="step_content_box-text">
+          {{ article.metafields.custom.step_four_text | metafield_tag }}
+        </div>
+        {% if article.metafields.custom.step_four_product != blank %}
+          {% assign step_four_product = article.metafields.custom.step_four_product.value %}
+
+          <div class="step_content_box-product">
+            <div class="step_content_box-product_info">
+              <img
+                src="{{ step_four_product.featured_media | image_url }}"
+                alt="{{ step_four_product.title }}"
+              >
+              <div>
+                <h3>{{ step_four_product.title }}</h3>
+                <div class="step_content_box-product_info-price">{{ step_four_product.price | money }}</div>
+              </div>
+            </div>
+            <a class="step_content_box-product_info-btn" href="{{ step_four_product.url }}">
+              {{- 'icon-plus.svg' | inline_asset_content -}}
+              View</a
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if article.metafields.custom.step_five_text != blank %}
+    <div class="step_content_box">
+      {% if article.metafields.custom.step_five_file != blank %}
+        {% assign step_five_file = article.metafields.custom.step_five_file.value %}
+
+        {% if step_five_file.media_type contains 'image' %}
+          <img class="step_content_box-media" src="{{ step_five_file | image_url }}" alt="step_content_box-image">
+        {% elsif step_five_file.media_type contains 'video' %}
+          {{
+            step_five_file
+            | video_tag: class: 'step_content_box-media', autoplay: true, loop: true, muted: true, controls: true
+          }}
+        {% endif %}
+      {% endif %}
+      <div class="step_content_box-right">
+        <div class="step_content_box-text">
+          {{ article.metafields.custom.step_five_text | metafield_tag }}
+        </div>
+        {% if article.metafields.custom.step_five_product != blank %}
+          {% assign step_five_product = article.metafields.custom.step_five_product.value %}
+
+          <div class="step_content_box-product">
+            <div class="step_content_box-product_info">
+              <img
+                src="{{ step_five_product.featured_media | image_url }}"
+                alt="{{ step_five_product.title }}"
+              >
+              <div>
+                <h3>{{ step_five_product.title }}</h3>
+                <div class="step_content_box-product_info-price">{{ step_five_product.price | money }}</div>
+              </div>
+            </div>
+            <a class="step_content_box-product_info-btn" href="{{ step_five_product.url }}">
+              {{- 'icon-plus.svg' | inline_asset_content -}}
+              View</a
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>
 
 {% schema %}
 {
