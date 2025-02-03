@@ -1,10 +1,10 @@
 .recipe-collection {
   padding: 7.5rem 0 10rem 0;
-  margin-top: -3.5rem;
   max-width: 144rem;
   margin: 0 auto;
   display: flex;
   gap: 5.4rem;
+  margin-top: -3.5rem;
 }
 
 .recipe-collection .recipe-collection-left {
