@@ -1,6 +1,157 @@
 {{ 'section-product-comparison.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-comparison"></div>
+<div id="section-{{ section.id }}" class="product-comparison">
+  <h2 class="product-comparison-heading">{{ section.settings.heading }}</h2>
+  <div class="product-comparison-text">{{ section.settings.text }}</div>
+
+  <div class="product-comparison-tab_btn_box">
+    {% for block in section.blocks %}
+      <div
+        class="product-comparison-tab_btn {% if forloop.index == 1 %} active{% endif %}"
+        data-tab="tab-{{ forloop.index }}"
+      >
+        {{ block.settings.title }}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% for block_item in section.blocks %}
+    <div
+      class="swiper product-comparison-swiper{% if forloop.index == 1 %} active{% endif %}"
+      id="tab-{{ forloop.index }}"
+    >
+      <div class="swiper-wrapper">
+        {% for product in block_item.settings.product %}
+          <div class="swiper-slide product-card">
+            <div class="product-image">
+              <div
+                class="product-variant-swiper-{{ product.id }} swiper"
+                data-id="{{ product.id }}"
+              >
+                <div class="swiper-wrapper">
+                  {%- if product.has_only_default_variant -%}
+                    <div
+                      class="swiper-slide"
+                      data-color="{{ variant.metafields.custom.color }}"
+                    >
+                      <img
+                        src="{{ product.featured_image | image_url }}"
+                        alt="{{ product.title }}"
+                      >
+                    </div>
+                  {%- else -%}
+                    {% for variant in product.variants %}
+                      {% if variant.featured_image %}
+                        <div
+                          class="swiper-slide"
+                          data-color="{{ variant.metafields.custom.color }}"
+                        >
+                          <img
+                            src="{{ variant.featured_image | image_url }}"
+                            alt="{{ variant.title }}"
+                          >
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+
+              <a href="{{ product.url }}" class="product-btn">
+                {{- 'shopping.svg' | inline_asset_content -}}
+              </a>
+            </div>
+
+            <div class="product-info">
+              <div class="flex-center">
+                <h3 class="product-title">{{ product.title }}</h3>
+                <div class="flex-center">
+                  <span class="product-price">{{ product.price | money }}</span>
+                  <span class="product-compare_at_price">{{ product.compare_at_price | money }}</span>
+                </div>
+              </div>
+              <div class="flex-center">
+                <div class="product-description">{{ product.description }}</div>
+                <div class="swiper-navigation product-variant-navigation-{{ product.id }}"></div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 初始化默认的 Swiper
+    const defaultSwiper = new Swiper('.product-comparison-swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      freeMode: true,
+    });
+
+    // 监听 tab 切换事件
+    const tabs = document.querySelectorAll('.product-comparison-tab_btn');
+    const tabContents = document.querySelectorAll('.product-comparison-swiper');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        // 如果当前 tab 已经是 active，跳过
+        if (this.classList.contains('active')) {
+          return;
+        }
+
+        // 移除所有 tab 的 active 类
+        tabs.forEach((item) => item.classList.remove('active'));
+        // 隐藏所有 tab 内容
+        tabContents.forEach((content) => content.classList.remove('active'));
+
+        // 为当前点击的 tab 添加 active 类
+        this.classList.add('active');
+        // 显示对应的 tab 内容
+        const tabId = this.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+
+        // 初始化当前 tab 中的 swiper
+        initSwiperForTab(tabId);
+      });
+    });
+
+    // 默认初始化第一个 tab 的 swiper
+    initSwiperForTab('tab-1');
+
+    // Swiper 初始化函数
+    function initSwiperForTab(tabId) {
+      const tabContent = document.getElementById(tabId);
+      if (!tabContent) return;
+
+      // 查找 tab 中的 swiper 元素并初始化
+      tabContent.querySelectorAll('[class^="product-variant-swiper-"]').forEach(function (swiperElement) {
+        const productSwiperId = swiperElement.classList[0];
+        const productId = swiperElement.getAttribute('data-id');
+
+        new Swiper(`.${productSwiperId}`, {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          allowTouchMove: false,
+          pagination: {
+            el: `.product-variant-navigation-${productId}`,
+            clickable: true,
+            renderBullet: function (index, className) {
+              const variant = swiperElement.querySelectorAll('.swiper-slide')[index];
+              const color = variant.getAttribute('data-color') || '#000000';
+              const borderClass =
+                color.toLowerCase() === '#ffffff' || color.toLowerCase() === 'rgb(255,255,255)' ? 'border-black' : '';
+
+              return `<span class="${className} ${borderClass}" style="background-color: ${color};"></span>`;
+            },
+          },
+        });
+      });
+    }
+  });
+</script>
 
 {% schema %}
 {

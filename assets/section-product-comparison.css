@@ -1,0 +1,240 @@
+.product-comparison {
+  margin: 0 auto;
+  padding-left: calc((100% - 144rem) / 2);
+}
+
+.product-comparison .product-comparison-heading {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.product-comparison .product-comparison-text {
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #777777;
+  margin-top: 1.6rem;
+}
+
+.product-comparison .product-comparison-tab_btn_box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  margin-top: 6rem;
+}
+
+.product-comparison
+  .product-comparison-tab_btn_box
+  .product-comparison-tab_btn {
+  border-radius: 50.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid #000000;
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+  padding: 1rem;
+  min-width: 22rem;
+  cursor: pointer;
+}
+
+.product-comparison
+  .product-comparison-tab_btn_box
+  .product-comparison-tab_btn.active,
+.product-comparison
+  .product-comparison-tab_btn_box
+  .product-comparison-tab_btn:hover {
+  background: #ebb069;
+  color: #fff;
+  border-color: #ebb069;
+}
+
+.product-comparison .product-comparison-swiper {
+  padding: 6rem 0 10rem 0;
+  padding-left: 2rem;
+  margin-left: -2rem;
+  align-items: stretch;
+}
+
+.product-comparison .product-card {
+  width: 70.8rem;
+  min-height: 71.9rem;
+  height: auto;
+  border-radius: 1.6rem;
+  background: #ffffff;
+  box-shadow: 0px 0.4rem 1.6rem 0px rgba(0, 0, 0, 0.16);
+  padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+}
+
+.product-comparison .product-card .product-image {
+  width: 100%;
+  height: 54.9rem;
+  border-radius: 1.6rem;
+  background: #f0f2f3;
+  position: relative;
+}
+
+.product-comparison .product-card .product-image .swiper {
+  height: 100%;
+}
+
+.product-comparison .product-card .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-comparison .product-card .product-image .product-btn {
+  width: 7.8rem;
+  height: 7.8rem;
+  background: #ffffff;
+  box-shadow: 0px 0.3rem 0.8rem 0px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  bottom: 2.4rem;
+  right: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.product-comparison .product-card .product-image .product-btn:hover {
+  background: #ebb069;
+}
+
+.product-comparison .product-card .product-image .product-btn:hover svg path {
+  fill: #fff;
+}
+
+.product-comparison .product-card .product-info {
+  padding-top: 2rem;
+}
+
+.product-comparison .product-card .product-info .flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-comparison .product-card .product-info .flex-center + .flex-center {
+  margin-top: 1.7rem;
+}
+
+.product-comparison .product-card .product-info .flex-center .product-title {
+  font-family: Blinker;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #3d3d3d;
+}
+
+.product-comparison .product-card .product-info .flex-center .product-price {
+  font-family: Blinker;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #1a1a1a;
+}
+
+.product-comparison
+  .product-card
+  .product-info
+  .flex-center
+  .product-compare_at_price {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-decoration: line-through;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #767676;
+  margin-left: 2.4rem;
+}
+
+.product-comparison
+  .product-card
+  .product-info
+  .flex-center
+  .product-description {
+  font-family: Blinker;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #777777;
+}
+
+.product-comparison
+  .product-card
+  .product-info
+  .flex-center
+  .product-description
+  p {
+  margin: 0;
+}
+
+.product-comparison
+  .product-comparison-swiper
+  .swiper-wrapper
+  .product-card:last-child {
+  margin-right: 2.4rem;
+}
+
+.product-comparison .swiper-navigation {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.product-comparison .swiper-navigation .swiper-pagination-bullet {
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  opacity: 1;
+}
+
+.product-comparison .swiper-navigation .swiper-pagination-bullet.border-black {
+  border: 0.1rem solid #000000;
+}
+
+.product-comparison .swiper-navigation .swiper-pagination-bullet-active {
+  width: 3.4rem;
+  height: 3.4rem;
+  border: 0.1rem solid #000000;
+}
+
+.product-comparison .product-comparison-swiper {
+  display: none;
+}
+
+.product-comparison .product-comparison-swiper.active {
+  display: block;
+}
