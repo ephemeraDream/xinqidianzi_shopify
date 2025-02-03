@@ -5,8 +5,11 @@
     <div class="policy-tab-left-title">Support</div>
     <div class="policy-tab-list">
       {%- for block in section.blocks -%}
-        <div class="policy-tab-list-item" data-tab="tab-{{ forloop.index }}">
-          {{ block.settings.title }}
+        <div
+          class="policy-tab-list-item{% if page.handle == block.settings.page.handle %} active{% endif %}"
+          data-tab="tab-{{ block.settings.page.handle }}"
+        >
+          {{ block.settings.page.title }}
         </div>
       {%- endfor -%}
     </div>
@@ -15,8 +18,8 @@
     {%- for block in section.blocks -%}
       <div
         class="policy-tab-content"
-        id="tab-{{ forloop.index }}"
-        {% if forloop.index != 1 %}
+        id="tab-{{ block.settings.page.handle }}"
+        {% if page.handle != block.settings.page.handle %}
           style="display: none;"
         {% endif %}
       >
@@ -46,7 +49,7 @@
       });
     });
 
-    tabListItems[0].classList.add('active');
+    {% comment %} tabListItems[0].classList.add('active'); {% endcomment %}
   });
 </script>
 
