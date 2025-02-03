@@ -27,9 +27,14 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "recipe_post_content_AHJExY": {
+      "type": "recipe-post-content",
+      "settings": {}
     }
   },
   "order": [
-    "image_banner_hFbC4G"
+    "image_banner_hFbC4G",
+    "recipe_post_content_AHJExY"
   ]
 }
