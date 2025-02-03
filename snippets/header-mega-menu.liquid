@@ -27,7 +27,7 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup{% if link.handle == 'products' %} mega-menu__content-product{% endif %}"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup{% if link.handle == 'products' %} mega-menu__content-product{% endif %}{% if link.handle == 'recipe' %} mega-menu__content-recipe{% endif %}"
                 tabindex="-1"
               >
                 <div class="mega-menu__content_body">
@@ -40,10 +40,11 @@
                         <a
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                           href="{{ childlink.url }}"
-                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current or forloop.index == 1 %} mega-menu__link--active{% endif %}{% if link.handle == 'products' %} mega-menu__collection-item{% endif %}"
+                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current or forloop.index == 1 %} mega-menu__link--active{% endif %}{% if link.handle == 'products' %} mega-menu__collection-item{% endif %}{% if link.handle == 'recipe' %} mega-menu__recipe-item{% endif %}"
                           {% if childlink.current %}
                             aria-current="page"
                           {% endif %}
+                          data-tab="tab-{{ childlink.handle }}"
                         >
                           {{ childlink.title | escape }}
                         </a>
@@ -73,10 +74,64 @@
                         <div class="view_all_box_line"></div>
                         <a href="{{ link.url }}">View All Products</a>
                       </div>
+                    {% elsif link.handle == 'recipe' %}
+                      <div class="view_all_box">
+                        <div class="view_all_box_line"></div>
+                        <a href="{{ link.links[0].url }}">View All Recipes</a>
+                      </div>
                     {% endif %}
                   </ul>
                   {%- if link.handle == 'products' %}
                     <div id="collection-products" class="mega-menu__flex-box"></div>
+                    {%- for childlink in link.links -%}
+                      <div
+                        class="mega-menu__flex-box collection-products{% if forloop.index == 1 %} active{% endif %}"
+                        id="tab-{{ childlink.handle }}"
+                      >
+                        {%- for product in collections[childlink.handle].products limit: 3 -%}
+                          {% comment %}
+                            <div class="collection-recipe_item">
+                              <a href="{{ article.url }}">
+                                <img src="{{ article.image | image_url }}" alt="{{ article.title | escape }}">
+                                <div class="collection-recipe_item_info">
+                                  <div class="collection-recipe_item_info_title">{{ article.title | escape }}</div>
+                                  {{- 'arrow-right.svg' | inline_asset_content -}}
+                                </div>
+                              </a>
+                            </div>
+                          {% endcomment %}
+                          <div class="product-item">
+                            <a href="{{ product.url }}">
+                              <img src="{{ product.featured_image | image_url }}" alt="{{ product.title | escape }}">
+                              <h4>{{ product.title | escape }}</h4>
+                              <div class="flex-end">
+                                <div class="product-desc">{{ product.description }}</div>
+                                {{- 'arrow-right.svg' | inline_asset_content -}}
+                              </div>
+                            </a>
+                          </div>
+                        {%- endfor -%}
+                      </div>
+                    {%- endfor -%}
+                  {% elsif link.handle == 'recipe' %}
+                    {%- for childlink in link.links -%}
+                      <div
+                        class="mega-menu__flex-box collection-recipe{% if forloop.index == 1 %} active{% endif %}"
+                        id="tab-{{ childlink.handle }}"
+                      >
+                        {%- for article in blogs[childlink.handle].articles limit: 3 -%}
+                          <div class="collection-recipe_item">
+                            <a href="{{ article.url }}">
+                              <img src="{{ article.image | image_url }}" alt="{{ article.title | escape }}">
+                              <div class="collection-recipe_item_info">
+                                <div class="collection-recipe_item_info_title">{{ article.title | escape }}</div>
+                                {{- 'arrow-right.svg' | inline_asset_content -}}
+                              </div>
+                            </a>
+                          </div>
+                        {%- endfor -%}
+                      </div>
+                    {%- endfor -%}
                   {% endif %}
                 </div>
               </div>
@@ -106,62 +161,52 @@
 </nav>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  {% comment %} document.addEventListener('DOMContentLoaded', function () {
     const collectionItems = document.querySelectorAll('.mega-menu__collection-item');
     const productListContainer = document.getElementById('collection-products');
     const contentProductElement = document.querySelector('.mega-menu__content-product');
 
-    // 创建 IntersectionObserver 实例来监视 .mega-menu__content-product 的可见性
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // 如果 .mega-menu__content-product 元素出现在视口中，则加载第一个 Collection 的产品
             loadProducts(collectionItems[0].getAttribute('href'));
-            // 停止监听，因为只需要在首次可见时加载
             observer.disconnect();
           }
         });
       },
       { threshold: 0.1 }
-    ); // 触发条件：元素至少有 10% 可见
+    );
 
-    // 开始监听 .mega-menu__content-product 元素
     if (contentProductElement) {
       observer.observe(contentProductElement);
     }
 
-    // 监听 Collection 列表项点击事件
     collectionItems.forEach((item) => {
       item.addEventListener('click', function (event) {
         event.preventDefault();
         const collectionHandle = this.getAttribute('href');
 
-        // 先移除所有项的 'mega-menu__link--active' 类
         collectionItems.forEach((item) => {
           item.classList.remove('mega-menu__link--active');
         });
 
-        // 给当前点击的项添加 'mega-menu__link--active' 类
         this.classList.add('mega-menu__link--active');
 
         loadProducts(collectionHandle);
       });
     });
 
-    // 使用 AJAX 加载产品
     function loadProducts(href) {
       const url = `${href}/products.json?limit=3`;
 
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
-          // 清空现有的产品列表
           productListContainer.innerHTML = '';
 
-          // 遍历返回的产品数据并渲染
           data.products.forEach((product) => {
-            const productUrl = `/products/${product.handle}`; // 生成产品的 URL
+            const productUrl = `/products/${product.handle}`;
 
             const productHTML = `
               <div class="product-item">
@@ -181,5 +226,46 @@
           console.error('Error loading products:', error);
         });
     }
+  }); {% endcomment %}
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const recipeTabItems = document.querySelectorAll('.mega-menu__recipe-item');
+    const recipeTabContents = document.querySelectorAll('.collection-recipe.mega-menu__flex-box');
+
+    recipeTabItems.forEach((item) => {
+      item.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetTab = this.getAttribute('data-tab');
+
+        recipeTabContents.forEach((content) => {
+          content.style.display = 'none';
+        });
+
+        document.getElementById(targetTab).style.display = 'flex';
+
+        recipeTabItems.forEach((i) => i.classList.remove('mega-menu__link--active'));
+        this.classList.add('mega-menu__link--active');
+      });
+    });
+
+    const productTabItems = document.querySelectorAll('.mega-menu__collection-item');
+    const productTabContents = document.querySelectorAll('.collection-products.mega-menu__flex-box');
+
+    productTabItems.forEach((item) => {
+      item.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetTab = this.getAttribute('data-tab');
+
+        productTabContents.forEach((content) => {
+          content.style.display = 'none';
+        });
+
+        document.getElementById(targetTab).style.display = 'flex';
+
+        productTabItems.forEach((i) => i.classList.remove('mega-menu__link--active'));
+        this.classList.add('mega-menu__link--active');
+      });
+    });
   });
 </script>

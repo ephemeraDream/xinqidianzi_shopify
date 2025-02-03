@@ -84,49 +84,38 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // 初始化默认的 Swiper
     const defaultSwiper = new Swiper('.product-comparison-swiper', {
       slidesPerView: 'auto',
       spaceBetween: 24,
       freeMode: true,
     });
 
-    // 监听 tab 切换事件
     const tabs = document.querySelectorAll('.product-comparison-tab_btn');
     const tabContents = document.querySelectorAll('.product-comparison-swiper');
 
     tabs.forEach((tab) => {
       tab.addEventListener('click', function () {
-        // 如果当前 tab 已经是 active，跳过
         if (this.classList.contains('active')) {
           return;
         }
 
-        // 移除所有 tab 的 active 类
         tabs.forEach((item) => item.classList.remove('active'));
-        // 隐藏所有 tab 内容
         tabContents.forEach((content) => content.classList.remove('active'));
 
-        // 为当前点击的 tab 添加 active 类
         this.classList.add('active');
-        // 显示对应的 tab 内容
         const tabId = this.getAttribute('data-tab');
         document.getElementById(tabId).classList.add('active');
 
-        // 初始化当前 tab 中的 swiper
         initSwiperForTab(tabId);
       });
     });
 
-    // 默认初始化第一个 tab 的 swiper
     initSwiperForTab('tab-1');
 
-    // Swiper 初始化函数
     function initSwiperForTab(tabId) {
       const tabContent = document.getElementById(tabId);
       if (!tabContent) return;
 
-      // 查找 tab 中的 swiper 元素并初始化
       tabContent.querySelectorAll('[class^="product-variant-swiper-"]').forEach(function (swiperElement) {
         const productSwiperId = swiperElement.classList[0];
         const productId = swiperElement.getAttribute('data-id');

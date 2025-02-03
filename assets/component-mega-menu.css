@@ -127,7 +127,7 @@
   .mega-menu__list
   .mega-menu__link:hover {
   color: #1a1a1a;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.6rem;
 }
 
 .view_all_box {
@@ -165,8 +165,10 @@
   justify-content: flex-end;
 }
 
-.mega-menu__flex-box .product-item {
+.mega-menu__flex-box .product-item,
+.mega-menu__flex-box .collection-recipe_item {
   flex: 0 0 calc(100% / 3);
+  position: relative;
 }
 
 .mega-menu__flex-box .product-item img {
@@ -223,5 +225,64 @@
 }
 
 .mega-menu__flex-box .product-item:hover .flex-end svg path {
+  fill: #ebb069;
+}
+
+.mega-menu__flex-box.collection-recipe,
+.mega-menu__flex-box.collection-products {
+  display: none;
+}
+
+.mega-menu__flex-box.collection-recipe.active,
+.mega-menu__flex-box.collection-products.active {
+  display: flex;
+}
+
+.mega-menu__flex-box .collection-recipe_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.mega-menu__flex-box .collection-recipe_item .collection-recipe_item_info {
+  padding: 0 2.6rem 2rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.mega-menu__flex-box
+  .collection-recipe_item
+  .collection-recipe_item_info
+  .collection-recipe_item_info_title {
+  font-family: Blinker;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #ffffff;
+  max-width: 31rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mega-menu__flex-box
+  .collection-recipe_item
+  .collection-recipe_item_info
+  svg
+  path {
+  fill: #fff;
+}
+
+.mega-menu__flex-box .collection-recipe_item:hover svg path {
   fill: #ebb069;
 }
