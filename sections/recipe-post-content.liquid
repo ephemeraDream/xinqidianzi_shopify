@@ -1,0 +1,20 @@
+{{ 'section-recipe-post-content.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="recipe-post-content"></div>
+
+{% schema %}
+{
+  "name": "recipe post content",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "recipe post content"
+    }
+  ]
+}
+{% endschema %}
