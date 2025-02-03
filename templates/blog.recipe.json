@@ -146,6 +146,9 @@
         "faq_3XN6n9",
         "faq_kztidQ"
       ],
+      "custom_css": [
+        ".product-faq{margin-bottom: 13rem;}"
+      ],
       "settings": {
         "heading": "FAQ",
         "text": "This is a placeholder copy This is a placeholder copy"
