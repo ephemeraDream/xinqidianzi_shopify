@@ -15,9 +15,37 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "activity_banner_KLtwVy": {
+      "type": "activity-banner",
+      "blocks": {
+        "heading_MB9KhW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lorem Ipsum",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+          }
+        },
+        "buttons_GXGBV7": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_MB9KhW",
+        "buttons_GXGBV7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/activity_banner.webp"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "activity_banner_KLtwVy"
   ]
 }
