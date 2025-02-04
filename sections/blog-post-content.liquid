@@ -1,0 +1,20 @@
+{{ 'section-blog-post-content.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="blog-post-content"></div>
+
+{% schema %}
+{
+  "name": "blog post content",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "blog post content"
+    }
+  ]
+}
+{% endschema %}
