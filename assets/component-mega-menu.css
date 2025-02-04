@@ -229,12 +229,14 @@
 }
 
 .mega-menu__flex-box.collection-recipe,
-.mega-menu__flex-box.collection-products {
+.mega-menu__flex-box.collection-products,
+.mega-menu__flex-box.collection-support {
   display: none;
 }
 
 .mega-menu__flex-box.collection-recipe.active,
-.mega-menu__flex-box.collection-products.active {
+.mega-menu__flex-box.collection-products.active,
+.mega-menu__flex-box.collection-support.active {
   display: flex;
 }
 

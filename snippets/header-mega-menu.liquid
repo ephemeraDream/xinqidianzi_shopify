@@ -36,11 +36,29 @@
                     role="list"
                   >
                     {%- for childlink in link.links -%}
+                      {% assign is_first_link = forloop.first %}
+                      {% assign has_current_link = false %}
+
+                      {%- for child in link.links -%}
+                        {% if child.current %}
+                          {% assign has_current_link = true %}
+                          {% break %}
+                        {% endif %}
+                      {%- endfor -%}
+
                       <li>
                         <a
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                           href="{{ childlink.url }}"
-                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current or forloop.index == 1 %} mega-menu__link--active{% endif %}{% if link.handle == 'products' %} mega-menu__collection-item{% endif %}{% if link.handle == 'recipe' %} mega-menu__recipe-item{% endif %}"
+                          class="
+                            mega-menu__link mega-menu__link--level-2 link
+                            {% if childlink.current %} mega-menu__link--active
+                            {% elsif is_first_link and has_current_link == false %} mega-menu__link--active
+                            {% endif %}
+                            {% if link.handle == 'products' %} mega-menu__collection-item{% endif %}
+                            {% if link.handle == 'recipe' %} mega-menu__recipe-item{% endif %}
+                            {% if link.handle == 'support' %} mega-menu__support-item{% endif %}
+                          "
                           {% if childlink.current %}
                             aria-current="page"
                           {% endif %}
@@ -79,10 +97,38 @@
                         <div class="view_all_box_line"></div>
                         <a href="{{ link.links[0].url }}">View All Recipes</a>
                       </div>
+                    {% elsif link.handle == 'support' %}
+                      <div class="view_all_box">
+                        <div class="view_all_box_line"></div>
+                        {%- for childlink in link.links -%}
+                          {%- if childlink.handle == 'blog' %}
+                            {% assign is_first_link = forloop.first %}
+                            {% assign has_current_link = false %}
+
+                            {%- for child in link.links -%}
+                              {% if child.current %}
+                                {% assign has_current_link = true %}
+                                {% break %}
+                              {% endif %}
+                            {%- endfor -%}
+                            <a
+                              href="{{ link.links[0].url }}"
+                              style="opacity: 0;pointer-events: none;
+                                {% comment %} {% if childlink.current %}opacity: 1
+                                {% elsif is_first_link and has_current_link == false %}opacity: 1
+                                 {% else %}
+                                  opacity: 0;pointer-events: none;
+                                {% endif %} {% endcomment %}
+                              "
+                              id="view_all_blog"
+                              >View All Blog</a
+                            >
+                          {% endif %}
+                        {%- endfor -%}
+                      </div>
                     {% endif %}
                   </ul>
                   {%- if link.handle == 'products' %}
-                    <div id="collection-products" class="mega-menu__flex-box"></div>
                     {%- for childlink in link.links -%}
                       <div
                         class="mega-menu__flex-box collection-products{% if forloop.index == 1 %} active{% endif %}"
@@ -131,6 +177,40 @@
                           </div>
                         {%- endfor -%}
                       </div>
+                    {%- endfor -%}
+                  {% elsif link.handle == 'support' %}
+                    {%- for childlink in link.links -%}
+                      {%- if childlink.handle == 'blog' %}
+                        {% assign is_first_link = forloop.first %}
+                        {% assign has_current_link = false %}
+
+                        {%- for child in link.links -%}
+                          {% if child.current %}
+                            {% assign has_current_link = true %}
+                            {% break %}
+                          {% endif %}
+                        {%- endfor -%}
+                        <div
+                          class="
+                            mega-menu__flex-box collection-support{% if childlink.current %} active
+                            {% elsif is_first_link and has_current_link == false %} active
+                            {% endif %}
+                          "
+                          id="tab-{{ childlink.handle }}"
+                        >
+                          {%- for article in blogs.news.articles limit: 3 -%}
+                            <div class="collection-recipe_item">
+                              <a href="{{ article.url }}">
+                                <img src="{{ article.image | image_url }}" alt="{{ article.title | escape }}">
+                                <div class="collection-recipe_item_info">
+                                  <div class="collection-recipe_item_info_title">{{ article.title | escape }}</div>
+                                  {{- 'arrow-right.svg' | inline_asset_content -}}
+                                </div>
+                              </a>
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                      {% endif %}
                     {%- endfor -%}
                   {% endif %}
                 </div>
@@ -265,6 +345,29 @@
 
         productTabItems.forEach((i) => i.classList.remove('mega-menu__link--active'));
         this.classList.add('mega-menu__link--active');
+      });
+    });
+
+    const supportTabItems = document.querySelectorAll('.mega-menu__support-item');
+    const supportTabContents = document.querySelectorAll('.collection-support.mega-menu__flex-box');
+
+    supportTabItems.forEach((item) => {
+      item.addEventListener('click', function (event) {
+        const targetTab = this.getAttribute('data-tab');
+
+        if (targetTab === 'tab-blog') {
+          event.preventDefault();
+          supportTabContents.forEach((content) => {
+            content.style.display = 'none';
+          });
+
+          document.getElementById(targetTab).style.display = 'flex';
+          {% comment %} document.getElementById('view_all_blog').style.opacity = '1';
+          document.getElementById('view_all_blog').style.pointerEvents = 'auto'; {% endcomment %}
+
+          supportTabItems.forEach((i) => i.classList.remove('mega-menu__link--active'));
+          this.classList.add('mega-menu__link--active');
+        }
       });
     });
   });

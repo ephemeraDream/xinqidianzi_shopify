@@ -1,5 +1,156 @@
 {
-  "article": [],
+  "article": [
+    {
+      "key": "step_one_file",
+      "namespace": "custom",
+      "name": "step one file",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_one_text",
+      "namespace": "custom",
+      "name": "step one text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "step_one_product",
+      "namespace": "custom",
+      "name": "step one product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_two_file",
+      "namespace": "custom",
+      "name": "step two file",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_two_text",
+      "namespace": "custom",
+      "name": "step two text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "step_two_product",
+      "namespace": "custom",
+      "name": "step two product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_three_file",
+      "namespace": "custom",
+      "name": "step three file",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_three_text",
+      "namespace": "custom",
+      "name": "step three text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "step_three_product",
+      "namespace": "custom",
+      "name": "step three product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_four_file",
+      "namespace": "custom",
+      "name": "step four file",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_four_text",
+      "namespace": "custom",
+      "name": "step four text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "step_four_product",
+      "namespace": "custom",
+      "name": "step four product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_five_file",
+      "namespace": "custom",
+      "name": "step five file",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_five_text",
+      "namespace": "custom",
+      "name": "step five text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "step_five_product",
+      "namespace": "custom",
+      "name": "step five product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "blog": [],
   "brand": [],
   "collection": [],
