@@ -29,7 +29,11 @@
   display: flex;
 }
 
-.blog-post-content .blog-post-navigation a:hover svg path {
+.blog-post-content
+  .blog-post-navigation
+  a:not(.blog-post-navigation_disabled):hover
+  svg
+  path {
   fill: #ebb069;
 }
 
@@ -42,4 +46,8 @@
   letter-spacing: 0px;
   font-variation-settings: "opsz" auto;
   color: #333333;
+}
+
+.blog-post-content .blog-post-navigation .blog-post-navigation_disabled svg {
+  opacity: 0.5;
 }
