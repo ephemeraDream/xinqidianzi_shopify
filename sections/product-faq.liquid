@@ -27,10 +27,10 @@
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach((item) => {
-      const icon = item.querySelector('.faq-icon');
+      const faqItem = item.querySelector('.flex-start');
       const answer = item.querySelector('.faq-answer');
 
-      icon.addEventListener('click', function () {
+      faqItem.addEventListener('click', function () {
         const isActive = item.classList.contains('active');
 
         document.querySelectorAll('.faq-item').forEach((i) => {
