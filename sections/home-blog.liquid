@@ -60,6 +60,7 @@
   "name": "home blog",
   "tag": "section",
   "class": "section",
+  "max_blocks": 3,
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -73,11 +74,19 @@
       "type": "inline_richtext",
       "id": "text",
       "label": "text"
-    },
+    }
+  ],
+  "blocks": [
     {
       "type": "blog",
-      "id": "blog",
-      "label": "Select Blog"
+      "name": "blog",
+      "settings": [
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Select Blog"
+        }
+      ]
     }
   ],
   "presets": [
