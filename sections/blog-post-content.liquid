@@ -1,6 +1,38 @@
 {{ 'section-blog-post-content.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="blog-post-content"></div>
+<div id="section-{{ section.id }}" class="blog-post-content">
+  <h1 class="blog-post-title">{{ article.title }}</h1>
+  <div class="blog-post-info">{{ article.content }}</div>
+  <div class="blog-post-navigation">
+    {% assign current_article = article %}
+    {% assign all_articles = blog.articles %}
+
+    {% assign current_index = 0 %}
+    {% for article in all_articles %}
+      {% if article.id == current_article.id %}
+        {% assign current_index = forloop.index %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign prev_index = current_index | minus: 2 %}
+    {% assign next_index = current_index %}
+
+    {% assign prev_article = all_articles[prev_index] %}
+    {% assign next_article = all_articles[next_index] %}
+
+    {% if prev_index >= 0 %}
+      <a href="{{ prev_article.url }}">
+        {{- 'left-circle-arrow.svg' | inline_asset_content -}}
+      </a>
+    {% endif %}
+
+    {% if next_index < all_articles.size %}
+      <a href="{{ next_article.url }}">
+        {{- 'right-circle-arrow.svg' | inline_asset_content -}}
+      </a>
+    {% endif %}
+  </div>
+</div>
 
 {% schema %}
 {
