@@ -1,0 +1,188 @@
+.activity-slider {
+  padding-top: 3.2rem;
+}
+
+.activity-slider .activity-slider-header {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  text-align: center;
+}
+
+.activity-slider .activity-slider-text {
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #777777;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.activity-slider .activity-slider-swiper {
+  margin-top: 6rem;
+  height: 96.4rem;
+}
+
+.activity-slider .activity-slider-swiper .activity-slider-swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.activity-slider .swiper_product_popup {
+  position: absolute;
+}
+
+.activity-slider .swiper_product_popup .swiper_product_popup-circle {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  position: relative;
+  cursor: pointer;
+}
+
+.activity-slider .swiper_product_popup .swiper_product_popup-circle::after {
+  content: "";
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: -0.5rem;
+  top: -0.5rem;
+}
+
+.activity-slider .swiper_product_popup .swiper_product_popup-box {
+  position: absolute;
+  top: 8.5rem;
+  left: -19.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.activity-slider .swiper_product_popup .swiper_product_popup-box.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activity-slider .swiper_product_popup .swiper_product_popup-box a {
+  width: 40.8rem;
+  height: 11.2rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+  position: relative;
+}
+
+.activity-slider .swiper_product_popup .swiper_product_popup-box a::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1.6rem solid transparent;
+  border-right: 1.6rem solid transparent;
+  border-bottom: 2.2rem solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: -2.2rem;
+  left: calc(50% - 1.6rem);
+}
+
+.activity-slider
+  .swiper_product_popup
+  .swiper_product_popup-box
+  .popup_product-img {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 0.8rem;
+  background: #f7f7f7;
+  object-fit: cover;
+  object-position: center center;
+  margin-left: 1.6rem;
+}
+
+.activity-slider
+  .swiper_product_popup
+  .swiper_product_popup-box
+  .popup_product-title {
+  margin-bottom: 1.2rem;
+  max-width: 26rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activity-slider .activity-slider-navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 144rem;
+  margin: 6rem auto;
+  gap: 6rem;
+}
+
+.activity-slider .activity-slider-navigation .activity-slider-next,
+.activity-slider .activity-slider-navigation .activity-slider-prev {
+  display: flex;
+  cursor: pointer;
+}
+
+.activity-slider
+  .activity-slider-navigation
+  .activity-slider-next:hover
+  svg
+  path,
+.activity-slider
+  .activity-slider-navigation
+  .activity-slider-prev:hover
+  svg
+  path {
+  fill: #ebb069;
+}
+
+.activity-slider .activity-slider-navigation svg {
+  width: 5rem;
+  height: 5rem;
+  flex: 0 0 auto;
+}
+
+.activity-slider .activity-slider-navigation .swiper-scrollbar {
+  position: relative;
+  flex: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background-color: #e7e7e7;
+  border-radius: 86rem;
+}
+
+.activity-slider
+  .activity-slider-navigation
+  .swiper-scrollbar
+  .swiper-scrollbar-drag {
+  background-color: #ebb069;
+}

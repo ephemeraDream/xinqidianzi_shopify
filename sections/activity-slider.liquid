@@ -1,6 +1,100 @@
 {{ 'section-activity-slider.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="activity-slider"></div>
+<div id="section-{{ section.id }}" class="activity-slider">
+  <h2 class="activity-slider-header">{{ section.settings.heading }}</h2>
+  <div class="activity-slider-text">{{ section.settings.text }}</div>
+  <div class="swiper activity-slider-swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <img
+            src="{{ block.settings.image | image_url }}"
+            alt="activity-slider-swiper"
+            class="activity-slider-swiper-image"
+          >
+          {% if block.settings.circle_one_product != blank %}
+            <div
+              class="swiper_product_popup"
+              style="top: {{ block.settings.circle_one_product_Y }}px;left: {{ block.settings.circle_one_product_X }}px"
+            >
+              <div class="swiper_product_popup-circle"></div>
+              <div class="swiper_product_popup-box">
+                <a href="{{ block.settings.circle_one_product.url }}">
+                  <img
+                    src="{{ block.settings.circle_one_product.featured_media | image_url }}"
+                    alt="{{ block.settings.circle_one_product.title }}"
+                    class="popup_product-img"
+                  >
+                  <div>
+                    <div class="popup_product-title">{{ block.settings.circle_one_product.title }}</div>
+                    <div>{{ block.settings.circle_one_product.price | money }}</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          {% endif %}
+          {% if block.settings.circle_two_product != blank %}
+            <div
+              class="swiper_product_popup"
+              style="top: {{ block.settings.circle_two_product_Y }}px;left: {{ block.settings.circle_two_product_X }}px"
+            >
+              <div class="swiper_product_popup-circle"></div>
+              <div class="swiper_product_popup-box">
+                <a href="{{ block.settings.circle_two_product.url }}">
+                  <img
+                    src="{{ block.settings.circle_two_product.featured_media | image_url }}"
+                    alt="{{ block.settings.circle_two_product.title }}"
+                    class="popup_product-img"
+                  >
+                  <div>
+                    <div class="popup_product-title">{{ block.settings.circle_two_product.title }}</div>
+                    <div>{{ block.settings.circle_two_product.price | money }}</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="activity-slider-navigation">
+    <div class="activity-slider-prev">{{- 'left-circle-arrow.svg' | inline_asset_content -}}</div>
+    <div class="swiper-scrollbar"></div>
+    <div class="activity-slider-next">{{- 'right-circle-arrow.svg' | inline_asset_content -}}</div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var circles = document.querySelectorAll('.swiper_product_popup-circle');
+
+    circles.forEach(function (circle) {
+      var popupBox = circle.nextElementSibling;
+
+      circle.addEventListener('click', function (event) {
+        event.stopPropagation();
+
+        popupBox.classList.toggle('show');
+      });
+    });
+
+    const activitySliderSwiper = new Swiper('.activity-slider-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+
+      navigation: {
+        nextEl: '.activity-slider-navigation .activity-slider-next',
+        prevEl: '.activity-slider-navigation .activity-slider-prev',
+      },
+
+      scrollbar: {
+        el: '.activity-slider-navigation .swiper-scrollbar',
+      },
+    });
+  });
+</script>
 
 {% schema %}
 {
