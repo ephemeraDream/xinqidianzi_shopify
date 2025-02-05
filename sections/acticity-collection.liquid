@@ -1,0 +1,38 @@
+{{ 'section-acticity-collection.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="acticity-collection"></div>
+
+{% schema %}
+{
+  "name": "acticity collection",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "acticity_collection",
+      "name": "acticity_collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "choose products"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "acticity collection",
+      "blocks": [
+        {
+          "type": "acticity_collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
