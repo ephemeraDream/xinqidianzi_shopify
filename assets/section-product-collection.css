@@ -167,7 +167,7 @@
 .product-collection .product-grid .product-item .product-info .flex-center {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
