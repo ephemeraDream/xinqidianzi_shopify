@@ -35,9 +35,60 @@
       "settings": {
         "image": "shopify://shop_images/activity_banner.webp"
       }
+    },
+    "activity_slider_t6iDgt": {
+      "type": "activity-slider",
+      "blocks": {
+        "product_circle_XkEUVw": {
+          "type": "product_circle",
+          "settings": {
+            "image": "shopify://shop_images/activity_image.webp",
+            "circle_one_product": "product-name",
+            "circle_one_product_X": 615,
+            "circle_one_product_Y": 275,
+            "circle_two_product": "product-name-copy-1",
+            "circle_two_product_X": 1236,
+            "circle_two_product_Y": 583
+          }
+        },
+        "product_circle_YWXH3a": {
+          "type": "product_circle",
+          "settings": {
+            "image": "shopify://shop_images/activity_image.webp",
+            "circle_one_product": "product-name",
+            "circle_one_product_X": 615,
+            "circle_one_product_Y": 275,
+            "circle_two_product": "product-name-copy-1",
+            "circle_two_product_X": 1236,
+            "circle_two_product_Y": 583
+          }
+        },
+        "product_circle_WE9Vhh": {
+          "type": "product_circle",
+          "settings": {
+            "image": "shopify://shop_images/activity_image.webp",
+            "circle_one_product": "product-name",
+            "circle_one_product_X": 615,
+            "circle_one_product_Y": 275,
+            "circle_two_product": "product-name-copy-1",
+            "circle_two_product_X": 1236,
+            "circle_two_product_Y": 583
+          }
+        }
+      },
+      "block_order": [
+        "product_circle_XkEUVw",
+        "product_circle_YWXH3a",
+        "product_circle_WE9Vhh"
+      ],
+      "settings": {
+        "heading": "Activity Introduction",
+        "text": "Welcome to learn about the latest products"
+      }
     }
   },
   "order": [
-    "activity_banner_KLtwVy"
+    "activity_banner_KLtwVy",
+    "activity_slider_t6iDgt"
   ]
 }
