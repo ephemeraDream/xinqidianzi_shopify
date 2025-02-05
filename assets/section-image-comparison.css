@@ -46,3 +46,9 @@
   top: calc(50% - 3.4rem);
   left: -1.35rem;
 }
+
+@media screen and (max-width: 767px) {
+  .image-comparison {
+    height: 30rem;
+  }
+}

@@ -7,7 +7,8 @@
       alt="home banner"
       width="100%"
       height="100%"
-      class="home-banner-bg">
+      class="home-banner-bg"
+    >
   {% endif %}
   <div class="home-banner-box">
     {%- for block in section.blocks -%}
@@ -19,22 +20,28 @@
                 {{ block.settings.heading }}
               </h2>
               {% if block.settings.icon != blank %}
-                <img
-                  src={{ block.settings.icon | image_url }}
-                  alt="icon-arrow-righ"
-                  class="home-banner-box-heading-icon">
-                <img
-                  src={{ block.settings.icon | image_url }}
-                  alt="icon-arrow-righ"
-                  class="home-banner-box-heading-icon">
-                <img
-                  src={{ block.settings.icon | image_url }}
-                  alt="icon-arrow-righ"
-                  class="home-banner-box-heading-icon">
-                <img
-                  src={{ block.settings.icon | image_url }}
-                  alt="icon-arrow-righ"
-                  class="home-banner-box-heading-icon">
+                <div class="flex-center">
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="home-banner-box-heading-icon"
+                  >
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="home-banner-box-heading-icon"
+                  >
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="home-banner-box-heading-icon"
+                  >
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="home-banner-box-heading-icon"
+                  >
+                </div>
               {% endif %}
             </div>
             <div class="home-banner-box-text">
@@ -54,66 +61,71 @@
   </div>
 </div>
 {% schema %}
-  {
-    "name": "Home banner",
-    "tag": "section",
-    "class": "section",
-    "disabled_on": {
-      "groups": ["header", "footer"]
+{
+  "name": "Home banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "home banner heading",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "home banner heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "home banner heading icon"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "home banner text"
+        }
+      ]
     },
-    "settings": [
-      {
-        "id": "image",
-        "type": "image_picker",
-        "label": "Image"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "name": "home banner heading",
-        "settings": [
-          {
-            "type": "inline_richtext",
-            "id": "heading",
-            "label": "home banner heading"
-          }, {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "home banner heading icon"
-          }, {
-            "type": "inline_richtext",
-            "id": "text",
-            "label": "home banner text"
-          }
-        ]
-      }, {
-        "type": "buttons",
-        "name": "home banner button",
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label",
-            "label": "button label"
-          }, {
-            "type": "url",
-            "id": "button_link",
-            "label": "button link"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Home banner",
-        "blocks": [
-          {
-            "type": "heading"
-          }, {
-            "type": "buttons"
-          }
-        ]
-      }
-    ]
-  }
+    {
+      "type": "buttons",
+      "name": "home banner button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home banner",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

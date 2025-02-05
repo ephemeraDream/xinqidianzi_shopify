@@ -155,3 +155,23 @@
   top: 2.4rem;
   left: 2.4rem;
 }
+
+@media screen and (max-width: 1600px) {
+  .swiper-father .swiper-button-prev,
+  .swiper-father .swiper-button-next {
+    --swiper-navigation-sides-offset: -2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .best-sellers {
+    padding-top: 6rem;
+  }
+  .swiper-father .swiper-button-prev,
+  .swiper-father .swiper-button-next {
+    display: none;
+  }
+  .swiper-father {
+    margin-top: 4rem;
+  }
+}

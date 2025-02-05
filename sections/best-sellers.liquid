@@ -1,6 +1,6 @@
 {{ 'section-best-sellers.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="best-sellers">
+<div id="section-{{ section.id }}" class="best-sellers padding-sider">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'heading' -%}
@@ -53,7 +53,6 @@
             </div>
           </div>
         {% endfor %}
-        ...
       </div>
       <!-- If we need pagination -->
       {% comment %} <div class="swiper-pagination"></div> {% endcomment %}
@@ -71,27 +70,20 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const bestSellersSwiper = new Swiper('.best-sellers-swiper', {
-      // Optional parameters
-      autoplay: true,
       loop: true,
-      slidesPerView: 2,
       spaceBetween: 24,
-
-      // If we need pagination
-      // pagination: {
-      //   el: '.swiper-pagination',
-      // },
-
-      // Navigation arrows
+      breakpoints: {
+        1025: {
+          slidesPerView: 2,
+        },
+        0: {
+          slidesPerView: 1,
+        },
+      },
       navigation: {
         nextEl: '.swiper-father .swiper-button-next',
         prevEl: '.swiper-father .swiper-button-prev',
       },
-
-      // And if we need scrollbar
-      // scrollbar: {
-      //   el: '.swiper-scrollbar',
-      // },
     });
   });
 </script>

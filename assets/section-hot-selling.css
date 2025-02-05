@@ -23,7 +23,7 @@
 .hot-selling-swiper .swiper-slide {
   display: flex;
   align-items: center;
-  gap: 12rem;
+  gap: 4rem 12rem;
 }
 
 .hot-selling-swiper .swiper-slide-left {
@@ -37,7 +37,7 @@
 
 .hot-selling-swiper .swiper-slide-left .product-box {
   width: 100%;
-  height: 11.2rem;
+  min-height: 11.2rem;
   border-radius: 0.8rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(51px);
@@ -126,6 +126,7 @@
   font-variation-settings: "opsz" auto;
   color: #767676;
   margin-top: 4rem;
+  margin-bottom: 0;
 }
 
 .category-btn {
@@ -189,4 +190,41 @@
 
 .category-btn.active .category-btn-title {
   color: #000000;
+}
+
+@media screen and (max-width: 1600px) {
+  .hot-selling-swiper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hot-selling-swiper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .hot-selling-swiper .swiper-slide {
+    flex-wrap: wrap;
+  }
+  .hot-selling-swiper .swiper-slide-left .carousel-image {
+    width: 100%;
+  }
+  .hot-selling-swiper .carousel-text p {
+    margin-top: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hot-selling {
+    padding-top: 6rem;
+  }
+  .hot-selling-swiper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 4rem;
+  }
+  .hot-selling-swiper .swiper-slide-left .product-box {
+    padding-right: 1.6rem;
+  }
 }

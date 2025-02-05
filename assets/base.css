@@ -142,10 +142,17 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1600px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
   .header:not(.drawer-menu).page-width {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header:not(.drawer-menu).page-width {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -3741,4 +3748,25 @@ a {
       format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0913/4207/8236/files/Poppins-Regular.woff?v=1737457226")
       format("woff");
+}
+
+@media screen and (max-width: 1600px) {
+  .padding-sider {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .padding-sider {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .padding-sider {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

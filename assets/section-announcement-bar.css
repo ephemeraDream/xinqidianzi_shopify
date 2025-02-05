@@ -12,3 +12,9 @@
 .utility-bar.gradient {
   background: #fcf4e2;
 }
+
+@media screen and (max-width: 767px) {
+  .announcement-bar__message {
+    font-size: 2rem;
+  }
+}

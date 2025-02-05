@@ -53,6 +53,17 @@
     const hotSellingSwiper = new Swiper('.hot-selling-swiper', {
       loop: true,
       allowTouchMove: false,
+      breakpoints: {
+        1025: {
+          spaceBetween: 60,
+        },
+        768: {
+          spaceBetween: 40,
+        },
+        0: {
+          spaceBetween: 20,
+        },
+      },
     });
     const categoryBtns = document.querySelectorAll('.category-btn');
 

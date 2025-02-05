@@ -19,7 +19,6 @@
 .new-arrivals-contain {
   max-width: 144rem;
   display: flex;
-  align-items: center;
   margin: 7rem auto 0 auto;
   gap: 2.4rem;
 }
@@ -114,4 +113,23 @@
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .new-arrivals-contain {
+    flex-wrap: wrap;
+  }
+  .new-arrivals-contain .product-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .new-arrivals {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .new-arrivals-contain {
+    margin-top: 4rem;
+  }
 }
