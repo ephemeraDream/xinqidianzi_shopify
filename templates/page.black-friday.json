@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "activity_banner_KLtwVy": {
       "type": "activity-banner",
       "blocks": {
@@ -45,7 +38,6 @@
     }
   },
   "order": [
-    "main",
     "activity_banner_KLtwVy"
   ]
 }

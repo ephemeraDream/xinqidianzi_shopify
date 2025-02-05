@@ -1,9 +1,8 @@
 .activity-banner {
   width: 100%;
-  height: 64.81vh;
+  height: 43.33vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
 }
 
@@ -20,8 +19,8 @@
 
 .activity-banner-box {
   width: 57.91vw;
-  min-height: 36.48vh;
-  background: rgba(0, 0, 0, 0.2);
+  /* min-height: 36.48vh;
+  background: rgba(0, 0, 0, 0.2); */
   border-radius: 0 10rem 0 10rem;
   display: flex;
   justify-content: center;
@@ -48,7 +47,7 @@
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .activity-banner-box-heading-icon {
@@ -56,11 +55,11 @@
   height: 3.3rem;
 }
 
-.activity-banner-box-heading h2+.activity-banner-box-heading-icon {
+.activity-banner-box-heading h2 + .activity-banner-box-heading-icon {
   margin-left: 3.2rem;
 }
 
-.activity-banner-box-heading-icon+.activity-banner-box-heading-icon {
+.activity-banner-box-heading-icon + .activity-banner-box-heading-icon {
   margin-left: 1.4rem;
 }
 
@@ -74,7 +73,7 @@
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 4.2rem;
   padding: 0 7.29vw;
 }
@@ -85,11 +84,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .activity-banner-box-button:hover {
-  background-color: #EBB069;
+  background-color: #ebb069;
 }
 
 .activity-banner-box-button a {
@@ -99,5 +98,5 @@
   line-height: normal;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
-  color: #FFFFFF;
+  color: #ffffff;
 }

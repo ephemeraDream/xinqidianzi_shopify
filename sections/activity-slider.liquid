@@ -1,0 +1,79 @@
+{{ 'section-activity-slider.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="activity-slider"></div>
+
+{% schema %}
+{
+  "name": "activity slider",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_circle",
+      "name": "product circle",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "circle_one_product",
+          "label": "circle_one_product"
+        },
+        {
+          "type": "number",
+          "id": "circle_one_product_X",
+          "label": "circle_one_product_X"
+        },
+        {
+          "type": "number",
+          "id": "circle_one_product_Y",
+          "label": "circle_one_product_Y"
+        },
+        {
+          "type": "product",
+          "id": "circle_two_product",
+          "label": "circle_two_product"
+        },
+        {
+          "type": "number",
+          "id": "circle_two_product_X",
+          "label": "circle_two_product_X"
+        },
+        {
+          "type": "number",
+          "id": "circle_two_product_Y",
+          "label": "circle_two_product_Y"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "activity slider",
+      "blocks": [
+        {
+          "type": "product_circle"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

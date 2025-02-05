@@ -142,6 +142,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .header:not(.drawer-menu).page-width {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 .isolate {
   position: relative;
   z-index: 0;
