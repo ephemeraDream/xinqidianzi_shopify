@@ -38,7 +38,7 @@
 
 .contact-form .flex-center {
   display: flex;
-  gap: 4.8rem;
+  gap: 2.4rem 4.8rem;
 }
 
 .contact-form .contact-form-field {
@@ -98,4 +98,14 @@
   letter-spacing: 0px;
   font-variation-settings: "opsz" auto;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form .flex-center {
+    flex-wrap: wrap;
+  }
+  .contact-form .flex-center .contact-form-field {
+    flex: 0 0 100%;
+    margin-top: 0;
+  }
 }

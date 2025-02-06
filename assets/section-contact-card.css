@@ -1,6 +1,7 @@
 .contact-card {
   max-width: 144rem;
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   margin: 0 auto;
   display: flex;
   align-content: stretch;
@@ -77,4 +78,23 @@
 
 .contact-card .contact-card-right .contact-box a:hover {
   color: #ebb069;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-card {
+    flex-wrap: wrap;
+  }
+  .contact-card .contact-card-left {
+    width: 100%;
+  }
+  .contact-card .contact-card-right {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-card .contact-card-right {
+    padding: 4rem;
+  }
 }
