@@ -186,3 +186,19 @@
   .swiper-scrollbar-drag {
   background-color: #ebb069;
 }
+
+@media screen and (max-width: 1024px) {
+  .activity-slider .activity-slider-header,
+  .activity-slider .activity-slider-text {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activity-slider .activity-slider-header,
+  .activity-slider .activity-slider-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
