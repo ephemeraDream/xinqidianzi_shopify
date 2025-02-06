@@ -1,6 +1,7 @@
 .product-longtext {
   max-width: 144rem;
-  padding: 10rem 0 7.5rem 0;
+  padding-top: 10rem;
+  padding-bottom: 7.5rem;
   margin: 0 auto;
 }
 
@@ -84,4 +85,10 @@
 
 .product-longtext .show-more-btn.active svg {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 767px) {
+  .product-longtext {
+    padding-top: 6rem;
+  }
 }

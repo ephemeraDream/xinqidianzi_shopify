@@ -179,3 +179,29 @@
   height: 3.4rem;
   border: 0.1rem solid #000000;
 }
+
+@media screen and (max-width: 1600px) {
+  .product-list {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-list {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-list {
+    padding-left: 2rem;
+  }
+  .product-list .product-list-swiper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .product-list .product-list-heading,
+  .product-list .product-list-text {
+    padding-right: 2rem;
+  }
+}

@@ -99,3 +99,9 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media screen and (max-width: 767px) {
+  .product-faq {
+    padding-bottom: 6rem;
+  }
+}
