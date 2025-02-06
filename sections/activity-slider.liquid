@@ -15,7 +15,7 @@
           {% if block.settings.circle_one_product != blank %}
             <div
               class="swiper_product_popup"
-              style="top: {{ block.settings.circle_one_product_Y }}px;left: {{ block.settings.circle_one_product_X }}px"
+              style="top: {{ block.settings.circle_one_product_Y }}px;left: {{ block.settings.circle_one_product_X }}%"
             >
               <div class="swiper_product_popup-circle"></div>
               <div class="swiper_product_popup-box">
@@ -36,7 +36,7 @@
           {% if block.settings.circle_two_product != blank %}
             <div
               class="swiper_product_popup"
-              style="top: {{ block.settings.circle_two_product_Y }}px;left: {{ block.settings.circle_two_product_X }}px"
+              style="top: {{ block.settings.circle_two_product_Y }}px;left: {{ block.settings.circle_two_product_X }}%"
             >
               <div class="swiper_product_popup-circle"></div>
               <div class="swiper_product_popup-box">
@@ -132,9 +132,14 @@
           "label": "circle_one_product"
         },
         {
-          "type": "number",
+          "type": "range",
           "id": "circle_one_product_X",
-          "label": "circle_one_product_X"
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "circle_one_product_X",
+          "default": 0
         },
         {
           "type": "number",
@@ -147,9 +152,14 @@
           "label": "circle_two_product"
         },
         {
-          "type": "number",
+          "type": "range",
           "id": "circle_two_product_X",
-          "label": "circle_two_product_X"
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "circle_two_product_X",
+          "default": 0
         },
         {
           "type": "number",

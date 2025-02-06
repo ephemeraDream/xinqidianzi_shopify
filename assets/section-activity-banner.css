@@ -100,3 +100,29 @@
   font-variation-settings: "opsz" auto;
   color: #ffffff;
 }
+
+.activity-banner .activity-banner-box-heading .flex-center {
+  display: flex;
+  align-items: center;
+  margin-left: 3.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .activity-banner-box-heading {
+    flex-wrap: wrap;
+  }
+  .activity-banner .activity-banner-box-heading .flex-center {
+    margin-top: 1.6rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activity-banner {
+    justify-content: center;
+  }
+  .activity-banner-box {
+    width: 80vw;
+    padding: 0;
+  }
+}

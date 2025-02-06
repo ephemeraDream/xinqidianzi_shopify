@@ -20,26 +20,28 @@
                 {{ block.settings.heading }}
               </h2>
               {% if block.settings.icon != blank %}
-                <img
-                  src="{{ block.settings.icon | image_url }}"
-                  alt="icon-arrow-righ"
-                  class="activity-banner-box-heading-icon"
-                >
-                <img
-                  src="{{ block.settings.icon | image_url }}"
-                  alt="icon-arrow-righ"
-                  class="activity-banner-box-heading-icon"
-                >
-                <img
-                  src="{{ block.settings.icon | image_url }}"
-                  alt="icon-arrow-righ"
-                  class="activity-banner-box-heading-icon"
-                >
-                <img
-                  src="{{ block.settings.icon | image_url }}"
-                  alt="icon-arrow-righ"
-                  class="activity-banner-box-heading-icon"
-                >
+                <div class="flex-center">
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="activity-banner-box-heading-icon"
+                  >
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="activity-banner-box-heading-icon"
+                  >
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="activity-banner-box-heading-icon"
+                  >
+                  <img
+                    src="{{ block.settings.icon | image_url }}"
+                    alt="icon-arrow-righ"
+                    class="activity-banner-box-heading-icon"
+                  >
+                </div>
               {% endif %}
             </div>
             <div class="activity-banner-box-text">
