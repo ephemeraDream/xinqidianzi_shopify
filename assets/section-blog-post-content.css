@@ -1,7 +1,8 @@
 .blog-post-content {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 10rem 0 26.8rem 0;
+  padding-top: 10rem;
+  padding-bottom: 26.8rem;
 }
 
 .blog-post-content .blog-post-title {
@@ -50,4 +51,87 @@
 
 .blog-post-content .blog-post-navigation .blog-post-navigation_disabled svg {
   opacity: 0.5;
+}
+
+.blog-post-content .blog-post-image {
+  width: 100%;
+  height: 72.3rem;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: 10rem;
+}
+
+.blog-post-image_with_text {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 6rem;
+}
+
+.blog-post-image_with_text img {
+  flex: 1;
+  width: calc(100% - 73rem);
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 1.6rem;
+}
+
+.blog-post-image_with_text .blog-post-image_with_text-content {
+  flex: 0 0 60rem;
+}
+
+.blog-post-image_with_text .blog-post-image_with_text-content h2,
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content h2 {
+  font-family: Blinker;
+  font-size: 6.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #333333;
+}
+
+.blog-post-image_with_text .blog-post-image_with_text-content p,
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
+  font-family: Blinker;
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 4.6rem;
+}
+
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.blog-post-text_with_two_images .blog-post-text_with_two_images-imgbox {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 6rem;
+}
+
+.blog-post-text_with_two_images .blog-post-text_with_two_images-imgbox img {
+  width: calc((100% - 2.4rem) / 2);
+  height: 65rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media screen and (max-width: 1024px) {
+  .blog-post-image_with_text,
+  .blog-post-text_with_two_images .blog-post-text_with_two_images-imgbox {
+    flex-wrap: wrap;
+  }
+  .blog-post-image_with_text img,
+  .blog-post-image_with_text .blog-post-image_with_text-content,
+  .blog-post-text_with_two_images .blog-post-text_with_two_images-imgbox img {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }

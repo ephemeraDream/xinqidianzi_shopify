@@ -1,8 +1,33 @@
 {{ 'section-blog-post-content.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="blog-post-content">
+<div id="section-{{ section.id }}" class="blog-post-content padding-sider">
   <h1 class="blog-post-title">{{ article.title }}</h1>
   <div class="blog-post-info">{{ article.content }}</div>
+  <img src="{{ article.image | image_url }}" alt="{{ article.title }}" class="blog-post-image">
+  {% if article.metafields.custom.image_with_text_image != blank
+    or article.metafields.custom.image_with_text_text != blank
+  %}
+    <div class="blog-post-image_with_text">
+      <img src="{{ article.metafields.custom.image_with_text_image | image_url }}" alt="{{ article.title }}">
+      <div class="blog-post-image_with_text-content">
+        {{ article.metafields.custom.image_with_text_text | metafield_tag }}
+      </div>
+    </div>
+  {% endif %}
+  {% if article.metafields.custom.text_with_two_images_text != blank
+    or article.metafields.custom.text_with_two_images_images.value != blank
+  %}
+    <div class="blog-post-text_with_two_images">
+      <div class="blog-post-text_with_two_images-content">
+        {{ article.metafields.custom.text_with_two_images_text | metafield_tag }}
+      </div>
+      <div class="blog-post-text_with_two_images-imgbox">
+        {% for img in article.metafields.custom.text_with_two_images_images.value -%}
+          <img src="{{ img | image_url }}" alt="{{ article.title }}">
+        {%- endfor %}
+      </div>
+    </div>
+  {% endif %}
   <div class="blog-post-navigation">
     {% assign current_article = article %}
     {% assign all_articles = blog.articles %}
