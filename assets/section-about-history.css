@@ -166,3 +166,21 @@
   top: -1.3rem;
   left: -1.3rem;
 }
+
+@media screen and (max-width: 1600px) {
+  .about-history .about-history-swiperBox {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-history .about-history-swiperBox {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-history .about-history-swiperBox {
+    padding-left: 2rem;
+  }
+}

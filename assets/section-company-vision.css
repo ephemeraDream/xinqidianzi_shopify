@@ -1,7 +1,8 @@
 .company-vision {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   display: flex;
   align-items: center;
   gap: 6.6rem;
@@ -74,4 +75,20 @@
 
 .company-vision .company-vision-right img:last-child {
   height: 33.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .company-vision {
+    flex-wrap: wrap;
+  }
+  .company-vision .company-vision-left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .company-vision {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
