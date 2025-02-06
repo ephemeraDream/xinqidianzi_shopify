@@ -625,3 +625,42 @@
   line-height: normal;
   padding-top: 0;
 }
+
+@media screen and (max-width: 1600px) {
+  .footer__content-top.page-width,
+  .footer__content-bottom.page-width {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__content-top.page-width,
+  .footer__content-bottom.page-width {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .footer-block--newsletter {
+    flex-wrap: wrap;
+  }
+  .grid--4-col-tablet .grid__item {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+  }
+  .footer-block__image-wrapper {
+    margin-top: -1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__content-top.page-width,
+  .footer__content-bottom.page-width {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer-block.grid__item {
+    width: 100%;
+  }
+  .footer-block__brand-info {
+    max-width: 100%;
+  }
+}

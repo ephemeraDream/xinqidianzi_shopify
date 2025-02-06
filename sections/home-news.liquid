@@ -1,6 +1,6 @@
 {{ 'section-home-news.css' | asset_url | stylesheet_tag }}
 
-<section id="section-{{ section.id }}" class="home-news">
+<section id="section-{{ section.id }}" class="home-news padding-sider">
   {% if section.settings.blog != blank %}
     <div class="blog-list">
       {% assign blog_handle = section.settings.blog %}

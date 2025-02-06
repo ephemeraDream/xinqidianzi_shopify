@@ -498,3 +498,16 @@
   justify-content: center;
   margin-top: 11.3rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .home-image-with-text .image-with-text__grid {
+    flex-wrap: wrap;
+  }
+  .home-image-with-text .image-with-text__media-item {
+    flex: 0 0 100%;
+  }
+  .home-image-with-text .image-with-text__text-item {
+    padding-right: 0;
+    margin-top: 4rem;
+  }
+}

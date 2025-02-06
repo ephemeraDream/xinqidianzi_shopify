@@ -140,3 +140,25 @@
 .user-feedback-swiper .swiper-wrapper .swiper-slide:last-child {
   margin-right: 2.4rem;
 }
+
+@media screen and (max-width: 1600px) {
+  .user-feedback {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .user-feedback {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .user-feedback {
+    padding-left: 2rem;
+  }
+  .user-feedback-swiper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
