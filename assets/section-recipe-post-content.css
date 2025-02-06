@@ -1,7 +1,8 @@
 .recipe-post-content {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 6.5rem 0 10rem 0;
+  padding-top: 6.5rem;
+  padding-bottom: 10rem;
 }
 
 .recipe-post-content .flex-center {
@@ -72,9 +73,9 @@
 
 .recipe-post-content .step_content_box .step_content_box-media {
   flex: 1;
-  height: 41rem;
   object-fit: cover;
   object-position: center center;
+  width: calc(100% - 69.7rem);
 }
 
 .recipe-post-content .step_content_box .step_content_box-right {
@@ -193,4 +194,44 @@
 
 .recipe-post-content .step_content_box-product_info-btn svg path {
   fill: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .recipe-post-content .step_content_box {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+  .recipe-post-content .step_content_box .step_content_box-media,
+  .recipe-post-content .step_content_box .step_content_box-right {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .recipe-post-content .step_content_box .step_content_box-right {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner.banner--content-align-center {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .banner--mobile-bottom .banner__box {
+    padding: 0;
+  }
+  .recipe-post-content .flex-center {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+  .recipe-post-content .recipe-post-image {
+    margin-top: 6rem;
+    height: 30rem;
+  }
+  .recipe-post-content .step_content_box + .step_content_box {
+    margin-top: 6rem;
+  }
+  .recipe-post-content .step_content_box-product_info-btn {
+    margin-right: 1.6rem;
+  }
 }

@@ -1,6 +1,6 @@
 {{ 'section-recipe-post-content.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="recipe-post-content">
+<div id="section-{{ section.id }}" class="recipe-post-content padding-sider">
   <div class="flex-center">
     {% assign img_thumb = 'icon-step.webp' | asset_url %}
     {% if article.metafields.custom.step_one_text != blank %}
