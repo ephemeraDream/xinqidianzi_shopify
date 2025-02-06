@@ -1,7 +1,8 @@
 .product-comment {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .product-comment .product-comment-head {
@@ -143,4 +144,29 @@
 .product-comment .comments-pagination #prev-page:hover svg path,
 .product-comment .comments-pagination #next-page:hover svg path {
   fill: #ebb069;
+}
+
+@media screen and (max-width: 1024px) {
+  .product-comment .comments-item .flex-center {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+  .product-comment .comments-item .flex-center .comment-images {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-comment #comments-list .comment-content {
+    margin-top: 2.4rem;
+  }
+  .product-comment .comments-pagination {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-comment {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }

@@ -167,3 +167,35 @@
   flex: 0 0 auto;
   margin-top: 0.3rem;
 }
+
+@media screen and (max-width: 1600px) {
+  .product-recommend {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-recommend {
+    padding-left: 4rem;
+  }
+  .product-recommend .product-recommend-heading,
+  .product-recommend .product-recommend-text {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-recommend {
+    padding-left: 2rem;
+  }
+  .product-recommend .product-recommend-heading,
+  .product-recommend .product-recommend-text {
+    padding-right: 2rem;
+  }
+  .product-recommend .product-recommend-swiper {
+    padding-bottom: 6rem;
+  }
+  .product-recommend {
+    padding-top: 6rem;
+  }
+}

@@ -1,7 +1,7 @@
 {{ 'section-product-comment.css' | asset_url | stylesheet_tag }}
 
 {%- if product.metafields.custom.comment != blank -%}
-  <div id="section-{{ section.id }}" class="product-comment">
+  <div id="section-{{ section.id }}" class="product-comment padding-sider">
     <div id="comment-data" style="display: none;">
       {{ product.metafields.custom.comment.value | json }}
     </div>

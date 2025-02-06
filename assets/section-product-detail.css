@@ -545,3 +545,29 @@
   path {
   fill: #ebb069;
 }
+
+@media screen and (max-width: 1024px) {
+  .product-detail {
+    flex-wrap: wrap;
+  }
+  .product-detail .product-detail-left,
+  .product-detail .product-detail-right {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .product-detail .product-detail-left .imgthumb-swiper {
+    padding-bottom: 2.4rem;
+  }
+  .product-detail .product-detail-imgbox {
+    height: 60rem;
+  }
+  .product-detail .product-detail-right {
+    padding-right: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-detail .product-detail-imgbox {
+    height: 30rem;
+  }
+}

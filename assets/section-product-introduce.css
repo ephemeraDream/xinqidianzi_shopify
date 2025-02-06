@@ -107,3 +107,26 @@
 .product-introduce .image_with_text_two .image_with_text_two-right {
   width: 67.2rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .product-introduce .image_with_text_one,
+  .product-introduce .image_with_text_two {
+    flex-wrap: wrap;
+  }
+  .product-introduce .image_with_text_one-left,
+  .product-introduce .image_with_text_two .image_with_text_two-left {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-introduce .product-introduce-media {
+    height: 50rem;
+  }
+  .product-introduce .image_with_text_one,
+  .product-introduce .image_with_text_two {
+    padding-top: 6rem;
+    gap: 4rem;
+  }
+}

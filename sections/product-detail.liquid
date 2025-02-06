@@ -1,6 +1,6 @@
 {{ 'section-product-detail.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-detail">
+<div id="section-{{ section.id }}" class="product-detail padding-sider">
   <div class="product-detail-left">
     <div class="product-detail-imgbox">
       <div class="swiper imgbox-swiper">
@@ -213,7 +213,7 @@
     const imgthumbSwiper = new Swiper('.imgthumb-swiper', {
       loop: true,
       spaceBetween: 24,
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       freeMode: true,
       watchSlidesProgress: true,
     });

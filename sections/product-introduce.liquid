@@ -13,7 +13,7 @@
   {% if product.metafields.custom.image_with_text_one_text.value != blank
     or product.metafields.custom.image_with_text_one_image.value != blank
   %}
-    <div class="image_with_text_one">
+    <div class="image_with_text_one padding-sider">
       <div class="image_with_text_one-left">
         {{ product.metafields.custom.image_with_text_one_text | metafield_tag }}
       </div>
@@ -30,7 +30,7 @@
   {% if product.metafields.custom.image_with_text_two_text.value != blank
     or product.metafields.custom.image_with_text_two_image.value != blank
   %}
-    <div class="image_with_text_two">
+    <div class="image_with_text_two padding-sider">
       <div class="image_with_text_two-left">
         <img
           src="{{ product.metafields.custom.image_with_text_two_image.value | image_url }}"

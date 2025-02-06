@@ -190,6 +190,10 @@
   .product-list {
     padding-left: 4rem;
   }
+  .product-list .product-list-heading,
+  .product-list .product-list-text {
+    padding-right: 4rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
