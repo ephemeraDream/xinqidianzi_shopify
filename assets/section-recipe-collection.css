@@ -1,10 +1,11 @@
 .recipe-collection {
-  padding: 7.5rem 0 10rem 0;
   max-width: 144rem;
   margin: 0 auto;
   display: flex;
   gap: 5.4rem;
   margin-top: -3.5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 10rem;
 }
 
 .recipe-collection .recipe-collection-left {
@@ -229,4 +230,30 @@
   svg
   path {
   fill: #ebb069;
+}
+
+@media screen and (max-width: 1024px) {
+  .recipe-collection
+    .recipe-collection-right
+    .blog-content-grid
+    .blog-content-grid_item {
+    flex: 0 0 100%;
+  }
+  .recipe-collection .recipe-collection-right .custom-pagination {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recipe-collection {
+    flex-wrap: wrap;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .recipe-collection .recipe-collection-left,
+  .recipe-collection .recipe-collection-right {
+    flex: 0 0 100%;
+    width: 100%;
+  }
 }

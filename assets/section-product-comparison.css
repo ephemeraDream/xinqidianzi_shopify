@@ -238,3 +238,32 @@
 .product-comparison .product-comparison-swiper.active {
   display: block;
 }
+
+@media screen and (max-width: 1600px) {
+  .product-comparison {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-comparison {
+    padding-left: 4rem;
+  }
+  .product-comparison .product-comparison-heading,
+  .product-comparison .product-comparison-text {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-comparison {
+    padding-left: 2rem;
+  }
+  .product-comparison .product-comparison-heading,
+  .product-comparison .product-comparison-text {
+    padding-right: 2rem;
+  }
+  .product-comparison .product-comparison-swiper {
+    padding-bottom: 6rem;
+  }
+}

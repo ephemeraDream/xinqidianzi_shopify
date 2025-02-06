@@ -257,6 +257,10 @@
   .product-collection .product-grid .product-item {
     flex: 0 0 calc((100% - 2.4rem) / 2);
   }
+  .product-collection .comments-pagination {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 767px) {
