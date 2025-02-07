@@ -21,6 +21,13 @@
     "social_youtube_link": "www.baidu.com",
     "social_twitter_link": "www.baidu.com",
     "content_for_index": [],
+    "blocks": {
+      "1710008633607995074": {
+        "type": "shopify://apps/tydal-reviews/blocks/app-embed/5f785e18-66cc-4519-8181-565d1cce1705",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
