@@ -37,13 +37,13 @@
     "1739344525954a7492": {
       "type": "apps",
       "blocks": {
-        "comment_app_product_popup_byRAgC": {
+        "comment_app_product_popup_MkmhNn": {
           "type": "shopify://apps/comment-app/blocks/product-popup/bf3d2150-399c-41e4-8d09-0c3510f3917a",
           "settings": {}
         }
       },
       "block_order": [
-        "comment_app_product_popup_byRAgC"
+        "comment_app_product_popup_MkmhNn"
       ],
       "settings": {
         "include_margins": true
