@@ -31,10 +31,26 @@
     "recipe_post_content_AHJExY": {
       "type": "recipe-post-content",
       "settings": {}
+    },
+    "1739593051f8b34b5e": {
+      "type": "apps",
+      "blocks": {
+        "comment_app_blog_comment_nFgmab": {
+          "type": "shopify://apps/comment-app/blocks/blog-comment/bf3d2150-399c-41e4-8d09-0c3510f3917a",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "comment_app_blog_comment_nFgmab"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image_banner_hFbC4G",
-    "recipe_post_content_AHJExY"
+    "recipe_post_content_AHJExY",
+    "1739593051f8b34b5e"
   ]
 }
