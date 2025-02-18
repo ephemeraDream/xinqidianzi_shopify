@@ -2,10 +2,10 @@
 
 <div id="section-{{ section.id }}" class="product-collection padding-sider">
   <div class="product-collection-filters">
-    <div class="product-collection-filters-btn">
+    {% comment %} <div class="product-collection-filters-btn">
       {{- 'icon-filters.svg' | inline_asset_content -}}
       <span>Show filters</span>
-    </div>
+    </div> {% endcomment %}
     <div class="categorize-group">
       <a data-type="all" class="categorize-group-btn active">ALL PRODUCTS</a>
       {% for type in collections.all.all_types %}

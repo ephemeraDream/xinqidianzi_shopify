@@ -149,6 +149,46 @@
         "name": "product_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "image_with_text_image",
+      "namespace": "custom",
+      "name": "image_with_text_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text_text",
+      "namespace": "custom",
+      "name": "image_with_text_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "text_with_two_images_text",
+      "namespace": "custom",
+      "name": "text_with_two_images_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "text_with_two_images_images",
+      "namespace": "custom",
+      "name": "text_with_two_images_images",
+      "description": "",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "blog": [],
