@@ -17,9 +17,20 @@
       "type": "product-introduce",
       "settings": {}
     },
-    "product_comment_kF7Hjf": {
-      "type": "product-comment",
-      "settings": {}
+    "173935207042c0d374": {
+      "type": "apps",
+      "blocks": {
+        "comment_app_product_comment_yEhGAB": {
+          "type": "shopify://apps/comment-app/blocks/product-comment/bf3d2150-399c-41e4-8d09-0c3510f3917a",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "comment_app_product_comment_yEhGAB"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "home_news_xA3BDm": {
       "type": "home-news",
@@ -38,7 +49,7 @@
   "order": [
     "product_detail_UfijdK",
     "product_introduce_yeeCkt",
-    "product_comment_kF7Hjf",
+    "173935207042c0d374",
     "home_news_xA3BDm",
     "product_recommend_kRfdJq"
   ]
