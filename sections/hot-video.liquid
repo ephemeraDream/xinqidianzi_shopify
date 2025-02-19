@@ -1,6 +1,27 @@
 {{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
 
-<section id="section-{{ section.id }}" class="hot-video padding-sider"></section>
+<section id="section-{{ section.id }}" class="hot-video padding-sider">
+  <div class="blog-list">
+    {% for block in section.blocks %}
+      <div class="blog-item">
+        <iframe
+          src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1"
+          class="blog-img"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="{{ block.settings.heading | escape }}"
+        ></iframe>
+        <div class="flex-center">
+          <h3 class="blog-title">
+            {{ block.settings.heading }}
+          </h3>
+          <span class="blog-date">{{ block.settings.date }}</span>
+        </div>
+        <div class="blog-excerpt">{{ block.settings.description }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 
 {% schema %}
 {
