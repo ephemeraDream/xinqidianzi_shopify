@@ -1,0 +1,54 @@
+{{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
+
+<section id="section-{{ section.id }}" class="hot-video padding-sider"></section>
+
+{% schema %}
+{
+  "name": "hot video",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "video_item",
+      "name": "video_item",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube"],
+          "label": "video_url"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "date"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "hot video",
+      "blocks": [
+        {
+          "type": "video_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

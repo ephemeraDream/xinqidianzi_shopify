@@ -76,6 +76,25 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
 
+  summary.addEventListener('mouseenter', (event) => {
+    const details = event.currentTarget.closest('details');
+    document.querySelectorAll('details[open]').forEach((otherDetails) => {
+      if (otherDetails !== details) {
+        otherDetails.removeAttribute('open');
+        const summaryOfOther = otherDetails.querySelector('summary');
+        if (summaryOfOther) {
+          summaryOfOther.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+
+    event.currentTarget.click();
+  });
+
+  // summary.addEventListener('mouseleave', (event) => {
+  //   event.currentTarget.click();
+  // });
+
   summary.addEventListener('click', (event) => {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
@@ -1043,7 +1062,7 @@ class SlideshowComponent extends SliderComponent {
     const slideScrollPosition =
       this.slider.scrollLeft +
       this.sliderFirstItemNode.clientWidth *
-        (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
+      (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition,
     });

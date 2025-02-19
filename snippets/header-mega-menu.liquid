@@ -88,6 +88,7 @@
                     {%- endfor -%}
 
                     {%- if link.handle == 'products' %}
+                      <li><a id="HeaderMenu-products-collection" href="{{ link.url }}" class="mega-menu__link mega-menu__link--level-2 link">Collection</a></li>
                       <div class="view_all_box">
                         <div class="view_all_box_line"></div>
                         <a href="{{ link.url }}">View All Products</a>
@@ -314,7 +315,7 @@
     const recipeTabContents = document.querySelectorAll('.collection-recipe.mega-menu__flex-box');
 
     recipeTabItems.forEach((item) => {
-      item.addEventListener('click', function (event) {
+      item.addEventListener('mouseenter', function (event) {
         event.preventDefault();
         const targetTab = this.getAttribute('data-tab');
 
@@ -333,7 +334,7 @@
     const productTabContents = document.querySelectorAll('.collection-products.mega-menu__flex-box');
 
     productTabItems.forEach((item) => {
-      item.addEventListener('click', function (event) {
+      item.addEventListener('mouseenter', function (event) {
         event.preventDefault();
         const targetTab = this.getAttribute('data-tab');
 
@@ -352,7 +353,7 @@
     const supportTabContents = document.querySelectorAll('.collection-support.mega-menu__flex-box');
 
     supportTabItems.forEach((item) => {
-      item.addEventListener('click', function (event) {
+      item.addEventListener('mouseenter', function (event) {
         const targetTab = this.getAttribute('data-tab');
 
         if (targetTab === 'tab-blog') {

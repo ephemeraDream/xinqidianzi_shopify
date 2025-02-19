@@ -3,9 +3,9 @@
 <div id="section-{{ section.id }}" class="product-collection padding-sider">
   <div class="product-collection-filters">
     {% comment %} <div class="product-collection-filters-btn">
-      {{- 'icon-filters.svg' | inline_asset_content -}}
-      <span>Show filters</span>
-    </div> {% endcomment %}
+                                                      {{- 'icon-filters.svg' | inline_asset_content -}}
+                                                      <span>Show filters</span>
+                                    </div> {% endcomment %}
     <div class="categorize-group">
       <a data-type="all" class="categorize-group-btn active">ALL PRODUCTS</a>
       {% for type in collections.all.all_types %}
@@ -21,8 +21,23 @@
         {% for product in collection.products %}
           <div class="product-item" data-type="{{ product.type | handleize }}">
             <div class="product-image">
-              <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
-              <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
+              <a href="{{ product.url }}">
+                <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
+              </a>
+              <form method="post" action="/cart/add">
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ product.selected_or_first_available_variant.id }}">
+                <input
+                  type="hidden"
+                  name="quantity"
+                  value="1">
+                <button class="product-btn" type="submit">
+                  {{- 'shopping.svg' | inline_asset_content -}}
+                </button>
+              </form>
+            {% comment %} <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a> {% endcomment %}
             </div>
             <div class="product-info">
               <div class="product-desc">{{ product.description | truncate: 45 }}</div>
@@ -52,8 +67,7 @@
               <a
                 href="{{ request.path }}?page={{ i }}"
                 class="ajax-pagination page"
-                data-page="{{ i }}"
-              >
+                data-page="{{ i }}">
                 {{ i }}
               </a>
             {% endif %}
@@ -73,22 +87,22 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     let currentType = 'all';
-
+  
     function bindPaginationLinks() {
       document.querySelectorAll('.ajax-pagination.page').forEach(function (link) {
         link.addEventListener('click', function (event) {
           event.preventDefault();
           const page = this.getAttribute('data-page');
-
+  
           let url = `/collections/all?page=${page}`;
           if (currentType !== 'all') {
             url = `/collections/types?q=${currentType}&page=${page}`;
           }
-
+  
           fetchProducts(url);
         });
       });
-
+  
       document.querySelectorAll('.ajax-pagination.prev, .ajax-pagination.next').forEach(function (btn) {
         btn.addEventListener('click', function (event) {
           event.preventDefault();
@@ -97,20 +111,20 @@
         });
       });
     }
-
+  
     function fetchProducts(url) {
       fetch(url)
         .then((response) => response.text())
         .then((data) => {
           const parser = new DOMParser();
           const html = parser.parseFromString(data, 'text/html');
-
+  
           document.querySelector('.product-grid').innerHTML = html.querySelector('.product-grid')?.innerHTML || '';
           document.querySelector('.custom-pagination').innerHTML =
             html.querySelector('.custom-pagination')?.innerHTML || '';
-
+  
           bindPaginationLinks();
-
+  
           document.querySelectorAll('.ajax-pagination.page').forEach(function (link) {
             let page = link.getAttribute('data-page');
             let newHref = `/collections/all?page=${page}`;
@@ -121,45 +135,45 @@
           });
         });
     }
-
+  
     function bindCategoryFilters() {
       document.querySelectorAll('.categorize-group-btn').forEach(function (btn) {
         btn.addEventListener('click', function (event) {
           event.preventDefault();
-
+  
           document.querySelectorAll('.categorize-group-btn').forEach((el) => el.classList.remove('active'));
           this.classList.add('active');
-
+  
           currentType = this.getAttribute('data-type');
-
+  
           let url = '/collections/all?page=1';
           if (currentType !== 'all') {
             url = `/collections/types?q=${currentType}&page=1`;
           }
-
+  
           fetchProducts(url);
         });
       });
     }
-
+  
     bindPaginationLinks();
     bindCategoryFilters();
   });
 </script>
 
 {% schema %}
-{
-  "name": "product collection",
-  "tag": "section",
-  "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  "settings": [],
-  "presets": [
-    {
-      "name": "product collection"
-    }
-  ]
-}
+  {
+    "name": "product collection",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [],
+    "presets": [
+      {
+        "name": "product collection"
+      }
+    ]
+  }
 {% endschema %}
