@@ -42,8 +42,8 @@
 }
 
 .activity-slider .swiper_product_popup .swiper_product_popup-circle {
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 2.9rem;
+  height: 2.9rem;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.6);
   position: relative;
@@ -52,8 +52,8 @@
 
 .activity-slider .swiper_product_popup .swiper_product_popup-circle::after {
   content: "";
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 3.9rem;
+  height: 3.9rem;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   position: absolute;
@@ -64,7 +64,7 @@
 .activity-slider .swiper_product_popup .swiper_product_popup-box {
   position: absolute;
   top: 8.5rem;
-  left: -19.5rem;
+  left: -19rem;
   visibility: hidden;
   opacity: 0;
   transform: translateY(-20px);
@@ -178,6 +178,7 @@
   height: 1rem;
   background-color: #e7e7e7;
   border-radius: 86rem;
+  z-index: 1;
 }
 
 .activity-slider
