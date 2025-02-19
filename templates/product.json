@@ -32,11 +32,83 @@
         "include_margins": true
       }
     },
-    "home_news_xA3BDm": {
-      "type": "home-news",
-      "settings": {
-        "blog": "news"
-      }
+    "hot_video_q4rymY": {
+      "type": "hot-video",
+      "blocks": {
+        "video_item_Gaxzit": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_ncwmYx": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_LmHPp7": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_HnGpCH": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_xPGCcm": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_MFXggR": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_FBh7fa": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        }
+      },
+      "block_order": [
+        "video_item_Gaxzit",
+        "video_item_ncwmYx",
+        "video_item_LmHPp7",
+        "video_item_HnGpCH",
+        "video_item_xPGCcm",
+        "video_item_MFXggR",
+        "video_item_FBh7fa"
+      ],
+      "settings": {}
     },
     "product_recommend_kRfdJq": {
       "type": "product-recommend",
@@ -50,7 +122,7 @@
     "product_detail_UfijdK",
     "product_introduce_yeeCkt",
     "173935207042c0d374",
-    "home_news_xA3BDm",
+    "hot_video_q4rymY",
     "product_recommend_kRfdJq"
   ]
 }
