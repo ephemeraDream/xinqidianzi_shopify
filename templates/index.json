@@ -246,6 +246,74 @@
         "blog": "news"
       }
     },
+    "hot_video_YaF9t7": {
+      "type": "hot-video",
+      "blocks": {
+        "video_item_nxiHLR": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=26bd5UhZqBk",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_tFWDEJ": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=26bd5UhZqBk",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_YAwaUp": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=26bd5UhZqBk",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_x3JMn9": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=26bd5UhZqBk",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_RN9wfr": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=26bd5UhZqBk",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_eyehrB": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=26bd5UhZqBk",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        }
+      },
+      "block_order": [
+        "video_item_nxiHLR",
+        "video_item_tFWDEJ",
+        "video_item_YAwaUp",
+        "video_item_x3JMn9",
+        "video_item_RN9wfr",
+        "video_item_eyehrB"
+      ],
+      "settings": {}
+    },
     "user_feedback_tjLKzK": {
       "type": "user-feedback",
       "blocks": {
@@ -335,6 +403,7 @@
     "video_KwY9a9",
     "image_with_text_home_HeT87b",
     "home_news_cNMLwW",
+    "hot_video_YaF9t7",
     "user_feedback_tjLKzK",
     "home_blog_yKBWMM"
   ]
