@@ -42,33 +42,12 @@
         "blogs_b3zCir": {
           "type": "blogs",
           "settings": {
-            "blog_handle": "cooking-methods"
-          }
-        },
-        "blogs_QpJwaX": {
-          "type": "blogs",
-          "settings": {
-            "blog_handle": "cooking-ingredients"
-          }
-        },
-        "blogs_6NX7Bk": {
-          "type": "blogs",
-          "settings": {
-            "blog_handle": "by-season-and-festival"
-          }
-        },
-        "blogs_kHqhTm": {
-          "type": "blogs",
-          "settings": {
-            "blog_handle": "popular-recipes"
+            "blog_handle": "news"
           }
         }
       },
       "block_order": [
-        "blogs_b3zCir",
-        "blogs_QpJwaX",
-        "blogs_6NX7Bk",
-        "blogs_kHqhTm"
+        "blogs_b3zCir"
       ],
       "settings": {}
     },
@@ -147,7 +126,7 @@
         "faq_kztidQ"
       ],
       "custom_css": [
-        ".product-faq{margin-bottom: 13rem;}"
+        ".product-faq {margin-bottom: 13rem;}"
       ],
       "settings": {
         "heading": "FAQ",
