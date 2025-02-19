@@ -88,15 +88,6 @@
             "date": "2024.09.01",
             "description": "This position contains the description text This position contains the description text"
           }
-        },
-        "video_item_FBh7fa": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
-          }
         }
       },
       "block_order": [
@@ -105,8 +96,7 @@
         "video_item_LmHPp7",
         "video_item_HnGpCH",
         "video_item_xPGCcm",
-        "video_item_MFXggR",
-        "video_item_FBh7fa"
+        "video_item_MFXggR"
       ],
       "settings": {}
     },
