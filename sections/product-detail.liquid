@@ -1,4 +1,5 @@
 {{ 'section-product-detail.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <div id="section-{{ section.id }}" class="product-detail padding-sider">
   <div class="product-detail-left">
@@ -108,68 +109,85 @@
       {% endif %}
     {%- endunless -%}
     <div class="product-detail-buybox">
-      {%- form 'product',
-        product,
-        id: product_form_id,
-        class: 'form',
-        novalidate: 'novalidate',
-        data-type: 'add-to-cart-form'
-      -%}
-        <form method="post" action="/cart/add">
-          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <product-form
+        class="product-form"
+        data-hide-errors="{{ false }}"
+        data-section-id="{{ section.id }}"
+      >
+        <div class="product-form__error-message-wrapper" role="alert" hidden>
+          <span class="svg-wrapper">
+            {{- 'icon-error.svg' | inline_asset_content -}}
+          </span>
+          <span class="product-form__error-message"></span>
+        </div>
+        {%- form 'product',
+          product,
+          id: product_form_id,
+          class: 'form',
+          novalidate: 'novalidate',
+          data-type: 'add-to-cart-form'
+        -%}
+          <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
-          <quantity-input class="product-detail-quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
-            <button class="quantity__button" name="minus" type="button">
-              {{- 'left.svg' | inline_asset_content -}}
-            </button>
-            <input
-              class="quantity__input"
-              type="number"
-              name="quantity"
-              data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-              min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-              {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-                data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-              {% endif %}
-              step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-              value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-              {% comment %} form="{{ product_form_id }}" {% endcomment %}
+            <quantity-input
+              class="product-detail-quantity"
+              data-url="{{ product.url }}"
+              data-section="{{ section.id }}"
             >
-            <button class="quantity__button" name="plus" type="button">
-              {{- 'right.svg' | inline_asset_content -}}
+              <button class="quantity__button" name="minus" type="button">
+                {{- 'left.svg' | inline_asset_content -}}
+              </button>
+              <input
+                class="quantity__input"
+                type="number"
+                name="quantity"
+                data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
+                  data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                  max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                {% endif %}
+                step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+                value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                {% comment %} form="{{ product_form_id }}" {% endcomment %}
+              >
+              <button class="quantity__button" name="plus" type="button">
+                {{- 'right.svg' | inline_asset_content -}}
+              </button>
+            </quantity-input>
+            {%- liquid
+              assign check_against_inventory = true
+              if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+                assign quantity_rule_soldout = true
+              endif
+            -%}
+            <button
+              class="product-detail-add_cart_btn"
+              type="submit"
+              {% if product.selected_or_first_available_variant.available == false
+                or quantity_rule_soldout
+                or product.selected_or_first_available_variant == null
+              %}
+                disabled
+              {% endif %}
+            >
+              <span>
+                {%- if product.selected_or_first_available_variant == null -%}
+                  Unavailable
+                {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                  Sold out
+                {%- else -%}
+                  Add to cart
+                {%- endif -%}
+              </span>
+              {%- render 'loading-spinner' -%}
             </button>
-          </quantity-input>
-          {%- liquid
-            assign check_against_inventory = true
-            if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
-              assign quantity_rule_soldout = true
-            endif
-          -%}
-          <button
-            class="product-detail-add_cart_btn"
-            type="submit"
-            {% if product.selected_or_first_available_variant.available == false
-              or quantity_rule_soldout
-              or product.selected_or_first_available_variant == null
-            %}
-              disabled
-            {% endif %}
-          >
-            <span>
-              {%- if product.selected_or_first_available_variant == null -%}
-                Unavailable
-              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                Sold out
-              {%- else -%}
-                Add to cart
-              {%- endif -%}
-            </span>
-          </button>
 
-          {{ form | payment_button }}
-        </form>
-      {%- endform -%}
+            {{ form | payment_button }}
+          </form>
+        {%- endform -%}
+      </product-form>
     </div>
     <div
       class="product-recommendations"
@@ -250,7 +268,7 @@
         .then((text) => {
           const html = document.createElement('div');
           html.innerHTML = text;
-          const recommendations = html.querySelector('.product-recommendations');
+          const recommendations = html.querySelector('.product-detail .product-recommendations');
 
           if (recommendations && recommendations.innerHTML.trim().length) {
             productRecommendationsSection.innerHTML = recommendations.innerHTML;
@@ -265,20 +283,20 @@
 
     const initializeSwiper = () => {
       setTimeout(() => {
-        new Swiper('.recommendations-complementary-swiper', {
+        new Swiper('.product-detail .recommendations-complementary-swiper', {
           slidesPerView: 1,
           loop: true,
           spaceBetween: 12,
           navigation: {
-            nextEl: '.recommendations-complementary-swiper-next',
-            prevEl: '.recommendations-complementary-swiper-prev',
+            nextEl: '.product-detail .recommendations-complementary-swiper-next',
+            prevEl: '.product-detail .recommendations-complementary-swiper-prev',
           },
         });
       }, 0);
     };
 
-    const productRecommendationsSection = document.querySelector('.product-recommendations');
-    const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 200px 0px' });
+    const productRecommendationsSection = document.querySelector('.product-detail .product-recommendations');
+    const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 0px 0px' });
 
     observer.observe(productRecommendationsSection);
   });

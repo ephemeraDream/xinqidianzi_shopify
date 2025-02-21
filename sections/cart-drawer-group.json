@@ -1,0 +1,12 @@
+{
+  "name": "cart-drawer-group",
+  "type": "custom.overlay",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+    }
+  },
+  "order": [
+    "cart-drawer"
+  ]
+}

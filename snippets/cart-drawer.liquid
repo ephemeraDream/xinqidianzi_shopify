@@ -454,6 +454,49 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+      <div
+        class="product-recommendations"
+        data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ cart.items[0].product_id }}&limit=4"
+      >
+        {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+          {% comment %}
+            {% if recommendations.intent == 'related' %}
+              <h2>You may also like</h2>
+            {% elsif recommendations.intent == 'complementary' %}
+              <h2>Pair it with</h2>
+            {% endif %}
+          {% endcomment %}
+          <div class="product-recommendations-head">
+            <span>You May Also Like</span>
+            <div class="flex-center">
+              <div class="recommendations-complementary-swiper-prev">{{- 'left.svg' | inline_asset_content -}}</div>
+              <div class="recommendations-complementary-swiper-next">{{- 'right.svg' | inline_asset_content -}}</div>
+            </div>
+          </div>
+          <div class="swiper recommendations-complementary-swiper">
+            <div class="swiper-wrapper">
+              {%- for product in recommendations.products -%}
+                <div class="recommendations-product-box swiper-slide">
+                  <div class="recommendations-product-info">
+                    <img
+                      src="{{ product.featured_media | image_url }}"
+                      alt="{{ product.title }}"
+                    >
+                    <div>
+                      <h3>{{ product.title }}</h3>
+                      <div class="recommendations-product-price">{{ product.price | money }}</div>
+                    </div>
+                  </div>
+                  <a class="recommendations-product-btn" href="{{ product.url }}">
+                    {{- 'icon-plus.svg' | inline_asset_content -}}
+                    View</a
+                  >
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
@@ -559,3 +602,51 @@
     </div>
   </div>
 </cart-drawer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const handleIntersection = (entries, observer) => {
+      if (!entries[0].isIntersecting) return;
+
+      observer.unobserve(productRecommendationsSection);
+
+      const url = productRecommendationsSection.dataset.url;
+
+      fetch(url)
+        .then((response) => response.text())
+        .then((text) => {
+          const html = document.createElement('div');
+          html.innerHTML = text;
+          const recommendations = html.querySelector('.cart-drawer .product-recommendations');
+
+          if (recommendations && recommendations.innerHTML.trim().length) {
+            productRecommendationsSection.innerHTML = recommendations.innerHTML;
+
+            initializeSwiper();
+          }
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+    };
+
+    const initializeSwiper = () => {
+      setTimeout(() => {
+        new Swiper('.cart-drawer .recommendations-complementary-swiper', {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 12,
+          navigation: {
+            nextEl: '.cart-drawer .recommendations-complementary-swiper-next',
+            prevEl: '.cart-drawer .recommendations-complementary-swiper-prev',
+          },
+        });
+      }, 0);
+    };
+
+    const productRecommendationsSection = document.querySelector('.cart-drawer .product-recommendations');
+    const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 200px 0px' });
+
+    observer.observe(productRecommendationsSection);
+  });
+</script>
