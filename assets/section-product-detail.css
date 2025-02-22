@@ -268,7 +268,7 @@
   flex: 1;
 }
 
-.product-detail .product-detail-right .product-detail-quantity .quantity__button svg {
+.product-detail .product-detail-right .product-detail-quantity .quantity__button img {
   width: 2.4rem;
   height: 2.4rem;
   pointer-events: none;
@@ -369,13 +369,13 @@
   flex: 1;
 }
 
-.product-detail .product-detail-right .product-recommendations-head .flex-center svg {
+.product-detail .product-detail-right .product-recommendations-head .flex-center img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
 }
 
-.product-detail .product-detail-right .product-recommendations-head .flex-center svg:hover path {
+.product-detail .product-detail-right .product-recommendations-head .flex-center img:hover path {
   fill: #ebb069;
 }
 

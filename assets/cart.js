@@ -184,6 +184,9 @@ class CartItems extends HTMLElement {
             section.selector
           );
         });
+
+        this.fetchProductRecommendations();
+
         const updatedValue = parsedState.items[line - 1] ? parsedState.items[line - 1].quantity : undefined;
         let message = '';
         if (items.length === parsedState.items.length && updatedValue !== parseInt(quantityElement.value)) {
@@ -262,6 +265,43 @@ class CartItems extends HTMLElement {
     cartItemElements.forEach((overlay) => overlay.classList.add('hidden'));
     cartDrawerItemElements.forEach((overlay) => overlay.classList.add('hidden'));
   }
+
+  fetchProductRecommendations() {
+    const productRecommendationsSection = document.querySelector('.cart-drawer .product-recommendations');
+    if (!productRecommendationsSection) return;
+
+    const url = productRecommendationsSection.dataset.url;
+
+    fetch(url)
+      .then((response) => response.text())
+      .then((text) => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.cart-drawer .product-recommendations');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+          this.initializeSwiper();  // 初始化 Swiper 轮播图
+        }
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  }
+
+  initializeSwiper = () => {
+    setTimeout(() => {
+      new Swiper('.cart-drawer .recommendations-complementary-swiper', {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 12,
+        navigation: {
+          nextEl: '.cart-drawer .recommendations-complementary-swiper-next',
+          prevEl: '.cart-drawer .recommendations-complementary-swiper-prev',
+        },
+      });
+    }, 0);
+  };
 }
 
 customElements.define('cart-items', CartItems);

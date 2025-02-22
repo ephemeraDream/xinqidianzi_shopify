@@ -469,8 +469,8 @@
           <div class="product-recommendations-head">
             <span>You May Also Like</span>
             <div class="flex-center">
-              <div class="recommendations-complementary-swiper-prev">{{- 'left.svg' | inline_asset_content -}}</div>
-              <div class="recommendations-complementary-swiper-next">{{- 'right.svg' | inline_asset_content -}}</div>
+              <div class="recommendations-complementary-swiper-prev">{{- 'swiper-left.svg' | inline_asset_content -}}</div>
+              <div class="recommendations-complementary-swiper-next">{{- 'swiper-right.svg' | inline_asset_content -}}</div>
             </div>
           </div>
           <div class="swiper recommendations-complementary-swiper">
@@ -606,28 +606,30 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const handleIntersection = (entries, observer) => {
-      if (!entries[0].isIntersecting) return;
+      entries.forEach((entry) => {
+        if (!entries[0].isIntersecting) return;
 
-      observer.unobserve(productRecommendationsSection);
+        observer.unobserve(productRecommendationsSection);
 
-      const url = productRecommendationsSection.dataset.url;
+        const url = productRecommendationsSection.dataset.url;
 
-      fetch(url)
-        .then((response) => response.text())
-        .then((text) => {
-          const html = document.createElement('div');
-          html.innerHTML = text;
-          const recommendations = html.querySelector('.cart-drawer .product-recommendations');
+        fetch(url)
+          .then((response) => response.text())
+          .then((text) => {
+            const html = document.createElement('div');
+            html.innerHTML = text;
+            const recommendations = html.querySelector('.cart-drawer .product-recommendations');
 
-          if (recommendations && recommendations.innerHTML.trim().length) {
-            productRecommendationsSection.innerHTML = recommendations.innerHTML;
+            if (recommendations && recommendations.innerHTML.trim().length) {
+              productRecommendationsSection.innerHTML = recommendations.innerHTML;
 
-            initializeSwiper();
-          }
-        })
-        .catch((e) => {
-          console.error(e);
-        });
+              initializeSwiper();
+            }
+          })
+          .catch((e) => {
+            console.error(e);
+          });
+      });
     };
 
     const initializeSwiper = () => {
@@ -645,7 +647,7 @@
     };
 
     const productRecommendationsSection = document.querySelector('.cart-drawer .product-recommendations');
-    const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 200px 0px' });
+    const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 0px 0px' });
 
     observer.observe(productRecommendationsSection);
   });

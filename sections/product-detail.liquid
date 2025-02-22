@@ -136,7 +136,7 @@
               data-section="{{ section.id }}"
             >
               <button class="quantity__button" name="minus" type="button">
-                {{- 'left.svg' | inline_asset_content -}}
+                {{- 'swiper-left.svg' | asset_url | img_tag -}}
               </button>
               <input
                 class="quantity__input"
@@ -153,7 +153,7 @@
                 {% comment %} form="{{ product_form_id }}" {% endcomment %}
               >
               <button class="quantity__button" name="plus" type="button">
-                {{- 'right.svg' | inline_asset_content -}}
+                {{- 'swiper-right.svg' | asset_url | img_tag -}}
               </button>
             </quantity-input>
             {%- liquid
@@ -204,8 +204,10 @@
         <div class="product-recommendations-head">
           <span>Pair it with</span>
           <div class="flex-center">
-            <div class="recommendations-complementary-swiper-prev">{{- 'left.svg' | inline_asset_content -}}</div>
-            <div class="recommendations-complementary-swiper-next">{{- 'right.svg' | inline_asset_content -}}</div>
+            <div class="recommendations-complementary-swiper-prev">{{ 'swiper-left.svg' | asset_url | img_tag }}</div>
+            <div class="recommendations-complementary-swiper-next">
+              {{- 'swiper-right.svg' | asset_url | img_tag -}}
+            </div>
           </div>
         </div>
         <div class="swiper recommendations-complementary-swiper">

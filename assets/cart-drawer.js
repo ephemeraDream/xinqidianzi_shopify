@@ -86,6 +86,7 @@ class CartDrawer extends HTMLElement {
     setTimeout(() => {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
+      this.fetchProductRecommendations()
     });
   }
 
@@ -112,6 +113,43 @@ class CartDrawer extends HTMLElement {
   setActiveElement(element) {
     this.activeElement = element;
   }
+
+  fetchProductRecommendations() {
+    const productRecommendationsSection = document.querySelector('.cart-drawer .product-recommendations');
+    if (!productRecommendationsSection) return;
+
+    const url = productRecommendationsSection.dataset.url;
+
+    fetch(url)
+      .then((response) => response.text())
+      .then((text) => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.cart-drawer .product-recommendations');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+          this.initializeSwiper();  // 初始化 Swiper 轮播图
+        }
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  }
+
+  initializeSwiper = () => {
+    setTimeout(() => {
+      new Swiper('.cart-drawer .recommendations-complementary-swiper', {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 12,
+        navigation: {
+          nextEl: '.cart-drawer .recommendations-complementary-swiper-next',
+          prevEl: '.cart-drawer .recommendations-complementary-swiper-prev',
+        },
+      });
+    }, 0);
+  };
 }
 
 customElements.define('cart-drawer', CartDrawer);

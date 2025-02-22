@@ -163,8 +163,8 @@
   --swiper-navigation-size: 0;
 }
 
-.unique-selling-contain .right-side .swiper-button-prev svg,
-.unique-selling-contain .right-side .swiper-button-next svg {
+.unique-selling-contain .right-side .swiper-button-prev img,
+.unique-selling-contain .right-side .swiper-button-next img {
   width: 3.2rem;
   height: 3.2rem;
 }
