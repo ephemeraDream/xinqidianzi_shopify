@@ -62,8 +62,8 @@
       <!-- If we need scrollbar -->
       {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
     </div>
-    <div class="swiper-button-prev">{{- 'swiper-left.svg' | asset_url | img_tag -}}</div>
-    <div class="swiper-button-next">{{- 'swiper-right.svg' | asset_url | img_tag -}}</div>
+    <div class="swiper-button-prev">{{- 'swiper-left.svg' | inline_asset_content -}}</div>
+    <div class="swiper-button-next">{{- 'swiper-right.svg' | inline_asset_content -}}</div>
   </div>
 </div>
 
