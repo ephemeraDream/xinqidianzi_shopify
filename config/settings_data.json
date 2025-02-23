@@ -23,6 +23,9 @@
     "cart_type": "drawer",
     "show_cart_note": false,
     "cart_drawer_collection": "best-sellers",
+    "show_shipping_bar": true,
+    "minimum_free_shipping": 50000,
+    "shipping_bar_color": "#ebb069",
     "content_for_index": [],
     "color_schemes": {
       "background-1": {
