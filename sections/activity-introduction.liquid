@@ -1,0 +1,46 @@
+{{ 'section-activity-introduction.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="activity-introduction"></div>
+
+{% schema %}
+{
+  "name": "activity introduction",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "text"
+    },
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "sub_heading",
+      "label": "sub_heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "sub_text",
+      "label": "sub_text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "activity introduction"
+    }
+  ]
+}
+{% endschema %}
