@@ -36,54 +36,14 @@
         "image": "shopify://shop_images/activity_banner.webp"
       }
     },
-    "activity_slider_t6iDgt": {
-      "type": "activity-slider",
-      "blocks": {
-        "product_circle_XkEUVw": {
-          "type": "product_circle",
-          "settings": {
-            "image": "shopify://shop_images/activity_image.webp",
-            "circle_one_product": "product-name",
-            "circle_one_product_X": 25,
-            "circle_one_product_Y": 275,
-            "circle_two_product": "product-name-copy-1",
-            "circle_two_product_X": 71,
-            "circle_two_product_Y": 583
-          }
-        },
-        "product_circle_YWXH3a": {
-          "type": "product_circle",
-          "settings": {
-            "image": "shopify://shop_images/activity_image.webp",
-            "circle_one_product": "product-name",
-            "circle_one_product_X": 25,
-            "circle_one_product_Y": 275,
-            "circle_two_product": "product-name-copy-1",
-            "circle_two_product_X": 71,
-            "circle_two_product_Y": 583
-          }
-        },
-        "product_circle_WE9Vhh": {
-          "type": "product_circle",
-          "settings": {
-            "image": "shopify://shop_images/activity_image.webp",
-            "circle_one_product": "product-name",
-            "circle_one_product_X": 25,
-            "circle_one_product_Y": 275,
-            "circle_two_product": "product-name-copy-1",
-            "circle_two_product_X": 71,
-            "circle_two_product_Y": 583
-          }
-        }
-      },
-      "block_order": [
-        "product_circle_XkEUVw",
-        "product_circle_YWXH3a",
-        "product_circle_WE9Vhh"
-      ],
+    "activity_introduction_qqVhWA": {
+      "type": "activity-introduction",
       "settings": {
         "heading": "Activity Introduction",
-        "text": "Welcome to learn about the latest products"
+        "text": "Welcome to learn about the latest products",
+        "image": "shopify://shop_images/recipe_4.webp",
+        "sub_heading": "Smoked Chicken with Alabama White Sauce",
+        "sub_text": "Smoked Chicken with Alabama White Sauce is slow-cooked over wood smoke, which imparts a rich, smoky flavor. The standout feature is the creamy Alabama White Sauce, a tangy, mayonnaise-based sauce with vinegar, black pepper, horseradish, and a few other spices."
       }
     },
     "acticity_collection_n6z64a": {
@@ -161,7 +121,7 @@
   },
   "order": [
     "activity_banner_KLtwVy",
-    "activity_slider_t6iDgt",
+    "activity_introduction_qqVhWA",
     "acticity_collection_n6z64a",
     "product_longtext_cp6pLL"
   ]
