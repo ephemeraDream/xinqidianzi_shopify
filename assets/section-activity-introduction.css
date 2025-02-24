@@ -1,0 +1,58 @@
+.activity-introduction {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.activity-introduction .activity-introduction-header {
+  font-family: Poppins;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  text-align: center;
+}
+
+.activity-introduction .activity-introduction-text {
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #777777;
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+.activity-introduction .activity-introduction-img {
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: 6.4rem;
+}
+
+.activity-introduction .activity-introduction-sub_header {
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 2.3rem;
+}
+
+.activity-introduction .activity-introduction-sub_text {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 2.3rem;
+}
