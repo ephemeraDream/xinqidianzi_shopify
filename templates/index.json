@@ -367,19 +367,19 @@
     "home_blog_yKBWMM": {
       "type": "home-blog",
       "blocks": {
-        "blog_Nd3NtP": {
+        "blog_AVLVPW": {
           "type": "blog",
           "settings": {
             "article": "news/what-is-the-reverse-sear-method-for"
           }
         },
-        "blog_4EFQKg": {
+        "blog_aNVMY8": {
           "type": "blog",
           "settings": {
-            "article": "news/what-can-you-cook"
+            "article": "news/what-can-you-cook-what-can-you-cook-what-can-you-cook"
           }
         },
-        "blog_xDGini": {
+        "blog_BGBAJE": {
           "type": "blog",
           "settings": {
             "article": "news/what-should-you-put"
@@ -387,9 +387,9 @@
         }
       },
       "block_order": [
-        "blog_Nd3NtP",
-        "blog_4EFQKg",
-        "blog_xDGini"
+        "blog_AVLVPW",
+        "blog_aNVMY8",
+        "blog_BGBAJE"
       ],
       "settings": {
         "heading": "Blog",
