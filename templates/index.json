@@ -128,13 +128,23 @@
             "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
             "product": "product-name-copy-1"
           }
+        },
+        "category_FwbcMW": {
+          "type": "category",
+          "settings": {
+            "title": "",
+            "heading": "",
+            "description": "",
+            "product": ""
+          }
         }
       },
       "block_order": [
         "category_LiDChJ",
         "category_UwmEfq",
         "category_PztF9G",
-        "category_Ppt9RR"
+        "category_Ppt9RR",
+        "category_FwbcMW"
       ],
       "settings": {
         "heading": "Hot selling product"
@@ -143,29 +153,29 @@
     "unique_selling_ci9cAL": {
       "type": "unique-selling",
       "blocks": {
-        "product_mHgJFV": {
+        "product_taJNnQ": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-1"
+            "product": "product-name"
           }
         },
-        "product_f3tKk3": {
+        "product_yMr4QK": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-2"
+            "product": "product-name-复制"
           }
         },
-        "product_xTRhYr": {
+        "product_XExaKP": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-3"
+            "product": "product-name-复制-1"
           }
         }
       },
       "block_order": [
-        "product_mHgJFV",
-        "product_f3tKk3",
-        "product_xTRhYr"
+        "product_taJNnQ",
+        "product_yMr4QK",
+        "product_XExaKP"
       ],
       "settings": {
         "heading": "Unique Selling Points",
