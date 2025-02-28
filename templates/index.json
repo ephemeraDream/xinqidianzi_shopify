@@ -327,37 +327,37 @@
             "product": "product-name"
           }
         },
-        "product_9UKmMQ": {
+        "product_iTnb8i": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy"
+            "product": "product-name-1"
           }
         },
-        "product_nCGWEz": {
+        "product_TwjPFj": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-1"
+            "product": "product-name-2"
           }
         },
-        "product_8FjTfL": {
+        "product_6AdFM9": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-2"
+            "product": "product-name-复制"
           }
         },
-        "product_PFV74R": {
+        "product_qQAYpt": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-3"
+            "product": "product-name-复制-1"
           }
         }
       },
       "block_order": [
         "product_Lx9mtw",
-        "product_9UKmMQ",
-        "product_nCGWEz",
-        "product_8FjTfL",
-        "product_PFV74R"
+        "product_iTnb8i",
+        "product_TwjPFj",
+        "product_6AdFM9",
+        "product_qQAYpt"
       ],
       "settings": {
         "heading": "User Feedback",
