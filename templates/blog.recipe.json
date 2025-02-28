@@ -81,8 +81,8 @@
             "title": "title",
             "product": [
               "product-name",
-              "product-name-copy",
-              "product-name-copy-1"
+              "product-name-复制",
+              "product-name-复制-1"
             ]
           }
         },
@@ -91,10 +91,8 @@
           "settings": {
             "title": "title",
             "product": [
-              "product-name-copy-2",
-              "product-name-copy-3",
-              "product-name-copy-copy",
-              "product-name-copy-copy-1"
+              "product-name-1",
+              "product-name-2"
             ]
           }
         }
@@ -147,7 +145,7 @@
         "faq_kztidQ"
       ],
       "custom_css": [
-        ".product-faq{margin-bottom: 13rem;}"
+        ".product-faq {margin-bottom: 13rem;}"
       ],
       "settings": {
         "heading": "FAQ",
