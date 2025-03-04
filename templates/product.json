@@ -106,6 +106,21 @@
         "heading": "You May Also Like",
         "text": "This is a placeholder copy This is a placeholder copy"
       }
+    },
+    "17410625948c6f83e7": {
+      "type": "apps",
+      "blocks": {
+        "comment_app_product_comment_kAPRmz": {
+          "type": "shopify://apps/comment-app/blocks/product-comment/bf3d2150-399c-41e4-8d09-0c3510f3917a",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "comment_app_product_comment_kAPRmz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -113,6 +128,7 @@
     "product_introduce_yeeCkt",
     "17407367833c92a3af",
     "hot_video_q4rymY",
-    "product_recommend_kRfdJq"
+    "product_recommend_kRfdJq",
+    "17410625948c6f83e7"
   ]
 }
