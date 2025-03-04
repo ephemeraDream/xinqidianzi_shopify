@@ -103,6 +103,23 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });
 
+// document.querySelectorAll('[id^="MegaMenu-"]').forEach((megamenu) => {
+//   megamenu.addEventListener('mouseleave', (event) => {
+//     const summary = event.currentTarget.previousElementSibling;
+//     summary.click();
+//   });
+// });
+
+document.getElementsByTagName("sticky-header")[0].addEventListener('mouseleave', (event) => {
+  document.querySelectorAll('details[open]').forEach((otherDetails) => {
+    otherDetails.removeAttribute('open');
+    const summaryOfOther = otherDetails.querySelector('summary');
+    if (summaryOfOther) {
+      summaryOfOther.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
 const trapFocusHandlers = {};
 
 function trapFocus(container, elementToFocus = container) {
