@@ -128,13 +128,23 @@
             "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
             "product": "product-name-copy-1"
           }
+        },
+        "category_FwbcMW": {
+          "type": "category",
+          "settings": {
+            "title": "",
+            "heading": "",
+            "description": "",
+            "product": ""
+          }
         }
       },
       "block_order": [
         "category_LiDChJ",
         "category_UwmEfq",
         "category_PztF9G",
-        "category_Ppt9RR"
+        "category_Ppt9RR",
+        "category_FwbcMW"
       ],
       "settings": {
         "heading": "Hot selling product"
@@ -143,29 +153,29 @@
     "unique_selling_ci9cAL": {
       "type": "unique-selling",
       "blocks": {
-        "product_mHgJFV": {
+        "product_taJNnQ": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-1"
+            "product": "product-name"
           }
         },
-        "product_f3tKk3": {
+        "product_yMr4QK": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-2"
+            "product": "product-name-复制"
           }
         },
-        "product_xTRhYr": {
+        "product_XExaKP": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-3"
+            "product": "product-name-复制-1"
           }
         }
       },
       "block_order": [
-        "product_mHgJFV",
-        "product_f3tKk3",
-        "product_xTRhYr"
+        "product_taJNnQ",
+        "product_yMr4QK",
+        "product_XExaKP"
       ],
       "settings": {
         "heading": "Unique Selling Points",
@@ -317,37 +327,37 @@
             "product": "product-name"
           }
         },
-        "product_9UKmMQ": {
+        "product_iTnb8i": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy"
+            "product": "product-name-1"
           }
         },
-        "product_nCGWEz": {
+        "product_TwjPFj": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-1"
+            "product": "product-name-2"
           }
         },
-        "product_8FjTfL": {
+        "product_6AdFM9": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-2"
+            "product": "product-name-复制"
           }
         },
-        "product_PFV74R": {
+        "product_qQAYpt": {
           "type": "product",
           "settings": {
-            "product": "product-name-copy-3"
+            "product": "product-name-复制-1"
           }
         }
       },
       "block_order": [
         "product_Lx9mtw",
-        "product_9UKmMQ",
-        "product_nCGWEz",
-        "product_8FjTfL",
-        "product_PFV74R"
+        "product_iTnb8i",
+        "product_TwjPFj",
+        "product_6AdFM9",
+        "product_qQAYpt"
       ],
       "settings": {
         "heading": "User Feedback",
@@ -357,19 +367,19 @@
     "home_blog_yKBWMM": {
       "type": "home-blog",
       "blocks": {
-        "blog_Nd3NtP": {
+        "blog_AVLVPW": {
           "type": "blog",
           "settings": {
             "article": "news/what-is-the-reverse-sear-method-for"
           }
         },
-        "blog_4EFQKg": {
+        "blog_aNVMY8": {
           "type": "blog",
           "settings": {
-            "article": "news/what-can-you-cook"
+            "article": "news/what-can-you-cook-what-can-you-cook-what-can-you-cook"
           }
         },
-        "blog_xDGini": {
+        "blog_BGBAJE": {
           "type": "blog",
           "settings": {
             "article": "news/what-should-you-put"
@@ -377,9 +387,9 @@
         }
       },
       "block_order": [
-        "blog_Nd3NtP",
-        "blog_4EFQKg",
-        "blog_xDGini"
+        "blog_AVLVPW",
+        "blog_aNVMY8",
+        "blog_BGBAJE"
       ],
       "settings": {
         "heading": "Blog",

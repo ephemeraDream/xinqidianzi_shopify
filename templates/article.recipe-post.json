@@ -35,13 +35,13 @@
     "1739593051f8b34b5e": {
       "type": "apps",
       "blocks": {
-        "comment_app_blog_comment_nFgmab": {
-          "type": "shopify://apps/comment-app/blocks/blog-comment/bf3d2150-399c-41e4-8d09-0c3510f3917a",
+        "shxq_comment_prod_blog_comment_9QHRrg": {
+          "type": "shopify://apps/shxq-comment-prod/blocks/blog-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
           "settings": {}
         }
       },
       "block_order": [
-        "comment_app_blog_comment_nFgmab"
+        "shxq_comment_prod_blog_comment_9QHRrg"
       ],
       "settings": {
         "include_margins": true

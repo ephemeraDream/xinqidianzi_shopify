@@ -17,16 +17,16 @@
       "type": "product-introduce",
       "settings": {}
     },
-    "173935207042c0d374": {
+    "17407367833c92a3af": {
       "type": "apps",
       "blocks": {
-        "comment_app_product_comment_yEhGAB": {
-          "type": "shopify://apps/comment-app/blocks/product-comment/bf3d2150-399c-41e4-8d09-0c3510f3917a",
+        "shxq_comment_prod_product_comment_A8yQRk": {
+          "type": "shopify://apps/shxq-comment-prod/blocks/product-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
           "settings": {}
         }
       },
       "block_order": [
-        "comment_app_product_comment_yEhGAB"
+        "shxq_comment_prod_product_comment_A8yQRk"
       ],
       "settings": {
         "include_margins": true
@@ -111,7 +111,7 @@
   "order": [
     "product_detail_UfijdK",
     "product_introduce_yeeCkt",
-    "173935207042c0d374",
+    "17407367833c92a3af",
     "hot_video_q4rymY",
     "product_recommend_kRfdJq"
   ]
