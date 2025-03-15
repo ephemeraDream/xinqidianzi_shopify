@@ -1,0 +1,74 @@
+{{ 'section-home-banner-swiper.css' | asset_url | stylesheet_tag }}
+
+<div id="Banner-{{ section.id }}" class="home-banner"></div>
+
+{% schema %}
+{
+  "name": "Home banner swiper",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "swiper section",
+      "name": "swiper section",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "home banner Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "home banner heading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "home banner text"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "button link"
+        },
+        {
+          "type": "radio",
+          "id": "position",
+          "label": "position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "centere",
+              "label": "Centere"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home banner swiper",
+      "blocks": [
+        {
+          "type": "swiper section"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
