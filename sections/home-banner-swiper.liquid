@@ -1,6 +1,37 @@
 {{ 'section-home-banner-swiper.css' | asset_url | stylesheet_tag }}
 
-<div id="Banner-{{ section.id }}" class="home-banner"></div>
+<div id="Banner-{{ section.id }}" class="home-banner-swiper">
+  <div class="swiper home-banner-swiper_contain">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <img
+            src="{{ block.settings.image | image_url }}"
+            alt="{{ block.settings.heading }}"
+          >
+          <div class="home-banner-swiper_contain-body{% if block.settings.position == 'left' %} position_left{% else %} position_center{% endif %}">
+            <h3>{{ block.settings.text }}</h3>
+            <h1>{{ block.settings.heading }}</h1>
+            <a href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const homeBannerSwiper = new Swiper('.swiper.home-banner-swiper_contain', {
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
 
 {% schema %}
 {
