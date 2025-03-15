@@ -9,32 +9,49 @@
  */
 {
   "sections": {
-    "home_banner_pV6qGH": {
-      "type": "home-banner",
+    "home_banner_swiper_RRwaDC": {
+      "type": "home-banner-swiper",
       "blocks": {
-        "heading_UFqXrw": {
-          "type": "heading",
+        "swiper_section_4QNWaG": {
+          "type": "swiper_section",
           "settings": {
-            "heading": "Lorem Ipsum",
-            "icon": "shopify://shop_images/icon-arrow-right.webp",
-            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+            "image": "shopify://shop_images/home_banner_1.webp",
+            "heading": "Where smart meets culinaryperfection.”",
+            "text": "Seal in freshness, savor precision, ",
+            "button_label": "Discover More",
+            "button_link": "",
+            "position": "left"
           }
         },
-        "buttons_aWBN7j": {
-          "type": "buttons",
+        "swiper_section_DR7CpF": {
+          "type": "swiper_section",
           "settings": {
-            "button_label": "DISCOVER",
-            "button_link": ""
+            "image": "shopify://shop_images/home_banner_2.webp",
+            "heading": "Elevate Your Convenient Use Experience",
+            "text": "\"Heiyo Comfort\" The first Mason Jar Sealer",
+            "button_label": "Discover More",
+            "button_link": "",
+            "position": "left"
+          }
+        },
+        "swiper_section_EcV6Na": {
+          "type": "swiper_section",
+          "settings": {
+            "image": "shopify://shop_images/home_banner_3.webp",
+            "heading": "Always on the Go",
+            "text": "Portable, Smart, Fresh",
+            "button_label": "Discover More",
+            "button_link": "",
+            "position": "centere"
           }
         }
       },
       "block_order": [
-        "heading_UFqXrw",
-        "buttons_aWBN7j"
+        "swiper_section_4QNWaG",
+        "swiper_section_DR7CpF",
+        "swiper_section_EcV6Na"
       ],
-      "settings": {
-        "image": "shopify://shop_images/home-banner.webp"
-      }
+      "settings": {}
     },
     "best_sellers_qXtxbG": {
       "type": "best-sellers",
@@ -398,7 +415,7 @@
     }
   },
   "order": [
-    "home_banner_pV6qGH",
+    "home_banner_swiper_RRwaDC",
     "best_sellers_qXtxbG",
     "new_arrivals_RwMRGd",
     "image_comparison_PCE8ze",
