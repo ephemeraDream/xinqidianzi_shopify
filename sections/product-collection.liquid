@@ -9,11 +9,32 @@
       </div>
     {% endcomment %}
     <div class="categorize-group">
-      <a data-type="all" class="categorize-group-btn active">ALL PRODUCTS</a>
-      {% for type in collections.all.all_types %}
-        {% if type != '' %}
-          <a data-type="{{ type | handleize }}" class="categorize-group-btn">{{ type }}</a>
+      <a
+        data-type="all"
+        class="categorize-group-btn{% if request.path contains "all" %} active{% endif %}"
+        href="/collections/all"
+        >ALL PRODUCTS</a
+      >
+      {% comment %}
+        {% for type in collections.all.all_types %}
+          {% if type != '' %}
+            <a data-type="{{ type | handleize }}" class="categorize-group-btn">{{ type }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endcomment %}
+      {% for collection in collections %}
+        {% assign active_class = '' %}
+        {% if request.path contains collection.handle %}
+          {% assign active_class = 'active' %}
         {% endif %}
+
+        <a
+          href="{{ collection.url }}"
+          class="categorize-group-btn {{ active_class }}"
+          data-type="{{ collection.handle }}"
+        >
+          {{ collection.title }}
+        </a>
       {% endfor %}
     </div>
   </div>
@@ -162,8 +183,9 @@
     }
 
     bindPaginationLinks();
-    bindCategoryFilters();
+    {% comment %} bindCategoryFilters(); {% endcomment %}
     bindAddToCartForm();
+
 
     function bindAddToCartForm() {
       const addToCartForms = document.querySelectorAll('form[action="/cart/add"]');
