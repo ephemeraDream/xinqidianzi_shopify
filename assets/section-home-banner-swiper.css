@@ -1,6 +1,6 @@
 .home-banner-swiper {
   width: 100%;
-  height: 64.81vh;
+  /* height: 64.81vh; */
   position: relative;
 }
 
@@ -121,4 +121,8 @@
   .home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
     font-size: 2.8rem;
   }
+  .home-banner-swiper {
+    height: 64.81vh;
+  }
+  
 }
