@@ -67,7 +67,7 @@
   <div class="product-detail-right">
     {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-    <div class="product-detail-vendor">{{ product.metafields.custom.short_description.value }}</div>
+    <div class="product-detail-vendor">{{ product.metafields.custom.short_description | metafield_tag }}</div>
     <div class="flex-box">
       <div class="product-detail-title">{{ product.title }}</div>
       <div class="product-detail-compare_at_price">{{ product.compare_at_price | money }}</div>
