@@ -308,18 +308,6 @@
             "product": "product-name"
           }
         },
-        "product_iTnb8i": {
-          "type": "product",
-          "settings": {
-            "product": "product-name-1"
-          }
-        },
-        "product_TwjPFj": {
-          "type": "product",
-          "settings": {
-            "product": "product-name-2"
-          }
-        },
         "product_6AdFM9": {
           "type": "product",
           "settings": {
@@ -335,8 +323,6 @@
       },
       "block_order": [
         "product_Lx9mtw",
-        "product_iTnb8i",
-        "product_TwjPFj",
         "product_6AdFM9",
         "product_qQAYpt"
       ],
