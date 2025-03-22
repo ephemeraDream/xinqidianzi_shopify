@@ -67,7 +67,7 @@
   <div class="product-detail-right">
     {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-    <div class="product-detail-vendor">{{ product.vendor }}</div>
+    <div class="product-detail-vendor">{{ section.settings.short_description }}</div>
     <div class="flex-box">
       <div class="product-detail-title">{{ product.title }}</div>
       <div class="product-detail-compare_at_price">{{ product.compare_at_price | money }}</div>
@@ -204,8 +204,12 @@
         <div class="product-recommendations-head">
           <span>Pair it with</span>
           <div class="flex-center">
-            <div class="recommendations-complementary-swiper-prev">{{- 'swiper-left.svg' | inline_asset_content -}}</div>
-            <div class="recommendations-complementary-swiper-next">{{- 'swiper-right.svg' | inline_asset_content -}}</div>
+            <div class="recommendations-complementary-swiper-prev">
+              {{- 'swiper-left.svg' | inline_asset_content -}}
+            </div>
+            <div class="recommendations-complementary-swiper-next">
+              {{- 'swiper-right.svg' | inline_asset_content -}}
+            </div>
           </div>
         </div>
         <div class="swiper recommendations-complementary-swiper">
@@ -310,7 +314,13 @@
   "disabled_on": {
     "groups": ["header", "footer"]
   },
-  "settings": [],
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "short_description",
+      "label": "short description"
+    }
+  ],
   "presets": [
     {
       "name": "product detail"
