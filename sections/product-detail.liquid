@@ -101,6 +101,9 @@
           </div>
         {% endfor %}
       </div>
+      {%- if product.metafields.custom.supply_description != blank -%}
+        <div class="product-detail-sale_word">{{ product.metafields.custom.supply_description | metafield_tag }}</div>
+      {% endif %}
       {% if product.options.size > 0 %}
         {% for option in product.options %}
           <div class="product-detail-label">{{ option }} ：</div>
