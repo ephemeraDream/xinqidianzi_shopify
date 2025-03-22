@@ -197,43 +197,37 @@
         "text_WEiHcc": {
           "type": "text",
           "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "subtitle": "Versatile Design, Multi-Purpose Use",
+            "content": "heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.",
+            "image": "shopify://shop_images/blog_post_image.webp",
+            "position": "left"
           }
         },
         "text_xkeVc6": {
           "type": "text",
           "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "subtitle": "Compact & Portable, Use Anywhere",
+            "content": "Lightweight and portable, perfect for home, camping, and travel.",
+            "image": "shopify://shop_images/blog_post_image_2.webp",
+            "position": "right"
           }
         },
         "text_VrAzQ4": {
           "type": "text",
           "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "subtitle": "Airtight Seal, Lock in Freshness",
+            "content": "Extends food freshness with airtight sealing, reducing waste.",
+            "image": "shopify://shop_images/blog_8.webp",
+            "position": "left"
           }
         },
         "text_JjiUKJ": {
           "type": "text",
           "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
-          }
-        },
-        "text_MENKH7": {
-          "type": "text",
-          "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
-          }
-        },
-        "text_prxnVb": {
-          "type": "text",
-          "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "subtitle": "Easy to Use, One-Touch Sealing",
+            "content": "One-touch operation, no complicated steps, suitable for everyone.",
+            "image": "shopify://shop_images/img_1.webp",
+            "position": "right"
           }
         }
       },
@@ -241,12 +235,11 @@
         "text_WEiHcc",
         "text_xkeVc6",
         "text_VrAzQ4",
-        "text_JjiUKJ",
-        "text_MENKH7",
-        "text_prxnVb"
+        "text_JjiUKJ"
       ],
       "settings": {
-        "heading": "Title placeholder"
+        "heading": "",
+        "product_handle": "smart-food-storage"
       }
     }
   },
