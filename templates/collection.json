@@ -79,96 +79,42 @@
           "type": "faq",
           "settings": {
             "question": "1、Are these products suitable for kitchen beginners?",
-            "answer": "Yes! heiyo’s Mason Jar Sealer is designed to be user-friendly, perfect for all cooking skill levels.",
-            "product_handle": "smart-food-storage"
+            "answer": "Yes! heiyo’s Mason Jar Sealer is designed to be user-friendly, perfect for all cooking skill levels."
           }
         },
         "faq_zcPRAr": {
           "type": "faq",
           "settings": {
             "question": "2、How do these products help reduce food waste?",
-            "answer": "heiyo’s Mason Jar Sealer extends food freshness with airtight sealing.",
-            "product_handle": "smart-food-storage"
+            "answer": "heiyo’s Mason Jar Sealer extends food freshness with airtight sealing."
           }
         },
         "faq_4U83G4": {
           "type": "faq",
           "settings": {
             "question": "3、Do I need to use oxygen absorbers with heiyo?",
-            "answer": "No, oxygen absorbers are not necessary when using heiyo. Our vacuum sealing technology effectively removes air, creating a perfect seal that preserves your food's freshness without the need for additional oxygen absorbers.",
-            "product_handle": "smart-food-storage"
+            "answer": "No, oxygen absorbers are not necessary when using heiyo. Our vacuum sealing technology effectively removes air, creating a perfect seal that preserves your food's freshness without the need for additional oxygen absorbers."
           }
         },
         "faq_b3MKU9": {
           "type": "faq",
           "settings": {
             "question": "4、Are these products suitable as gifts?",
-            "answer": "Yes! heiyo’s Mason Jar Sealer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living.",
-            "product_handle": "smart-food-storage"
+            "answer": "Yes! heiyo’s Mason Jar Sealer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living."
           }
         },
         "faq_hhGn8i": {
           "type": "faq",
           "settings": {
             "question": "5、Can heiyo seal both dry and liquid goods?",
-            "answer": "Yes, it can! heiyo is perfect for sealing a wide range of items, from dry goods like cereals to liquids like soups, thanks to its safe sealing technology.",
-            "product_handle": "smart-food-storage"
+            "answer": "Yes, it can! heiyo is perfect for sealing a wide range of items, from dry goods like cereals to liquids like soups, thanks to its safe sealing technology."
           }
         },
         "faq_GpARFC": {
           "type": "faq",
           "settings": {
             "question": "6、Is the vacuum extraction process loud?",
-            "answer": "No,heiyo operates with minimal noise during the vacuum extraction process, ensuring a quiet and convenient user experience.",
-            "product_handle": "smart-food-storage"
-          }
-        },
-        "faq_XKxf8W": {
-          "type": "faq",
-          "settings": {
-            "question": "1、Are these products suitable for kitchen beginners?",
-            "answer": "Yes! heiyo’s the Smart Wireless Meat Thermometer are designed to be user-friendly, perfect for all cooking skill levels.",
-            "product_handle": "smart-cooking-devices"
-          }
-        },
-        "faq_3V6ibY": {
-          "type": "faq",
-          "settings": {
-            "question": "2、How do these products help reduce food waste?",
-            "answer": "heiyo’s Smart Wireless Meat Thermometer ensures perfectly cooked meals, preventing overcooking or undercooking.",
-            "product_handle": "smart-cooking-devices"
-          }
-        },
-        "faq_f6mnyi": {
-          "type": "faq",
-          "settings": {
-            "question": "3、Do these products require additional accessories?",
-            "answer": "heiyo’s Smart Wireless Meat Thermometer comes with a probe—no additional accessories are needed.",
-            "product_handle": "smart-cooking-devices"
-          }
-        },
-        "faq_AU3MbF": {
-          "type": "faq",
-          "settings": {
-            "question": "4、Are these products suitable for outdoor use?",
-            "answer": "The Smart Wireless Meat Thermometer is also travel-friendly, ideal for outdoor grilling or cooking",
-            "product_handle": "smart-cooking-devices"
-          }
-        },
-        "faq_TrEcFD": {
-          "type": "faq",
-          "settings": {
-            "question": "5、Are these products suitable as gifts?",
-            "answer": "Yes! heiyo’s Smart Wireless Meat Thermometer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living.",
-            "product_handle": "smart-cooking-devices"
-          }
-        },
-        "faq_kY4FBT": {
-          "type": "faq",
-          "settings": {
-            "question": "6、How do I connect to Wi-Fi?",
-            "answer": "Open the Meat App, select \"Device Connection,\" and follow the prompts to connect the EM05 to your Wi-Fi network for remote temperature monitoring.",
-            "product_handle": "smart-cooking-devices"
+            "answer": "No,heiyo operates with minimal noise during the vacuum extraction process, ensuring a quiet and convenient user experience."
           }
         }
       },
@@ -178,17 +124,132 @@
         "faq_4U83G4",
         "faq_b3MKU9",
         "faq_hhGn8i",
-        "faq_GpARFC",
-        "faq_XKxf8W",
-        "faq_3V6ibY",
-        "faq_f6mnyi",
-        "faq_AU3MbF",
-        "faq_TrEcFD",
-        "faq_kY4FBT"
+        "faq_GpARFC"
       ],
       "settings": {
         "heading": "FAQ",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": "smart-food-storage"
+      }
+    },
+    "product_faq_mJwi8r": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_hxJj7b": {
+          "type": "faq",
+          "settings": {
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer is designed to be user-friendly, perfect for all cooking skill levels."
+          }
+        },
+        "faq_Q74YFD": {
+          "type": "faq",
+          "settings": {
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Mason Jar Sealer extends food freshness with airtight sealing."
+          }
+        },
+        "faq_XadGq4": {
+          "type": "faq",
+          "settings": {
+            "question": "3、Do I need to use oxygen absorbers with heiyo?",
+            "answer": "No, oxygen absorbers are not necessary when using heiyo. Our vacuum sealing technology effectively removes air, creating a perfect seal that preserves your food's freshness without the need for additional oxygen absorbers."
+          }
+        },
+        "faq_XLfgn8": {
+          "type": "faq",
+          "settings": {
+            "question": "4、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living."
+          }
+        },
+        "faq_ChzPQL": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Can heiyo seal both dry and liquid goods?",
+            "answer": "Yes, it can! heiyo is perfect for sealing a wide range of items, from dry goods like cereals to liquids like soups, thanks to its safe sealing technology."
+          }
+        },
+        "faq_iDHc47": {
+          "type": "faq",
+          "settings": {
+            "question": "6、Is the vacuum extraction process loud?",
+            "answer": "No,heiyo operates with minimal noise during the vacuum extraction process, ensuring a quiet and convenient user experience."
+          }
+        }
+      },
+      "block_order": [
+        "faq_hxJj7b",
+        "faq_Q74YFD",
+        "faq_XadGq4",
+        "faq_XLfgn8",
+        "faq_ChzPQL",
+        "faq_iDHc47"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": "all"
+      }
+    },
+    "product_faq_E6GfGz": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_t8xAU6": {
+          "type": "faq",
+          "settings": {
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s the Smart Wireless Meat Thermometer are designed to be user-friendly, perfect for all cooking skill levels."
+          }
+        },
+        "faq_cY6bea": {
+          "type": "faq",
+          "settings": {
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Smart Wireless Meat Thermometer ensures perfectly cooked meals, preventing overcooking or undercooking."
+          }
+        },
+        "faq_DxUi8L": {
+          "type": "faq",
+          "settings": {
+            "question": "3、Do these products require additional accessories?",
+            "answer": "heiyo’s Smart Wireless Meat Thermometer comes with a probe—no additional accessories are needed."
+          }
+        },
+        "faq_widKnn": {
+          "type": "faq",
+          "settings": {
+            "question": "4、Are these products suitable for outdoor use?",
+            "answer": "The Smart Wireless Meat Thermometer is also travel-friendly, ideal for outdoor grilling or cooking"
+          }
+        },
+        "faq_mjLmXr": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Smart Wireless Meat Thermometer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living."
+          }
+        },
+        "faq_fhyKqV": {
+          "type": "faq",
+          "settings": {
+            "question": "6、How do I connect to Wi-Fi?",
+            "answer": "Open the Meat App, select \"Device Connection,\" and follow the prompts to connect the EM05 to your Wi-Fi network for remote temperature monitoring."
+          }
+        }
+      },
+      "block_order": [
+        "faq_t8xAU6",
+        "faq_cY6bea",
+        "faq_DxUi8L",
+        "faq_widKnn",
+        "faq_mjLmXr",
+        "faq_fhyKqV"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": "smart-cooking-devices"
       }
     },
     "product_longtext_FjMcUk": {
@@ -350,6 +411,8 @@
     "product_collection_XJ9R94",
     "product_list_mqnFFM",
     "product_faq_yjrbia",
+    "product_faq_mJwi8r",
+    "product_faq_E6GfGz",
     "product_longtext_FjMcUk",
     "product_longtext_t6JDBj",
     "product_longtext_dYGDYg"
