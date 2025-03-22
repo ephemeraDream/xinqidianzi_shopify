@@ -15,15 +15,15 @@
         "heading_X6RMJ4": {
           "type": "heading",
           "settings": {
-            "heading": "Lorem Ipsum",
+            "heading": "Collections",
             "icon": "shopify://shop_images/icon-arrow-right.webp",
-            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+            "text": "Smart tools for easier, more loving meals."
           }
         },
         "buttons_ewcLym": {
           "type": "buttons",
           "settings": {
-            "button_label": "DISCOVER",
+            "button_label": "Explore More",
             "button_link": ""
           }
         }
