@@ -242,6 +242,57 @@
         "product_handle": "smart-food-storage"
       }
     },
+    "product_longtext_t6JDBj": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_UFaNG6": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Versatile Design, Multi-Purpose Use",
+            "content": "heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.",
+            "image": "shopify://shop_images/blog_post_image.webp",
+            "position": "left"
+          }
+        },
+        "text_4c7PUB": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Compact & Portable, Use Anywhere",
+            "content": "Lightweight and portable, perfect for home, camping, and travel.",
+            "image": "shopify://shop_images/blog_post_image_2.webp",
+            "position": "right"
+          }
+        },
+        "text_rfUp6w": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Airtight Seal, Lock in Freshness",
+            "content": "Extends food freshness with airtight sealing, reducing waste.",
+            "image": "shopify://shop_images/blog_8.webp",
+            "position": "left"
+          }
+        },
+        "text_LiWGre": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Easy to Use, One-Touch Sealing",
+            "content": "One-touch operation, no complicated steps, suitable for everyone.",
+            "image": "shopify://shop_images/img_1.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_UFaNG6",
+        "text_4c7PUB",
+        "text_rfUp6w",
+        "text_LiWGre"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": "all"
+      }
+    },
     "product_longtext_dYGDYg": {
       "type": "product-longtext",
       "blocks": {
@@ -300,6 +351,7 @@
     "product_list_mqnFFM",
     "product_faq_yjrbia",
     "product_longtext_FjMcUk",
+    "product_longtext_t6JDBj",
     "product_longtext_dYGDYg"
   ]
 }
