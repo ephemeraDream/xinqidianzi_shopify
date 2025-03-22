@@ -78,29 +78,97 @@
         "faq_YKypfp": {
           "type": "faq",
           "settings": {
-            "question": "This position contains the description text  This position contains the description text",
-            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer is designed to be user-friendly, perfect for all cooking skill levels.",
+            "product_handle": "smart-food-storage"
           }
         },
         "faq_zcPRAr": {
           "type": "faq",
           "settings": {
-            "question": "This position contains the description text  This position contains the description text",
-            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Mason Jar Sealer extends food freshness with airtight sealing.",
+            "product_handle": "smart-food-storage"
           }
         },
         "faq_4U83G4": {
           "type": "faq",
           "settings": {
-            "question": "This position contains the description text  This position contains the description text",
-            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+            "question": "3、Do I need to use oxygen absorbers with heiyo?",
+            "answer": "No, oxygen absorbers are not necessary when using heiyo. Our vacuum sealing technology effectively removes air, creating a perfect seal that preserves your food's freshness without the need for additional oxygen absorbers.",
+            "product_handle": "smart-food-storage"
           }
         },
         "faq_b3MKU9": {
           "type": "faq",
           "settings": {
-            "question": "This position contains the description text  This position contains the description text",
-            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+            "question": "4、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living.",
+            "product_handle": "smart-food-storage"
+          }
+        },
+        "faq_hhGn8i": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Can heiyo seal both dry and liquid goods?",
+            "answer": "Yes, it can! heiyo is perfect for sealing a wide range of items, from dry goods like cereals to liquids like soups, thanks to its safe sealing technology.",
+            "product_handle": "smart-food-storage"
+          }
+        },
+        "faq_GpARFC": {
+          "type": "faq",
+          "settings": {
+            "question": "6、Is the vacuum extraction process loud?",
+            "answer": "No,heiyo operates with minimal noise during the vacuum extraction process, ensuring a quiet and convenient user experience.",
+            "product_handle": "smart-food-storage"
+          }
+        },
+        "faq_XKxf8W": {
+          "type": "faq",
+          "settings": {
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s the Smart Wireless Meat Thermometer are designed to be user-friendly, perfect for all cooking skill levels.",
+            "product_handle": "smart-cooking-devices"
+          }
+        },
+        "faq_3V6ibY": {
+          "type": "faq",
+          "settings": {
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Smart Wireless Meat Thermometer ensures perfectly cooked meals, preventing overcooking or undercooking.",
+            "product_handle": "smart-cooking-devices"
+          }
+        },
+        "faq_f6mnyi": {
+          "type": "faq",
+          "settings": {
+            "question": "3、Do these products require additional accessories?",
+            "answer": "heiyo’s Smart Wireless Meat Thermometer comes with a probe—no additional accessories are needed.",
+            "product_handle": "smart-cooking-devices"
+          }
+        },
+        "faq_AU3MbF": {
+          "type": "faq",
+          "settings": {
+            "question": "4、Are these products suitable for outdoor use?",
+            "answer": "The Smart Wireless Meat Thermometer is also travel-friendly, ideal for outdoor grilling or cooking",
+            "product_handle": "smart-cooking-devices"
+          }
+        },
+        "faq_TrEcFD": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Smart Wireless Meat Thermometer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living.",
+            "product_handle": "smart-cooking-devices"
+          }
+        },
+        "faq_kY4FBT": {
+          "type": "faq",
+          "settings": {
+            "question": "6、How do I connect to Wi-Fi?",
+            "answer": "Open the Meat App, select \"Device Connection,\" and follow the prompts to connect the EM05 to your Wi-Fi network for remote temperature monitoring.",
+            "product_handle": "smart-cooking-devices"
           }
         }
       },
@@ -108,7 +176,15 @@
         "faq_YKypfp",
         "faq_zcPRAr",
         "faq_4U83G4",
-        "faq_b3MKU9"
+        "faq_b3MKU9",
+        "faq_hhGn8i",
+        "faq_GpARFC",
+        "faq_XKxf8W",
+        "faq_3V6ibY",
+        "faq_f6mnyi",
+        "faq_AU3MbF",
+        "faq_TrEcFD",
+        "faq_kY4FBT"
       ],
       "settings": {
         "heading": "FAQ",
