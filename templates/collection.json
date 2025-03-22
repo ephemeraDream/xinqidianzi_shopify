@@ -241,6 +241,57 @@
         "heading": "",
         "product_handle": "smart-food-storage"
       }
+    },
+    "product_longtext_dYGDYg": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_xkyUjq": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Bluetooth Connectivity, Real-Time Monitoring（APP）",
+            "content": "Connects via Bluetooth for real-time temperature tracking, ensuring perfectly cooked meals.",
+            "image": "shopify://shop_images/blog_post_image.webp",
+            "position": "left"
+          }
+        },
+        "text_dpC6cV": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Precision Control, Enhanced Flavor",
+            "content": "Precise temperature control prevents overcooking or undercooking, enhancing flavor.",
+            "image": "shopify://shop_images/blog_post_image_2.webp",
+            "position": "right"
+          }
+        },
+        "text_EyB8Yi": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Portable Design, Essential for Outdoors",
+            "content": "Compact and portable, ideal for outdoor grilling and picnics.",
+            "image": "shopify://shop_images/blog_8.webp",
+            "position": "left"
+          }
+        },
+        "text_b7HGXK": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Long Battery Life, Extended Use",
+            "content": "Lasts up to 24 hours on a single charge, perfect for long cooking sessions.",
+            "image": "shopify://shop_images/img_1.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_xkyUjq",
+        "text_dpC6cV",
+        "text_EyB8Yi",
+        "text_b7HGXK"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": "smart-cooking-devices"
+      }
     }
   },
   "order": [
@@ -248,6 +299,7 @@
     "product_collection_XJ9R94",
     "product_list_mqnFFM",
     "product_faq_yjrbia",
-    "product_longtext_FjMcUk"
+    "product_longtext_FjMcUk",
+    "product_longtext_dYGDYg"
   ]
 }
