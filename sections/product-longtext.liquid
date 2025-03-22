@@ -1,30 +1,48 @@
 {{ 'section-product-longtext.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-longtext padding-sider">
-  <h2 class="product-longtext-heading">{{ section.settings.heading }}</h2>
+{% if request.path contains section.settings.product_handle %}
+  <div id="section-{{ section.id }}" class="product-longtext padding-sider">
+    <h2 class="product-longtext-heading">{{ section.settings.heading }}</h2>
 
-  <div class="long-text-list">
-    {% assign max_visible = 3 %}
-    {% assign total_blocks = section.blocks.size %}
+    {% comment %}
+      <div class="long-text-list">
+        {% assign max_visible = 3 %}
+        {% assign total_blocks = section.blocks.size %}
+
+        {% for block in section.blocks %}
+          <div class="long-text-item{% if forloop.index > max_visible %} long-text-hidden{% endif %}">
+            <h3 class="long-text-subtitle">{{ block.settings.subtitle }}</h3>
+            <div class="long-text-content">{{ block.settings.content }}</div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="flex-center">
+        <div class="show-more-btn" id="show-more-btn">
+          <span>Show More</span>
+          {{- 'arrow-down.svg' | inline_asset_content -}}
+        </div>
+      </div>
+    {% endcomment %}
 
     {% for block in section.blocks %}
-      <div class="long-text-item{% if forloop.index > max_visible %} long-text-hidden{% endif %}">
-        <h3 class="long-text-subtitle">{{ block.settings.subtitle }}</h3>
-        <div class="long-text-content">{{ block.settings.content }}</div>
+      <div class="product-longtext-box {{ block.settings.position }}">
+        <img
+          src="{{ block.settings.image | image_url }}"
+          alt="{{ block.settings.subtitle }}"
+          class="product-longtext-box-img"
+        >
+        <div class="product-longtext-box-info">
+          <h3 class="long-text-subtitle">{{ block.settings.subtitle }}</h3>
+          <div class="long-text-content">{{ block.settings.content }}</div>
+        </div>
       </div>
     {% endfor %}
   </div>
-
-  <div class="flex-center">
-    <div class="show-more-btn" id="show-more-btn">
-      <span>Show More</span>
-      {{- 'arrow-down.svg' | inline_asset_content -}}
-    </div>
-  </div>
-</div>
+{% endif %}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  {% comment %} document.addEventListener('DOMContentLoaded', function () {
     const showMoreBtn = document.getElementById('show-more-btn');
 
     showMoreBtn.addEventListener('click', function () {
@@ -51,7 +69,7 @@
         showMoreBtn.classList.remove('active');
       }
     });
-  });
+  }); {% endcomment %}
 </script>
 
 {% schema %}
@@ -67,6 +85,11 @@
       "type": "inline_richtext",
       "id": "heading",
       "label": "heading"
+    },
+    {
+      "type": "text",
+      "id": "product_handle",
+      "label": "product type handle"
     }
   ],
   "blocks": [
@@ -83,6 +106,27 @@
           "type": "inline_richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "id": "position",
+          "type": "radio",
+          "label": "Position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
         }
       ]
     }
