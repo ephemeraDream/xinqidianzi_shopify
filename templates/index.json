@@ -145,26 +145,16 @@
             "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
             "product": "product-name-copy-1"
           }
-        },
-        "category_FwbcMW": {
-          "type": "category",
-          "settings": {
-            "title": "",
-            "heading": "",
-            "description": "",
-            "product": ""
-          }
         }
       },
       "block_order": [
         "category_LiDChJ",
         "category_UwmEfq",
         "category_PztF9G",
-        "category_Ppt9RR",
-        "category_FwbcMW"
+        "category_Ppt9RR"
       ],
       "settings": {
-        "heading": "Hot selling product"
+        "heading": "<strong>Simplify Your Kitchen, One Tool at a Time</strong>"
       }
     },
     "unique_selling_ci9cAL": {
