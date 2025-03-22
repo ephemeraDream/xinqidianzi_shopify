@@ -104,6 +104,7 @@
   object-fit: cover;
   object-position: center center;
   border-radius: 1.6rem;
+  width: 50%
 }
 
 .product-longtext .product-longtext-box-info {
@@ -111,10 +112,24 @@
   display: flex;
   align-items: center;
   padding: 2.2rem 4.4rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 767px) {
   .product-longtext {
     padding-top: 6rem;
+  }
+
+  .product-longtext .product-longtext-box {
+    flex-wrap: wrap;
+  }
+
+  .product-longtext .product-longtext-box.right {
+    flex-direction: row;
+  }
+
+  .product-longtext .product-longtext-box .product-longtext-box-img {
+    flex: 0 0 100%;
+    width: 100%;
   }
 }
