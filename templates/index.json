@@ -147,20 +147,13 @@
         "product_yMr4QK": {
           "type": "product",
           "settings": {
-            "product": "product-name-复制"
-          }
-        },
-        "product_XExaKP": {
-          "type": "product",
-          "settings": {
-            "product": "product-name-复制-1"
+            "product": "product-name-2"
           }
         }
       },
       "block_order": [
         "product_taJNnQ",
-        "product_yMr4QK",
-        "product_XExaKP"
+        "product_yMr4QK"
       ],
       "settings": {
         "heading": "Simplify Your Kitchen",
