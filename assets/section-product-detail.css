@@ -9,6 +9,8 @@
 
 .product-detail .product-detail-left {
   width: calc(100% - 61.6rem);
+  position: sticky;
+  top: 0;
 }
 
 .product-detail .product-detail-right {
