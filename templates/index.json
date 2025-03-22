@@ -68,7 +68,10 @@
         "heading_kWXmyd"
       ],
       "settings": {
-        "collection": "best-sellers"
+        "product_list": [
+          "product-name-复制-1",
+          "product-name-复制"
+        ]
       }
     },
     "new_arrivals_RwMRGd": {
@@ -113,7 +116,7 @@
             "title": "Smart Food Storage",
             "heading": "Preserve Freshness, Anytime, Anywhere!",
             "description": "Our Mason Jar Sealer is not just for jars—it’s your ultimate kitchen multitasker! Compact and easy to carry, it creates airtight seals for Mason jars, wine bottles, and even vacuum bags. Perfect for preserving jams, extending the life of your wine, or storing leftovers without the mess.",
-            "product": "product-name-2"
+            "product": "product-name-复制"
           }
         },
         "category_UwmEfq": {
@@ -123,7 +126,7 @@
             "title": "Smart Cooking Devices",
             "heading": "Cook Smarter, Taste Better!",
             "description": "Take your cooking to the next level with our Smart Wireless Meat Thermometer! Connect via Bluetooth to the app for real-time temperature monitoring, ensuring your food is perfectly cooked every time. Whether you’re grilling, roasting, or baking, enjoy fresher, juicier results with ease.",
-            "product": "product-name-1"
+            "product": "product-name"
           }
         }
       },
@@ -305,18 +308,6 @@
             "product": "product-name"
           }
         },
-        "product_iTnb8i": {
-          "type": "product",
-          "settings": {
-            "product": "product-name-1"
-          }
-        },
-        "product_TwjPFj": {
-          "type": "product",
-          "settings": {
-            "product": "product-name-2"
-          }
-        },
         "product_6AdFM9": {
           "type": "product",
           "settings": {
@@ -332,8 +323,6 @@
       },
       "block_order": [
         "product_Lx9mtw",
-        "product_iTnb8i",
-        "product_TwjPFj",
         "product_6AdFM9",
         "product_qQAYpt"
       ],
