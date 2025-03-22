@@ -104,4 +104,13 @@
   .product-faq {
     padding-bottom: 6rem;
   }
+
+  .product-faq-contain .faq-list .flex-start {
+    gap: 1rem;
+  }
+
+  .product-faq-contain .faq-list .flex-start .faq-question,
+  .product-faq-contain .faq-list .faq-answer {
+    font-size: 2.2rem;
+  }
 }
