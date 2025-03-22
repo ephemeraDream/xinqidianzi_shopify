@@ -29,7 +29,7 @@
   visibility: visible;
 }
 
-.product-longtext .long-text-list .long-text-item .long-text-subtitle {
+.product-longtext .long-text-subtitle {
   font-family: Poppins;
   font-size: 3.2rem;
   font-weight: 600;
@@ -40,7 +40,7 @@
   margin-top: 3.2rem;
 }
 
-.product-longtext .long-text-list .long-text-item .long-text-content {
+.product-longtext .long-text-content {
   font-family: Poppins;
   font-size: 2rem;
   font-weight: normal;
@@ -91,6 +91,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .product-longtext .product-longtext-box.right {
@@ -102,6 +103,7 @@
   height: 41rem;
   object-fit: cover;
   object-position: center center;
+  border-radius: 1.6rem;
 }
 
 .product-longtext .product-longtext-box-info {
