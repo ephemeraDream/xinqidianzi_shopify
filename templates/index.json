@@ -68,7 +68,10 @@
         "heading_kWXmyd"
       ],
       "settings": {
-        "collection": "best-sellers"
+        "product_list": [
+          "product-name-复制-1",
+          "product-name-复制"
+        ]
       }
     },
     "new_arrivals_RwMRGd": {
