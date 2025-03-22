@@ -19,7 +19,7 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        {% for product in section.settings.collection.products limit: 10 %}
+        {% for product in section.settings.product_list %}
           <div class="swiper-slide product-card">
             <div class="product-image">
               <a href="{{ product.url }}">
@@ -98,8 +98,8 @@
   },
   "settings": [
     {
-      "type": "collection",
-      "id": "collection",
+      "type": "product_list",
+      "id": "product_list",
       "label": "choose products"
     }
   ],
