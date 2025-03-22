@@ -10,13 +10,15 @@
     </div>
     <div class="faq-list">
       {% for block in section.blocks %}
-        <div class="faq-item">
-          <div class="flex-start">
-            <div class="faq-question">{{ block.settings.question }}</div>
-            <div class="faq-icon">{{- 'icon-plus.svg' | inline_asset_content -}}</div>
+        {% if request.path contains block.settings.product_handle %}
+          <div class="faq-item">
+            <div class="flex-start">
+              <div class="faq-question">{{ block.settings.question }}</div>
+              <div class="faq-icon">{{- 'icon-plus.svg' | inline_asset_content -}}</div>
+            </div>
+            <div class="faq-answer">{{ block.settings.answer }}</div>
           </div>
-          <div class="faq-answer">{{ block.settings.answer }}</div>
-        </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
