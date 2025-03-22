@@ -1,6 +1,6 @@
 {{ 'section-product-faq.css' | asset_url | stylesheet_tag }}
 
-{% if request.path contains block.settings.product_handle %}
+{% if request.path contains section.settings.product_handle %}
   <div id="section-{{ section.id }}" class="product-faq">
     <div class="product-faq-contain  padding-sider">
       <h2 class="product-faq-heading">
