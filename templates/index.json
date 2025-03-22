@@ -113,45 +113,23 @@
             "title": "Smart Food Storage",
             "heading": "Preserve Freshness, Anytime, Anywhere!",
             "description": "Our Mason Jar Sealer is not just for jars—it’s your ultimate kitchen multitasker! Compact and easy to carry, it creates airtight seals for Mason jars, wine bottles, and even vacuum bags. Perfect for preserving jams, extending the life of your wine, or storing leftovers without the mess.",
-            "product": "product-name-copy-1"
+            "product": "product-name-复制"
           }
         },
         "category_UwmEfq": {
           "type": "category",
           "settings": {
             "image": "shopify://shop_images/image-comparison-1.webp",
-            "title": "category01",
-            "heading": "Lorem Ipsum",
-            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
-            "product": "product-name-copy-1"
-          }
-        },
-        "category_PztF9G": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/image-comparison-1.webp",
-            "title": "category01",
-            "heading": "Lorem Ipsum",
-            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
-            "product": "product-name-copy-1"
-          }
-        },
-        "category_Ppt9RR": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/image-comparison-1.webp",
-            "title": "category01",
-            "heading": "Lorem Ipsum",
-            "description": "Lorem ipsum dolor sit amet. Aut iste ipsum a ipsum mollitia ut similique aperiam quo sequi voluptatem non assumenda expedita. Qui inventore neque cum ipsam blanditiis sed rerum recusandae.",
-            "product": "product-name-copy-1"
+            "title": "Smart Cooking Devices",
+            "heading": "Cook Smarter, Taste Better!",
+            "description": "Take your cooking to the next level with our Smart Wireless Meat Thermometer! Connect via Bluetooth to the app for real-time temperature monitoring, ensuring your food is perfectly cooked every time. Whether you’re grilling, roasting, or baking, enjoy fresher, juicier results with ease.",
+            "product": "product-name"
           }
         }
       },
       "block_order": [
         "category_LiDChJ",
-        "category_UwmEfq",
-        "category_PztF9G",
-        "category_Ppt9RR"
+        "category_UwmEfq"
       ],
       "settings": {
         "heading": "<strong>Simplify Your Kitchen, One Tool at a Time</strong>"
