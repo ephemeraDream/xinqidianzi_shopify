@@ -17,6 +17,10 @@
       "type": "product-highlight-intro",
       "settings": {}
     },
+    "prodcut_introduce_two_6H8d7G": {
+      "type": "prodcut-introduce-two",
+      "settings": {}
+    },
     "17407367833c92a3af": {
       "type": "apps",
       "blocks": {
@@ -107,9 +111,60 @@
         "text": "This is a placeholder copy This is a placeholder copy"
       }
     },
-    "prodcut_introduce_two_6H8d7G": {
-      "type": "prodcut-introduce-two",
-      "settings": {}
+    "product_faq_QymQNC": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_HQYT4P": {
+          "type": "faq",
+          "settings": {
+            "question": "1、<strong>How do I connect to Wi-Fi?</strong>",
+            "answer": "Open the <strong>Meat App</strong>, select \"Device Connection,\" and follow the prompts to connect the EM09 to your Wi-Fi network for remote temperature monitoring."
+          }
+        },
+        "faq_BV3Kx3": {
+          "type": "faq",
+          "settings": {
+            "question": "2、<strong>How waterproof is the EM09?</strong>",
+            "answer": "The EM09 is IPX7 waterproof, resistant to steam and humidity, making it perfect for outdoor grilling and tough weather conditions."
+          }
+        },
+        "faq_8AHLp6": {
+          "type": "faq",
+          "settings": {
+            "question": "3、<strong>What is the battery life of the EM09?</strong>",
+            "answer": "It lasts up to 24 hours on a single charge, ideal for all-day cooking sessions, whether slow cooking or outdoor grilling."
+          }
+        },
+        "faq_qfgRpP": {
+          "type": "faq",
+          "settings": {
+            "question": "4、<strong>What is the temperature range of the EM05?</strong>",
+            "answer": "The EM09 monitors temperatures from -50°C to 300°C, perfect for grilling, roasting, and baking."
+          }
+        },
+        "faq_BPgwnz": {
+          "type": "faq",
+          "settings": {
+            "question": "5、<strong>How do I set alerts using the Meat App?</strong>",
+            "answer": "Set target temperatures in the <strong>Meat PRO App</strong>, and the EM09 will alert you when your food is perfectly cooked—no more guesswork!"
+          }
+        }
+      },
+      "block_order": [
+        "faq_HQYT4P",
+        "faq_BV3Kx3",
+        "faq_8AHLp6",
+        "faq_qfgRpP",
+        "faq_BPgwnz"
+      ],
+      "custom_css": [
+        ".product-faq-contain .product-faq-heading {text-transform: none; text-align: center;}"
+      ],
+      "settings": {
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "text": "",
+        "product_handle": ""
+      }
     }
   },
   "order": [
@@ -118,6 +173,7 @@
     "prodcut_introduce_two_6H8d7G",
     "17407367833c92a3af",
     "hot_video_q4rymY",
-    "product_recommend_kRfdJq"
+    "product_recommend_kRfdJq",
+    "product_faq_QymQNC"
   ]
 }
