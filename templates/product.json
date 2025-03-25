@@ -163,7 +163,117 @@
       "settings": {
         "heading": "<strong>Frequently Asked Questions</strong>",
         "text": "",
-        "product_handle": ""
+        "product_handle": "em09"
+      }
+    },
+    "product_faq_nUWLHm": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_mXRMVM": {
+          "type": "faq",
+          "settings": {
+            "question": "1、<strong>What lids and mason jar brands are heiyo products suitable for?</strong>",
+            "answer": "heiyo was designed to fit universally to any and every mason jar brand and lid, saving you money by not having to buy special ones. You can use any mason jars from the likes of Ball, Kerr, Bernardin and all other brands! Its the same case with lids, you can use any store-bought lids regardless of the brand."
+          }
+        },
+        "faq_UNJTf6": {
+          "type": "faq",
+          "settings": {
+            "question": "2、<strong>What jar sizes does heiyo’s VP05 fit?</strong>",
+            "answer": "The heiyo’s VP05 is designed to fit both regular and wide-mouth jars, providing versatility in preserving your favorite foods."
+          }
+        },
+        "faq_d7mVUc": {
+          "type": "faq",
+          "settings": {
+            "question": "3、<strong>How does the heiyo’s VP05 charge?</strong>",
+            "answer": "The VP05 features USB-C charging for quick and versatile power, with a single charge supporting up to 50 seals."
+          }
+        },
+        "faq_kEyTGc": {
+          "type": "faq",
+          "settings": {
+            "question": "4、<strong>What is the battery life of the VP05?</strong>",
+            "answer": "A single charge supports up to 50 seals, making it ideal for extended use and a reliable kitchen companion."
+          }
+        },
+        "faq_4twCWY": {
+          "type": "faq",
+          "settings": {
+            "question": "5、<strong>How do I clean and maintain the VP05?</strong>",
+            "answer": "Simply wipe the VP05 with a damp cloth, avoid direct contact with water near the charging port, and store it in a dry place."
+          }
+        }
+      },
+      "block_order": [
+        "faq_mXRMVM",
+        "faq_UNJTf6",
+        "faq_d7mVUc",
+        "faq_kEyTGc",
+        "faq_4twCWY"
+      ],
+      "custom_css": [
+        ".product-faq-contain .product-faq-heading {text-transform: none; text-align: center;}"
+      ],
+      "settings": {
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "text": "",
+        "product_handle": "vp05"
+      }
+    },
+    "product_faq_TKNzWA": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_q9fxiG": {
+          "type": "faq",
+          "settings": {
+            "question": "1、<strong>What lids and mason jar brands are heiyo products suitable for?</strong>",
+            "answer": "heiyo was designed to fit universally to any and every mason jar brand and lid, saving you money by not having to buy special ones. You can use any mason jars from the likes of Ball, Kerr, Bernardin and all other brands! Its the same case with lids, you can use any store-bought lids regardless of the brand."
+          }
+        },
+        "faq_7pnWLP": {
+          "type": "faq",
+          "settings": {
+            "question": "2、<strong>Why choose our VP09 mason jar vacuum sealer?</strong>",
+            "answer": "Our vacuum sealer for jars can currently not only seal mason jars, but can also be used with external components to seal bags and wine bottles. The scenes are diverse while saving you and your family worry and effort."
+          }
+        },
+        "faq_P6X8J6": {
+          "type": "faq",
+          "settings": {
+            "question": "3、<strong>Which part of the upgraded VP09 mason jar vacuum sealer has been improved?</strong>",
+            "answer": "The biggest difference between our jar sealer and the mason jar sealer on the market is that we currently adopt an integrated design, which can switch between sealed wide-mouth mason jars and regular-mouth mason jars without disassembly."
+          }
+        },
+        "faq_GCLMdD": {
+          "type": "faq",
+          "settings": {
+            "question": "4、<strong>Where is the main function of magnetic absorption?</strong>",
+            "answer": "There is a magnet installed on the side of the main unit and the cover of the external component cup. After you seal it, you can magnetically absorb it and store it away. It does not take up too much space and is beautiful and practical."
+          }
+        },
+        "faq_q3MLky": {
+          "type": "faq",
+          "settings": {
+            "question": "5、<strong>Where are the upgrades in silicone mainly reflected?</strong>",
+            "answer": "The silicone of our cordless mason vacuum sealer is fixed, unlike the mason jar sealers on the market today, so the seal will not warp no matter how many times you use it, ensuring your sealing effect."
+          }
+        }
+      },
+      "block_order": [
+        "faq_q9fxiG",
+        "faq_7pnWLP",
+        "faq_P6X8J6",
+        "faq_GCLMdD",
+        "faq_q3MLky"
+      ],
+      "custom_css": [
+        ".product-faq-contain .product-faq-heading {text-transform: none; text-align: center;}"
+      ],
+      "settings": {
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "text": "",
+        "product_handle": "vp09"
       }
     }
   },
@@ -174,6 +284,8 @@
     "17407367833c92a3af",
     "hot_video_q4rymY",
     "product_recommend_kRfdJq",
-    "product_faq_QymQNC"
+    "product_faq_QymQNC",
+    "product_faq_nUWLHm",
+    "product_faq_TKNzWA"
   ]
 }
