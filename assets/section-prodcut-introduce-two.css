@@ -6,6 +6,7 @@
 .product-introduce-two .product-introduce-two-text {
   text-align: center;
   padding: 0 2.4rem;
+  margin: 6rem 0;
 }
 
 .product-introduce-two .product-introduce-two-text h4 {
@@ -28,10 +29,6 @@
   font-variation-settings: "opsz" auto;
   color: #767676;
   margin-top: 3.4rem;
-}
-
-.product-introduce-two .product-introduce-two-text+.product-introduce-two-image {
-  margin-top: 1.33em;
 }
 
 /* .product-introduce-two .product-introduce-two-image {
@@ -58,7 +55,7 @@
 
 .product-introduce-two .product-introduce-two-box img {
   flex: 0 0 50%;
-  height: 40rem;
-  object-fit: cover;
+  height: 60rem;
+  object-fit: contain;
   object-position: center center;
 }
