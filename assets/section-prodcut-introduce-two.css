@@ -64,10 +64,13 @@
 @media screen and (max-width: 767px) {
   .product-introduce-two .product-introduce-two-box {
     flex-wrap: wrap;
+    margin: 0;
   }
 
   .product-introduce-two .product-introduce-two-box .product-introduce-two-text,
   .product-introduce-two .product-introduce-two-box img {
     flex: 0 0 100%;
+    width: 100%;
+    height: auto;
   }
 }
