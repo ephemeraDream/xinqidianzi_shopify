@@ -60,3 +60,14 @@
   object-fit: contain;
   object-position: center center;
 }
+
+@media screen and (max-width: 767px) {
+  .product-introduce-two .product-introduce-two-box {
+    flex-wrap: wrap;
+  }
+
+  .product-introduce-two .product-introduce-two-box .product-introduce-two-text,
+  .product-introduce-two .product-introduce-two-box img {
+    flex: 0 0 100%;
+  }
+}
