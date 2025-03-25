@@ -73,4 +73,8 @@
     width: 100%;
     height: auto;
   }
+
+  .product-introduce-two .product-introduce-two-box.product-introduce-two-box-right {
+    flex-direction: row-reverse;
+  }
 }
