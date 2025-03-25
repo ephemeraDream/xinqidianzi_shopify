@@ -4,13 +4,13 @@
   <h2 class="product-highlight-intro-title">{{ product.metafields.custom.highlight_intro_title }}</h2>
   <div class="product-highlight-intro-contain">
     <div class="product-highlight-intro-item">
-      {{ product.metafields.custom.highlight_intro_one }}
+      {{ product.metafields.custom.highlight_intro_one | metafield_tag }}
     </div>
     <div class="product-highlight-intro-item">
-      {{ product.metafields.custom.highlight_intro_two }}
+      {{ product.metafields.custom.highlight_intro_two | metafield_tag }}
     </div>
     <div class="product-highlight-intro-item">
-      {{ product.metafields.custom.highlight_intro_thr }}
+      {{ product.metafields.custom.highlight_intro_thr | metafield_tag }}
     </div>
   </div>
 </div>

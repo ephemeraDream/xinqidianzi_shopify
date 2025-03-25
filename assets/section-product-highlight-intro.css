@@ -12,10 +12,12 @@
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   color: #333333;
+  text-align: center;
 }
 
 .product-highlight-intro .product-highlight-intro-contain {
   display: flex;
+  margin-top: 3.4rem;
 }
 
 .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item {
