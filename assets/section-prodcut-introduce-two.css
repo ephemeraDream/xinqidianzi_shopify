@@ -75,6 +75,6 @@
   }
 
   .product-introduce-two .product-introduce-two-box.product-introduce-two-box-right {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
 }
