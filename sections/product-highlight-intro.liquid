@@ -1,0 +1,33 @@
+{{ 'section-product-highlight-intro.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-highlight-intro padding-sider">
+  <h2 class="product-highlight-intro-title">{{ product.metafields.custom.highlight_intro_title }}</h2>
+  <div class="product-highlight-intro-contain">
+    <div class="product-highlight-intro-item">
+      {{ product.metafields.custom.highlight_intro_one }}
+    </div>
+    <div class="product-highlight-intro-item">
+      {{ product.metafields.custom.highlight_intro_two }}
+    </div>
+    <div class="product-highlight-intro-item">
+      {{ product.metafields.custom.highlight_intro_thr }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "product highlight intro",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "product highlight intro"
+    }
+  ]
+}
+{% endschema %}
