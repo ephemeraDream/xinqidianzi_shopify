@@ -106,11 +106,16 @@
         "heading": "You May Also Like",
         "text": "This is a placeholder copy This is a placeholder copy"
       }
+    },
+    "prodcut_introduce_two_6H8d7G": {
+      "type": "prodcut-introduce-two",
+      "settings": {}
     }
   },
   "order": [
     "product_detail_UfijdK",
     "product_highlight_intro_KLxPti",
+    "prodcut_introduce_two_6H8d7G",
     "17407367833c92a3af",
     "hot_video_q4rymY",
     "product_recommend_kRfdJq"
