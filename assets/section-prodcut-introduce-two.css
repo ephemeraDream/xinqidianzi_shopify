@@ -46,6 +46,7 @@
 .product-introduce-two .product-introduce-two-box {
   display: flex;
   align-items: center;
+  margin: 6rem 0;
 }
 
 .product-introduce-two .product-introduce-two-box .product-introduce-two-text {
