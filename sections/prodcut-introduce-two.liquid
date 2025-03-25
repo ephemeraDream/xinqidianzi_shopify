@@ -1,0 +1,82 @@
+{{ 'section-prodcut-introduce-two.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="product-introduce-two padding-sider">
+  {% if product.metafields.custom.image_with_text_one_text != blank %}
+    <div class="product-introduce-two-text">
+      {{ product.metafields.custom.image_with_text_one_text | metafield_tag }}
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_one_image != blank %}
+    <div class="product-introduce-two-image">
+      <img
+        src="{{ product.metafields.custom.image_with_text_one_image | image_url }}"
+        alt="image_with_text_one_image"
+      >
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_two_text != blank %}
+    <div class="product-introduce-two-text">
+      {{ product.metafields.custom.image_with_text_two_text | metafield_tag }}
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_two_image != blank %}
+    <div class="product-introduce-two-image">
+      <img
+        src="{{ product.metafields.custom.image_with_text_two_image | image_url }}"
+        alt="image_with_text_two_image"
+      >
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_thr_text != blank %}
+    <div class="product-introduce-two-text">
+      {{ product.metafields.custom.image_with_text_thr_text | metafield_tag }}
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_thr_image != blank %}
+    <div class="product-introduce-two-image">
+      <img
+        src="{{ product.metafields.custom.image_with_text_thr_image | image_url }}"
+        alt="image_with_text_thr_image"
+      >
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_four_text != blank || product.metafields.custom.image_with_text_four_image != blank %}
+    <div class="product-introduce-two-box">
+      <div class="product-introduce-two-text">
+        {{ product.metafields.custom.image_with_text_four_text | metafield_tag }}
+      </div>
+      <img
+        src="{{ product.metafields.custom.image_with_text_four_image | image_url }}"
+        alt="image_with_text_four_image"
+      >
+    </div>
+  {% endif %}
+  {% if product.metafields.custom.image_with_text_five_text != blank || product.metafields.custom.image_with_text_five_image != blank %}
+    <div class="product-introduce-two-box">
+      <img
+        src="{{ product.metafields.custom.image_with_text_five_image | image_url }}"
+        alt="image_with_text_five_image"
+      >
+      <div class="product-introduce-two-text">
+        {{ product.metafields.custom.image_with_text_five_text | metafield_tag }}
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "product introduce two",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "product introduce two"
+    }
+  ]
+}
+{% endschema %}

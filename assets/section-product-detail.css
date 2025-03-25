@@ -34,7 +34,7 @@
 .product-detail .product-detail-imgbox img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
 
@@ -489,6 +489,9 @@
     position: relative;
   }
 
+  .product-detail .product-detail-left {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 767px) {
