@@ -46,3 +46,13 @@
   color: #767676;
   margin-top: 5.2rem;
 }
+
+@media screen and (max-width: 767px) {
+  .product-highlight-intro .product-highlight-intro-contain {
+    flex-wrap: wrap;
+  }
+
+  .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item {
+    flex: 0 0 100%;
+  }
+}
