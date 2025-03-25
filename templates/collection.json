@@ -24,7 +24,9 @@
           "type": "buttons",
           "settings": {
             "button_label": "Explore More",
-            "button_link": ""
+            "button_link": "",
+            "button_label_two": "Explore More",
+            "button_link_two": ""
           }
         }
       },
