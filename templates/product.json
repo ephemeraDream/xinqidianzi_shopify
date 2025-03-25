@@ -21,21 +21,6 @@
       "type": "prodcut-introduce-two",
       "settings": {}
     },
-    "17407367833c92a3af": {
-      "type": "apps",
-      "blocks": {
-        "shxq_comment_prod_product_comment_A8yQRk": {
-          "type": "shopify://apps/shxq-comment-prod/blocks/product-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "shxq_comment_prod_product_comment_A8yQRk"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "hot_video_q4rymY": {
       "type": "hot-video",
       "blocks": {
@@ -275,17 +260,32 @@
         "text": "",
         "product_handle": "vp09"
       }
+    },
+    "17407367833c92a3af": {
+      "type": "apps",
+      "blocks": {
+        "shxq_comment_prod_product_comment_A8yQRk": {
+          "type": "shopify://apps/shxq-comment-prod/blocks/product-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "shxq_comment_prod_product_comment_A8yQRk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "product_detail_UfijdK",
     "product_highlight_intro_KLxPti",
     "prodcut_introduce_two_6H8d7G",
-    "17407367833c92a3af",
-    "hot_video_q4rymY",
-    "product_recommend_kRfdJq",
     "product_faq_QymQNC",
     "product_faq_nUWLHm",
-    "product_faq_TKNzWA"
+    "product_faq_TKNzWA",
+    "17407367833c92a3af",
+    "hot_video_q4rymY",
+    "product_recommend_kRfdJq"
   ]
 }
