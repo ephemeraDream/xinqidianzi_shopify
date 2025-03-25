@@ -49,11 +49,20 @@
             </div>
           </div>
         {%- when 'buttons' -%}
-          <div class="home-banner-box-button">
+          <div class="home-banner-box-button_box">
             {%- if block.settings.button_label != blank -%}
-              <a href="{{ block.settings.button_link }}">
-                {{- block.settings.button_label | escape -}}
-              </a>
+              <div class="home-banner-box-button">
+                <a href="{{ block.settings.button_link }}">
+                  {{- block.settings.button_label | escape -}}
+                </a>
+              </div>
+            {%- endif -%}
+            {%- if block.settings.button_label_two != blank -%}
+              <div class="home-banner-box-button">
+                <a href="{{ block.settings.button_link_two }}">
+                  {{- block.settings.button_label_two | escape -}}
+                </a>
+              </div>
             {%- endif -%}
           </div>
       {%- endcase -%}
@@ -110,6 +119,16 @@
           "type": "url",
           "id": "button_link",
           "label": "button link"
+        },
+        {
+          "type": "text",
+          "id": "button_label_two",
+          "label": "second button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_two",
+          "label": "second button link"
         }
       ]
     }

@@ -108,6 +108,13 @@
   margin-left: 3.2rem;
 }
 
+.home-banner-box .home-banner-box-button_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
 .home-banner .home-banner-box-head {
   flex: 0 0 100%;
 }
