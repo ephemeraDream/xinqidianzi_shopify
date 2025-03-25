@@ -69,8 +69,8 @@
       ],
       "settings": {
         "product_list": [
-          "product-name-复制-1",
-          "product-name-复制"
+          "heiyo-vacuum-sealer-kit-vp05",
+          "heiyo-3-in-1-vacuum-sealer-kit-vp09"
         ]
       }
     },
@@ -116,7 +116,7 @@
             "title": "Smart Food Storage",
             "heading": "Preserve Freshness, Anytime, Anywhere!",
             "description": "Our Mason Jar Sealer is not just for jars—it’s your ultimate kitchen multitasker! Compact and easy to carry, it creates airtight seals for Mason jars, wine bottles, and even vacuum bags. Perfect for preserving jams, extending the life of your wine, or storing leftovers without the mess.",
-            "product": "product-name-复制"
+            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09"
           }
         },
         "category_UwmEfq": {
@@ -126,7 +126,7 @@
             "title": "Smart Cooking Devices",
             "heading": "Cook Smarter, Taste Better!",
             "description": "Take your cooking to the next level with our Smart Wireless Meat Thermometer! Connect via Bluetooth to the app for real-time temperature monitoring, ensuring your food is perfectly cooked every time. Whether you’re grilling, roasting, or baking, enjoy fresher, juicier results with ease.",
-            "product": "product-name"
+            "product": "heiyo-wireless-thermometer-em09"
           }
         }
       },
@@ -144,13 +144,13 @@
         "product_taJNnQ": {
           "type": "product",
           "settings": {
-            "product": "product-name"
+            "product": "heiyo-wireless-thermometer-em09"
           }
         },
         "product_yMr4QK": {
           "type": "product",
           "settings": {
-            "product": "product-name-复制"
+            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09"
           }
         }
       },
@@ -305,19 +305,19 @@
         "product_Lx9mtw": {
           "type": "product",
           "settings": {
-            "product": "product-name"
+            "product": "heiyo-wireless-thermometer-em09"
           }
         },
         "product_6AdFM9": {
           "type": "product",
           "settings": {
-            "product": "product-name-复制"
+            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09"
           }
         },
         "product_qQAYpt": {
           "type": "product",
           "settings": {
-            "product": "product-name-复制-1"
+            "product": "heiyo-vacuum-sealer-kit-vp05"
           }
         }
       },
