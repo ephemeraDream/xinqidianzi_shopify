@@ -17,11 +17,13 @@
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           <div class="swiper-slide history-card">
+            {% if block.settings.image != blank %}
             <img
               src="{{ block.settings.image | image_url }}"
               alt="{{ block.settings.heading }}"
               class="history-image"
             >
+            {% endif %}
             <div class="history-box">
               <h3 class="history-year">{{ block.settings.year }}</h3>
               <div class="history-heading">{{ block.settings.heading }}</div>
