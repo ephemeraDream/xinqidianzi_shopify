@@ -40,7 +40,7 @@
       >
     </div>
   {% endif %}
-  {% if product.metafields.custom.image_with_text_four_text != blank || product.metafields.custom.image_with_text_four_image != blank %}
+  {% if product.metafields.custom.image_with_text_four_text != blank or product.metafields.custom.image_with_text_four_image != blank %}
     <div class="product-introduce-two-box">
       <div class="product-introduce-two-text">
         {{ product.metafields.custom.image_with_text_four_text | metafield_tag }}
@@ -51,7 +51,7 @@
       >
     </div>
   {% endif %}
-  {% if product.metafields.custom.image_with_text_five_text != blank || product.metafields.custom.image_with_text_five_image != blank %}
+  {% if product.metafields.custom.image_with_text_five_text != blank or product.metafields.custom.image_with_text_five_image != blank %}
     <div class="product-introduce-two-box">
       <img
         src="{{ product.metafields.custom.image_with_text_five_image | image_url }}"
