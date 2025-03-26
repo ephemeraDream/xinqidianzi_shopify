@@ -2,4 +2,34 @@
   max-width: 144rem;
   margin: 0 auto;
   padding: 6rem 0;
+
+  font-family: Blinker;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #767676;
+}
+
+.buying-guide-richtext .buying-guide-richtext-title {
+  font-family: Blinker;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  text-align: center;
+}
+
+.buying-guide-richtext h4 {
+  font-family: Blinker;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+  margin-top: 3.4rem;
 }
