@@ -44,17 +44,60 @@
         "faq_Fg4P7c"
       ],
       "custom_css": [
-        ".product-faq{background: #fff;}"
+        ".product-faq {background: #fff;}"
       ],
       "settings": {
         "heading": "<strong>FAQ</strong>",
         "text": "",
         "product_handle": ""
       }
+    },
+    "rich_text_UtBEaU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6ELQQz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Conclusion</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_AAce6d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you choose the <strong>VP05</strong> or <strong>VP09</strong>, heiyo’s Mason jar sealers offer efficient and convenient food storage solutions. Pick the one that suits your needs and enjoy the freshness!</p>"
+          }
+        },
+        "heading_UXphTY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Shop Now and Embrace a Fresher Lifestyle!</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ELQQz",
+        "text_AAce6d",
+        "heading_UXphTY"
+      ],
+      "custom_css": [
+        ".isolate .rich-text .rich-text__wrapper {font-family: Blinker; font-size: 2rem; font-weight: normal; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676;}",
+        ".isolate .rich-text .rich-text__wrapper h2 {font-family: Blinker; font-size: 3.2rem; font-weight: normal; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "buying_guide_richtext_fMLnny",
-    "product_faq_tdim8t"
+    "product_faq_tdim8t",
+    "rich_text_UtBEaU"
   ]
 }
