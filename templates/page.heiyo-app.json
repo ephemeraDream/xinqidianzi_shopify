@@ -90,6 +90,9 @@
         "heading_3yheWG",
         "text_UcJMkK"
       ],
+      "custom_css": [
+        ".media>img{object-fit:contain;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/01.webp",
         "height": "large",
