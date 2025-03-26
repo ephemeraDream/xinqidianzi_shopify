@@ -91,7 +91,8 @@
         "text_UcJMkK"
       ],
       "custom_css": [
-        ".media>img{object-fit:contain;}"
+        ".media > img {object-fit: contain;}",
+        ".image-with-text__media{border: none;}"
       ],
       "settings": {
         "image": "shopify://shop_images/01.webp",
