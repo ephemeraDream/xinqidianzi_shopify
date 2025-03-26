@@ -92,7 +92,7 @@
       ],
       "custom_css": [
         ".media > img {object-fit: contain;}",
-        ".image-with-text__media{border: none;}"
+        ".image-with-text__media {border: none;}"
       ],
       "settings": {
         "image": "shopify://shop_images/01.webp",
@@ -109,11 +109,140 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "image_with_text_DRKnLc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_b8NM7y": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Smart Alerts and Notifications</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_JLANyA": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Receive instant notifications when your food is ready.</li><li>Stay connected even when you’re away from the kitchen.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_b8NM7y",
+        "text_JLANyA"
+      ],
+      "custom_css": [
+        ".media > img {object-fit: contain;}",
+        ".image-with-text__media {border: none;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/02.webp",
+        "height": "large",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_jRmK6F": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ANT7kw": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Customizable Cooking Programs</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_jfip3q": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Set target temperatures for different types of food (steak, chicken, fish, etc.).</li><li>Save your favorite recipes and cooking settings for quick access.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ANT7kw",
+        "text_jfip3q"
+      ],
+      "custom_css": [
+        ".media > img {object-fit: contain;}",
+        ".image-with-text__media {border: none;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/03.webp",
+        "height": "large",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_Rm9qwc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Gf7idB": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Multi-Device Compatibility</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Fqg979": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Control multiple heiyo devices from one app.</li><li>Perfect for large meals or multi-course dinners.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gf7idB",
+        "text_Fqg979"
+      ],
+      "custom_css": [
+        ".media > img {object-fit: contain;}",
+        ".image-with-text__media {border: none;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/05.webp",
+        "height": "large",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "home_banner_kKRwgU",
     "rich_text_X4xFe7",
-    "image_with_text_FgqFUR"
+    "image_with_text_FgqFUR",
+    "image_with_text_DRKnLc",
+    "image_with_text_jRmK6F",
+    "image_with_text_Rm9qwc"
   ]
 }
