@@ -83,9 +83,9 @@
       ],
       "custom_css": [
         ".isolate .rich-text .rich-text__wrapper {font-family: Blinker; font-size: 2rem; font-weight: normal; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676;}",
-        ".isolate .rich-text .rich-text__wrapper h2 {font-family: Blinker; font-size: 3.2rem; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333;}",
+        ".isolate .rich-text .rich-text__wrapper h2 {font-size: 3.2rem; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333;}",
         ".isolate .rich-text .rich-text__wrapper h2 strong {font-weight: normal;}",
-        "@media screen and (min-width: 990px) {.rich-text__blocks {max-width: 100%; }}"
+        " .rich-text__blocks {max-width: 100%; }"
       ],
       "settings": {
         "desktop_content_position": "left",
