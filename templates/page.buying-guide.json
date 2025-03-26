@@ -43,6 +43,9 @@
         "faq_BCgRRb",
         "faq_Fg4P7c"
       ],
+      "custom_css": [
+        ".product-faq{background: #fff;}"
+      ],
       "settings": {
         "heading": "<strong>FAQ</strong>",
         "text": "",
