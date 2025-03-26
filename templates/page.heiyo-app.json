@@ -35,152 +35,81 @@
         "buttons_w3QGRG"
       ],
       "settings": {
-        "image": "shopify://shop_images/home-banner.webp"
+        "image": "shopify://shop_images/banner.webp"
       }
     },
-    "company_vision_4BbKeg": {
-      "type": "company-vision",
+    "rich_text_X4xFe7": {
+      "type": "rich-text",
       "blocks": {
-        "category_GpKceh": {
-          "type": "category",
+        "heading_RJ4tfL": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/about_1.webp"
+            "heading": "<strong>Download the heiyo App Today!</strong>",
+            "heading_size": "h1"
           }
         },
-        "category_rTfVqX": {
-          "type": "category",
+        "text_AiaQWc": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/about_3.webp"
-          }
-        },
-        "category_gHnKKt": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_2.webp"
-          }
-        },
-        "category_3XbbJX": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_4.webp"
+            "text": "<p>Take your cooking to the next level with the <strong>heiyo App</strong>, the ultimate companion for your <strong>Wireless Thermometer </strong>. Designed to make cooking smarter, easier, and more precise, the heiyo App is your go-to tool for perfect meals every time.</p>"
           }
         }
       },
       "block_order": [
-        "category_GpKceh",
-        "category_rTfVqX",
-        "category_gHnKKt",
-        "category_3XbbJX"
+        "heading_RJ4tfL",
+        "text_AiaQWc"
       ],
       "settings": {
-        "heading": "Company Vision",
-        "sec_heading": "This position contains the description text",
-        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
-    "design_team_zwfj3W": {
-      "type": "design-team",
+    "image_with_text_FgqFUR": {
+      "type": "image-with-text",
       "blocks": {
-        "category_NDbBmL": {
-          "type": "category",
+        "heading_3yheWG": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/about_6.webp"
+            "heading": "<strong>Real-Time Temperature Monitoring</strong>",
+            "heading_size": "h1"
           }
         },
-        "category_64mkmK": {
-          "type": "category",
+        "text_UcJMkK": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/about_5.webp"
+            "text": "<ul><li>Track your food’s internal temperature in real-time via Bluetooth connectivity.</li><li>Never overcook or undercook again—get alerts when your food reaches the perfect temperature.</li></ul>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "category_NDbBmL",
-        "category_64mkmK"
+        "heading_3yheWG",
+        "text_UcJMkK"
       ],
       "settings": {
-        "heading": "Design team",
-        "sec_heading": "This position contains the description text",
-        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
-        "title": "Title placeholder",
-        "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text"
-      }
-    },
-    "about_history_Vc7XLQ": {
-      "type": "about-history",
-      "blocks": {
-        "category_kaK7dz": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history_1.webp",
-            "year": "1958",
-            "heading": "Title placeholder",
-            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
-          }
-        },
-        "category_MEUfxQ": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history_2.webp",
-            "year": "1983",
-            "heading": "Title placeholder",
-            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
-          }
-        },
-        "category_KmK9cK": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history_1.webp",
-            "year": "1992",
-            "heading": "Title placeholder",
-            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
-          }
-        },
-        "category_DfUyA3": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history_2.webp",
-            "year": "1996",
-            "heading": "Title placeholder",
-            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
-          }
-        },
-        "category_WVabb4": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history_1.webp",
-            "year": "1998",
-            "heading": "Title placeholder",
-            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
-          }
-        },
-        "category_Fig6Qh": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history_2.webp",
-            "year": "2014",
-            "heading": "Title placeholder",
-            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
-          }
-        }
-      },
-      "block_order": [
-        "category_kaK7dz",
-        "category_MEUfxQ",
-        "category_KmK9cK",
-        "category_DfUyA3",
-        "category_WVabb4",
-        "category_Fig6Qh"
-      ],
-      "settings": {
-        "heading": "History"
+        "image": "shopify://shop_images/01.webp",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "home_banner_kKRwgU",
-    "company_vision_4BbKeg",
-    "design_team_zwfj3W",
-    "about_history_Vc7XLQ"
+    "rich_text_X4xFe7",
+    "image_with_text_FgqFUR"
   ]
 }
