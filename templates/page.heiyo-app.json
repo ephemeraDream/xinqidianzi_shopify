@@ -15,16 +15,18 @@
         "heading_BttCLX": {
           "type": "heading",
           "settings": {
-            "heading": "Lorem Ipsum",
+            "heading": "heiyo APP",
             "icon": "shopify://shop_images/icon-arrow-right.webp",
-            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+            "text": "<strong>heiyo App: Your Smart Cooking Companion</strong>"
           }
         },
         "buttons_w3QGRG": {
           "type": "buttons",
           "settings": {
-            "button_label": "DISCOVER",
-            "button_link": ""
+            "button_label": "Download from App Store",
+            "button_link": "https://apps.apple.com/cn/app/meat-pro/id6450789578",
+            "button_label_two": "Download from Android",
+            "button_link_two": "https://play.google.com/store/apps/details?id=com.zhixintek.meats&pcampaignid=web_share"
           }
         }
       },
