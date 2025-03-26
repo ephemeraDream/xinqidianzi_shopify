@@ -1,0 +1,97 @@
+{{ 'section-buying-guide-richtext.css' | asset_url | stylesheet_tag }}
+
+<div id="section-{{ section.id }}" class="buying-guide-richtext padding-sider">
+  <h2>Why Choose heiyo Mason Jar Sealers?</h2>
+  <div>
+    Mason jar sealers are essential tools for kitchen freshness, but heiyo’s VP05 and VP09 are more than just ordinary
+    sealers. With patented sealing technology, they ensure a perfect airtight seal every time, locking in the freshness
+    and nutrients of your food. Compared to regular sealers, heiyo’s products are more efficient, smarter, and suitable
+    for a variety of use cases.
+  </div>
+  <h4>Compared to ordinary sealers, heiyo’s VP05 and VP09 offer:</h4>
+  <div><span>Superior Sealing:</span> Patented technology ensures airtightness, preventing food spoilage.</div>
+  <div><span>Longer Battery Life:</span> Up to 50 seals on a single charge.</div>
+  <div><span>Wider Applications:</span> From home kitchens to outdoor camping, they handle it all.</div>
+  <h4>Product Comparison: VP05 vs. VP09</h4>
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>VP05</th>
+      <th>VP09</th>
+    </tr>
+    <tr>
+      <td>Compatibility</td>
+      <td>Mason jars</td>
+      <td>Mason jars, vacuum bags, wine bottles</td>
+    </tr>
+    <tr>
+      <td>Sealing Method</td>
+      <td>One-touch sealing</td>
+      <td>One-touch sealing</td>
+    </tr>
+    <tr>
+      <td>Portability</td>
+      <td>Compact and lightweight</td>
+      <td>Compact and lightweight</td>
+    </tr>
+    <tr>
+      <td>Charging Method</td>
+      <td>USB-C charging</td>
+      <td>USB-C charging</td>
+    </tr>
+    <tr>
+      <td>Battery Life</td>
+      <td>Up to 50 seals per charge</td>
+      <td>Up to 50 seals per charge</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>Budget-friendly</td>
+      <td>Multi-functional, great value</td>
+    </tr>
+  </table>
+  <h2>Use Cases</h2>
+  <h4>1. Your Kitchen’s Best Helper</h4>
+  <li>
+    <span>VP05:</span> Perfect for storing homemade jams, pickled foods, and dry goods, keeping your kitchen organized.
+  </li>
+  <li>
+    <span>VP09:</span> In addition to Mason jars, it can seal vacuum bags and wine bottles, meeting all your storage
+    needs.
+  </li>
+  <h4>2. The Freshness Hero for Camping & Picnics</h4>
+  <li><span>VP05:</span> Seal Mason jars to store camping ingredients and prevent food spoilage.</li>
+  <li><span>VP09:</span> Seal vacuum bags for meats and wine bottles for outdoor enjoyment.</li>
+  <h4>3. Your Travel Companion</h4>
+  <li><span>VP05:</span> Compact and lightweight, ideal for storing snacks and coffee beans on the go.</li>
+  <li><span>VP09:</span> Multi-functional design for versatile storage during travel.</li>
+  <h4>4. The Freshness Expert for Healthy Living</h4>
+  <li><span>VP05:</span> Seal grains and nuts to preserve their nutrients.</li>
+  <li><span>VP09:</span> Seal homemade sauces and healthy snacks for easy access.</li>
+  <h2>How to Choose?</h2>
+  <h4>Choose VP05 if:</h4>
+  <li>You primarily need to seal Mason jars.</li>
+  <li>You’re looking for a budget-friendly option.</li>
+  <li>You want a compact and portable device for home or travel use.</li>
+  <h4>Choose VP09 if:</h4>
+  <li>You need a multi-functional sealer (Mason jars, vacuum bags, wine bottles).</li>
+  <li>You want one device to meet all your storage needs.</li>
+  <li>You’re willing to pay a bit more for added versatility.</li>
+</div>
+
+{% schema %}
+{
+  "name": "buying guide richtext",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "buying guide richtext"
+    }
+  ]
+}
+{% endschema %}
