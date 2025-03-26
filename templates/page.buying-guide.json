@@ -1,0 +1,184 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "home_banner_kKRwgU": {
+      "type": "home-banner",
+      "blocks": {
+        "heading_BttCLX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lorem Ipsum",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+          }
+        },
+        "buttons_w3QGRG": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "DISCOVER",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_BttCLX",
+        "buttons_w3QGRG"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/home-banner.webp"
+      }
+    },
+    "company_vision_4BbKeg": {
+      "type": "company-vision",
+      "blocks": {
+        "category_GpKceh": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_1.webp"
+          }
+        },
+        "category_rTfVqX": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_3.webp"
+          }
+        },
+        "category_gHnKKt": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_2.webp"
+          }
+        },
+        "category_3XbbJX": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "category_GpKceh",
+        "category_rTfVqX",
+        "category_gHnKKt",
+        "category_3XbbJX"
+      ],
+      "settings": {
+        "heading": "Company Vision",
+        "sec_heading": "This position contains the description text",
+        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+      }
+    },
+    "design_team_zwfj3W": {
+      "type": "design-team",
+      "blocks": {
+        "category_NDbBmL": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_6.webp"
+          }
+        },
+        "category_64mkmK": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/about_5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "category_NDbBmL",
+        "category_64mkmK"
+      ],
+      "settings": {
+        "heading": "Design team",
+        "sec_heading": "This position contains the description text",
+        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+        "title": "Title placeholder",
+        "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text"
+      }
+    },
+    "about_history_Vc7XLQ": {
+      "type": "about-history",
+      "blocks": {
+        "category_kaK7dz": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_1.webp",
+            "year": "1958",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_MEUfxQ": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_2.webp",
+            "year": "1983",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_KmK9cK": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_1.webp",
+            "year": "1992",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_DfUyA3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_2.webp",
+            "year": "1996",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_WVabb4": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_1.webp",
+            "year": "1998",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        },
+        "category_Fig6Qh": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history_2.webp",
+            "year": "2014",
+            "heading": "Title placeholder",
+            "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This"
+          }
+        }
+      },
+      "block_order": [
+        "category_kaK7dz",
+        "category_MEUfxQ",
+        "category_KmK9cK",
+        "category_DfUyA3",
+        "category_WVabb4",
+        "category_Fig6Qh"
+      ],
+      "settings": {
+        "heading": "History"
+      }
+    }
+  },
+  "order": [
+    "home_banner_kKRwgU",
+    "company_vision_4BbKeg",
+    "design_team_zwfj3W",
+    "about_history_Vc7XLQ"
+  ]
+}
