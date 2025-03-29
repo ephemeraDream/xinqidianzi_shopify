@@ -15,93 +15,17 @@
         "heading_BttCLX": {
           "type": "heading",
           "settings": {
-            "heading": "Lorem Ipsum",
+            "heading": "Our Story",
             "icon": "shopify://shop_images/icon-arrow-right.webp",
-            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
-          }
-        },
-        "buttons_w3QGRG": {
-          "type": "buttons",
-          "settings": {
-            "button_label": "DISCOVER",
-            "button_link": ""
+            "text": "<strong>heiyo｜Your Smart Cooking Companion</strong>"
           }
         }
       },
       "block_order": [
-        "heading_BttCLX",
-        "buttons_w3QGRG"
+        "heading_BttCLX"
       ],
       "settings": {
         "image": "shopify://shop_images/home-banner.webp"
-      }
-    },
-    "company_vision_4BbKeg": {
-      "type": "company-vision",
-      "blocks": {
-        "category_GpKceh": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_1.webp"
-          }
-        },
-        "category_rTfVqX": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_3.webp"
-          }
-        },
-        "category_gHnKKt": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_2.webp"
-          }
-        },
-        "category_3XbbJX": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_4.webp"
-          }
-        }
-      },
-      "block_order": [
-        "category_GpKceh",
-        "category_rTfVqX",
-        "category_gHnKKt",
-        "category_3XbbJX"
-      ],
-      "settings": {
-        "heading": "Company Vision",
-        "sec_heading": "This position contains the description text",
-        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
-      }
-    },
-    "design_team_zwfj3W": {
-      "type": "design-team",
-      "blocks": {
-        "category_NDbBmL": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_6.webp"
-          }
-        },
-        "category_64mkmK": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/about_5.webp"
-          }
-        }
-      },
-      "block_order": [
-        "category_NDbBmL",
-        "category_64mkmK"
-      ],
-      "settings": {
-        "heading": "Design team",
-        "sec_heading": "This position contains the description text",
-        "text": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
-        "title": "Title placeholder",
-        "description": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text"
       }
     },
     "about_history_Vc7XLQ": {
@@ -173,12 +97,83 @@
       "settings": {
         "heading": "History"
       }
+    },
+    "product_longtext_KUEHF6": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_DaFbfR": {
+          "type": "text",
+          "settings": {
+            "subtitle": "To make cooking effortless and precise for everyone.",
+            "content": "<p>We strive to design products that simplify food preparation, enhance accuracy, and bring joy to the kitchen. Whether you’re preserving freshness or cooking the perfect meal, heiyo is here to help you every step of the way.</p>",
+            "image": "shopify://shop_images/activity-image.webp",
+            "position": "right"
+          }
+        },
+        "text_fQ6MDH": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<strong>Precision at Its Core</strong>",
+            "content": "<p>Precision is the heart of everything we do. From sealing Mason jars to monitoring meat temperatures, our products are designed to deliver accurate results every time. With heiyo, you can trust that your food will be perfectly preserved or cooked to perfection.</p>",
+            "image": "shopify://shop_images/activity-image-1.webp",
+            "position": "left"
+          }
+        },
+        "text_KTR89w": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<strong>Making Cooking Effortless</strong>",
+            "content": "<p>We understand that cooking can be time-consuming and challenging. That’s why we’ve created tools that streamline the process, so you can focus on what matters most—creating delicious meals and memories with loved ones.</p>",
+            "image": "shopify://shop_images/vp09-8.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_DaFbfR",
+        "text_fQ6MDH",
+        "text_KTR89w"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": ""
+      }
+    },
+    "rich_text_rYkPXk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jxPMjN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Story</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_3Xrd64": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>heiyo</strong>, we believe that cooking should be simple, precise, and enjoyable. Founded by <strong>Shanghai XinQi Electronics Co., Ltd.</strong>, heiyo is dedicated to creating innovative kitchen tools that empower home cooks and professionals alike. Our journey began with a passion for solving everyday kitchen challenges, and today, we’re proud to be a trusted name in smart cooking technology.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jxPMjN",
+        "text_3Xrd64"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "home_banner_kKRwgU",
-    "company_vision_4BbKeg",
-    "design_team_zwfj3W",
-    "about_history_Vc7XLQ"
+    "about_history_Vc7XLQ",
+    "product_longtext_KUEHF6",
+    "rich_text_rYkPXk"
   ]
 }
