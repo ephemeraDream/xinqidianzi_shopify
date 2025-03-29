@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "home_banner_QhdzDr": {
       "type": "home-banner",
@@ -24,7 +24,9 @@
           "type": "buttons",
           "settings": {
             "button_label": "DISCOVER",
-            "button_link": ""
+            "button_link": "",
+            "button_label_two": "",
+            "button_link_two": ""
           }
         }
       },
@@ -39,36 +41,22 @@
     "recipe_collection_T4WqVQ": {
       "type": "recipe-collection",
       "blocks": {
-        "blogs_b3zCir": {
+        "blogs_BnQEky": {
           "type": "blogs",
           "settings": {
-            "blog_handle": "cooking-methods"
+            "blog_handle": "food-temperature"
           }
         },
-        "blogs_QpJwaX": {
+        "blogs_cHVaGH": {
           "type": "blogs",
           "settings": {
-            "blog_handle": "cooking-ingredients"
-          }
-        },
-        "blogs_6NX7Bk": {
-          "type": "blogs",
-          "settings": {
-            "blog_handle": "by-season-and-festival"
-          }
-        },
-        "blogs_kHqhTm": {
-          "type": "blogs",
-          "settings": {
-            "blog_handle": "popular-recipes"
+            "blog_handle": "food-preservation"
           }
         }
       },
       "block_order": [
-        "blogs_b3zCir",
-        "blogs_QpJwaX",
-        "blogs_6NX7Bk",
-        "blogs_kHqhTm"
+        "blogs_BnQEky",
+        "blogs_cHVaGH"
       ],
       "settings": {}
     },
@@ -149,7 +137,8 @@
       ],
       "settings": {
         "heading": "FAQ",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": ""
       }
     }
   },
