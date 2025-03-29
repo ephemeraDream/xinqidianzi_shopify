@@ -58,7 +58,9 @@
         "blogs_BnQEky",
         "blogs_cHVaGH"
       ],
-      "settings": {}
+      "settings": {
+        "layout": "type"
+      }
     },
     "product_comparison_4fHC9d": {
       "type": "product-comparison",
