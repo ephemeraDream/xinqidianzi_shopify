@@ -98,12 +98,43 @@
         "heading": "",
         "product_handle": ""
       }
+    },
+    "rich_text_DJewCn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CUtDgD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Spring into Freshness with heiyo!",
+            "heading_size": "h1"
+          }
+        },
+        "text_RwLciU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This April, upgrade your kitchen with heiyo's latest Mason Jar Sealers—<strong>VP05</strong> and <strong>VP09</strong>. Designed for effortless food storage, these innovative sealers are here to make your life fresher, simpler, and more organized. Plus, enjoy an exclusive <strong>20% off</strong> for a limited time!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CUtDgD",
+        "text_RwLciU"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "activity_banner_KLtwVy",
     "activity_introduction_qqVhWA",
     "acticity_collection_n6z64a",
-    "product_longtext_cp6pLL"
+    "product_longtext_cp6pLL",
+    "rich_text_DJewCn"
   ]
 }
