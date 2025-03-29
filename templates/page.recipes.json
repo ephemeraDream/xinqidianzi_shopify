@@ -7,17 +7,156 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "home_banner_QhdzDr": {
+      "type": "home-banner",
+      "blocks": {
+        "heading_bjXnAz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lorem Ipsum",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+          }
+        },
+        "buttons_36wJdk": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "DISCOVER",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bjXnAz",
+        "buttons_36wJdk"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "image": "shopify://shop_images/recipe_banner.webp"
+      }
+    },
+    "recipe_collection_T4WqVQ": {
+      "type": "recipe-collection",
+      "blocks": {
+        "blogs_b3zCir": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "cooking-methods"
+          }
+        },
+        "blogs_QpJwaX": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "cooking-ingredients"
+          }
+        },
+        "blogs_6NX7Bk": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "by-season-and-festival"
+          }
+        },
+        "blogs_kHqhTm": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "popular-recipes"
+          }
+        }
+      },
+      "block_order": [
+        "blogs_b3zCir",
+        "blogs_QpJwaX",
+        "blogs_6NX7Bk",
+        "blogs_kHqhTm"
+      ],
+      "settings": {}
+    },
+    "product_comparison_4fHC9d": {
+      "type": "product-comparison",
+      "blocks": {
+        "product_d4NKTd": {
+          "type": "product",
+          "settings": {
+            "title": "title",
+            "product": [
+              "heiyo-wireless-thermometer-em09",
+              "heiyo-3-in-1-vacuum-sealer-kit-vp09",
+              "heiyo-vacuum-sealer-kit-vp05"
+            ]
+          }
+        },
+        "product_Yi3iPk": {
+          "type": "product",
+          "settings": {
+            "title": "title",
+            "product": [
+              "product-name-1",
+              "product-name-2"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "product_d4NKTd",
+        "product_Yi3iPk"
+      ],
+      "settings": {
+        "heading": "Product Comparison",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
+    },
+    "product_faq_GGTTqy": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_fxqrMX": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        },
+        "faq_TfYXpB": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        },
+        "faq_3XN6n9": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        },
+        "faq_kztidQ": {
+          "type": "faq",
+          "settings": {
+            "question": "This position contains the description text  This position contains the description text",
+            "answer": "When selecting an engagement ring, it is crucial to carefully consider the centerpiece stone. The stone’s cut, size, and carat weight all play an integral role in the ring’s overall appearance and significance. Therefore, choosing these elements with great care and attention to detail is essential."
+          }
+        }
+      },
+      "block_order": [
+        "faq_fxqrMX",
+        "faq_TfYXpB",
+        "faq_3XN6n9",
+        "faq_kztidQ"
+      ],
+      "custom_css": [
+        ".product-faq {margin-bottom: 13rem;}"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy"
       }
     }
   },
   "order": [
-    "main"
+    "home_banner_QhdzDr",
+    "recipe_collection_T4WqVQ",
+    "product_comparison_4fHC9d",
+    "product_faq_GGTTqy"
   ]
 }
