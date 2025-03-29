@@ -189,9 +189,30 @@
         "name": "list.file_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "second_type",
+      "namespace": "custom",
+      "name": "second type",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
-  "blog": [],
+  "blog": [
+    {
+      "key": "second_type",
+      "namespace": "custom",
+      "name": "second type",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "brand": [],
   "collection": [],
   "company": [],
@@ -242,16 +263,6 @@
       }
     },
     {
-      "key": "video_or_image",
-      "namespace": "custom",
-      "name": "video_or_image",
-      "description": "",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
       "key": "feedback",
       "namespace": "custom",
       "name": "Feedback",
@@ -282,12 +293,142 @@
       }
     },
     {
+      "key": "short_description",
+      "namespace": "custom",
+      "name": "short description",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "supply_description",
+      "namespace": "custom",
+      "name": "supply description",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "main_description",
+      "namespace": "custom",
+      "name": "main description",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "highlight_intro_title",
+      "namespace": "custom",
+      "name": "highlight_intro_title",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "highlight_intro_one",
+      "namespace": "custom",
+      "name": "highlight_intro_one",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "highlight_intro_two",
+      "namespace": "custom",
+      "name": "highlight_intro_two",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "highlight_intro_thr",
+      "namespace": "custom",
+      "name": "highlight_intro_thr",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
       "key": "image_with_text_one_image",
       "namespace": "custom",
       "name": "image_with_text_one_image",
       "description": "",
       "type": {
-        "name": "list.file_reference",
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text_thr_text",
+      "namespace": "custom",
+      "name": "image_with_text_thr_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "image_with_text_four_text",
+      "namespace": "custom",
+      "name": "image_with_text_four_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "image_with_text_five_text",
+      "namespace": "custom",
+      "name": "image_with_text_five_text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "image_with_text_thr_image",
+      "namespace": "custom",
+      "name": "image_with_text_thr_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text_four_image",
+      "namespace": "custom",
+      "name": "image_with_text_four_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_with_text_five_image",
+      "namespace": "custom",
+      "name": "image_with_text_five_image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
         "category": "REFERENCE"
       }
     }

@@ -63,7 +63,8 @@
   margin-top: 6rem;
 }
 
-.recipe-post-content .step_content_box + .step_content_box {
+.recipe-post-content .step_content_box+.step_content_box,
+.recipe-post-content .step_content_box+.recipe-post-content_info {
   margin-top: 10rem;
 }
 
@@ -88,11 +89,8 @@
   padding-left: 0;
 }
 
-.recipe-post-content
-  .step_content_box
-  .step_content_box-right
-  .step_content_box-text
-  h2 {
+.recipe-post-content .step_content_box .step_content_box-right .step_content_box-text h2,
+.recipe-post-content .recipe-post-content_info h2 {
   font-family: Poppins;
   font-size: 4.8rem;
   font-weight: 600;
@@ -103,11 +101,8 @@
   margin-bottom: 3.8rem;
 }
 
-.recipe-post-content
-  .step_content_box
-  .step_content_box-right
-  .step_content_box-text
-  p {
+.recipe-post-content .step_content_box .step_content_box-right .step_content_box-text p,
+.recipe-post-content .step_content_box .step_content_box-right .step_content_box-text li {
   font-family: Poppins;
   font-size: 2rem;
   font-weight: normal;
@@ -154,9 +149,7 @@
   color: #000000;
 }
 
-.recipe-post-content
-  .step_content_box-product_info
-  .step_content_box-product_info-price {
+.recipe-post-content .step_content_box-product_info .step_content_box-product_info-price {
   font-family: Poppins;
   font-size: 2rem;
   font-weight: 500;
@@ -201,11 +194,13 @@
     flex-wrap: wrap;
     gap: 2.4rem;
   }
+
   .recipe-post-content .step_content_box .step_content_box-media,
   .recipe-post-content .step_content_box .step_content_box-right {
     flex: 0 0 100%;
     width: 100%;
   }
+
   .recipe-post-content .step_content_box .step_content_box-right {
     padding-left: 0;
   }
@@ -216,21 +211,26 @@
     height: auto !important;
     min-height: auto !important;
   }
+
   .banner--mobile-bottom .banner__box {
     padding: 0;
   }
+
   .recipe-post-content .flex-center {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2.4rem;
   }
+
   .recipe-post-content .recipe-post-image {
     margin-top: 6rem;
     height: 30rem;
   }
-  .recipe-post-content .step_content_box + .step_content_box {
+
+  .recipe-post-content .step_content_box+.step_content_box {
     margin-top: 6rem;
   }
+
   .recipe-post-content .step_content_box-product_info-btn {
     margin-right: 1.6rem;
   }

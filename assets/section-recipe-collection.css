@@ -29,10 +29,7 @@
   border-top: 0.1rem solid #e2e2e2;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-head {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -40,11 +37,7 @@
   cursor: pointer;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-head
-  h3 {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head h3 {
   font-family: Blinker;
   font-size: 2.8rem;
   font-weight: normal;
@@ -56,56 +49,33 @@
   color: #000000;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-head
-  svg {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head svg {
   flex: 0 0 auto;
   transition: transform 0.4s ease;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-article
-  a {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-article a {
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.8rem;
   font-variation-settings: "opsz" auto;
   color: #767676;
+  cursor: pointer;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-article
-  a:hover {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-article a:hover {
   color: #ebb069;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-article
-  + .recipe-collection-item-article {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-article+.recipe-collection-item-article {
   margin-top: 1.6rem;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-head:hover
-  h3 {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head:hover h3 {
   color: #ebb069;
 }
 
-.recipe-collection
-  .recipe-collection-left
-  .recipe-collection-item
-  .recipe-collection-item-head:hover
-  svg {
+.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head:hover svg {
   transform: rotate(45deg);
 }
 
@@ -133,29 +103,18 @@
   gap: 2.4rem 2.8rem;
 }
 
-.recipe-collection
-  .recipe-collection-right
-  .blog-content-grid
-  .blog-content-grid_item {
+.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item {
   flex: 0 0 calc((100% - 2.8rem) / 2);
 }
 
-.recipe-collection
-  .recipe-collection-right
-  .blog-content-grid
-  .blog-content-grid_item
-  img {
+.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item img {
   width: 100%;
   height: 49.6rem;
   object-fit: cover;
   object-position: center center;
 }
 
-.recipe-collection
-  .recipe-collection-right
-  .blog-content-grid
-  .blog-content-grid_item
-  .article-published_at {
+.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-published_at {
   font-family: Poppins;
   font-size: 2.4rem;
   font-weight: normal;
@@ -166,11 +125,7 @@
   margin-top: 2.4rem;
 }
 
-.recipe-collection
-  .recipe-collection-right
-  .blog-content-grid
-  .blog-content-grid_item
-  .article-title {
+.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-title {
   font-family: Poppins;
   font-size: 3.2rem;
   font-weight: 600;
@@ -216,29 +171,19 @@
   justify-content: center;
 }
 
-.recipe-collection
-  .recipe-collection-right
-  .custom-pagination
-  .ajax-pagination:hover {
+.recipe-collection .recipe-collection-right .custom-pagination .ajax-pagination:hover {
   color: #ebb069;
 }
 
-.recipe-collection
-  .recipe-collection-right
-  .custom-pagination
-  .ajax-pagination:hover
-  svg
-  path {
+.recipe-collection .recipe-collection-right .custom-pagination .ajax-pagination:hover svg path {
   fill: #ebb069;
 }
 
 @media screen and (max-width: 1024px) {
-  .recipe-collection
-    .recipe-collection-right
-    .blog-content-grid
-    .blog-content-grid_item {
+  .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item {
     flex: 0 0 100%;
   }
+
   .recipe-collection .recipe-collection-right .custom-pagination {
     width: 100%;
     flex-wrap: wrap;
@@ -251,6 +196,7 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+
   .recipe-collection .recipe-collection-left,
   .recipe-collection .recipe-collection-right {
     flex: 0 0 100%;

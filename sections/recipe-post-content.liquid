@@ -37,6 +37,13 @@
         <img src="{{ img_thumb }}" alt="step icon">
       </div>
     {% endif %}
+    {% if article.metafields.custom.step_six_text != blank %}
+      {{- 'arrow-right.svg' | inline_asset_content -}}
+      <div class="step-box">
+        <span>STEP6</span>
+        <img src="{{ img_thumb }}" alt="step icon">
+      </div>
+    {% endif %}
   </div>
   <img src="{{ article.image | image_url }}" alt="{{ article.title }}" class="recipe-post-image">
   <div class="recipe-post-title">{{ article.title }}</div>
@@ -245,6 +252,50 @@
         {% endif %}
       </div>
     </div>
+  {% endif %}
+  {% if article.metafields.custom.step_six_text != blank %}
+    <div class="step_content_box">
+      {% if article.metafields.custom.step_six_file != blank %}
+        {% assign step_six_file = article.metafields.custom.step_six_file.value %}
+
+        {% if step_six_file.media_type contains 'image' %}
+          <img class="step_content_box-media" src="{{ step_six_file | image_url }}" alt="step_content_box-image">
+        {% elsif step_six_file.media_type contains 'video' %}
+          {{
+            step_six_file
+            | video_tag: class: 'step_content_box-media', autoplay: true, loop: true, muted: true, controls: true
+          }}
+        {% endif %}
+      {% endif %}
+      <div class="step_content_box-right">
+        <div class="step_content_box-text">
+          {{ article.metafields.custom.step_six_text | metafield_tag }}
+        </div>
+        {% if article.metafields.custom.step_six_product != blank %}
+          {% assign step_six_product = article.metafields.custom.step_six_product.value %}
+
+          <div class="step_content_box-product">
+            <div class="step_content_box-product_info">
+              <img
+                src="{{ step_six_product.featured_media | image_url }}"
+                alt="{{ step_six_product.title }}"
+              >
+              <div>
+                <h3>{{ step_six_product.title }}</h3>
+                <div class="step_content_box-product_info-price">{{ step_six_product.price | money }}</div>
+              </div>
+            </div>
+            <a class="step_content_box-product_info-btn" href="{{ step_six_product.url }}">
+              {{- 'icon-plus.svg' | inline_asset_content -}}
+              View</a
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if article.metafields.custom.final_paragraph != blank %}
+    <div class="recipe-post-content_info">{{ article.metafields.custom.final_paragraph | metafield_tag }}</div>
   {% endif %}
 </div>
 
