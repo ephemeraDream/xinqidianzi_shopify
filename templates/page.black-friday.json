@@ -33,7 +33,7 @@
         "buttons_GXGBV7"
       ],
       "settings": {
-        "image": "shopify://shop_images/activity_banner.webp"
+        "image": "shopify://shop_images/activity_banner_d3da52b3-c98a-4993-b090-01d7d7195d61.webp"
       }
     },
     "activity_introduction_qqVhWA": {
@@ -76,7 +76,7 @@
           "settings": {
             "subtitle": "<strong>heiyo Vacuum Sealer Kit - VP05</strong>",
             "content": "<p>The VP05 is your go-to sealer for everyday freshness, designed specifically for Mason jars with one-touch sealing.</p><ul><li>One-Touch Sealing -Preserve freshness in seconds</li><li>Ultra-Portable Design - Fits perfectly in any kitchen or travel bag</li><li>USB-C Fast Charging -50+ seals per charge</li><li>Universal Compatibility-Works with all standard Mason jars</li></ul>",
-            "image": "shopify://shop_images/activity-image.webp",
+            "image": "shopify://shop_images/activity_image_1.webp",
             "position": "left"
           }
         },
@@ -85,7 +85,7 @@
           "settings": {
             "subtitle": "heiyo 3 in 1 Vacuum Sealer Kit - VP09",
             "content": "<p>The VP09 is your ultimate kitchen multitasker, sealing Mason jars, vacuum bags, and wine bottles in one powerful device.</p><ul><li>3-in-1 Functionality-Seals Mason jars, vacuum bags AND wine bottles</li><li>Smart LED Display-Real-time sealing status updates</li><li>Extended Battery Life -50+ seals per charge</li><li>Premium Stainless Steel Build - Durable and stylish</li></ul>",
-            "image": "shopify://shop_images/activity-image-1.webp",
+            "image": "shopify://shop_images/activity_image_2.webp",
             "position": "right"
           }
         }
