@@ -88,20 +88,11 @@
             "image": "shopify://shop_images/activity-image-1.webp",
             "position": "right"
           }
-        },
-        "text_iPg7Ex": {
-          "type": "text",
-          "settings": {
-            "subtitle": "Title placeholder",
-            "content": "<p>This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description</p>",
-            "position": "left"
-          }
         }
       },
       "block_order": [
         "text_eFgT7b",
-        "text_B3RAiN",
-        "text_iPg7Ex"
+        "text_B3RAiN"
       ],
       "settings": {
         "heading": "",
