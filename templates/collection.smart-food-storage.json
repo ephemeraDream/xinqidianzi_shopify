@@ -1,0 +1,412 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "home_banner_3meiHC": {
+      "type": "home-banner",
+      "blocks": {
+        "heading_X6RMJ4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Collections",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "Smart tools for easier, more loving meals."
+          }
+        }
+      },
+      "block_order": [
+        "heading_X6RMJ4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/all-banner.webp"
+      }
+    },
+    "product_collection_XJ9R94": {
+      "type": "product-collection",
+      "settings": {}
+    },
+    "product_list_mqnFFM": {
+      "type": "product-list",
+      "blocks": {
+        "product_6WTxdX": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-wireless-thermometer-em09"
+          }
+        },
+        "product_FaMGKx": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09"
+          }
+        },
+        "product_mDj6RA": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-vacuum-sealer-kit-vp05"
+          }
+        }
+      },
+      "block_order": [
+        "product_6WTxdX",
+        "product_FaMGKx",
+        "product_mDj6RA"
+      ],
+      "settings": {
+        "heading": "Product List",
+        "text": ""
+      }
+    },
+    "product_faq_yjrbia": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_YKypfp": {
+          "type": "faq",
+          "settings": {
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer is designed to be user-friendly, perfect for all cooking skill levels."
+          }
+        },
+        "faq_zcPRAr": {
+          "type": "faq",
+          "settings": {
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Mason Jar Sealer extends food freshness with airtight sealing."
+          }
+        },
+        "faq_4U83G4": {
+          "type": "faq",
+          "settings": {
+            "question": "3、Do I need to use oxygen absorbers with heiyo?",
+            "answer": "No, oxygen absorbers are not necessary when using heiyo. Our vacuum sealing technology effectively removes air, creating a perfect seal that preserves your food's freshness without the need for additional oxygen absorbers."
+          }
+        },
+        "faq_b3MKU9": {
+          "type": "faq",
+          "settings": {
+            "question": "4、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living."
+          }
+        },
+        "faq_hhGn8i": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Can heiyo seal both dry and liquid goods?",
+            "answer": "Yes, it can! heiyo is perfect for sealing a wide range of items, from dry goods like cereals to liquids like soups, thanks to its safe sealing technology."
+          }
+        },
+        "faq_GpARFC": {
+          "type": "faq",
+          "settings": {
+            "question": "6、Is the vacuum extraction process loud?",
+            "answer": "No,heiyo operates with minimal noise during the vacuum extraction process, ensuring a quiet and convenient user experience."
+          }
+        }
+      },
+      "block_order": [
+        "faq_YKypfp",
+        "faq_zcPRAr",
+        "faq_4U83G4",
+        "faq_b3MKU9",
+        "faq_hhGn8i",
+        "faq_GpARFC"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": "smart-food-storage"
+      }
+    },
+    "product_faq_mJwi8r": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_hxJj7b": {
+          "type": "faq",
+          "settings": {
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer is designed to be user-friendly, perfect for all cooking skill levels."
+          }
+        },
+        "faq_Q74YFD": {
+          "type": "faq",
+          "settings": {
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Mason Jar Sealer extends food freshness with airtight sealing."
+          }
+        },
+        "faq_XadGq4": {
+          "type": "faq",
+          "settings": {
+            "question": "3、Do I need to use oxygen absorbers with heiyo?",
+            "answer": "No, oxygen absorbers are not necessary when using heiyo. Our vacuum sealing technology effectively removes air, creating a perfect seal that preserves your food's freshness without the need for additional oxygen absorbers."
+          }
+        },
+        "faq_XLfgn8": {
+          "type": "faq",
+          "settings": {
+            "question": "4、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Mason Jar Sealer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living."
+          }
+        },
+        "faq_ChzPQL": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Can heiyo seal both dry and liquid goods?",
+            "answer": "Yes, it can! heiyo is perfect for sealing a wide range of items, from dry goods like cereals to liquids like soups, thanks to its safe sealing technology."
+          }
+        },
+        "faq_iDHc47": {
+          "type": "faq",
+          "settings": {
+            "question": "6、Is the vacuum extraction process loud?",
+            "answer": "No,heiyo operates with minimal noise during the vacuum extraction process, ensuring a quiet and convenient user experience."
+          }
+        }
+      },
+      "block_order": [
+        "faq_hxJj7b",
+        "faq_Q74YFD",
+        "faq_XadGq4",
+        "faq_XLfgn8",
+        "faq_ChzPQL",
+        "faq_iDHc47"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": "all"
+      }
+    },
+    "product_faq_E6GfGz": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_t8xAU6": {
+          "type": "faq",
+          "settings": {
+            "question": "1、Are these products suitable for kitchen beginners?",
+            "answer": "Yes! heiyo’s the Smart Wireless Meat Thermometer are designed to be user-friendly, perfect for all cooking skill levels."
+          }
+        },
+        "faq_cY6bea": {
+          "type": "faq",
+          "settings": {
+            "question": "2、How do these products help reduce food waste?",
+            "answer": "heiyo’s Smart Wireless Meat Thermometer ensures perfectly cooked meals, preventing overcooking or undercooking."
+          }
+        },
+        "faq_DxUi8L": {
+          "type": "faq",
+          "settings": {
+            "question": "3、Do these products require additional accessories?",
+            "answer": "heiyo’s Smart Wireless Meat Thermometer comes with a probe—no additional accessories are needed."
+          }
+        },
+        "faq_widKnn": {
+          "type": "faq",
+          "settings": {
+            "question": "4、Are these products suitable for outdoor use?",
+            "answer": "The Smart Wireless Meat Thermometer is also travel-friendly, ideal for outdoor grilling or cooking"
+          }
+        },
+        "faq_mjLmXr": {
+          "type": "faq",
+          "settings": {
+            "question": "5、Are these products suitable as gifts?",
+            "answer": "Yes! heiyo’s Smart Wireless Meat Thermometer are practical and thoughtful gifts, perfect for friends and family who love cooking, outdoor activities, or healthy living."
+          }
+        },
+        "faq_fhyKqV": {
+          "type": "faq",
+          "settings": {
+            "question": "6、How do I connect to Wi-Fi?",
+            "answer": "Open the Meat App, select \"Device Connection,\" and follow the prompts to connect the EM05 to your Wi-Fi network for remote temperature monitoring."
+          }
+        }
+      },
+      "block_order": [
+        "faq_t8xAU6",
+        "faq_cY6bea",
+        "faq_DxUi8L",
+        "faq_widKnn",
+        "faq_mjLmXr",
+        "faq_fhyKqV"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": "smart-cooking-devices"
+      }
+    },
+    "product_longtext_FjMcUk": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_WEiHcc": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Versatile Design, Multi-Purpose Use",
+            "content": "<p>heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.</p>",
+            "image": "shopify://shop_images/blog_post_image.webp",
+            "position": "left"
+          }
+        },
+        "text_xkeVc6": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Compact & Portable, Use Anywhere",
+            "content": "<p>Lightweight and portable, perfect for home, camping, and travel.</p>",
+            "image": "shopify://shop_images/blog_post_image_2.webp",
+            "position": "right"
+          }
+        },
+        "text_VrAzQ4": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Airtight Seal, Lock in Freshness",
+            "content": "<p>Extends food freshness with airtight sealing, reducing waste.</p>",
+            "image": "shopify://shop_images/blog_8.webp",
+            "position": "left"
+          }
+        },
+        "text_JjiUKJ": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Easy to Use, One-Touch Sealing",
+            "content": "<p>One-touch operation, no complicated steps, suitable for everyone.</p>",
+            "image": "shopify://shop_images/img_1.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_WEiHcc",
+        "text_xkeVc6",
+        "text_VrAzQ4",
+        "text_JjiUKJ"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": "smart-food-storage"
+      }
+    },
+    "product_longtext_t6JDBj": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_UFaNG6": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Versatile Design, Multi-Purpose Use",
+            "content": "<p>heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.</p>",
+            "image": "shopify://shop_images/blog_post_image.webp",
+            "position": "left"
+          }
+        },
+        "text_4c7PUB": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Compact & Portable, Use Anywhere",
+            "content": "<p>Lightweight and portable, perfect for home, camping, and travel.</p>",
+            "image": "shopify://shop_images/blog_post_image_2.webp",
+            "position": "right"
+          }
+        },
+        "text_rfUp6w": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Airtight Seal, Lock in Freshness",
+            "content": "<p>Extends food freshness with airtight sealing, reducing waste.</p>",
+            "image": "shopify://shop_images/blog_8.webp",
+            "position": "left"
+          }
+        },
+        "text_LiWGre": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Easy to Use, One-Touch Sealing",
+            "content": "<p>One-touch operation, no complicated steps, suitable for everyone.</p>",
+            "image": "shopify://shop_images/img_1.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_UFaNG6",
+        "text_4c7PUB",
+        "text_rfUp6w",
+        "text_LiWGre"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": "all"
+      }
+    },
+    "product_longtext_dYGDYg": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_xkyUjq": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Bluetooth Connectivity, Real-Time Monitoring（APP）",
+            "content": "<p>Connects via Bluetooth for real-time temperature tracking, ensuring perfectly cooked meals.</p>",
+            "image": "shopify://shop_images/blog_post_image.webp",
+            "position": "left"
+          }
+        },
+        "text_dpC6cV": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Precision Control, Enhanced Flavor",
+            "content": "<p>Precise temperature control prevents overcooking or undercooking, enhancing flavor.</p>",
+            "image": "shopify://shop_images/blog_post_image_2.webp",
+            "position": "right"
+          }
+        },
+        "text_EyB8Yi": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Portable Design, Essential for Outdoors",
+            "content": "<p>Compact and portable, ideal for outdoor grilling and picnics.</p>",
+            "image": "shopify://shop_images/blog_8.webp",
+            "position": "left"
+          }
+        },
+        "text_b7HGXK": {
+          "type": "text",
+          "settings": {
+            "subtitle": "Long Battery Life, Extended Use",
+            "content": "<p>Lasts up to 24 hours on a single charge, perfect for long cooking sessions.</p>",
+            "image": "shopify://shop_images/img_1.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_xkyUjq",
+        "text_dpC6cV",
+        "text_EyB8Yi",
+        "text_b7HGXK"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": "smart-cooking-devices"
+      }
+    }
+  },
+  "order": [
+    "home_banner_3meiHC",
+    "product_collection_XJ9R94",
+    "product_list_mqnFFM",
+    "product_faq_yjrbia",
+    "product_faq_mJwi8r",
+    "product_faq_E6GfGz",
+    "product_longtext_FjMcUk",
+    "product_longtext_t6JDBj",
+    "product_longtext_dYGDYg"
+  ]
+}
