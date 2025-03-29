@@ -36,6 +36,12 @@
   min-height: 71.6rem;
   display: flex;
   height: auto;
+  border-radius: 1.6rem;
+  background-color: #fff;
+}
+
+.about-history .about-history-swiper .history-card.no_image {
+  width: 58.6rem;
 }
 
 .about-history .about-history-swiper .history-card .history-image {
@@ -49,8 +55,7 @@
 .about-history .about-history-swiper .history-card .history-box {
   flex: 1;
   height: auto;
-  background-color: #fff;
-  border-radius: 0 1.6rem 1.6rem 0;
+  border-radius: 1.6rem;
   padding: 8.9rem 1.3rem 2.4rem 2.4rem;
 }
 
@@ -64,11 +69,7 @@
   color: #777777;
 }
 
-.about-history
-  .about-history-swiper
-  .history-card
-  .history-box
-  .history-heading {
+.about-history .about-history-swiper .history-card .history-box .history-heading {
   font-family: Poppins;
   font-size: 3.2rem;
   font-weight: 600;
@@ -79,11 +80,7 @@
   margin-top: 0.4rem;
 }
 
-.about-history
-  .about-history-swiper
-  .history-card
-  .history-box
-  .history-description {
+.about-history .about-history-swiper .history-card .history-box .history-description {
   font-family: Poppins;
   font-size: 2.4rem;
   font-weight: normal;
@@ -140,8 +137,7 @@
 }
 
 .about-history-navigation .navigation-btn:hover::before,
-.about-history-navigation
-  .swiper-pagination-bullet-active.navigation-btn::before {
+.about-history-navigation .swiper-pagination-bullet-active.navigation-btn::before {
   content: "";
   width: 1.3rem;
   height: 1.3rem;
@@ -154,8 +150,7 @@
 }
 
 .about-history-navigation .navigation-btn:hover::after,
-.about-history-navigation
-  .swiper-pagination-bullet-active.navigation-btn::after {
+.about-history-navigation .swiper-pagination-bullet-active.navigation-btn::after {
   content: "";
   width: 3.2rem;
   height: 3.2rem;

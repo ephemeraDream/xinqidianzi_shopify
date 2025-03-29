@@ -16,7 +16,7 @@
     <div class="swiper about-history-swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
-          <div class="swiper-slide history-card">
+          <div class="swiper-slide history-card{% if block.settings.image == blank %} no_image{% endif %}">
             {% if block.settings.image != blank %}
             <img
               src="{{ block.settings.image | image_url }}"
