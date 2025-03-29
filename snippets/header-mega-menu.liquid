@@ -56,7 +56,7 @@
                             {% elsif is_first_link and has_current_link == false %} mega-menu__link--active
                             {% endif %}
                             {% if link.handle == 'products' %} mega-menu__collection-item{% endif %}
-                            {% if link.handle == 'recipe' %} mega-menu__recipe-item{% endif %}
+                            {% if link.handle == 'inspiration' %} mega-menu__recipe-item{% endif %}
                             {% if link.handle == 'support' %} mega-menu__support-item{% endif %}
                           "
                           {% if childlink.current %}
@@ -88,7 +88,14 @@
                     {%- endfor -%}
 
                     {%- if link.handle == 'products' %}
-                      <li><a id="HeaderMenu-products-collection" href="{{ link.url }}" class="mega-menu__link mega-menu__link--level-2 link">Collection</a></li>
+                      <li>
+                        <a
+                          id="HeaderMenu-products-collection"
+                          href="{{ link.url }}"
+                          class="mega-menu__link mega-menu__link--level-2 link"
+                          >Collection</a
+                        >
+                      </li>
                       <div class="view_all_box">
                         <div class="view_all_box_line"></div>
                         <a href="{{ link.url }}">View All Products</a>
@@ -114,7 +121,8 @@
                             {%- endfor -%}
                             <a
                               href="{{ link.links[0].url }}"
-                              style="opacity: 0;pointer-events: none;
+                              style="
+                                opacity: 0;pointer-events: none;
                                 {% comment %} {% if childlink.current %}opacity: 1
                                 {% elsif is_first_link and has_current_link == false %}opacity: 1
                                  {% else %}
@@ -160,24 +168,64 @@
                         {%- endfor -%}
                       </div>
                     {%- endfor -%}
-                  {% elsif link.handle == 'recipe' %}
+                  {% elsif link.handle == 'inspiration' %}
+                    {% comment %}
+                      {%- for childlink in link.links -%}
+                        <div
+                          class="mega-menu__flex-box collection-recipe{% if forloop.index == 1 %} active{% endif %}"
+                          id="tab-{{ childlink.handle }}"
+                        >
+                          {%- for article in blogs[childlink.handle].articles limit: 3 -%}
+                            <div class="collection-recipe_item">
+                              <a href="{{ article.url }}">
+                                <img src="{{ article.image | image_url }}" alt="{{ article.title | escape }}">
+                                <div class="collection-recipe_item_info">
+                                  <div class="collection-recipe_item_info_title">{{ article.title | escape }}</div>
+                                  {{- 'arrow-right.svg' | inline_asset_content -}}
+                                </div>
+                              </a>
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                      {%- endfor -%}
+                    {% endcomment %}
                     {%- for childlink in link.links -%}
-                      <div
-                        class="mega-menu__flex-box collection-recipe{% if forloop.index == 1 %} active{% endif %}"
-                        id="tab-{{ childlink.handle }}"
-                      >
-                        {%- for article in blogs[childlink.handle].articles limit: 3 -%}
-                          <div class="collection-recipe_item">
-                            <a href="{{ article.url }}">
-                              <img src="{{ article.image | image_url }}" alt="{{ article.title | escape }}">
-                              <div class="collection-recipe_item_info">
-                                <div class="collection-recipe_item_info_title">{{ article.title | escape }}</div>
-                                {{- 'arrow-right.svg' | inline_asset_content -}}
-                              </div>
-                            </a>
-                          </div>
+                      {%- if childlink.handle == 'recipes' %}
+                        {% assign is_first_link = forloop.first %}
+                        {% assign has_current_link = false %}
+
+                        {%- for child in link.links -%}
+                          {% if child.current %}
+                            {% assign has_current_link = true %}
+                            {% break %}
+                          {% endif %}
                         {%- endfor -%}
-                      </div>
+                        <div
+                          class="
+                            mega-menu__flex-box collection-recipe{% if childlink.current %} active
+                            {% elsif is_first_link and has_current_link == false %} active
+                            {% endif %}
+                          "
+                          id="tab-{{ childlink.handle }}"
+                        >
+                          {% assign temp_articles = blogs['food-temperature'].articles %}
+                          {% assign preservation_articles = blogs['food-preservation'].articles %}
+
+                          {% assign all_articles = temp_articles | concat: preservation_articles %}
+                          {% assign sorted_articles = all_articles | sort: 'published_at' | reverse %}
+                          {%- for article in sorted_articles limit: 3 -%}
+                            <div class="collection-recipe_item">
+                              <a href="{{ article.url }}">
+                                <img src="{{ article.image | image_url }}" alt="{{ article.title | escape }}">
+                                <div class="collection-recipe_item_info">
+                                  <div class="collection-recipe_item_info_title">{{ article.title | escape }}</div>
+                                  {{- 'arrow-right.svg' | inline_asset_content -}}
+                                </div>
+                              </a>
+                            </div>
+                          {%- endfor -%}
+                        </div>
+                      {% endif %}
                     {%- endfor -%}
                   {% elsif link.handle == 'support' %}
                     {%- for childlink in link.links -%}
@@ -319,14 +367,17 @@
         event.preventDefault();
         const targetTab = this.getAttribute('data-tab');
 
-        recipeTabContents.forEach((content) => {
-          content.style.display = 'none';
-        });
+        if (targetTab === 'tab-recipes') {
+          event.preventDefault();
+          recipeTabContents.forEach((content) => {
+            content.style.display = 'none';
+          });
 
-        document.getElementById(targetTab).style.display = 'flex';
+          document.getElementById(targetTab).style.display = 'flex';
 
-        recipeTabItems.forEach((i) => i.classList.remove('mega-menu__link--active'));
-        this.classList.add('mega-menu__link--active');
+          recipeTabItems.forEach((i) => i.classList.remove('mega-menu__link--active'));
+          this.classList.add('mega-menu__link--active');
+        }
       });
     });
 

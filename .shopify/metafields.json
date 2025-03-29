@@ -199,6 +199,46 @@
         "name": "metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "step_six_file",
+      "namespace": "custom",
+      "name": "step six file",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "step_six_text",
+      "namespace": "custom",
+      "name": "step six text",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "step_six_product",
+      "namespace": "custom",
+      "name": "step six product",
+      "description": "",
+      "type": {
+        "name": "product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "final_paragraph",
+      "namespace": "custom",
+      "name": "Final paragraph",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "blog": [
