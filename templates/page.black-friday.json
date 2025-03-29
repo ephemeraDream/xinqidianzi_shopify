@@ -74,8 +74,9 @@
         "text_eFgT7b": {
           "type": "text",
           "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "subtitle": "<strong>heiyo Vacuum Sealer Kit - VP05</strong>",
+            "content": "<p>The VP05 is your go-to sealer for everyday freshness, designed specifically for Mason jars with one-touch sealing.</p><ul><li>One-Touch Sealing -Preserve freshness in seconds</li><li>Ultra-Portable Design - Fits perfectly in any kitchen or travel bag</li><li>USB-C Fast Charging -50+ seals per charge</li><li>Universal Compatibility-Works with all standard Mason jars</li></ul>",
+            "image": "shopify://shop_images/activity-image.webp",
             "position": "left"
           }
         },
@@ -83,7 +84,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "content": "<p>This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description</p>",
             "position": "left"
           }
         },
@@ -91,23 +92,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
-            "position": "left"
-          }
-        },
-        "text_wt7pk3": {
-          "type": "text",
-          "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
-            "position": "left"
-          }
-        },
-        "text_Kt6gEK": {
-          "type": "text",
-          "settings": {
-            "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "content": "<p>This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description</p>",
             "position": "left"
           }
         }
@@ -115,12 +100,10 @@
       "block_order": [
         "text_eFgT7b",
         "text_B3RAiN",
-        "text_iPg7Ex",
-        "text_wt7pk3",
-        "text_Kt6gEK"
+        "text_iPg7Ex"
       ],
       "settings": {
-        "heading": "Title placeholder",
+        "heading": "",
         "product_handle": ""
       }
     }
