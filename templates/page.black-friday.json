@@ -39,11 +39,11 @@
     "activity_introduction_qqVhWA": {
       "type": "activity-introduction",
       "settings": {
-        "heading": "Activity Introduction",
-        "text": "Welcome to learn about the latest products",
+        "heading": "<strong>New Arrivals: Freshness Redefined</strong>",
+        "text": "",
         "image": "shopify://shop_images/recipe_4.webp",
-        "sub_heading": "Smoked Chicken with Alabama White Sauce",
-        "sub_text": "Smoked Chicken with Alabama White Sauce is slow-cooked over wood smoke, which imparts a rich, smoky flavor. The standout feature is the creamy Alabama White Sauce, a tangy, mayonnaise-based sauce with vinegar, black pepper, horseradish, and a few other spices."
+        "sub_heading": "Meet the New Generation of Food Preservation",
+        "sub_text": "This April, upgrade your kitchen with heiyo's latest Mason Jar Sealers—VP05 and VP09. Designed for effortless food storage, these innovative sealers are here to make your life fresher, simpler, and more organized. Plus, enjoy an exclusive 20% off for a limited time!"
       }
     },
     "acticity_collection_n6z64a": {
