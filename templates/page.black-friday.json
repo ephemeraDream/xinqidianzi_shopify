@@ -83,9 +83,10 @@
         "text_B3RAiN": {
           "type": "text",
           "settings": {
-            "subtitle": "Title placeholder",
-            "content": "<p>This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description</p>",
-            "position": "left"
+            "subtitle": "heiyo 3 in 1 Vacuum Sealer Kit - VP09",
+            "content": "<p>The VP09 is your ultimate kitchen multitasker, sealing Mason jars, vacuum bags, and wine bottles in one powerful device.</p><ul><li>3-in-1 Functionality-Seals Mason jars, vacuum bags AND wine bottles</li><li>Smart LED Display-Real-time sealing status updates</li><li>Extended Battery Life -50+ seals per charge</li><li>Premium Stainless Steel Build - Durable and stylish</li></ul>",
+            "image": "shopify://shop_images/activity-image-1.webp",
+            "position": "right"
           }
         },
         "text_iPg7Ex": {
