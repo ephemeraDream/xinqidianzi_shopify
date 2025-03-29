@@ -15,9 +15,9 @@
         "heading_MB9KhW": {
           "type": "heading",
           "settings": {
-            "heading": "Lorem Ipsum",
+            "heading": "<strong>Spring Sale</strong>",
             "icon": "shopify://shop_images/icon-arrow-right.webp",
-            "text": "Lorem Ipsum Dolor Sit Amet. Aut Iste Ipsum A Ipsum Mollitia Ut Similique Aperiam Quo Sequi Voluptatem Non Assumenda Expedita."
+            "text": "<strong>Spring into Freshness with heiyo!</strong>"
           }
         },
         "buttons_GXGBV7": {
@@ -75,35 +75,40 @@
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "position": "left"
           }
         },
         "text_B3RAiN": {
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "position": "left"
           }
         },
         "text_iPg7Ex": {
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "position": "left"
           }
         },
         "text_wt7pk3": {
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "position": "left"
           }
         },
         "text_Kt6gEK": {
           "type": "text",
           "settings": {
             "subtitle": "Title placeholder",
-            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description"
+            "content": "This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the description text This position contains the This position contains the description text This position contains the description text This position contains the description",
+            "position": "left"
           }
         }
       },
@@ -115,7 +120,8 @@
         "text_Kt6gEK"
       ],
       "settings": {
-        "heading": "Title placeholder"
+        "heading": "Title placeholder",
+        "product_handle": ""
       }
     }
   },
