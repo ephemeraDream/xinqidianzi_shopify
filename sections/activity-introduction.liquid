@@ -3,11 +3,13 @@
 <div id="section-{{ section.id }}" class="activity-introduction padding-sider">
   <h2 class="activity-introduction-header">{{ section.settings.heading }}</h2>
   <div class="activity-introduction-text">{{ section.settings.text }}</div>
-  <img
-    src="{{ section.settings.image | image_url }}"
-    alt="black friday"
-    class="activity-introduction-img"
-  >
+  {% if section.settings.image != blank %}
+    <img
+      src="{{ section.settings.image | image_url }}"
+      alt="black friday"
+      class="activity-introduction-img"
+    >
+  {% endif %}
   <h2 class="activity-introduction-sub_header">{{ section.settings.sub_heading }}</h2>
   <div class="activity-introduction-sub_text">{{ section.settings.sub_text }}</div>
 </div>
