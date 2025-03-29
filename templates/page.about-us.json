@@ -25,7 +25,7 @@
         "heading_BttCLX"
       ],
       "settings": {
-        "image": "shopify://shop_images/home-banner.webp"
+        "image": "shopify://shop_images/all-banner.webp"
       }
     },
     "product_longtext_KUEHF6": {
@@ -36,7 +36,7 @@
           "settings": {
             "subtitle": "To make cooking effortless and precise for everyone.",
             "content": "<p>We strive to design products that simplify food preparation, enhance accuracy, and bring joy to the kitchen. Whether you’re preserving freshness or cooking the perfect meal, heiyo is here to help you every step of the way.</p>",
-            "image": "shopify://shop_images/activity-image.webp",
+            "image": "shopify://shop_images/about_image_1.webp",
             "position": "right"
           }
         },
@@ -45,7 +45,7 @@
           "settings": {
             "subtitle": "<strong>Precision at Its Core</strong>",
             "content": "<p>Precision is the heart of everything we do. From sealing Mason jars to monitoring meat temperatures, our products are designed to deliver accurate results every time. With heiyo, you can trust that your food will be perfectly preserved or cooked to perfection.</p>",
-            "image": "shopify://shop_images/activity-image-1.webp",
+            "image": "shopify://shop_images/about_image_2.webp",
             "position": "left"
           }
         },
@@ -54,7 +54,7 @@
           "settings": {
             "subtitle": "<strong>Making Cooking Effortless</strong>",
             "content": "<p>We understand that cooking can be time-consuming and challenging. That’s why we’ve created tools that streamline the process, so you can focus on what matters most—creating delicious meals and memories with loved ones.</p>",
-            "image": "shopify://shop_images/vp09-8.webp",
+            "image": "shopify://shop_images/about_image_3.webp",
             "position": "right"
           }
         }
