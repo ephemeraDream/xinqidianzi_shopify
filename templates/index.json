@@ -205,7 +205,7 @@
           "type": "button",
           "settings": {
             "button_label": "click",
-            "button_link": "shopify://pages/about-us",
+            "button_link": "shopify://pages/our-story",
             "button_style_secondary": false
           }
         }
