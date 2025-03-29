@@ -11,11 +11,19 @@
             <h3>{{ blog_item.title }}</h3>
             {{- 'icon-plus.svg' | inline_asset_content -}}
           </div>
-          {% for article in blog_item.articles limit: 7 %}
-            <div class="recipe-collection-item-article">
-              <a href="{{ article.url }}">— {{ article.title }}</a>
-            </div>
-          {% endfor %}
+          {% if section.settings.layout == 'article' %}
+            {% for article in blog_item.articles limit: 7 %}
+              <div class="recipe-collection-item-article">
+                <a href="{{ article.url }}">— {{ article.title }}</a>
+              </div>
+            {% endfor %}
+          {% else %}
+            {% for type in blog_item.metafields.custom.second_type %}
+              <div class="recipe-collection-item-article">
+                <a data-type="{{ type }}">— {{ type }}</a>
+              </div>
+            {% endfor -%}
+          {%- endif %}
         </div>
       {% endif %}
     {% endfor %}
@@ -169,7 +177,7 @@
         }
       ],
       "default": "article",
-      "label": "show type or article",
+      "label": "show type or article"
     }
   ],
   "max_blocks": 4,
