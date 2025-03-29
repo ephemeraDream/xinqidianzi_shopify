@@ -19,23 +19,13 @@
             "icon": "shopify://shop_images/icon-arrow-right.webp",
             "text": "Smart tools for easier, more loving meals."
           }
-        },
-        "buttons_ewcLym": {
-          "type": "buttons",
-          "settings": {
-            "button_label": "Explore More",
-            "button_link": "",
-            "button_label_two": "Explore More",
-            "button_link_two": ""
-          }
         }
       },
       "block_order": [
-        "heading_X6RMJ4",
-        "buttons_ewcLym"
+        "heading_X6RMJ4"
       ],
       "settings": {
-        "image": "shopify://shop_images/home-banner.webp"
+        "image": "shopify://shop_images/all-banner.webp"
       }
     },
     "product_collection_XJ9R94": {
@@ -261,7 +251,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Versatile Design, Multi-Purpose Use",
-            "content": "heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.",
+            "content": "<p>heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.</p>",
             "image": "shopify://shop_images/blog_post_image.webp",
             "position": "left"
           }
@@ -270,7 +260,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Compact & Portable, Use Anywhere",
-            "content": "Lightweight and portable, perfect for home, camping, and travel.",
+            "content": "<p>Lightweight and portable, perfect for home, camping, and travel.</p>",
             "image": "shopify://shop_images/blog_post_image_2.webp",
             "position": "right"
           }
@@ -279,7 +269,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Airtight Seal, Lock in Freshness",
-            "content": "Extends food freshness with airtight sealing, reducing waste.",
+            "content": "<p>Extends food freshness with airtight sealing, reducing waste.</p>",
             "image": "shopify://shop_images/blog_8.webp",
             "position": "left"
           }
@@ -288,7 +278,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Easy to Use, One-Touch Sealing",
-            "content": "One-touch operation, no complicated steps, suitable for everyone.",
+            "content": "<p>One-touch operation, no complicated steps, suitable for everyone.</p>",
             "image": "shopify://shop_images/img_1.webp",
             "position": "right"
           }
@@ -312,7 +302,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Versatile Design, Multi-Purpose Use",
-            "content": "heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.",
+            "content": "<p>heiyo’s vacuum sealer works with Mason jars, vacuum bags, and wine bottles for versatile storage solutions.</p>",
             "image": "shopify://shop_images/blog_post_image.webp",
             "position": "left"
           }
@@ -321,7 +311,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Compact & Portable, Use Anywhere",
-            "content": "Lightweight and portable, perfect for home, camping, and travel.",
+            "content": "<p>Lightweight and portable, perfect for home, camping, and travel.</p>",
             "image": "shopify://shop_images/blog_post_image_2.webp",
             "position": "right"
           }
@@ -330,7 +320,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Airtight Seal, Lock in Freshness",
-            "content": "Extends food freshness with airtight sealing, reducing waste.",
+            "content": "<p>Extends food freshness with airtight sealing, reducing waste.</p>",
             "image": "shopify://shop_images/blog_8.webp",
             "position": "left"
           }
@@ -339,7 +329,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Easy to Use, One-Touch Sealing",
-            "content": "One-touch operation, no complicated steps, suitable for everyone.",
+            "content": "<p>One-touch operation, no complicated steps, suitable for everyone.</p>",
             "image": "shopify://shop_images/img_1.webp",
             "position": "right"
           }
@@ -363,7 +353,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Bluetooth Connectivity, Real-Time Monitoring（APP）",
-            "content": "Connects via Bluetooth for real-time temperature tracking, ensuring perfectly cooked meals.",
+            "content": "<p>Connects via Bluetooth for real-time temperature tracking, ensuring perfectly cooked meals.</p>",
             "image": "shopify://shop_images/blog_post_image.webp",
             "position": "left"
           }
@@ -372,7 +362,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Precision Control, Enhanced Flavor",
-            "content": "Precise temperature control prevents overcooking or undercooking, enhancing flavor.",
+            "content": "<p>Precise temperature control prevents overcooking or undercooking, enhancing flavor.</p>",
             "image": "shopify://shop_images/blog_post_image_2.webp",
             "position": "right"
           }
@@ -381,7 +371,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Portable Design, Essential for Outdoors",
-            "content": "Compact and portable, ideal for outdoor grilling and picnics.",
+            "content": "<p>Compact and portable, ideal for outdoor grilling and picnics.</p>",
             "image": "shopify://shop_images/blog_8.webp",
             "position": "left"
           }
@@ -390,7 +380,7 @@
           "type": "text",
           "settings": {
             "subtitle": "Long Battery Life, Extended Use",
-            "content": "Lasts up to 24 hours on a single charge, perfect for long cooking sessions.",
+            "content": "<p>Lasts up to 24 hours on a single charge, perfect for long cooking sessions.</p>",
             "image": "shopify://shop_images/img_1.webp",
             "position": "right"
           }
