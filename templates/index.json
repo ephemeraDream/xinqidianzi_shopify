@@ -204,7 +204,7 @@
         "button_GqtaNR": {
           "type": "button",
           "settings": {
-            "button_label": "click",
+            "button_label": "Our Story",
             "button_link": "shopify://pages/our-story",
             "button_style_secondary": false
           }
@@ -216,7 +216,7 @@
         "button_GqtaNR"
       ],
       "settings": {
-        "image": "shopify://shop_images/img_1.webp",
+        "image": "shopify://shop_images/company_image.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
