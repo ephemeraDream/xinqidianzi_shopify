@@ -93,6 +93,7 @@
                           id="HeaderMenu-products-collection"
                           href="{{ link.url }}"
                           class="mega-menu__link mega-menu__link--level-2 link"
+                          data-tab="tab-all"
                           >ALL PRODUCTS</a
                         >
                       </li>
@@ -168,6 +169,27 @@
                         {%- endfor -%}
                       </div>
                     {%- endfor -%}
+                    <div
+                      class="mega-menu__flex-box collection-products"
+                      id="tab-all"
+                    >
+                      {% assign smart_cooking_devices = collections['smart-cooking-devices'].products %}
+                      {% assign smart_food_storage = collections['smart-food-storage'].products %}
+
+                      {% assign all_products = smart_cooking_devices | concat: smart_food_storage %}
+                      {%- for product in all_products limit: 3 -%}
+                        <div class="product-item">
+                          <a href="{{ product.url }}">
+                            <img src="{{ product.featured_image | image_url }}" alt="{{ product.title | escape }}">
+                            <h4>{{ product.title | escape }}</h4>
+                            <div class="flex-end">
+                              <div class="product-desc">{{ product.description }}</div>
+                              {{- 'arrow-right.svg' | inline_asset_content -}}
+                            </div>
+                          </a>
+                        </div>
+                      {%- endfor -%}
+                    </div>
                   {% elsif link.handle == 'inspiration' %}
                     {% comment %}
                       {%- for childlink in link.links -%}
