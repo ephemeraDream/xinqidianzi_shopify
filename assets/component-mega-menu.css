@@ -162,7 +162,6 @@
 .mega-menu__flex-box {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
 }
 
 .mega-menu__flex-box .product-item,
