@@ -38,6 +38,7 @@
     },
     "activity_introduction_qqVhWA": {
       "type": "activity-introduction",
+      "disabled": true,
       "settings": {
         "heading": "<strong>New Arrivals: Freshness Redefined</strong>",
         "text": "",
