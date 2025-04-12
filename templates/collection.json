@@ -52,12 +52,19 @@
           "settings": {
             "product": "heiyo-vacuum-sealer-kit-vp05"
           }
+        },
+        "product_dMcwRG": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
+          }
         }
       },
       "block_order": [
         "product_6WTxdX",
         "product_FaMGKx",
-        "product_mDj6RA"
+        "product_mDj6RA",
+        "product_dMcwRG"
       ],
       "settings": {
         "heading": "Product List",
