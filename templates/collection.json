@@ -35,36 +35,36 @@
     "product_list_mqnFFM": {
       "type": "product-list",
       "blocks": {
-        "product_6WTxdX": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-wireless-thermometer-em09"
-          }
-        },
-        "product_FaMGKx": {
+        "product_Up6Umi": {
           "type": "product",
           "settings": {
             "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09"
           }
         },
-        "product_mDj6RA": {
+        "product_FhKTKz": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
+          }
+        },
+        "product_8NM7MQ": {
           "type": "product",
           "settings": {
             "product": "heiyo-vacuum-sealer-kit-vp05"
           }
         },
-        "product_dMcwRG": {
+        "product_ywjLDE": {
           "type": "product",
           "settings": {
-            "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
+            "product": "heiyo-wireless-thermometer-em09"
           }
         }
       },
       "block_order": [
-        "product_6WTxdX",
-        "product_FaMGKx",
-        "product_mDj6RA",
-        "product_dMcwRG"
+        "product_Up6Umi",
+        "product_FhKTKz",
+        "product_8NM7MQ",
+        "product_ywjLDE"
       ],
       "settings": {
         "heading": "Product List",
