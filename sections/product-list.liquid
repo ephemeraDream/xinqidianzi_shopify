@@ -13,23 +13,48 @@
               data-id="{{ block.settings.product.id }}"
             >
               <div class="swiper-wrapper">
-                {% for variant in block.settings.product.variants %}
-                  {% if variant.featured_image %}
-                    <div
-                      class="swiper-slide"
-                      data-color="{{ variant.metafields.custom.color }}"
-                    >
-                      <img
-                        src="{{ variant.featured_image | image_url }}"
-                        alt="{{ variant.title }}"
+                {% if block.settings.product.options_by_name.Color.values.size > 1 %}
+                  {% for variant in block.settings.product.variants %}
+                    {% if variant.featured_image %}
+                      {% for item in block.settings.product.metafields.custom.color.value %}
+                        {% if item.color == variant.option1 %}
+                          {% assign active_color = item %}
+                        {% endif %}
+                      {% endfor %}
+                      <div
+                        class="swiper-slide"
+                        data-color="{{ active_color.value }}"
                       >
-                    </div>
-                  {% endif %}
-                {% endfor %}
+                        <img
+                          src="{{ variant.featured_image | image_url }}"
+                          alt="{{ variant.title }}"
+                        >
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% assign fisrt_variant = block.settings.product.variants[0] %}
+                  {% for item in block.settings.product.metafields.custom.color.value %}
+                    {% if item.color == fisrt_variant.option1 %}
+                      {% assign active_color = item %}
+                    {% endif %}
+                  {% endfor %}
+                  <div
+                    class="swiper-slide"
+                    data-color="{{ active_color.value }}"
+                  >
+                    <img
+                      src="{{ fisrt_variant.featured_image | image_url }}"
+                      alt="{{ fisrt_variant.title }}"
+                    >
+                  </div>
+                {% endif %}
               </div>
             </div>
 
-            <a href="{{ block.settings.product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
+            <a href="{{ block.settings.product.url }}" class="product-btn">
+              {{- 'shopping.svg' | inline_asset_content -}}
+            </a>
           </div>
 
           <div class="product-info">

@@ -75,11 +75,7 @@
   color: #ffffff;
 }
 
-.hot-selling-swiper
-  .swiper-slide-left
-  .product-box
-  .product-info
-  .product-price {
+.hot-selling-swiper .swiper-slide-left .product-box .product-info .product-price {
   font-family: Poppins;
   font-size: 2rem;
   font-weight: 500;
@@ -192,6 +188,20 @@
   color: #000000;
 }
 
+.hot-selling .swiper-pagination {
+  bottom: -6rem;
+}
+
+.hot-selling .swiper-pagination .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.6rem;
+}
+
+.hot-selling .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ebb069;
+}
+
 @media screen and (max-width: 1600px) {
   .hot-selling-swiper {
     padding-left: 6rem;
@@ -204,12 +214,15 @@
     padding-left: 4rem;
     padding-right: 4rem;
   }
+
   .hot-selling-swiper .swiper-slide {
     flex-wrap: wrap;
   }
+
   .hot-selling-swiper .swiper-slide-left .carousel-image {
     width: 100%;
   }
+
   .hot-selling-swiper .carousel-text p {
     margin-top: 2.4rem;
   }
@@ -219,11 +232,13 @@
   .hot-selling {
     padding-top: 6rem;
   }
+
   .hot-selling-swiper {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 4rem;
   }
+
   .hot-selling-swiper .swiper-slide-left .product-box {
     padding-right: 1.6rem;
   }

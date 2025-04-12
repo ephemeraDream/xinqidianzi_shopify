@@ -29,22 +29,17 @@
                 data-id="{{ product.id }}"
               >
                 <div class="swiper-wrapper">
-                  {%- if product.has_only_default_variant -%}
-                    <div
-                      class="swiper-slide"
-                      data-color="{{ variant.metafields.custom.color }}"
-                    >
-                      <img
-                        src="{{ product.featured_image | image_url }}"
-                        alt="{{ product.title }}"
-                      >
-                    </div>
-                  {%- else -%}
+                  {% if product.options_by_name.Color.values.size > 1 %}
                     {% for variant in product.variants %}
                       {% if variant.featured_image %}
+                        {% for item in product.metafields.custom.color.value %}
+                          {% if item.color == variant.option1 %}
+                            {% assign active_color = item %}
+                          {% endif %}
+                        {% endfor %}
                         <div
                           class="swiper-slide"
-                          data-color="{{ variant.metafields.custom.color }}"
+                          data-color="{{ active_color.value }}"
                         >
                           <img
                             src="{{ variant.featured_image | image_url }}"
@@ -53,7 +48,50 @@
                         </div>
                       {% endif %}
                     {% endfor %}
+                  {% else %}
+                    {% assign fisrt_variant = product.variants[0] %}
+                    {% for item in product.metafields.custom.color.value %}
+                      {% if item.color == fisrt_variant.option1 %}
+                        {% assign active_color = item %}
+                      {% endif %}
+                    {% endfor %}
+                    <div
+                      class="swiper-slide"
+                      data-color="{{ active_color.value }}"
+                    >
+                      <img
+                        src="{{ fisrt_variant.featured_image | image_url }}"
+                        alt="{{ fisrt_variant.title }}"
+                      >
+                    </div>
                   {% endif %}
+                  {% comment %}
+                    {%- if product.has_only_default_variant -%}
+                      <div
+                        class="swiper-slide"
+                        data-color="{{ variant.metafields.custom.color }}"
+                      >
+                        <img
+                          src="{{ product.featured_image | image_url }}"
+                          alt="{{ product.title }}"
+                        >
+                      </div>
+                    {%- else -%}
+                      {% for variant in product.variants %}
+                        {% if variant.featured_image %}
+                          <div
+                            class="swiper-slide"
+                            data-color="{{ variant.metafields.custom.color }}"
+                          >
+                            <img
+                              src="{{ variant.featured_image | image_url }}"
+                              alt="{{ variant.title }}"
+                            >
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endcomment %}
                 </div>
               </div>
 

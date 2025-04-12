@@ -36,24 +36,34 @@
       {% endfor %}
     </div>
 
-    <div class="carousel-navigation">
-      {% for block in section.blocks %}
-        <div class="category-btn{% if forloop.index0 == 0 %} active{% endif %}">
-          <div class="category-btn-circle"></div>
-          <span class="category-btn-title">{{ block.settings.title }}</span>
-        </div>
-      {% endfor %}
-    </div>
+    {% comment %}
+      <div class="carousel-navigation">
+        {% for block in section.blocks %}
+          <div class="category-btn{% if forloop.index0 == 0 %} active{% endif %}">
+            <div class="category-btn-circle"></div>
+            <span class="category-btn-title">{{ block.settings.title }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endcomment %}
   </div>
-  <div class="carousel-navigation-line"></div>
+  <div class="swiper-pagination"></div>
+  {% comment %} <div class="carousel-navigation-line"></div> {% endcomment %}
 </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const hotSellingSwiper = new Swiper('.hot-selling-swiper', {
       loop: true,
-      allowTouchMove: false,
-      breakpoints: {
+      {% comment %} allowTouchMove: false, {% endcomment %}
+      pagination: {
+        el: '.hot-selling .swiper-pagination',
+        clickable :true,
+      },
+      autoplay: {
+        disableOnInteraction: false,
+      },
+      {% comment %} breakpoints: {
         1025: {
           spaceBetween: 60,
         },
@@ -63,9 +73,9 @@
         0: {
           spaceBetween: 20,
         },
-      },
+      },{% endcomment %}
     });
-    const categoryBtns = document.querySelectorAll('.category-btn');
+    {% comment %} const categoryBtns = document.querySelectorAll('.category-btn');
 
     categoryBtns.forEach((btn, index) => {
       btn.addEventListener('click', function () {
@@ -74,7 +84,7 @@
         btn.classList.add('active');
         hotSellingSwiper.slideTo(index);
       });
-    });
+    }); {% endcomment %}
   });
 </script>
 

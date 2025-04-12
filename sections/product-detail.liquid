@@ -89,27 +89,67 @@
       <div class="product-detail-sale_word">{{ product.metafields.custom.sale_word | metafield_tag }}</div>
     {% endif %}
     {%- unless product.has_only_default_variant -%}
-      <div class="product-detail-label">Color ：</div>
-      <div class="product-detail-content">
-        {% for variant in product.variants %}
-          <div class="product-detail-color{% if product.selected_or_first_available_variant.metafields.custom.color == variant.metafields.custom.color %} active{% endif %}">
-            <a
-              href="{{ variant.url }}"
-              class="product-detail-color-circle"
-              style="background-color: {{ variant.metafields.custom.color }};"
-            ></a>
+      {% for option in product.options_with_values %}
+        {%- case option.name -%}
+          {%- when 'Color' -%}
+            <div class="product-detail-label">{{ option.name }} ：</div>
+            <div class="product-detail-content">
+              {% for value in option.values %}
+                {% for item in product.metafields.custom.color.value %}
+                  {% if item.color == value %}
+                    {% assign active_color = item %}
+                  {% endif %}
+                {% endfor %}
+                <div class="product-detail-color{% if value.selected %} active{% endif %}">
+                  <a
+                    href="{{ value.variant.url }}"
+                    class="product-detail-color-circle"
+                    style="background-color: {{ active_color.value }};"
+                  ></a>
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="product-detail-label">{{ option.name }} ：</div>
+            <div class="product-detail-content">
+              {% for value in option.values %}
+                <a
+                  href="{{ value.variant.url }}"
+                  class="product-detail-select{% if value.selected %} active{% endif %}"
+                >
+                  {{ value }}
+                </a>
+              {% endfor %}
+            </div>
+        {%- endcase -%}
+      {% endfor %}
+      {% for item in product.metafields.custom.extra_info.value.data.value %}
+        <div class="product-detail-label">{{ item.label }} ：</div>
+        <div class="product-detail-content">{{ item.value }}</div>
+      {% endfor %}
+      {%- if product.metafields.custom.supply_description != blank -%}
+        {% comment %} <div class="product-detail-sale_word">{{ product.metafields.custom.supply_description | metafield_tag }}</div> {% endcomment %}
+        {% for item in product.metafields.custom.supply_description.value.data.value %}
+          <div class="product-detail-sale_word_box">
+            {%- if item.icon != '' -%}
+              <img
+                class="product-detail-sale_word_box_icon"
+                src="{{ item.icon }}"
+                alt="{{ item.text }}"
+              >
+            {% endif %}
+            <div class="product-detail-sale_word_box_text">{{ item.text }}</div>
           </div>
         {% endfor %}
-      </div>
-      {%- if product.metafields.custom.supply_description != blank -%}
-        <div class="product-detail-sale_word">{{ product.metafields.custom.supply_description | metafield_tag }}</div>
       {% endif %}
-      {% if product.options.size > 0 %}
-        {% for option in product.options %}
-          <div class="product-detail-label">{{ option }} ：</div>
-          <div class="product-detail-content">{{ product.options_by_name[option].selected_value }}</div>
-        {% endfor %}
-      {% endif %}
+      {% comment %}
+        {% if product.options.size > 0 %}
+          {% for option in product.options %}
+            <div class="product-detail-label">{{ option }} ：</div>
+            <div class="product-detail-content">{{ product.options_by_name[option].selected_value }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endcomment %}
     {%- endunless -%}
     <div class="product-detail-buybox">
       <product-form
