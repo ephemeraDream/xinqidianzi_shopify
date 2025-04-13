@@ -471,14 +471,16 @@
           {% endcomment %}
           <div class="product-recommendations-head">
             <span>You May Also Like</span>
-            <div class="flex-center">
-              <div class="recommendations-complementary-swiper-prev">
-                {{- 'swiper-left.svg' | inline_asset_content -}}
+            {% comment %}
+              <div class="flex-center">
+                <div class="recommendations-complementary-swiper-prev">
+                  {{- 'swiper-left.svg' | inline_asset_content -}}
+                </div>
+                <div class="recommendations-complementary-swiper-next">
+                  {{- 'swiper-right.svg' | inline_asset_content -}}
+                </div>
               </div>
-              <div class="recommendations-complementary-swiper-next">
-                {{- 'swiper-right.svg' | inline_asset_content -}}
-              </div>
-            </div>
+            {% endcomment %}
           </div>
           <div class="swiper recommendations-complementary-swiper">
             <div class="swiper-wrapper">
@@ -501,6 +503,7 @@
                 </div>
               {%- endfor -%}
             </div>
+            <div class="swiper-scrollbar"></div>
           </div>
         {%- endif -%}
       </div>
@@ -642,12 +645,20 @@
     const initializeSwiper = () => {
       setTimeout(() => {
         new Swiper('.cart-drawer .recommendations-complementary-swiper', {
-          slidesPerView: 1,
+          {% comment %} slidesPerView: 1,
           loop: true,
           spaceBetween: 12,
           navigation: {
             nextEl: '.cart-drawer .recommendations-complementary-swiper-next',
             prevEl: '.cart-drawer .recommendations-complementary-swiper-prev',
+          }, {% endcomment %}
+          spaceBetween: 12,
+          direction: 'vertical',
+          nested:true,
+          slidesPerView: 'auto',
+          freeMode: true,
+          scrollbar: {
+            el: '.cart-drawer .swiper-scrollbar',
           },
         });
       }, 0);

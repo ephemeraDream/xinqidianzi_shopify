@@ -343,16 +343,6 @@
       }
     },
     {
-      "key": "supply_description",
-      "namespace": "custom",
-      "name": "supply description",
-      "description": "",
-      "type": {
-        "name": "rich_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
       "key": "main_description",
       "namespace": "custom",
       "name": "main description",
@@ -481,19 +471,28 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
-    }
-  ],
-  "variant": [
+    },
     {
-      "key": "color",
+      "key": "extra_info",
       "namespace": "custom",
-      "name": "Color",
+      "name": "extra info",
       "description": "",
       "type": {
-        "name": "color",
-        "category": "COLOR"
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "supply_description",
+      "namespace": "custom",
+      "name": "supply description",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
       }
     }
   ],
+  "variant": [],
   "shop": []
 }
