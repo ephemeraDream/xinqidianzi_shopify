@@ -17,84 +17,52 @@
       "type": "product-highlight-intro",
       "settings": {}
     },
-    "prodcut_introduce_two_6H8d7G": {
-      "type": "prodcut-introduce-two",
-      "settings": {}
-    },
-    "hot_video_q4rymY": {
-      "type": "hot-video",
+    "product_icontext_tfrGJR": {
+      "type": "product-icontext",
       "blocks": {
-        "video_item_Gaxzit": {
-          "type": "video_item",
+        "iconbox_GX3Ccd": {
+          "type": "iconbox",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" t=\"1744598473891\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" p-id=\"9400\" width=\"200\" height=\"200\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M139.03 726.77H37.73c-6.77 0-13.27-2.69-18.06-7.48a25.523 25.523 0 0 1-7.48-18.05v-570.8c0-14.11 11.43-25.53 25.53-25.53H643.6c14.11 0 25.53 11.43 25.53 25.53v569.61c0 6.77-2.69 13.27-7.48 18.05a25.529 25.529 0 0 1-18.06 7.48H466.96c-14.1 0-25.53-11.43-25.53-25.53s11.43-25.53 25.53-25.53h151.12V155.98H63.28v519.7h75.75c14.11 0 25.55 11.43 25.55 25.54s-11.44 25.55-25.55 25.55z m0 0\" fill=\"#8a8a8a\" p-id=\"9401\"></path><path d=\"M306.19 917.86c-74.55 0-135.2-60.65-135.2-135.2 0-74.55 60.65-135.2 135.2-135.2 74.55 0 135.21 60.64 135.21 135.2s-60.66 135.2-135.21 135.2z m0-219.32c-46.38 0-84.12 37.74-84.12 84.12s37.74 84.12 84.12 84.12 84.11-37.74 84.11-84.12-37.73-84.12-84.11-84.12z m513.98 219.32c-74.55 0-135.2-60.65-135.2-135.2 0-74.55 60.65-135.2 135.2-135.2 74.55 0 135.21 60.64 135.21 135.2s-60.66 135.2-135.21 135.2z m0-219.32c-46.39 0-84.12 37.74-84.12 84.12s37.73 84.12 84.12 84.12c46.38 0 84.11-37.74 84.11-84.12s-37.73-84.12-84.11-84.12z m165.96-17.56c-6.77 0-13.27-2.69-18.05-7.48a25.529 25.529 0 0 1-7.48-18.06v-191.4L808.08 278.01H659.94a25.55 25.55 0 0 1-22.12-12.77 25.538 25.538 0 1 1 22.12-38.31h160.23c7.65 0 14.9 3.44 19.76 9.34l165.96 202.44a25.577 25.577 0 0 1 5.79 16.2v200.54c-0.02 14.11-11.45 25.53-25.55 25.53z m0 0\" fill=\"#8a8a8a\" p-id=\"9402\"></path><path d=\"M966.42 486.35H754.65c-9.12 0-17.55-4.86-22.11-12.77a25.534 25.534 0 0 1 22.11-38.3h211.78c14.11 0.01 25.53 11.44 25.53 25.54-0.01 14.1-11.44 25.54-25.54 25.53z m-828.19-124a25.539 25.539 0 0 1-23.62-15.76 25.529 25.529 0 0 1 5.55-27.84L231.1 207.81c9.97-9.98 26.15-9.98 36.12 0 9.97 9.97 9.97 26.14 0 36.12L156.29 354.86c-5 4.98-11.54 7.49-18.06 7.49z m36.14 135.76a25.519 25.519 0 0 1-23.61-15.77 25.51 25.51 0 0 1 5.55-27.84L369.8 241.01c9.97-9.97 26.15-9.97 36.12 0 9.97 9.98 9.97 26.15 0 36.12L192.43 490.62a25.521 25.521 0 0 1-18.06 7.49z m0 0\" fill=\"#8a8a8a\" p-id=\"9403\"></path></svg>",
+            "text": "Fast Free Shipping"
           }
         },
-        "video_item_ncwmYx": {
-          "type": "video_item",
+        "iconbox_yNVe6d": {
+          "type": "iconbox",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" t=\"1744598458563\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" p-id=\"8107\" width=\"200\" height=\"200\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M495.843556 975.416889c-134.030222 0-381.724444-212.195556-381.724445-403.911111v-381.724445h37.319111s85.617778-1.820444 173.112889-37.205333C413.866667 117.191111 471.608889 74.353778 471.608889 74.353778l24.234667-16.725334 22.300444 16.725334s57.742222 42.837333 148.992 78.222222a540.785778 540.785778 0 0 0 173.112889 37.205333h37.262222v383.544889c0 189.895111-247.637333 402.090667-381.724444 402.090667z m-316.302223-710.542222v316.643555c0 152.576 221.240889 326.144 312.775111 326.144 89.656889 0 312.832-173.511111 312.832-326.144V264.931556a677.205333 677.205333 0 0 1-165.944888-40.049778 873.813333 873.813333 0 0 1-144.952889-74.410667c-26.737778 17.180444-78.222222 47.729778-144.952889 74.410667a699.733333 699.733333 0 0 1-169.756445 40.049778zM324.437333 526.222222a35.328 35.328 0 0 1 49.265778-3.015111l94.321778 81.578667 185.457778-210.204445a32.085333 32.085333 0 0 1 45.397333-2.787555 32.426667 32.426667 0 0 1 2.844444 45.681778l-226.417777 258.730666-147.512889-122.424889a32.995556 32.995556 0 0 1-3.413334-47.559111z\" fill=\"#8a8a8a\" p-id=\"8108\"></path></svg>",
+            "text": "Secure payment"
           }
         },
-        "video_item_LmHPp7": {
-          "type": "video_item",
+        "iconbox_zdKRJ8": {
+          "type": "iconbox",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" t=\"1744598259534\" class=\"icon\" viewbox=\"0 0 1025 1024\" version=\"1.1\" p-id=\"5827\" width=\"200.1953125\" height=\"200\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M886.184664 673.051643H669.846635v-84.932707L559.273865 785.226917l110.57277 197.107981v-83.330203h110.57277c27.242567 0 52.882629-14.422535 67.305165-38.460094l137.815336-243.580595c-20.832551 35.255086-57.690141 56.087637-99.355242 56.087637z m-155.44288-339.730829l110.57277-197.107981-72.112676 43.267605s-27.242567-49.677621-38.460094-68.907668c-22.435055-41.665102-75.317684-57.690141-116.982786-35.255086-14.422535 8.01252-27.242567 20.832551-35.255086 35.255086 0 0-25.640063 44.87011-51.280125 91.342723l51.280125 92.945227-72.112676 41.665102 224.350548-3.205008z m-427.868545 224.350548l-108.970266 193.902973c-20.832551 35.255086-20.832551 80.125196 0 115.380282L56.087637 623.374022c-14.422535-24.037559-14.422535-54.485133 0-80.125196L112.175274 445.496088l-72.112676-41.665102h222.748044l110.57277 197.107981-70.510173-43.267605z m483.956182 91.342723l-110.57277-197.107982 190.697966-112.175274c32.050078 59.292645 65.70266 116.982786 97.752738 176.275431 16.025039 27.242567 16.025039 62.497653 0 89.740219-16.025039 27.242567-44.87011 44.87011-76.920188 44.870109h-100.957746z m-573.696401 116.982785s25.640063-44.87011 51.280126-91.342723h222.748043v225.953052H288.450704c-32.050078 0-60.895149-16.025039-76.920188-44.87011-14.422535-27.242567-14.422535-60.895149 1.602504-89.740219zM560.876369 97.752739C535.236307 144.225352 391.010955 399.023474 391.010955 399.023474l-190.697966-113.777778S291.655712 120.187793 315.693271 80.125196c12.820031-24.037559 38.460094-40.062598 65.70266-40.062598H657.026604c-40.062598 0-76.920188 22.435055-96.150235 57.690141z\" fill=\"#8a8a8a\" p-id=\"5828\"></path></svg>",
+            "text": "Eco-friendly Purification Tech"
           }
         },
-        "video_item_HnGpCH": {
-          "type": "video_item",
+        "iconbox_iPpdpD": {
+          "type": "iconbox",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
-          }
-        },
-        "video_item_xPGCcm": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
-          }
-        },
-        "video_item_MFXggR": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
-            "heading": "Title Placeholder",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" t=\"1744598386310\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" p-id=\"7030\" width=\"200\" height=\"200\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M616.853333 90.517333a42.666667 42.666667 0 0 0-60.309333-0.042666L90.453333 556.544a42.752 42.752 0 0 0 0.042667 60.309333l58.858667 58.837334a149.333333 149.333333 0 0 1 198.933333 198.933333l58.837333 58.858667a42.666667 42.666667 0 0 0 60.309334 0.042666L933.546667 467.456a42.752 42.752 0 0 0-0.042667-60.309333l-45.013333-45.013334a149.333333 149.333333 0 0 1-205.290667-205.290666l-66.346667-66.325334zM963.626667 376.981333a85.418667 85.418667 0 0 1 0.042666 120.661334L497.642667 963.690667a85.333333 85.333333 0 0 1-120.661334-0.042667l-83.072-83.072a106.666667 106.666667 0 0 0-150.464-150.464l-83.093333-83.093333a85.418667 85.418667 0 0 1-0.042667-120.661334L526.357333 60.309333a85.333333 85.333333 0 0 1 120.661334 0.042667l93.738666 93.738667a106.666667 106.666667 0 1 0 150.464 150.464l72.426667 72.426666z m-435.050667-29.397333l-181.013333 181.013333a21.333333 21.333333 0 0 0 30.165333 30.165334l181.013333-181.013334a21.333333 21.333333 0 0 0-30.165333-30.165333z m117.653333 128l-170.666666 170.666667a21.333333 21.333333 0 0 0 30.165333 30.165333l170.666667-170.666667a21.333333 21.333333 0 0 0-30.165334-30.165333z\" fill=\"#8a8a8a\" p-id=\"7031\"></path></svg>",
+            "text": "favourable price"
           }
         }
       },
       "block_order": [
-        "video_item_Gaxzit",
-        "video_item_ncwmYx",
-        "video_item_LmHPp7",
-        "video_item_HnGpCH",
-        "video_item_xPGCcm",
-        "video_item_MFXggR"
+        "iconbox_GX3Ccd",
+        "iconbox_yNVe6d",
+        "iconbox_zdKRJ8",
+        "iconbox_iPpdpD"
       ],
-      "settings": {}
-    },
-    "product_recommend_kRfdJq": {
-      "type": "product-recommend",
       "settings": {
-        "heading": "You May Also Like",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "heading": "",
+        "text": ""
       }
+    },
+    "prodcut_introduce_two_6H8d7G": {
+      "type": "prodcut-introduce-two",
+      "settings": {}
     },
     "product_faq_QymQNC": {
       "type": "product-faq",
@@ -275,11 +243,87 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "hot_video_q4rymY": {
+      "type": "hot-video",
+      "blocks": {
+        "video_item_Gaxzit": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_ncwmYx": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_LmHPp7": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_HnGpCH": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_xPGCcm": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        },
+        "video_item_MFXggR": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=zYBXjBUoOJo",
+            "heading": "Title Placeholder",
+            "date": "2024.09.01",
+            "description": "This position contains the description text This position contains the description text"
+          }
+        }
+      },
+      "block_order": [
+        "video_item_Gaxzit",
+        "video_item_ncwmYx",
+        "video_item_LmHPp7",
+        "video_item_HnGpCH",
+        "video_item_xPGCcm",
+        "video_item_MFXggR"
+      ],
+      "settings": {}
+    },
+    "product_recommend_kRfdJq": {
+      "type": "product-recommend",
+      "settings": {
+        "heading": "You May Also Like",
+        "text": "This is a placeholder copy This is a placeholder copy"
+      }
     }
   },
   "order": [
     "product_detail_UfijdK",
     "product_highlight_intro_KLxPti",
+    "product_icontext_tfrGJR",
     "prodcut_introduce_two_6H8d7G",
     "product_faq_QymQNC",
     "product_faq_nUWLHm",
