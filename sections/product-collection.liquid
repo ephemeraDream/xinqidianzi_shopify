@@ -22,23 +22,21 @@
           {% endif %}
         {% endfor %}
       {% endcomment %}
-      {% assign featured_handles = 'smart-food-storage,smart-cooking-devices' | split: ',' %}
+      {% for collection in collections %}
+        {% if collection.handle == 'smart-food-storage' or collection.handle == 'smart-cooking-devices' %}
+          {% assign active_class = '' %}
+          {% if request.path contains collection.handle %}
+            {% assign active_class = 'active' %}
+          {% endif %}
 
-      {% for handle in featured_handles %}
-        {% assign collection = collections[handle] %}
-
-        {% assign active_class = '' %}
-        {% if request.path contains collection.handle %}
-          {% assign active_class = 'active' %}
+          <a
+            href="{{ collection.url }}"
+            class="categorize-group-btn {{ active_class }}"
+            data-type="{{ collection.handle }}"
+          >
+            {{ collection.title }}
+          </a>
         {% endif %}
-
-        <a
-          href="{{ collection.url }}"
-          class="categorize-group-btn {{ active_class }}"
-          data-type="{{ collection.handle }}"
-        >
-          {{ collection.title }}
-        </a>
       {% endfor %}
     </div>
   </div>
