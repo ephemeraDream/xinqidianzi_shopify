@@ -23,7 +23,7 @@
         {% endfor %}
       {% endcomment %}
       {% for collection in collections %}
-        {% if collection.handle == 'smart-cooking-devices' or collection.handle == 'smart-food-storage' %}
+        {% if collection.handle == 'smart-food-storage' or collection.handle == 'smart-cooking-devices' %}
           {% assign active_class = '' %}
           {% if request.path contains collection.handle %}
             {% assign active_class = 'active' %}
