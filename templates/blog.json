@@ -24,7 +24,9 @@
           "type": "buttons",
           "settings": {
             "button_label": "DISCOVER",
-            "button_link": ""
+            "button_link": "",
+            "button_label_two": "",
+            "button_link_two": ""
           }
         }
       },
@@ -44,12 +46,21 @@
           "settings": {
             "blog_handle": "news"
           }
+        },
+        "blogs_QdzMtR": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "guide"
+          }
         }
       },
       "block_order": [
-        "blogs_b3zCir"
+        "blogs_b3zCir",
+        "blogs_QdzMtR"
       ],
-      "settings": {}
+      "settings": {
+        "layout": "article"
+      }
     },
     "product_comparison_4fHC9d": {
       "type": "product-comparison",
@@ -128,7 +139,8 @@
       ],
       "settings": {
         "heading": "FAQ",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "text": "This is a placeholder copy This is a placeholder copy",
+        "product_handle": ""
       }
     }
   },
