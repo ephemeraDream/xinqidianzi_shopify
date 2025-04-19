@@ -46,6 +46,16 @@
                             alt="{{ variant.title }}"
                           >
                         </div>
+                      {% else %}
+                        <div
+                          class="swiper-slide"
+                          data-color="{{ active_color.value }}"
+                        >
+                          <img
+                            src="{{ product.featured_image | image_url }}"
+                            alt="{{ variant.title }}"
+                          >
+                        </div>
                       {% endif %}
                     {% endfor %}
                   {% else %}
@@ -55,15 +65,27 @@
                         {% assign active_color = item %}
                       {% endif %}
                     {% endfor %}
-                    <div
-                      class="swiper-slide"
-                      data-color="{{ active_color.value }}"
-                    >
-                      <img
-                        src="{{ fisrt_variant.featured_image | image_url }}"
-                        alt="{{ fisrt_variant.title }}"
+                    {% if fisrt_variant.featured_image %}
+                      <div
+                        class="swiper-slide"
+                        data-color="{{ active_color.value }}"
                       >
-                    </div>
+                        <img
+                          src="{{ fisrt_variant.featured_image | image_url }}"
+                          alt="{{ fisrt_variant.title }}"
+                        >
+                      </div>
+                    {% else %}
+                      <div
+                        class="swiper-slide"
+                        data-color="{{ active_color.value }}"
+                      >
+                        <img
+                          src="{{ product.featured_image | image_url }}"
+                          alt="{{ fisrt_variant.title }}"
+                        >
+                      </div>
+                    {% endif %}
                   {% endif %}
                   {% comment %}
                     {%- if product.has_only_default_variant -%}
