@@ -305,7 +305,7 @@
         "product_Lx9mtw": {
           "type": "product",
           "settings": {
-            "product": "heiyo-wireless-thermometer-em09"
+            "product": "heiyo-wireless-meat-thermometer-kit-dual-em09"
           }
         },
         "product_6AdFM9": {
@@ -325,13 +325,20 @@
           "settings": {
             "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
           }
+        },
+        "product_HKYJee": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-wireless-meat-thermometer-kit-one-em09"
+          }
         }
       },
       "block_order": [
         "product_Lx9mtw",
         "product_6AdFM9",
         "product_7PFtd8",
-        "product_PCt6aA"
+        "product_PCt6aA",
+        "product_HKYJee"
       ],
       "settings": {
         "heading": "Customer Reviews",
