@@ -69,7 +69,7 @@
   font-weight: normal;
   line-height: normal;
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
