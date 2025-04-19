@@ -176,7 +176,7 @@
         "heading_size": "h1",
         "enable_video_looping": true,
         "video_url": "",
-        "cover_image": "shopify://shop_images/home_video_cover.webp",
+        "cover_image": "shopify://shop_images/home_video_cover_full.webp",
         "description": "",
         "full_width": true,
         "color_scheme": "",
