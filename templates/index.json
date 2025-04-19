@@ -126,7 +126,7 @@
             "title": "Smart Cooking Devices",
             "heading": "Cook Smarter, Taste Better!",
             "description": "Take your cooking to the next level with our Smart Wireless Meat Thermometer! Connect via Bluetooth to the app for real-time temperature monitoring, ensuring your food is perfectly cooked every time. Whether you’re grilling, roasting, or baking, enjoy fresher, juicier results with ease.",
-            "product": "heiyo-wireless-thermometer-em09"
+            "product": "heiyo-wireless-meat-thermometer-kit-one-em09"
           }
         }
       },
@@ -144,7 +144,7 @@
         "product_taJNnQ": {
           "type": "product",
           "settings": {
-            "product": "heiyo-wireless-thermometer-em09"
+            "product": "heiyo-wireless-meat-thermometer-kit-one-em09"
           }
         },
         "product_yMr4QK": {
@@ -176,7 +176,7 @@
         "heading_size": "h1",
         "enable_video_looping": true,
         "video_url": "",
-        "cover_image": "shopify://shop_images/home_video_cover.webp",
+        "cover_image": "shopify://shop_images/home_video_cover_full.webp",
         "description": "",
         "full_width": true,
         "color_scheme": "",
@@ -197,7 +197,7 @@
         "text_Cipc34": {
           "type": "text",
           "settings": {
-            "text": "<p>At Heiyo, we believe the kitchen is the heart of the home and the starting point of a better life. Whether it’s preserving the natural flavors of food with our Mason Jar Sealer or precisely controlling every degree of cooking with our Smart Wireless Meat Thermometer, we are committed to providing you with simple, intelligent tools that make every meal fresh and delicious.</p><p> </p><p>Heiyo is more than just kitchen tools—we are your partner in a healthy, convenient lifestyle. Every product is thoughtfully designed to help you reduce waste, improve efficiency, and make cooking and storage easier and more enjoyable.</p>",
+            "text": "<p>At heiyo, we believe the kitchen is the heart of the home and the starting point of a better life. With independent R&D capabilities and a factory covering over 20,000 square meters, we have developed a range of simple and intelligent kitchen tools and sold over 5 million products worldwide. We are here to help you reduce waste, improve efficiency, and make cooking and storage easier and more enjoyable.</p>",
             "text_style": "body"
           }
         },
@@ -305,7 +305,7 @@
         "product_Lx9mtw": {
           "type": "product",
           "settings": {
-            "product": "heiyo-wireless-thermometer-em09"
+            "product": "heiyo-wireless-meat-thermometer-kit-one-em09"
           }
         },
         "product_6AdFM9": {
@@ -334,8 +334,8 @@
         "product_PCt6aA"
       ],
       "settings": {
-        "heading": "User Feedback",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "heading": "Customer Reviews",
+        "text": ""
       }
     },
     "home_blog_yKBWMM": {
@@ -366,8 +366,8 @@
         "blog_BGBAJE"
       ],
       "settings": {
-        "heading": "Blog",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "heading": "heiyo blog",
+        "text": "Discover tips, innovative recipes, and cutting-edge kitchen tech insights with heiyo's blog."
       }
     }
   },
