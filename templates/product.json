@@ -17,6 +17,10 @@
       "type": "product-highlight-intro",
       "settings": {}
     },
+    "prodcut_introduce_two_6H8d7G": {
+      "type": "prodcut-introduce-two",
+      "settings": {}
+    },
     "product_icontext_tfrGJR": {
       "type": "product-icontext",
       "blocks": {
@@ -59,10 +63,6 @@
         "heading": "",
         "text": ""
       }
-    },
-    "prodcut_introduce_two_6H8d7G": {
-      "type": "prodcut-introduce-two",
-      "settings": {}
     },
     "product_faq_QymQNC": {
       "type": "product-faq",
@@ -323,8 +323,8 @@
   "order": [
     "product_detail_UfijdK",
     "product_highlight_intro_KLxPti",
-    "product_icontext_tfrGJR",
     "prodcut_introduce_two_6H8d7G",
+    "product_icontext_tfrGJR",
     "product_faq_QymQNC",
     "product_faq_nUWLHm",
     "product_faq_TKNzWA",
