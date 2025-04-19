@@ -9,7 +9,7 @@
   font-size: 5.2rem;
   font-weight: 600;
   line-height: normal;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
