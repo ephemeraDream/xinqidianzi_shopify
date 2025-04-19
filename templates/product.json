@@ -316,7 +316,7 @@
       "type": "product-recommend",
       "settings": {
         "heading": "You May Also Like",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "text": ""
       }
     }
   },
