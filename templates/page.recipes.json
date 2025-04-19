@@ -68,7 +68,7 @@
         "product_d4NKTd": {
           "type": "product",
           "settings": {
-            "title": "title",
+            "title": "Storage Solutions",
             "product": [
               "heiyo-wireless-meat-thermometer-kit-one-em09",
               "heiyo-3-in-1-vacuum-sealer-kit-vp09",
@@ -79,7 +79,7 @@
         "product_Yi3iPk": {
           "type": "product",
           "settings": {
-            "title": "title",
+            "title": "Cooking Devices",
             "product": [
               "product-name-1",
               "product-name-2"
@@ -92,8 +92,8 @@
         "product_Yi3iPk"
       ],
       "settings": {
-        "heading": "Product Comparison",
-        "text": "This is a placeholder copy This is a placeholder copy"
+        "heading": "Product Recommendations",
+        "text": ""
       }
     },
     "product_faq_GGTTqy": {
