@@ -70,9 +70,9 @@
           "settings": {
             "title": "Storage Solutions",
             "product": [
+              "heiyo-vacuum-sealer-kit-vp05",
               "heiyo-3-in-1-vacuum-sealer-kit-vp09",
-              "heiyo-vacuum-sealer-nomal-kit-vp05",
-              "heiyo-vacuum-sealer-kit-vp05"
+              "heiyo-vacuum-sealer-nomal-kit-vp05"
             ]
           }
         },
@@ -139,7 +139,7 @@
       ],
       "settings": {
         "heading": "FAQ",
-        "text": "This is a placeholder copy This is a placeholder copy",
+        "text": "",
         "product_handle": ""
       }
     }
