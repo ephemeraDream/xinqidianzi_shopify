@@ -3,7 +3,7 @@
 <div id="section-{{ section.id }}" class="blog-post-content padding-sider">
   <h1 class="blog-post-title">{{ article.title }}</h1>
   <div class="blog-post-info">{{ article.content }}</div>
-  <img src="{{ article.image | image_url }}" alt="{{ article.title }}" class="blog-post-image">
+  {% comment %} <img src="{{ article.image | image_url }}" alt="{{ article.title }}" class="blog-post-image"> {% endcomment %}
   {% if article.metafields.custom.image_with_text_image != blank
     or article.metafields.custom.image_with_text_text != blank
   %}
