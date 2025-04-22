@@ -10,11 +10,19 @@
       {% for block in section.blocks %}
         <div class="swiper-slide product-card">
           <div class="feedback-info">
-            <img
-              src="{{ "logo-head.webp" | asset_url }}"
-              alt="logo-head"
-              class="logo-head"
-            >
+            {% if block.settings.product.metafields.custom.feedback_profile != blank %}
+              <img
+                src="{{ block.settings.product.metafields.custom.feedback_profile.value | asset_url }}"
+                alt="logo-head"
+                class="logo-head"
+              >
+            {% else %}
+              <img
+                src="{{ "logo-head.webp" | asset_url }}"
+                alt="logo-head"
+                class="logo-head"
+              >
+            {% endif %}
             <div class="feedback-info-text">{{ block.settings.product.metafields.custom.feedback }}</div>
           </div>
           <div class="product-box">
