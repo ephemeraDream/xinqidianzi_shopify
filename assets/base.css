@@ -3666,7 +3666,7 @@ a {
       format("woff");
 } */
 
-@font-face {
+/* @font-face {
   font-family: Blinker;
   src: url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Blinker-Regular.woff2?v=1742014555") format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Blinker-Regular.woff?v=1742014555") format("woff");
@@ -3676,7 +3676,7 @@ a {
   font-family: Poppins;
   src: url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Poppins-Regular.woff2?v=1742014534") format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Poppins-Regular.woff?v=1742014534") format("woff");
-}
+} */
 
 
 @media screen and (max-width: 1600px) {
