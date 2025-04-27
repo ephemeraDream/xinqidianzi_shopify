@@ -20,7 +20,7 @@
 
 .product-introduce .image_with_text_one-left h2,
 .product-introduce .image_with_text_two-right h2 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -31,7 +31,7 @@
 
 .product-introduce .image_with_text_one-left h4,
 .product-introduce .image_with_text_two-right h4 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: normal;
@@ -43,7 +43,7 @@
 
 .product-introduce .image_with_text_one-left p,
 .product-introduce .image_with_text_two-right p {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;

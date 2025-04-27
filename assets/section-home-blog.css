@@ -5,7 +5,7 @@
 }
 
 .home-blog-heading {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 5.2rem;
   font-weight: 600;
   line-height: normal;
@@ -18,7 +18,7 @@
 }
 
 .home-blog-text {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -66,7 +66,7 @@
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info .blog-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
@@ -78,7 +78,7 @@
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info .blog-excerpt {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -89,7 +89,7 @@
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info a {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: 500;
   line-height: normal;
@@ -142,7 +142,7 @@
 }
 
 .home-blog .blog-contain .blog-item-right .blog-info .blog-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
@@ -154,7 +154,7 @@
 }
 
 .home-blog .blog-contain .blog-item-right .blog-info .blog-excerpt {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -165,7 +165,7 @@
 }
 
 .home-blog .blog-contain .blog-item-right .blog-info a {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: 500;
   line-height: normal;

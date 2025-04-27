@@ -10,7 +10,7 @@
 }
 
 .product-introduce-two .product-introduce-two-text h4 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: normal;
@@ -21,7 +21,7 @@
 }
 
 .product-introduce-two .product-introduce-two-text p {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;

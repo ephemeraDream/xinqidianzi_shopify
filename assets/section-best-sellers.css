@@ -3,7 +3,7 @@
 }
 
 .best-sellers-heading {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 5.2rem;
   font-weight: 600;
   line-height: normal;
@@ -15,7 +15,7 @@
 }
 
 .best-sellers-text {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -83,7 +83,7 @@
 }
 
 .best-sellers-swiper .product-title a {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
   line-height: normal;
@@ -93,7 +93,7 @@
 }
 
 .best-sellers-swiper .product-price {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;
@@ -104,7 +104,7 @@
 }
 
 .best-sellers-swiper .product-compareprice {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -117,7 +117,7 @@
 }
 
 .best-sellers-swiper .product-btn {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -144,7 +144,7 @@
   justify-content: center;
   background: #fdcc5d;
   padding: 0.2rem 1rem;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 1.6rem;
   font-weight: 500;
   line-height: normal;

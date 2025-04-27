@@ -6,7 +6,7 @@
 }
 
 .blog-post-content .blog-post-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 6.8rem;
   font-weight: 600;
   line-height: normal;
@@ -39,7 +39,7 @@
 }
 
 .blog-post-content .blog-post-info {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
   line-height: normal;
@@ -82,7 +82,7 @@
 
 .blog-post-image_with_text .blog-post-image_with_text-content h2,
 .blog-post-text_with_two_images .blog-post-text_with_two_images-content h2 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 6.8rem;
   font-weight: 600;
   line-height: normal;
@@ -94,7 +94,7 @@
 
 .blog-post-image_with_text .blog-post-image_with_text-content p,
 .blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
   line-height: normal;

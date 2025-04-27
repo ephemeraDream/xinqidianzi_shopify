@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 6rem 0;
 
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: 150%;
@@ -13,7 +13,7 @@
 }
 
 .buying-guide-richtext .buying-guide-richtext-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 150%;
@@ -25,7 +25,7 @@
 }
 
 .buying-guide-richtext h4 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: 150%;

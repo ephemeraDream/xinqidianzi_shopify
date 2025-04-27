@@ -13,7 +13,7 @@
 }
 
 .recipe-post-content .flex-center .step-box {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.8rem;
   font-weight: 600;
   line-height: normal;
@@ -36,7 +36,7 @@
 }
 
 .recipe-post-content .recipe-post-title {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
@@ -48,7 +48,7 @@
 }
 
 .recipe-post-content .recipe-post-content_info {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -91,7 +91,7 @@
 
 .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text h2,
 .recipe-post-content .recipe-post-content_info h2 {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -103,7 +103,7 @@
 
 .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text p,
 .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text li {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -140,7 +140,7 @@
 
 .recipe-post-content .step_content_box-product_info h3 {
   opacity: 0.8;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 500;
   line-height: normal;
@@ -150,7 +150,7 @@
 }
 
 .recipe-post-content .step_content_box-product_info .step_content_box-product_info-price {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: 500;
   line-height: normal;
@@ -169,7 +169,7 @@
   align-items: center;
   background: #ebb069;
   gap: 1rem;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 1.6rem;
   font-weight: 500;
   line-height: normal;

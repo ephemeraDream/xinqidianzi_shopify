@@ -93,7 +93,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-vendor {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 1.8rem;
   font-weight: normal;
   line-height: normal;
@@ -111,7 +111,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
   line-height: normal;
@@ -122,7 +122,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-compare_at_price {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -151,7 +151,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-star .product-detail-star_value {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 1.6rem;
   font-weight: normal;
   line-height: normal;
@@ -162,7 +162,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-price {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;
@@ -174,7 +174,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-description {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 1.6rem;
   font-weight: normal;
   line-height: normal;
@@ -186,7 +186,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-sale_word {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 1.8rem;
   font-weight: normal;
   line-height: normal;
@@ -202,7 +202,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-label {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.2rem;
   font-weight: normal;
   line-height: normal;
@@ -219,7 +219,7 @@
   flex-wrap: wrap;
   gap: 2.4rem;
   margin-top: 2.4rem;
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 1.4rem;
   font-weight: normal;
   line-height: normal;
@@ -277,7 +277,7 @@
 }
 
 .product-detail .product-detail-right .product-detail-quantity .quantity__input {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -297,7 +297,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -326,7 +326,7 @@
   border-radius: 1.6rem;
   background: #ebb069;
   padding: 0;
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -350,7 +350,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -415,7 +415,7 @@
 }
 
 .product-detail .product-detail-right .recommendations-product-box .recommendations-product-info h3 {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 500;
   line-height: normal;
@@ -426,7 +426,7 @@
 }
 
 .product-detail .product-detail-right .recommendations-product-box .recommendations-product-info .recommendations-product-price {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: 500;
   line-height: normal;
@@ -441,7 +441,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 1.6rem;
   font-weight: 500;
   line-height: normal;
@@ -468,7 +468,7 @@
 .product-detail .product-detail-select {
   display: flex;
   align-items: center;
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 1.8rem;
   font-weight: normal;
   line-height: normal;
@@ -502,7 +502,7 @@
 }
 
 .product-detail .product-detail-sale_word_box_text {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;

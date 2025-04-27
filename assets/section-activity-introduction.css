@@ -5,7 +5,7 @@
 }
 
 .activity-introduction .activity-introduction-header {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -16,7 +16,7 @@
 }
 
 .activity-introduction .activity-introduction-text {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -36,7 +36,7 @@
 }
 
 .activity-introduction .activity-introduction-sub_header {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
@@ -47,7 +47,7 @@
 }
 
 .activity-introduction .activity-introduction-sub_text {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;

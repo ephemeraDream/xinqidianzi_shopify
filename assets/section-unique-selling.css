@@ -4,7 +4,7 @@
 }
 
 .unique-selling-heading {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 5.2rem;
   font-weight: 600;
   line-height: normal;
@@ -17,7 +17,7 @@
 }
 
 .unique-selling-text {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -137,7 +137,7 @@
 }
 
 .unique-selling-swiper .product-title a {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
   line-height: normal;
@@ -148,7 +148,7 @@
 }
 
 .unique-selling-swiper .product-price {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;
@@ -178,7 +178,7 @@
 }
 
 .unique-selling-contain .right-side .swiper-pagination {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: normal;

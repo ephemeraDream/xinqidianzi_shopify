@@ -6,7 +6,7 @@
 }
 
 .product-longtext .product-longtext-heading {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -30,7 +30,7 @@
 }
 
 .product-longtext .long-text-subtitle {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
@@ -41,7 +41,7 @@
 }
 
 .product-longtext .long-text-content {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 600;
   line-height: normal;

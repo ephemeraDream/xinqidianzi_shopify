@@ -5,7 +5,7 @@
 }
 
 .product-highlight-intro .product-highlight-intro-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -27,7 +27,7 @@
 }
 
 .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item h4 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: normal;
@@ -37,7 +37,7 @@
 }
 
 .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item p {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;

@@ -11,7 +11,7 @@
   justify-content: space-between;
   padding-bottom: 2.8rem;
   border-bottom: 0.1rem solid #707070;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;
@@ -29,7 +29,7 @@
   align-items: center;
   gap: 1rem;
   background: #ebb069;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -47,7 +47,7 @@
 .product-comment .comments-item .flex-center .flex-center {
   flex: 0 0 auto;
   justify-content: flex-start;
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: normal;
@@ -86,7 +86,7 @@
 
 .product-comment #comments-list .comment-content {
   margin-top: 0.8rem;
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.3rem;
   font-weight: normal;
   line-height: normal;
@@ -108,7 +108,7 @@
 }
 
 .product-comment .comments-pagination #page-numbers {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 500;
   line-height: normal;

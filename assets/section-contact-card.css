@@ -25,7 +25,7 @@
 }
 
 .contact-card .contact-card-right .contact-card-heading {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3.8rem;
   font-weight: 600;
   line-height: normal;
@@ -35,7 +35,7 @@
 }
 
 .contact-card .contact-card-right .contact-card-text {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -66,7 +66,7 @@
 }
 
 .contact-card .contact-card-right .contact-box a {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 1.6rem;
   font-weight: normal;
   line-height: normal;

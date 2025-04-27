@@ -103,7 +103,7 @@
 }
 
 .mega-menu__content .mega-menu__content_body .mega-menu__list .mega-menu__link {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 3rem;
@@ -143,7 +143,7 @@
 }
 
 .view_all_box a {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 3rem;
@@ -179,7 +179,7 @@
 }
 
 .mega-menu__flex-box .product-item h4 {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.8rem;
   font-weight: 500;
   line-height: normal;
@@ -212,7 +212,7 @@
 }
 
 .mega-menu__flex-box .product-item .flex-end .product-desc {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
   line-height: normal;
@@ -273,7 +273,7 @@
   .collection-recipe_item
   .collection-recipe_item_info
   .collection-recipe_item_info_title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;

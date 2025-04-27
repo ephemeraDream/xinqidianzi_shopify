@@ -4,7 +4,7 @@
 }
 
 .product-comparison .product-comparison-heading {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -15,7 +15,7 @@
 }
 
 .product-comparison .product-comparison-text {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   border: 0.1rem solid #000000;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3.2rem;
   font-weight: 500;
   line-height: normal;
@@ -138,7 +138,7 @@
 }
 
 .product-comparison .product-card .product-info .flex-center .product-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: 600;
   line-height: normal;
@@ -149,7 +149,7 @@
 }
 
 .product-comparison .product-card .product-info .flex-center .product-price {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3.2rem;
   font-weight: normal;
   line-height: normal;
@@ -164,7 +164,7 @@
   .product-info
   .flex-center
   .product-compare_at_price {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: normal;
@@ -181,7 +181,7 @@
   .product-info
   .flex-center
   .product-description {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;

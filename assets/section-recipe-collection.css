@@ -13,7 +13,7 @@
 }
 
 .recipe-collection .recipe-collection-left .recipe-collection-left_head {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 3rem;
   font-weight: bold;
   line-height: normal;
@@ -38,7 +38,7 @@
 }
 
 .recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head h3 {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
   line-height: 3rem;
@@ -55,7 +55,7 @@
 }
 
 .recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-article a {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-weight: 400;
   font-size: 1.8rem;
   font-variation-settings: "opsz" auto;
@@ -85,7 +85,7 @@
 }
 
 .recipe-collection .recipe-collection-right .blog-content-title {
-  font-family: Blinker;
+  /* font-family: Blinker; */
   font-size: 4.8rem;
   font-weight: 600;
   line-height: normal;
@@ -115,7 +115,7 @@
 }
 
 .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-published_at {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: normal;
   line-height: normal;
@@ -126,7 +126,7 @@
 }
 
 .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-title {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
@@ -151,7 +151,7 @@
 }
 
 .recipe-collection .recipe-collection-right .custom-pagination .page {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 2.4rem;
   font-weight: 500;
   line-height: normal;
