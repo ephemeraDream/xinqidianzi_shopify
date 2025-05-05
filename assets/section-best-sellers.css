@@ -61,7 +61,7 @@
   object-position: center center;
 }
 
-.product-star svg + svg {
+.product-star svg+svg {
   margin-left: 1rem;
 }
 
@@ -156,7 +156,18 @@
   left: 2.4rem;
 }
 
+.best-sellers .product-color {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+}
+
+.best-sellers .product-color+.product-color {
+  margin-left: 1.2rem;
+}
+
 @media screen and (max-width: 1600px) {
+
   .swiper-father .swiper-button-prev,
   .swiper-father .swiper-button-next {
     --swiper-navigation-sides-offset: -2rem;
@@ -167,10 +178,12 @@
   .best-sellers {
     padding-top: 6rem;
   }
+
   .swiper-father .swiper-button-prev,
   .swiper-father .swiper-button-next {
     display: none;
   }
+
   .swiper-father {
     margin-top: 4rem;
   }

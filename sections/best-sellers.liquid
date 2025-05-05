@@ -34,14 +34,19 @@
                 <h3 class="product-title">
                   <a href="{{ product.url }}">{{ product.title }}</a>
                 </h3>
-                <div class="flex-center product-star">
-                  {% liquid
-                    assign rating = product.metafields.custom.rating.value.rating | times: 1 | floor
-                  %}
-                  {% for i in (1..rating) %}
-                    {{- 'star.svg' | inline_asset_content -}}
-                  {% endfor %}
-                </div>
+              </div>
+              <div class="flex-center product-star">
+                {% liquid
+                  assign rating = product.metafields.custom.rating.value.rating | times: 1 | floor
+                %}
+                {% for i in (1..rating) %}
+                  {{- 'star.svg' | inline_asset_content -}}
+                {% endfor %}
+              </div>
+              <div class="flex-center">
+                {% for item in product.metafields.custom.color.value %}
+                  <div class="product-color" style="background-color: {{ item.color }}"></div>
+                {% endfor %}
               </div>
               <div class="flex-start">
                 <div>
