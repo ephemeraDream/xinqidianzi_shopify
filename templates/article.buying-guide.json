@@ -51,10 +51,57 @@
         "text": "",
         "product_handle": ""
       }
+    },
+    "rich_text_FttYnX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Xqw3nx": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Conclusion</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_WB3W7Y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you choose the <strong>VP05</strong> or <strong>VP09</strong>, heiyo’s Mason jar sealers offer efficient and convenient food storage solutions. Pick the one that suits your needs and enjoy the freshness!</p>"
+          }
+        },
+        "heading_nVrCjy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Shop Now and Embrace a Fresher Lifestyle!</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xqw3nx",
+        "text_WB3W7Y",
+        "heading_nVrCjy"
+      ],
+      "custom_css": [
+        ".isolate .rich-text .rich-text__wrapper {/* font-family: Blinker; */ font-size: 2rem; font-weight: normal; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676;}",
+        ".isolate .rich-text .rich-text__wrapper h2 {font-size: 3.2rem; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333;}",
+        ".isolate .rich-text .rich-text__wrapper h2 strong {font-weight: normal;}",
+        ".rich-text__blocks {max-width: 100%;}",
+        ".isolate .rich-text .rich-text__wrapper strong {color: #333333;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
     "blog_post_content_n3zyGa",
-    "product_faq_QzKdbw"
+    "product_faq_QzKdbw",
+    "rich_text_FttYnX"
   ]
 }
