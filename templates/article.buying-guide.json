@@ -12,9 +12,46 @@
     "blog_post_content_n3zyGa": {
       "type": "blog-post-content",
       "settings": {}
+    },
+    "product_faq_QzKdbw": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_mhYMUU": {
+          "type": "faq",
+          "settings": {
+            "question": "<strong>Q1: Are the sealing effects of VP05 and VP09 the same?</strong>",
+            "answer": "<strong>A:</strong> Yes, both products use heiyo’s patented sealing technology to ensure airtight freshness."
+          }
+        },
+        "faq_G4cGMJ": {
+          "type": "faq",
+          "settings": {
+            "question": "<strong>Q2: Are these devices suitable for outdoor use?</strong>",
+            "answer": "<strong>A:</strong> Yes! Both the VP05 and VP09 are compact and portable, ideal for camping, picnics, and other outdoor activities."
+          }
+        },
+        "faq_6qBkyY": {
+          "type": "faq",
+          "settings": {
+            "question": "<strong>Q3: How do I clean and maintain these devices?</strong>",
+            "answer": "<strong>A:</strong> Simply wipe the surface with a damp cloth, avoid water near the charging port, and store in a dry place."
+          }
+        }
+      },
+      "block_order": [
+        "faq_mhYMUU",
+        "faq_G4cGMJ",
+        "faq_6qBkyY"
+      ],
+      "settings": {
+        "heading": "<strong>FAQ</strong>",
+        "text": "",
+        "product_handle": ""
+      }
     }
   },
   "order": [
-    "blog_post_content_n3zyGa"
+    "blog_post_content_n3zyGa",
+    "product_faq_QzKdbw"
   ]
 }
