@@ -11,6 +11,9 @@
   "sections": {
     "blog_post_content_n3zyGa": {
       "type": "blog-post-content",
+      "custom_css": [
+        ".blog-post-content{padding-bottom: 0;}"
+      ],
       "settings": {}
     },
     "product_faq_QzKdbw": {
