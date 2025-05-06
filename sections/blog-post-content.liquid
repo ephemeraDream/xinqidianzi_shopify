@@ -28,43 +28,45 @@
       </div>
     </div>
   {% endif %}
-  <div class="blog-post-navigation">
-    {% assign current_article = article %}
-    {% assign all_articles = blog.articles %}
+  {% if blog.handle != 'buying-guide' %}
+    <div class="blog-post-navigation">
+      {% assign current_article = article %}
+      {% assign all_articles = blog.articles %}
 
-    {% assign current_index = 0 %}
-    {% for article in all_articles %}
-      {% if article.id == current_article.id %}
-        {% assign current_index = forloop.index %}
+      {% assign current_index = 0 %}
+      {% for article in all_articles %}
+        {% if article.id == current_article.id %}
+          {% assign current_index = forloop.index %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign prev_index = current_index | minus: 2 %}
+      {% assign next_index = current_index %}
+
+      {% assign prev_article = all_articles[prev_index] %}
+      {% assign next_article = all_articles[next_index] %}
+
+      {% if prev_article %}
+        <a href="{{ prev_article.url }}">
+          {{- 'left-circle-arrow.svg' | inline_asset_content -}}
+        </a>
+      {% else %}
+        <a href="{{ all_articles.last.url }}">
+          {{- 'left-circle-arrow.svg' | inline_asset_content -}}
+        </a>
       {% endif %}
-    {% endfor %}
 
-    {% assign prev_index = current_index | minus: 2 %}
-    {% assign next_index = current_index %}
-
-    {% assign prev_article = all_articles[prev_index] %}
-    {% assign next_article = all_articles[next_index] %}
-
-    {% if prev_article %}
-      <a href="{{ prev_article.url }}">
-        {{- 'left-circle-arrow.svg' | inline_asset_content -}}
-      </a>
-    {% else %}
-      <a href="{{ all_articles.last.url }}">
-        {{- 'left-circle-arrow.svg' | inline_asset_content -}}
-      </a>
-    {% endif %}
-
-    {% if next_article %}
-      <a href="{{ next_article.url }}">
-        {{- 'right-circle-arrow.svg' | inline_asset_content -}}
-      </a>
-    {% else %}
-      <a href="{{ all_articles.first.url }}">
-        {{- 'right-circle-arrow.svg' | inline_asset_content -}}
-      </a>
-    {% endif %}
-  </div>
+      {% if next_article %}
+        <a href="{{ next_article.url }}">
+          {{- 'right-circle-arrow.svg' | inline_asset_content -}}
+        </a>
+      {% else %}
+        <a href="{{ all_articles.first.url }}">
+          {{- 'right-circle-arrow.svg' | inline_asset_content -}}
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
