@@ -11,9 +11,7 @@
   gap: 2.4rem 6rem;
 }
 
-.product-collection
-  .product-collection-filters
-  .product-collection-filters-btn {
+.product-collection .product-collection-filters .product-collection-filters-btn {
   width: 29.7rem;
   height: 6.8rem;
   border-radius: 56.9rem;
@@ -32,26 +30,17 @@
   flex: 0 0 auto;
 }
 
-.product-collection
-  .product-collection-filters
-  .product-collection-filters-btn
-  svg {
+.product-collection .product-collection-filters .product-collection-filters-btn svg {
   margin-right: 2rem;
 }
 
-.product-collection
-  .product-collection-filters
-  .product-collection-filters-btn:hover {
+.product-collection .product-collection-filters .product-collection-filters-btn:hover {
   border: none;
   background-color: #ebb069;
   color: #fff;
 }
 
-.product-collection
-  .product-collection-filters
-  .product-collection-filters-btn:hover
-  svg
-  path {
+.product-collection .product-collection-filters .product-collection-filters-btn:hover svg path {
   fill: #fff;
 }
 
@@ -126,21 +115,11 @@
   cursor: pointer;
 }
 
-.product-collection
-  .product-grid
-  .product-item
-  .product-image
-  .product-btn:hover {
+.product-collection .product-grid .product-item .product-image .product-btn:hover {
   background-color: #ebb069;
 }
 
-.product-collection
-  .product-grid
-  .product-item
-  .product-image
-  .product-btn:hover
-  svg
-  path {
+.product-collection .product-grid .product-item .product-image .product-btn:hover svg path {
   fill: #fff;
 }
 
@@ -175,13 +154,7 @@
   justify-content: space-between;
 }
 
-.product-collection
-  .product-grid
-  .product-item
-  .product-info
-  .flex-center
-  .product-title
-  a {
+.product-collection .product-grid .product-item .product-info .flex-center .product-title a {
   /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
@@ -192,12 +165,7 @@
   color: #000000;
 }
 
-.product-collection
-  .product-grid
-  .product-item
-  .product-info
-  .flex-center
-  .product-price {
+.product-collection .product-grid .product-item .product-info .product-price {
   /* font-family: Blinker; */
   font-size: 2.4rem;
   font-weight: normal;
@@ -256,9 +224,11 @@
   .product-collection .product-collection-filters {
     flex-wrap: wrap;
   }
+
   .product-collection .product-grid .product-item {
     flex: 0 0 calc((100% - 2.4rem) / 2);
   }
+
   .product-collection .comments-pagination {
     width: 100%;
     flex-wrap: wrap;
@@ -270,9 +240,11 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+
   .product-collection .product-grid .product-item {
     flex: 0 0 100%;
   }
+
   .product-collection .product-grid {
     padding-top: 6rem;
   }
