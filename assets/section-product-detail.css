@@ -110,6 +110,13 @@
   margin-top: 1.2rem;
 }
 
+.product-detail .product-detail-right .flex-box-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
 .product-detail .product-detail-right .product-detail-title {
   /* font-family: Blinker; */
   font-size: 3.6rem;
