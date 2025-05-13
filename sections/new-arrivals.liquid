@@ -13,10 +13,10 @@
   <div class="new-arrivals-contain">
     {% for product in section.settings.collection.products limit: 3 %}
       <div class="product-card">
-        <div class="product-image">
+        <a class="product-image" href="{{ product.url }}">
           <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
           <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
-        </div>
+        </a>
         <div class="product-info">
           <h3 class="product-title">
             <a href="{{ product.url }}">{{ product.title }}</a>
