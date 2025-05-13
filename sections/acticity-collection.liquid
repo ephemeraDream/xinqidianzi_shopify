@@ -18,10 +18,12 @@
       <div id="product-list" class="product-grid">
         {% for product in collections[first_collection_handle].products %}
           <div class="product-item" data-type="{{ product.type | handleize }}">
-            <div class="product-image">
-              <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
-              <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
-            </div>
+            <a href="{{ product.url }}">
+              <div class="product-image">
+                <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
+                <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
+              </div>
+            </a>
             <div class="product-info">
               <div class="product-desc">{{ product.description | truncate: 45 }}</div>
               <div class="flex-center">
