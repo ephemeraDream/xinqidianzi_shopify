@@ -55,6 +55,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const hotSellingSwiper = new Swiper('.hot-selling-swiper', {
       loop: true,
+      spaceBetween: 20,
       {% comment %} allowTouchMove: false, {% endcomment %}
       pagination: {
         el: '.hot-selling .swiper-pagination',
