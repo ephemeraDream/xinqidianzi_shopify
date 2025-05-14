@@ -28,6 +28,7 @@
   color: #777777;
   margin-top: 2.6rem;
   text-align: center;
+  word-break: break-word;
 }
 
 .home-blog .blog-contain {
