@@ -304,6 +304,7 @@
       "blocks": {
         "product_Lx9mtw": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "heiyo-wireless-meat-thermometer-kit-dual-em09"
           }
