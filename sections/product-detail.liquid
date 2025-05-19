@@ -35,8 +35,7 @@
     <div class="imgthumb-swiper-box">
       <div class="swiper imgthumb-swiper">
         <div class="swiper-wrapper">
-          {% for image in product.images %}
-            {%- if product.selected_or_first_available_variant.featured_image != null and forloop.index0 == 2 -%}
+          {%- if product.selected_or_first_available_variant.featured_image != null -%}
               <div class="swiper-slide">
                 <img
                   src="{{ product.selected_or_first_available_variant.featured_image | image_url }}"
@@ -44,6 +43,7 @@
                 >
               </div>
             {%- endif -%}
+          {% for image in product.images %}
             {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
             {% if variant_images contains image.src %}
               {% continue %}
