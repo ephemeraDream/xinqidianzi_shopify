@@ -103,7 +103,7 @@
       "type": "image-comparison",
       "settings": {
         "left_image": "shopify://shop_images/comparison_image_left.webp",
-        "right_image": "shopify://shop_images/comparison_image_right.webp"
+        "right_image": "shopify://shop_images/comparison_image_right.jpg"
       }
     },
     "hot_selling_qpWptB": {
