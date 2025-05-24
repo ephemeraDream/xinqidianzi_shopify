@@ -52,6 +52,9 @@
 
 .best-sellers-swiper .product-card {
   width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .best-sellers-swiper .product-card .product-image img {
@@ -84,6 +87,10 @@
 
 .best-sellers-swiper .product-info {
   margin-top: 2.4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .best-sellers-swiper .product-title a {
