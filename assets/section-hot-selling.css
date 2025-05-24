@@ -33,6 +33,7 @@
 .hot-selling-swiper .swiper-slide-left .carousel-image {
   width: 70.8rem;
   height: 57rem;
+  object-fit: cover;
 }
 
 .hot-selling-swiper .swiper-slide-left .product-box {
