@@ -3651,7 +3651,7 @@ a {
 }
 
 /* @font-face {
-  /* font-family: Blinker; */
+  font-family: Blinker;
   src: url("https://cdn.shopify.com/s/files/1/0913/4207/8236/files/Blinker-Regular.woff2?v=1737457243")
       format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0913/4207/8236/files/Blinker-Regular.woff?v=1737457242")
@@ -3659,7 +3659,7 @@ a {
 }
 
 @font-face {
-  /* font-family: Poppins; */
+  font-family: Poppins;
   src: url("https://cdn.shopify.com/s/files/1/0913/4207/8236/files/Poppins-Regular.woff2?v=1737457226")
       format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0913/4207/8236/files/Poppins-Regular.woff?v=1737457226")
@@ -3667,13 +3667,13 @@ a {
 } */
 
 /* @font-face {
-  /* font-family: Blinker; */
+  font-family: Blinker;
   src: url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Blinker-Regular.woff2?v=1742014555") format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Blinker-Regular.woff?v=1742014555") format("woff");
 }
 
 @font-face {
-  /* font-family: Poppins; */
+  font-family: Poppins;
   src: url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Poppins-Regular.woff2?v=1742014534") format("woff2"),
     url("https://cdn.shopify.com/s/files/1/0682/6839/2615/files/Poppins-Regular.woff?v=1742014534") format("woff");
 } */
