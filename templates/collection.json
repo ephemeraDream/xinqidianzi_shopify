@@ -41,20 +41,22 @@
             "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09"
           }
         },
-        "product_FhKTKz": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
-          }
-        },
-        "product_dT4YBj": {
+        "product_bCLkfc": {
           "type": "product",
           "settings": {
             "product": "heiyo-vacuum-sealer-kit-vp05"
           }
         },
+        "product_FhKTKz": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
+          }
+        },
         "product_8NM7MQ": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "heiyo-vacuum-sealer-kit-vp05"
           }
@@ -68,8 +70,8 @@
       },
       "block_order": [
         "product_Up6Umi",
+        "product_bCLkfc",
         "product_FhKTKz",
-        "product_dT4YBj",
         "product_8NM7MQ",
         "product_ywjLDE"
       ],
