@@ -47,6 +47,12 @@
             "product": "heiyo-vacuum-sealer-nomal-kit-vp05"
           }
         },
+        "product_dT4YBj": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-vacuum-sealer-kit-vp05"
+          }
+        },
         "product_8NM7MQ": {
           "type": "product",
           "settings": {
@@ -63,6 +69,7 @@
       "block_order": [
         "product_Up6Umi",
         "product_FhKTKz",
+        "product_dT4YBj",
         "product_8NM7MQ",
         "product_ywjLDE"
       ],
