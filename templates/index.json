@@ -102,7 +102,7 @@
     "image_comparison_PCE8ze": {
       "type": "image-comparison",
       "settings": {
-        "left_image": "shopify://shop_images/comparison_image_L_c6b048f3-0769-4ecb-8a22-5eda771e4de7.png",
+        "left_image": "shopify://shop_images/comparison_image_L_c032b5e6-719e-4b1f-90e0-10ff72f22969.png",
         "right_image": "shopify://shop_images/comparison_image_R.png"
       }
     },
