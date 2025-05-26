@@ -102,8 +102,8 @@
     "image_comparison_PCE8ze": {
       "type": "image-comparison",
       "settings": {
-        "left_image": "shopify://shop_images/comparison_image_left.webp",
-        "right_image": "shopify://shop_images/comparison_image_right.webp"
+        "left_image": "shopify://shop_images/comparison_image_L.png",
+        "right_image": "shopify://shop_images/comparison_image_R.png"
       }
     },
     "hot_selling_qpWptB": {
