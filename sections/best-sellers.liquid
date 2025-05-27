@@ -30,12 +30,12 @@
               {% endif %}
             </div>
             <div class="product-info">
+              <div class="flex-center">
+                <h3 class="product-title">
+                  <a href="{{ product.url }}">{{ product.title }}</a>
+                </h3>
+              </div>
               <div>
-                <div class="flex-center">
-                  <h3 class="product-title">
-                    <a href="{{ product.url }}">{{ product.title }}</a>
-                  </h3>
-                </div>
                 <div class="flex-center product-star">
                   {% liquid
                     assign rating = product.metafields.custom.rating.value.rating | times: 1 | floor
@@ -49,13 +49,13 @@
                     <div class="product-color" style="background-color: {{ item.value }}"></div>
                   {% endfor %}
                 </div>
-              </div>
-              <div class="flex-start">
-                <div>
-                  <span class="product-price">{{ product.price | money }}</span>
-                  <span class="product-compareprice">{{ product.compare_at_price | money }}</span>
+                <div class="flex-start">
+                  <div>
+                    <span class="product-price">{{ product.price | money }}</span>
+                    <span class="product-compareprice">{{ product.compare_at_price | money }}</span>
+                  </div>
+                  <a href="{{ product.url }}" class="product-btn">Learn more</a>
                 </div>
-                <a href="{{ product.url }}" class="product-btn">Learn more</a>
               </div>
             </div>
           </div>
