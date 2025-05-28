@@ -33,14 +33,14 @@
   width: 100%;
   height: 46rem;
   border-radius: 1.6rem;
-  background: #f0f2f3;
+  /* background: #f0f2f3; */
   position: relative;
 }
 
 .new-arrivals-contain .product-card .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
 
