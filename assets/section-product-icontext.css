@@ -48,3 +48,13 @@
   width: 8rem;
   height: 8rem;
 }
+
+@media screen and (max-width: 767px) {
+  .product-icontext .product-icontext-contain{
+    flex-wrap: wrap;
+  }
+
+  .product-icontext .product-icontext-box{
+    flex: 0 0 100%;
+  }
+}
