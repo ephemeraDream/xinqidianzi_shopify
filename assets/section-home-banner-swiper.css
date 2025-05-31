@@ -15,6 +15,14 @@
   object-fit: cover;
 }
 
+.home-banner-swiper .swiper-slide-img-pc {
+  display: block;
+}
+
+.home-banner-swiper .swiper-slide-img-pe {
+  display: none;
+}
+
 .home-banner-swiper_contain .home-banner-swiper_contain-body {
   width: 40vw;
   position: absolute;
@@ -98,13 +106,16 @@
   .home-banner-swiper_contain .home-banner-swiper_contain-body {
     width: 50vw;
   }
+
   .home-banner-swiper_contain .home-banner-swiper_contain-body.position_left {
     left: 5.5vw;
     top: 8.11vh;
   }
+
   .home-banner-swiper_contain .home-banner-swiper_contain-body h3 {
     font-size: 2.6rem;
   }
+
   .home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
     font-size: 3.6rem;
   }
@@ -114,14 +125,24 @@
   .home-banner-swiper_contain .home-banner-swiper_contain-body {
     width: 90vw;
   }
+
   .home-banner-swiper_contain .home-banner-swiper_contain-body h3 {
     font-size: 1.8rem;
   }
+
   .home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
     font-size: 2.8rem;
   }
+
   .home-banner-swiper {
     height: 64.81vh;
   }
-  
+
+  .home-banner-swiper .swiper-slide-img-pc {
+    display: none;
+  }
+
+  .home-banner-swiper .swiper-slide-img-pe {
+    display: block;
+  }
 }
