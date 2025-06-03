@@ -105,8 +105,8 @@
     "image_comparison_PCE8ze": {
       "type": "image-comparison",
       "settings": {
-        "left_image": "shopify://shop_images/ChatGPT_Image_2025_6_3_18_27_50.png",
-        "right_image": "shopify://shop_images/2025-06-03_183110.png"
+        "left_image": "shopify://shop_images/comparison_image_left.webp",
+        "right_image": "shopify://shop_images/comparison_image_right.webp"
       }
     },
     "hot_selling_qpWptB": {
