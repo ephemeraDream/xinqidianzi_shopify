@@ -16,6 +16,7 @@
           "type": "swiper_section",
           "settings": {
             "image": "shopify://shop_images/home_banner_1.webp",
+            "image_pe": "shopify://shop_images/3.jpg",
             "heading": "Where smart meets culinary perfection.",
             "text": "Seal in freshness, savor precision, ",
             "button_label": "Discover More",
@@ -27,6 +28,7 @@
           "type": "swiper_section",
           "settings": {
             "image": "shopify://shop_images/home_banner_2.webp",
+            "image_pe": "shopify://shop_images/2.jpg",
             "heading": "Elevate Your Convenient Use Experience",
             "text": "\"heiyo Comfort\" The first Mason Jar Sealer",
             "button_label": "Discover More",
@@ -38,6 +40,7 @@
           "type": "swiper_section",
           "settings": {
             "image": "shopify://shop_images/home_banner_3.webp",
+            "image_pe": "shopify://shop_images/1_3894dbcd-5a36-4da8-ac27-6635b4173eef.jpg",
             "heading": "Always on the Go",
             "text": "Portable, Smart, Fresh",
             "button_label": "Discover More",
