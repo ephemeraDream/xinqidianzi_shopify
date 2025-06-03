@@ -8,7 +8,15 @@
           <img
             src="{{ block.settings.image | image_url }}"
             alt="{{ block.settings.heading }}"
+            class="swiper-slide-img-pc"
           >
+          {% if block.settings.image_pe != blank %}
+            <img
+              src="{{ block.settings.image_pe | image_url }}"
+              alt="{{ block.settings.heading }}"
+              class="swiper-slide-img-pe"
+            >
+          {% endif %}
           <div class="home-banner-swiper_contain-body{% if block.settings.position == 'left' %} position_left{% else %} position_center{% endif %}">
             <h3>{{ block.settings.text }}</h3>
             <h1>{{ block.settings.heading }}</h1>
@@ -51,6 +59,11 @@
           "id": "image",
           "type": "image_picker",
           "label": "home banner Image"
+        },
+        {
+          "id": "image_pe",
+          "type": "image_picker",
+          "label": "home banner Image mobile"
         },
         {
           "type": "inline_richtext",
