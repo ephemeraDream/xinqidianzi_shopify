@@ -20,13 +20,6 @@
             "link": ""
           }
         },
-        "contact_ERC3gF": {
-          "type": "contact",
-          "settings": {
-            "text": "",
-            "link": ""
-          }
-        },
         "contact_idjyxC": {
           "type": "contact",
           "settings": {
@@ -38,7 +31,6 @@
       },
       "block_order": [
         "contact_fiq7Tx",
-        "contact_ERC3gF",
         "contact_idjyxC"
       ],
       "settings": {
