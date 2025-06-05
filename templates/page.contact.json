@@ -15,7 +15,7 @@
         "contact_fiq7Tx": {
           "type": "contact",
           "settings": {
-            "icon": "shopify://shop_images/icon-address.svg",
+            "icon": "shopify://shop_images/email_3.svg",
             "text": "heiyo@hsinchitek.com",
             "link": ""
           }
