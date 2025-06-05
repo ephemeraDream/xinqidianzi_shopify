@@ -20,14 +20,6 @@
             "link": ""
           }
         },
-        "contact_TWnEKV": {
-          "type": "contact",
-          "settings": {
-            "icon": "shopify://shop_images/icon-tel.svg",
-            "text": "Phone: （302）272-7174",
-            "link": ""
-          }
-        },
         "contact_idjyxC": {
           "type": "contact",
           "settings": {
@@ -39,7 +31,6 @@
       },
       "block_order": [
         "contact_fiq7Tx",
-        "contact_TWnEKV",
         "contact_idjyxC"
       ],
       "settings": {
