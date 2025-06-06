@@ -28,11 +28,20 @@
             "text": "Phone: （302）272-7173",
             "link": ""
           }
+        },
+        "contact_ncYDMH": {
+          "type": "contact",
+          "settings": {
+            "icon": "shopify://shop_images/f084dbfeee17aefc488a509b8fec7779.svg",
+            "text": "ADS阿斯顿ASD阿斯顿",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "contact_fiq7Tx",
-        "contact_idjyxC"
+        "contact_idjyxC",
+        "contact_ncYDMH"
       ],
       "settings": {
         "heading": "Contact us",
