@@ -15,7 +15,7 @@
         "contact_fiq7Tx": {
           "type": "contact",
           "settings": {
-            "icon": "shopify://shop_images/contact.svg",
+            "icon": "shopify://shop_images/contact_1.svg",
             "text": "Email:   heiyo@hsinchitek.com<br> Phone:    （302）272-7173",
             "link": ""
           }
