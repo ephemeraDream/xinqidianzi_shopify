@@ -16,7 +16,7 @@
           "type": "contact",
           "settings": {
             "icon": "shopify://shop_images/email_5.svg",
-            "text": "heiyo@hsinchitek.com《按时艰苦劳动和方法论四道口附近啊善良的阿斯顿发射点发生》",
+            "text": "heiyo@hsinchitek.com",
             "link": ""
           }
         },
@@ -46,41 +46,10 @@
         "heading": "Submit Your Inquiry Online",
         "text": "This position contains the description text This"
       }
-    },
-    "contact_card_VepyYq": {
-      "type": "contact-card",
-      "blocks": {
-        "contact_LawP9e": {
-          "type": "contact",
-          "settings": {
-            "icon": "shopify://shop_images/icon-address.svg",
-            "text": "sadfasdfasdfasdfasdff",
-            "link": ""
-          }
-        },
-        "contact_XMrzEG": {
-          "type": "contact",
-          "settings": {
-            "icon": "shopify://shop_images/icon-tel.svg",
-            "text": "asdfasdfsadfasdffasdf",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "contact_LawP9e",
-        "contact_XMrzEG"
-      ],
-      "name": "contact card",
-      "settings": {
-        "heading": "",
-        "text": ""
-      }
     }
   },
   "order": [
     "contact_card_zyiVdJ",
-    "contact_form_rP4nNg",
-    "contact_card_VepyYq"
+    "contact_form_rP4nNg"
   ]
 }
