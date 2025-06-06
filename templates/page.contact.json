@@ -20,6 +20,15 @@
             "link": ""
           }
         },
+        "contact_cTGL3p": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/email_5.svg",
+            "text": "heiyo@hsinchitek.com",
+            "link": ""
+          }
+        },
         "contact_idjyxC": {
           "type": "contact",
           "disabled": true,
@@ -32,6 +41,7 @@
       },
       "block_order": [
         "contact_fiq7Tx",
+        "contact_cTGL3p",
         "contact_idjyxC"
       ],
       "custom_css": [],
