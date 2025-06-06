@@ -14,6 +14,7 @@
       "blocks": {
         "contact_fiq7Tx": {
           "type": "contact",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/email_5.svg",
             "text": "heiyo@hsinchitek.com",
