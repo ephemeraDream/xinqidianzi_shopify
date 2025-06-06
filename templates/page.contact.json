@@ -22,6 +22,7 @@
         },
         "contact_idjyxC": {
           "type": "contact",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/f084dbfeee17aefc488a509b8fec7779.svg",
             "text": "Phone: （302）272-7173",
