@@ -21,6 +21,7 @@
 
     let isDragging = false;
 
+    // 鼠标事件
     divider.addEventListener('mousedown', () => {
       isDragging = true;
       document.body.style.cursor = 'ew-resize';
@@ -28,9 +29,33 @@
 
     document.addEventListener('mousemove', (e) => {
       if (!isDragging) return;
+      handleMove(e.clientX);
+    });
 
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      document.body.style.cursor = 'default';
+    });
+
+    // 触摸事件
+    divider.addEventListener('touchstart', () => {
+      isDragging = true;
+    });
+
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      if (e.touches.length > 0) {
+        handleMove(e.touches[0].clientX);
+      }
+    }, { passive: false }); // 注意防止默认滚动行为
+
+    document.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+    function handleMove(clientX) {
       const rect = container.getBoundingClientRect();
-      const offsetX = e.clientX - rect.left;
+      const offsetX = clientX - rect.left;
       const percentage = (offsetX / rect.width) * 100;
 
       if (percentage > 1 && percentage < 98) {
@@ -38,12 +63,7 @@
         rightImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
         divider.style.left = `${percentage}%`;
       }
-    });
-
-    document.addEventListener('mouseup', () => {
-      isDragging = false;
-      document.body.style.cursor = 'default';
-    });
+    }
   });
 </script>
 
