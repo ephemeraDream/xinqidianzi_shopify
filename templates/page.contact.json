@@ -46,10 +46,41 @@
         "heading": "Submit Your Inquiry Online",
         "text": "This position contains the description text This"
       }
+    },
+    "contact_card_VepyYq": {
+      "type": "contact-card",
+      "blocks": {
+        "contact_LawP9e": {
+          "type": "contact",
+          "settings": {
+            "icon": "shopify://shop_images/icon-address.svg",
+            "text": "sadfasdfasdfasdfasdff",
+            "link": ""
+          }
+        },
+        "contact_XMrzEG": {
+          "type": "contact",
+          "settings": {
+            "icon": "shopify://shop_images/icon-tel.svg",
+            "text": "asdfasdfsadfasdffasdf",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "contact_LawP9e",
+        "contact_XMrzEG"
+      ],
+      "name": "contact card",
+      "settings": {
+        "heading": "",
+        "text": ""
+      }
     }
   },
   "order": [
     "contact_card_zyiVdJ",
-    "contact_form_rP4nNg"
+    "contact_form_rP4nNg",
+    "contact_card_VepyYq"
   ]
 }
