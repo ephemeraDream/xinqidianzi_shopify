@@ -20,14 +20,6 @@
             "link": ""
           }
         },
-        "contact_eUja8X": {
-          "type": "contact",
-          "settings": {
-            "icon": "shopify://shop_images/f084dbfeee17aefc488a509b8fec7779.svg",
-            "text": "Phone: （302）272-7173",
-            "link": ""
-          }
-        },
         "contact_idjyxC": {
           "type": "contact",
           "settings": {
@@ -39,7 +31,6 @@
       },
       "block_order": [
         "contact_fiq7Tx",
-        "contact_eUja8X",
         "contact_idjyxC"
       ],
       "settings": {
