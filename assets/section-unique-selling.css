@@ -54,6 +54,11 @@
   object-fit: cover;
   object-position: center center;
 }
+@meida (max-width:1024px){
+  .unique-selling-contain .left-side .left-side-bg {
+    height: auto;
+}
+}
 
 .unique-selling-contain .left-side .left-side-dot {
   position: absolute;
