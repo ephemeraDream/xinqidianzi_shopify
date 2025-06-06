@@ -436,6 +436,7 @@
   }
 
   .home-image-with-text .image-with-text__media-item {
+    height: auto;
     flex: 0 0 100%;
   }
 
