@@ -203,6 +203,9 @@
   .unique-selling-contain .right-side {
     width: 100%;
   }
+  .unique-selling-contain .left-side .left-side-bg {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
