@@ -38,6 +38,11 @@
         "type": "shopify://apps/rt-terms-and-conditions-box/blocks/app-embed/17661ca5-aeea-41b9-8091-d8f7233e8b22",
         "disabled": false,
         "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
