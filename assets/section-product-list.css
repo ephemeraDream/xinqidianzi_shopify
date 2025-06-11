@@ -198,11 +198,10 @@
 
 @media screen and (max-width: 767px) {
   .product-list {
-    padding-left: 0rem;
+    padding-left: 2rem;
   }
   .product-list .product-list-swiper {
     padding: 6rem 2rem;
-    margin-left: 0rem;
   }
   .product-list .product-list-heading,
   .product-list .product-list-text {
