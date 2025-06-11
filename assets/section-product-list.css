@@ -201,11 +201,13 @@
     padding-left: 2rem;
   }
   .product-list .product-list-swiper {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 6rem 2rem;
   }
   .product-list .product-list-heading,
   .product-list .product-list-text {
     padding-right: 2rem;
   }
+  .product-list .product-card .product-info .flex-center .product-title {
+    font-size: 2rem;
+}
 }
