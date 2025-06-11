@@ -553,6 +553,8 @@
   }
   .product-detail .product-detail-right .recommendations-product-box{
     flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 3rem;
   }
   .product-detail .product-detail-right .recommendations-product-box .recommendations-product-info h3 {
     font-size: 1.6rem;
