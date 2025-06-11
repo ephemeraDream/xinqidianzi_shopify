@@ -144,4 +144,7 @@
   .home-banner-box {
     width: 80vw;
   }
+  .home-banner-box .home-banner-box-button_box{
+    flex-direction: column;
+  }
 }
