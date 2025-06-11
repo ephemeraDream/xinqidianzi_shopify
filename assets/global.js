@@ -75,7 +75,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   if (summary.nextElementSibling.getAttribute('id')) {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
-
+if (window.innerWidth > 768) {
   summary.addEventListener('mouseenter', (event) => {
     const details = event.currentTarget.closest('details');
     document.querySelectorAll('details[open]').forEach((otherDetails) => {
@@ -90,7 +90,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 
     event.currentTarget.click();
   });
-
+}
   // summary.addEventListener('mouseleave', (event) => {
   //   event.currentTarget.click();
   // });
