@@ -209,5 +209,12 @@
   }
   .product-list .product-card .product-info .flex-center .product-title {
     font-size: 2rem;
-}
+  }
+  .product-list .product-card{
+    width: 100%;
+    min-height: 20rem;
+  }
+   .product-list .product-card .product-info>.flex-center{
+     flex-direction: column;
+   }
 }
