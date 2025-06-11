@@ -554,4 +554,7 @@
   .product-detail .product-detail-right .recommendations-product-box{
     flex-direction: column;
   }
+  .product-detail .product-detail-right .recommendations-product-box .recommendations-product-info h3 {
+    font-size: 1.6rem;
+  }
 }
