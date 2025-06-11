@@ -57,3 +57,8 @@
   font-size: 3.2rem;
   color: #333333;
 }
+@media screen and (max-width: 767px) {
+.buying-guide-richtext table h2 {
+  font-size: 2rem;
+}
+}
