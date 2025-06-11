@@ -202,4 +202,7 @@
     flex: 0 0 100%;
     width: 100%;
   }
+  .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item img {
+    height: auto;
+  }
 }
