@@ -551,4 +551,7 @@
   .product-detail .product-detail-imgbox {
     height: 30rem;
   }
+  .product-detail .product-detail-right .recommendations-product-box{
+    flex-direction: column;
+  }
 }
