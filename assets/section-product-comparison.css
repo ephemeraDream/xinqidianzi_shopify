@@ -264,6 +264,17 @@
     padding-right: 2rem;
   }
   .product-comparison .product-comparison-swiper {
-    padding-bottom: 6rem;
+     padding: 6rem 2rem;
   }
+
+  /* .product-list .product-card .product-image {
+    height: auto;
+  } */
+  .product-comparison-swiper .product-card{
+    width: 100%;
+    min-height: 20rem;
+  }
+   .product-comparison-swiper .product-card .product-info>.flex-center{
+     flex-direction: column;
+   }
 }
