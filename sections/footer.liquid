@@ -335,6 +335,11 @@
                 </li>
               {%- endif -%}
             {%- endfor -%}
+            <li>
+              <small class="copyright__content">
+                <a href="{{ section.settings.custom_link }}">{{ section.settings.custom_text | escape }}</a>
+              </small>
+            </li>
           </ul>
         {%- endif -%}
       </div>
@@ -606,7 +611,18 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    },
+    {
+      "type": "text",
+      "id": "custom_text",
+      "label": "Custom text",
+      "default": "INTELLECTUAL PROPERTY RIGHTS"
+    },
+    {
+       "type": "url",
+      "id": "custom_url",
+      "label": "Custom url"
+    },
   ],
   "default": {
     "blocks": [
