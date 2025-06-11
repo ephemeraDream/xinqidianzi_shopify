@@ -75,7 +75,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   if (summary.nextElementSibling.getAttribute('id')) {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
-if (window.innerWidth > 768) {
+if (window.innerWidth > 1024) {
   summary.addEventListener('mouseenter', (event) => {
     const details = event.currentTarget.closest('details');
     document.querySelectorAll('details[open]').forEach((otherDetails) => {
