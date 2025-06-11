@@ -136,8 +136,7 @@
   }
 }
 
-@meida screen and (max-width: 768px){
-  
+@media screen and (max-width: 767px) {
 .blog-post-content .blog-post-title {
   font-size: 5rem;
   margin-bottom: 5rem;
