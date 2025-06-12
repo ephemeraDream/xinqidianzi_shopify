@@ -340,13 +340,6 @@
                 <a href="{{ section.settings.custom_url }}">{{ section.settings.custom_text1 | escape }}</a>
               </small>
             </li>
-
-
-            <li>
-  <small class="copyright__content">
-    <a href="{{ section.settings.custom_url2 }}">{{ section.settings.custom_text2 }}</a>
-  </small>
-</li>
           </ul>
         {%- endif -%}
       </div>
@@ -629,18 +622,7 @@
       "type": "url",
       "id": "custom_url",
       "label": "自定义链接"
-    },
-    {
-  "type": "text",
-  "id": "custom_text2",
-  "label": "自定义条款 2 文本",
-  "default": "Cookie Policy"
-},
-{
-  "type": "url",
-  "id": "custom_url2",
-  "label": "自定义条款 2 链接"
-}
+    }
   ],
   "default": {
     "blocks": [
