@@ -328,7 +328,7 @@
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
-		{% if policy.title == '/policies/terms-of-service' %}
+		{% if policy.url == '/policies/terms-of-service' %}
 		<li>
                   <small class="copyright__content"
                     ><a href="/pages/terms-of-service">{{ policy.title | escape }}</a></small>
