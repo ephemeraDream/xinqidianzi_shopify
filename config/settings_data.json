@@ -25,7 +25,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "best-sellers",
     "show_shipping_bar": true,
-    "minimum_free_shipping": 35,
+    "minimum_free_shipping": 0,
     "shipping_bar_color": "#ebb069",
     "content_for_index": [],
     "blocks": {
