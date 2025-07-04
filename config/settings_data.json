@@ -19,8 +19,10 @@
     "brand_image_width": 235,
     "social_facebook_link": "www.baidu.com",
     "social_instagram_link": "www.baidu.com",
-    "social_youtube_link": "www.baidu.com",
-    "social_twitter_link": "www.baidu.com",
+    "social_youtube_link": "https://www.youtube.com/channel/UCRKXaXVii2I8_tADVscIf8w",
+    "social_tiktok_link": "https://www.tiktok.com/@heiyokitchen",
+    "social_twitter_link": "https://x.com/haoruixin2025",
+    "social_vimeo_link": "",
     "cart_type": "drawer",
     "show_cart_note": false,
     "cart_drawer_collection": "best-sellers",
@@ -29,11 +31,6 @@
     "shipping_bar_color": "#ebb069",
     "content_for_index": [],
     "blocks": {
-      "6858403126979251294": {
-        "type": "shopify://apps/consentik-cookie/blocks/omega-cookies-notification/13cba824-a338-452e-9b8e-c83046a79f21",
-        "disabled": false,
-        "settings": {}
-      },
       "16735461377607925125": {
         "type": "shopify://apps/rt-terms-and-conditions-box/blocks/app-embed/17661ca5-aeea-41b9-8091-d8f7233e8b22",
         "disabled": false,
