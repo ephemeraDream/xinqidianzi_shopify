@@ -235,10 +235,15 @@
         "shxq_comment_prod_product_comment_A8yQRk": {
           "type": "shopify://apps/shxq-comment-prod/blocks/product-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
           "settings": {}
+        },
+        "shxq_comment_prod_product_comment_YG6GF3": {
+          "type": "shopify://apps/shxq-comment-prod/blocks/product-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
+          "settings": {}
         }
       },
       "block_order": [
-        "shxq_comment_prod_product_comment_A8yQRk"
+        "shxq_comment_prod_product_comment_A8yQRk",
+        "shxq_comment_prod_product_comment_YG6GF3"
       ],
       "settings": {
         "include_margins": true
