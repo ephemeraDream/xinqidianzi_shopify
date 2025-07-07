@@ -259,6 +259,7 @@
         "video_item_PLkeKj": {
           "type": "video_item",
           "settings": {
+            "video_url": "",
             "heading": "",
             "date": "",
             "description": ""
