@@ -244,11 +244,6 @@
         "include_margins": true
       }
     },
-    "hot_video_UKGzLp": {
-      "type": "hot-video",
-      "name": "hot video",
-      "settings": {}
-    },
     "hot_video_q4rymY": {
       "type": "hot-video",
       "blocks": {
@@ -273,7 +268,7 @@
         "video_item_LmHPp7": {
           "type": "video_item",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=ZASH00K0b94",
+            "video_url": "https://www.youtube.com/watch?v=gMyY3UmsI5I",
             "heading": "heiyo 3 in 1 Vacuum Sealer Kit",
             "date": "2024.09.01",
             "description": "This position contains the description text This position contains the description text"
@@ -304,7 +299,6 @@
     "product_faq_nUWLHm",
     "product_faq_TKNzWA",
     "17407367833c92a3af",
-    "hot_video_UKGzLp",
     "hot_video_q4rymY",
     "product_recommend_kRfdJq"
   ]
