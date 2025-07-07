@@ -16,11 +16,6 @@
       ],
       "settings": {}
     },
-    "product_highlight_intro_MQgR6A": {
-      "type": "product-highlight-intro",
-      "name": "product highlight intro",
-      "settings": {}
-    },
     "product_highlight_intro_KLxPti": {
       "type": "product-highlight-intro",
       "settings": {}
@@ -319,7 +314,6 @@
   },
   "order": [
     "product_detail_UfijdK",
-    "product_highlight_intro_MQgR6A",
     "product_highlight_intro_KLxPti",
     "prodcut_introduce_two_6H8d7G",
     "product_icontext_tfrGJR",
