@@ -246,20 +246,6 @@
     },
     "hot_video_UKGzLp": {
       "type": "hot-video",
-      "blocks": {
-        "video_item_rXYPmc": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=hlkqwusemRg",
-            "heading": "",
-            "date": "",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_item_rXYPmc"
-      ],
       "name": "hot video",
       "settings": {}
     },
