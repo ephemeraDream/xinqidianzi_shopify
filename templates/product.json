@@ -12,7 +12,7 @@
     "product_detail_UfijdK": {
       "type": "product-detail",
       "custom_css": [
-        ".product-detail-star{display: none !important;}"
+        ".product-detail-star {display: none !important;}"
       ],
       "settings": {}
     },
@@ -254,7 +254,7 @@
           "type": "video_item",
           "settings": {
             "video_url": "https://www.youtube.com/watch?v=JS8oSD1n8dE",
-            "heading": "",
+            "heading": "a",
             "date": "",
             "description": ""
           }
