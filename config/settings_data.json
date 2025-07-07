@@ -12,6 +12,7 @@
     "logo": "shopify://shop_images/logo.webp",
     "logo_width": 220,
     "type_header_font": "unna_n4",
+    "type_body_font": "assistant_n4",
     "buttons_border_thickness": 0,
     "popup_border_thickness": 0,
     "brand_description": "<p>Your Smart Cooking Companion</p>",
@@ -126,5 +127,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".ppp{color:unset !important;}"
+    ]
   }
 }
