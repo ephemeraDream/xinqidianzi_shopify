@@ -16,6 +16,11 @@
       ],
       "settings": {}
     },
+    "product_highlight_intro_ELbzA9": {
+      "type": "product-highlight-intro",
+      "name": "product highlight intro",
+      "settings": {}
+    },
     "product_highlight_intro_tNE3AG": {
       "type": "product-highlight-intro",
       "name": "product highlight intro",
@@ -296,6 +301,7 @@
   },
   "order": [
     "product_detail_UfijdK",
+    "product_highlight_intro_ELbzA9",
     "product_highlight_intro_tNE3AG",
     "prodcut_introduce_two_6H8d7G",
     "product_icontext_tfrGJR",
