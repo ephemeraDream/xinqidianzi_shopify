@@ -15,9 +15,9 @@
         "heading_BttCLX": {
           "type": "heading",
           "settings": {
-            "heading": "Our Story",
+            "heading": "Refund Policy",
             "icon": "shopify://shop_images/icon-arrow-right.webp",
-            "text": "<strong>heiyo｜Your Smart Cooking Companion</strong>"
+            "text": "<strong>heiyo｜</strong>Refund Policy"
           }
         }
       },
@@ -28,61 +28,20 @@
         "image": "shopify://shop_images/all-banner.webp"
       }
     },
-    "product_longtext_KUEHF6": {
-      "type": "product-longtext",
-      "blocks": {
-        "text_DaFbfR": {
-          "type": "text",
-          "settings": {
-            "subtitle": "To make cooking effortless and precise for everyone.",
-            "content": "<p>We strive to design products that simplify food preparation, enhance accuracy, and bring joy to the kitchen. Whether you’re preserving freshness or cooking the perfect meal, heiyo is here to help you every step of the way.</p>",
-            "image": "shopify://shop_images/about_image_1.webp",
-            "position": "right"
-          }
-        },
-        "text_fQ6MDH": {
-          "type": "text",
-          "settings": {
-            "subtitle": "<strong>Precision at Its Core</strong>",
-            "content": "<p>Precision is the heart of everything we do. From sealing Mason jars to monitoring meat temperatures, our products are designed to deliver accurate results every time. With heiyo, you can trust that your food will be perfectly preserved or cooked to perfection.</p>",
-            "image": "shopify://shop_images/about_image_2.webp",
-            "position": "left"
-          }
-        },
-        "text_KTR89w": {
-          "type": "text",
-          "settings": {
-            "subtitle": "<strong>Making Cooking Effortless</strong>",
-            "content": "<p>We understand that cooking can be time-consuming and challenging. That’s why we’ve created tools that streamline the process, so you can focus on what matters most—creating delicious meals and memories with loved ones.</p>",
-            "image": "shopify://shop_images/about_image_3.webp",
-            "position": "right"
-          }
-        }
-      },
-      "block_order": [
-        "text_DaFbfR",
-        "text_fQ6MDH",
-        "text_KTR89w"
-      ],
-      "settings": {
-        "heading": "",
-        "product_handle": ""
-      }
-    },
     "rich_text_rYkPXk": {
       "type": "rich-text",
       "blocks": {
         "heading_jxPMjN": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Story</strong>",
+            "heading": "Refund Policy",
             "heading_size": "h1"
           }
         },
         "text_3Xrd64": {
           "type": "text",
           "settings": {
-            "text": "<p>At<strong> Heiyo</strong>, we believe cooking should be simple, precise, and enjoyable. Dedicated to innovative kitchen tools, we empower home cooks and professionals alike. Our journey began with a passion for solving everyday kitchen challenges, and today, we take pride in being a trusted name in smart cooking technology.<br/><br/></p>"
+            "text": "<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.<br/><br/>To be eligible for a return, your item must be in the same condition that you received it,  unused with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.If the return is caused by the consumer, consumer should be responsible for the shipping fee. The specific fee should be based on the express company you choose.If due to our reasons, the goods received are damaged or not correct, and the consumer is not required to bear the shipping fee for this reason.</p><p>To request a return, please contact us at <a target=\"_top\"><strong>heiyo@hsinchitek.com</strong></a>.<br/>Once your return request is approved, we will provide you with a return shipping label along with detailed instructions on how and where to send your package.</p><p><strong>Please note that unauthorized returns will not be accepted.</strong><br/>If you have any questions regarding returns, feel free to contact us at <a target=\"_top\"><strong>heiyo@hsinchitek.com</strong></a>.</p><p><strong>Damages and issues</strong><br/>Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.</p><p><strong>Exceptions / non-returnable items</strong><br/>Certain types of items cannot be returned, like perishable goods (such as food, flowers, or plants), custom products (such as special orders or personalized items), and personal care goods (such as beauty products). We also do not accept returns for hazardous materials, flammable liquids, or gases. Please get in touch if you have questions or concerns about your specific item.<br/><br/>Unfortunately, we cannot accept returns on sale items or gift cards.</p><p><strong>Exchanges</strong><br/>The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for the new item.</p><p><strong>Refunds</strong><br/>We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too.<br/>If more than 15 business days have passed since we’ve approved your return, please contact us at heiyo@hsinchitek.com.</p>"
           }
         }
       },
@@ -91,9 +50,9 @@
         "text_3Xrd64"
       ],
       "custom_css": [
-        ".isolate .rich-text .rich-text__wrapper {/* font-family: Blinker; */ font-size: 2rem; font-weight: normal; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676;}",
-        ".isolate .rich-text .rich-text__wrapper h2 {font-size: 3.6rem; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333; font-weight: 600;}",
-        ".rich-text__blocks {max-width: 100%;}",
+        ".isolate .rich-text .rich-text__wrapper {/* font-family: Blinker; */ font-size: 2rem; font-weight: normal; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676; }",
+        ".isolate .rich-text .rich-text__wrapper h2 {font-size: 3.6rem; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333; font-weight: 600;}",
+        ".rich-text__blocks {max-width: 100%; text-align: left !important;}",
         ".isolate .rich-text .rich-text__wrapper strong {color: #333333;}"
       ],
       "settings": {
@@ -104,92 +63,10 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "about_history_Vc7XLQ": {
-      "type": "about-history",
-      "blocks": {
-        "category_kaK7dz": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/XK2209012172C_FCC_Cert_005e7f47-feee-411f-bc93-c288fc045087.png",
-            "year": "2014",
-            "heading": "VP05 has obtained FCC certification, earning recognition for its quality and safety.",
-            "description": "The VP05 vacuum sealer has successfully passed FCC certification, indicating that it meets authoritative standards for electromagnetic compatibility and user safety, ensuring greater product reliability."
-          }
-        },
-        "category_CVYgQA": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history-1.webp",
-            "year": "2018",
-            "heading": "Inventing the First Mason Jar Sealer",
-            "description": "We started our journey by addressing a common problem: keeping food fresh. In 2018, we invented the first Mason jar sealer, revolutionizing the way people store their food."
-          }
-        },
-        "category_MEUfxQ": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history-2.webp",
-            "year": "2019",
-            "heading": "Developing the First Wireless Meat Thermometer",
-            "description": "In 2019, we expanded our focus to cooking precision with the launch of our first wireless meat thermometer, helping home cooks achieve perfectly cooked meals with ease."
-          }
-        },
-        "category_KmK9cK": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history-3.webp",
-            "year": "2020",
-            "heading": "Launching the Meat Pro App",
-            "description": "To enhance the user experience, we introduced the Meat Pro App in 2020. This app allowed users to monitor cooking temperatures in real-time, making smart cooking accessible to everyone."
-          }
-        },
-        "category_DfUyA3": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history-4.webp",
-            "year": "2021",
-            "heading": "Upgrading to the Smarter EM09",
-            "description": "In 2021, we launched the EM09, an upgraded wireless meat thermometer with enhanced features like Bluetooth connectivity and a user-friendly interface."
-          }
-        },
-        "category_WVabb4": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history-5.webp",
-            "year": "2022",
-            "heading": "Innovating Portability with VP05",
-            "description": "In 2022, we took Mason jar sealing to the next level with the VP05, a compact and portable sealer designed for on-the-go freshness."
-          }
-        },
-        "category_Fig6Qh": {
-          "type": "category",
-          "settings": {
-            "image": "shopify://shop_images/history-1.webp",
-            "year": "2024",
-            "heading": "Introducing the 3-in-1 VP09",
-            "description": "In 2024, we responded to evolving needs with the VP09, a versatile 3-in-1 sealer for Mason jars, vacuum bags, and wine bottles. This innovation reflects our commitment to continuous improvement and customer satisfaction."
-          }
-        }
-      },
-      "block_order": [
-        "category_kaK7dz",
-        "category_CVYgQA",
-        "category_MEUfxQ",
-        "category_KmK9cK",
-        "category_DfUyA3",
-        "category_WVabb4",
-        "category_Fig6Qh"
-      ],
-      "settings": {
-        "heading": "Certification"
-      }
     }
   },
   "order": [
     "home_banner_kKRwgU",
-    "product_longtext_KUEHF6",
-    "rich_text_rYkPXk",
-    "about_history_Vc7XLQ"
+    "rich_text_rYkPXk"
   ]
 }
