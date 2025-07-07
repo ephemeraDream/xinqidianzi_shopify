@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "home_banner_kKRwgU": {
+      "type": "home-banner",
+      "blocks": {
+        "heading_BttCLX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Refund Policy",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "<strong>heiyo｜</strong>Refund Policy"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BttCLX"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/all-banner.webp"
+      }
+    },
+    "rich_text_rYkPXk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jxPMjN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Refund Policy",
+            "heading_size": "h1"
+          }
+        },
+        "text_3Xrd64": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.<br/><br/>To be eligible for a return, your item must be in the same condition that you received it,  unused with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.If the return is caused by the consumer, consumer should be responsible for the shipping fee. The specific fee should be based on the express company you choose.If due to our reasons, the goods received are damaged or not correct, and the consumer is not required to bear the shipping fee for this reason.</p><p>To request a return, please contact us at <a target=\"_top\"><strong>heiyo@hsinchitek.com</strong></a>.<br/>Once your return request is approved, we will provide you with a return shipping label along with detailed instructions on how and where to send your package.</p><p><strong>Please note that unauthorized returns will not be accepted.</strong><br/>If you have any questions regarding returns, feel free to contact us at <a target=\"_top\"><strong>heiyo@hsinchitek.com</strong></a>.</p><p><strong>Damages and issues</strong><br/>Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.</p><p><strong>Exceptions / non-returnable items</strong><br/>Certain types of items cannot be returned, like perishable goods (such as food, flowers, or plants), custom products (such as special orders or personalized items), and personal care goods (such as beauty products). We also do not accept returns for hazardous materials, flammable liquids, or gases. Please get in touch if you have questions or concerns about your specific item.<br/><br/>Unfortunately, we cannot accept returns on sale items or gift cards.</p><p><strong>Exchanges</strong><br/>The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for the new item.</p><p><strong>Refunds</strong><br/>We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too.<br/>If more than 15 business days have passed since we’ve approved your return, please contact us at heiyo@hsinchitek.com.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jxPMjN",
+        "text_3Xrd64"
+      ],
+      "custom_css": [
+        ".isolate .rich-text .rich-text__wrapper {/* font-family: Blinker; */ font-size: 2rem; font-weight: normal; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676; }",
+        ".isolate .rich-text .rich-text__wrapper h2 {font-size: 3.6rem; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333; font-weight: 600;}",
+        ".rich-text__blocks {max-width: 100%; text-align: left !important;}",
+        ".isolate .rich-text .rich-text__wrapper strong {color: #333333;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "home_banner_kKRwgU",
+    "rich_text_rYkPXk"
+  ]
+}
