@@ -11,6 +11,9 @@
   "sections": {
     "product_detail_UfijdK": {
       "type": "product-detail",
+      "custom_css": [
+        ".product-detail-star{display: none !important;}"
+      ],
       "settings": {}
     },
     "product_highlight_intro_KLxPti": {
