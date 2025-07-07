@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "home_banner_kKRwgU": {
+      "type": "home-banner",
+      "blocks": {
+        "heading_BttCLX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story",
+            "icon": "shopify://shop_images/icon-arrow-right.webp",
+            "text": "<strong>heiyo｜Your Smart Cooking Companion</strong>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BttCLX"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/all-banner.webp"
+      }
+    },
+    "product_longtext_KUEHF6": {
+      "type": "product-longtext",
+      "blocks": {
+        "text_DaFbfR": {
+          "type": "text",
+          "settings": {
+            "subtitle": "To make cooking effortless and precise for everyone.",
+            "content": "<p>We strive to design products that simplify food preparation, enhance accuracy, and bring joy to the kitchen. Whether you’re preserving freshness or cooking the perfect meal, heiyo is here to help you every step of the way.</p>",
+            "image": "shopify://shop_images/about_image_1.webp",
+            "position": "right"
+          }
+        },
+        "text_fQ6MDH": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<strong>Precision at Its Core</strong>",
+            "content": "<p>Precision is the heart of everything we do. From sealing Mason jars to monitoring meat temperatures, our products are designed to deliver accurate results every time. With heiyo, you can trust that your food will be perfectly preserved or cooked to perfection.</p>",
+            "image": "shopify://shop_images/about_image_2.webp",
+            "position": "left"
+          }
+        },
+        "text_KTR89w": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<strong>Making Cooking Effortless</strong>",
+            "content": "<p>We understand that cooking can be time-consuming and challenging. That’s why we’ve created tools that streamline the process, so you can focus on what matters most—creating delicious meals and memories with loved ones.</p>",
+            "image": "shopify://shop_images/about_image_3.webp",
+            "position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "text_DaFbfR",
+        "text_fQ6MDH",
+        "text_KTR89w"
+      ],
+      "settings": {
+        "heading": "",
+        "product_handle": ""
+      }
+    },
+    "rich_text_rYkPXk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jxPMjN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Story</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_3Xrd64": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At<strong> Heiyo</strong>, we believe cooking should be simple, precise, and enjoyable. Dedicated to innovative kitchen tools, we empower home cooks and professionals alike. Our journey began with a passion for solving everyday kitchen challenges, and today, we take pride in being a trusted name in smart cooking technology.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jxPMjN",
+        "text_3Xrd64"
+      ],
+      "custom_css": [
+        ".isolate .rich-text .rich-text__wrapper {/* font-family: Blinker; */ font-size: 2rem; font-weight: normal; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #767676;}",
+        ".isolate .rich-text .rich-text__wrapper h2 {font-size: 3.6rem; line-height: 150%; letter-spacing: 0px; font-variation-settings: \"opsz\" auto; color: #333333; font-weight: 600;}",
+        ".rich-text__blocks {max-width: 100%;}",
+        ".isolate .rich-text .rich-text__wrapper strong {color: #333333;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "about_history_Vc7XLQ": {
+      "type": "about-history",
+      "blocks": {
+        "category_kaK7dz": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/XK2209012172C_FCC_Cert_005e7f47-feee-411f-bc93-c288fc045087.png",
+            "year": "2014",
+            "heading": "VP05 has obtained FCC certification, earning recognition for its quality and safety.",
+            "description": "The VP05 vacuum sealer has successfully passed FCC certification, indicating that it meets authoritative standards for electromagnetic compatibility and user safety, ensuring greater product reliability."
+          }
+        },
+        "category_CVYgQA": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history-1.webp",
+            "year": "2018",
+            "heading": "Inventing the First Mason Jar Sealer",
+            "description": "We started our journey by addressing a common problem: keeping food fresh. In 2018, we invented the first Mason jar sealer, revolutionizing the way people store their food."
+          }
+        },
+        "category_MEUfxQ": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history-2.webp",
+            "year": "2019",
+            "heading": "Developing the First Wireless Meat Thermometer",
+            "description": "In 2019, we expanded our focus to cooking precision with the launch of our first wireless meat thermometer, helping home cooks achieve perfectly cooked meals with ease."
+          }
+        },
+        "category_KmK9cK": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history-3.webp",
+            "year": "2020",
+            "heading": "Launching the Meat Pro App",
+            "description": "To enhance the user experience, we introduced the Meat Pro App in 2020. This app allowed users to monitor cooking temperatures in real-time, making smart cooking accessible to everyone."
+          }
+        },
+        "category_DfUyA3": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history-4.webp",
+            "year": "2021",
+            "heading": "Upgrading to the Smarter EM09",
+            "description": "In 2021, we launched the EM09, an upgraded wireless meat thermometer with enhanced features like Bluetooth connectivity and a user-friendly interface."
+          }
+        },
+        "category_WVabb4": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history-5.webp",
+            "year": "2022",
+            "heading": "Innovating Portability with VP05",
+            "description": "In 2022, we took Mason jar sealing to the next level with the VP05, a compact and portable sealer designed for on-the-go freshness."
+          }
+        },
+        "category_Fig6Qh": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/history-1.webp",
+            "year": "2024",
+            "heading": "Introducing the 3-in-1 VP09",
+            "description": "In 2024, we responded to evolving needs with the VP09, a versatile 3-in-1 sealer for Mason jars, vacuum bags, and wine bottles. This innovation reflects our commitment to continuous improvement and customer satisfaction."
+          }
+        }
+      },
+      "block_order": [
+        "category_kaK7dz",
+        "category_CVYgQA",
+        "category_MEUfxQ",
+        "category_KmK9cK",
+        "category_DfUyA3",
+        "category_WVabb4",
+        "category_Fig6Qh"
+      ],
+      "settings": {
+        "heading": "Certification"
+      }
+    }
+  },
+  "order": [
+    "home_banner_kKRwgU",
+    "product_longtext_KUEHF6",
+    "rich_text_rYkPXk",
+    "about_history_Vc7XLQ"
+  ]
+}
