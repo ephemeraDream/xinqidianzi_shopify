@@ -244,6 +244,25 @@
         "include_margins": true
       }
     },
+    "hot_video_UKGzLp": {
+      "type": "hot-video",
+      "blocks": {
+        "video_item_rXYPmc": {
+          "type": "video_item",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=hlkqwusemRg",
+            "heading": "",
+            "date": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_rXYPmc"
+      ],
+      "name": "hot video",
+      "settings": {}
+    },
     "hot_video_q4rymY": {
       "type": "hot-video",
       "blocks": {
@@ -299,6 +318,7 @@
     "product_faq_nUWLHm",
     "product_faq_TKNzWA",
     "17407367833c92a3af",
+    "hot_video_UKGzLp",
     "hot_video_q4rymY",
     "product_recommend_kRfdJq"
   ]
