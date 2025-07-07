@@ -129,8 +129,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".ppp{color:unset !important;}"
-    ]
+    "custom_css": []
   }
 }
