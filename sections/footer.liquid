@@ -364,7 +364,7 @@
               {% endfor %}
             </ul>
           {% else %}
-            <!-- 没有有效支付方式 -->
+            {{ shop.enabled_payment_types | json }}
           {% endif %}
 
         </div>
