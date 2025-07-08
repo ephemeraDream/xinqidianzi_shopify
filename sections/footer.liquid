@@ -376,7 +376,13 @@
       {%- endif -%}
   </div>
 </footer>
-
+<style>
+  @media screen and (min-width: 750px) {
+    .footer__payment .list-payment {
+        justify-content: center;
+    }
+}
+</style>
 {% schema %}
 {
   "name": "t:sections.footer.name",
