@@ -72,7 +72,7 @@
       ],
       "settings": {
         "product_list": [
-          "heiyo-vacuum-sealer-kit-vp05",
+          "heiyo-vacuum-sealer-kit-vp05-multiple-colors",
           "heiyo-vacuum-sealer-nomal-kit-vp05"
         ]
       }
@@ -321,7 +321,7 @@
         "product_7PFtd8": {
           "type": "product",
           "settings": {
-            "product": "heiyo-vacuum-sealer-kit-vp05"
+            "product": "heiyo-vacuum-sealer-kit-vp05-multiple-colors"
           }
         },
         "product_PCt6aA": {
