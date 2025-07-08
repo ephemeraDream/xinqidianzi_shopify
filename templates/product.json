@@ -253,9 +253,8 @@
       "blocks": {
         "video_item_YjQzfH": {
           "type": "video_item",
-          "source": "{{ metaobjects.vp09_1[\"vp09-1-0sfclrlc\"] }}",
           "settings": {
-            "video_url": "https://www.youtube.com/watch?v=JwXY0Lhm1k4",
+            "video_url": "https://www.youtube.com/watch?v=A1HjPZJnr8k",
             "heading": "",
             "date": "",
             "description": ""
