@@ -235,15 +235,23 @@
       </product-form>
     </div>
 
-    {% if shop.enabled_payment_types.size > 0 %}
-      <ul class="list-payment">
-        {% for type in shop.enabled_payment_types %}
+    <ul class="list-payment" style="justify-content: center">
+      {% assign types = shop.enabled_payment_types %}
+      {% if types.size > 0 %}
+        {%- for type in types -%}
           <li class="list-payment__item">
             {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
           </li>
+        {%- endfor -%}
+      {% else %}
+        {% assign icons = 'visa,mastercar,discover,american,jcb,maestro,unionpay' | split: ',' %}
+        {% for icon in icons %}
+          <li class="list-payment__item">
+            <img src="{{ icon | append: '.svg' | asset_url }}" alt="{{ icon | capitalize }}" style="width:3rem">
+          </li>
         {% endfor %}
+      {% endif %}
       </ul>
-    {% endif %}
     
     <div
       class="product-recommendations"
