@@ -351,8 +351,7 @@
         {%- endif -%}
       </div>
     </div>
-   <div class="footer__column footer__column--info">
-      {%- if section.settings.payment_enable -%}
+    {%- if section.settings.payment_enable -%}
         <div class="footer__payment">
           <ul class="list-payment">
           {% assign types = shop.enabled_payment_types %}
@@ -381,7 +380,6 @@
 
         </div>
       {%- endif -%}
-    </div>
   </div>
 </footer>
 
