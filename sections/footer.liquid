@@ -362,7 +362,7 @@
               </li>
             {%- endfor -%}
           {% else %}
-            {% assign icons = 'visa,mastercard,discover,american,xxx,jcb,dinersclub,maestro,unionpay' | split: ',' %}
+            {% assign icons = 'visa,mastercard,discover,american,xxx,jcb,xxx,xxx,unionpay,dinersclub,maestro,unionpay' | split: ',' %}
             {% for icon in icons %}
               <li class="list-payment__item">
                 <img src="{{ icon | append: '.svg' | asset_url }}" alt="{{ icon | capitalize }}" style="width:4rem">
