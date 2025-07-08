@@ -235,7 +235,7 @@
       </product-form>
     </div>
 
-    <ul class="list-payment" style="justify-content: center">
+    <ul class="list-payment" style="justify-content: center;margin-top:2rem">
       {% assign types = shop.enabled_payment_types %}
       {% if types.size > 0 %}
         {%- for type in types -%}
@@ -247,7 +247,7 @@
         {% assign icons = 'visa,mastercar,discover,american,jcb,maestro,unionpay' | split: ',' %}
         {% for icon in icons %}
           <li class="list-payment__item">
-            <img src="{{ icon | append: '.svg' | asset_url }}" alt="{{ icon | capitalize }}" style="width:3rem">
+            <img src="{{ icon | append: '.svg' | asset_url }}" alt="{{ icon | capitalize }}" style="width:4rem">
           </li>
         {% endfor %}
       {% endif %}
