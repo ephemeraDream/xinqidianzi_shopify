@@ -235,13 +235,15 @@
       </product-form>
     </div>
 
-    <ul class="list-payment">
+    {% if shop.enabled_payment_types.size > 0 %}
+      <ul class="list-payment">
         {% for type in shop.enabled_payment_types %}
           <li class="list-payment__item">
             {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
           </li>
         {% endfor %}
       </ul>
+    {% endif %}
     
     <div
       class="product-recommendations"
