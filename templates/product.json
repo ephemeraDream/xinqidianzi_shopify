@@ -254,7 +254,12 @@
         "video_item_YjQzfH": {
           "type": "video_item",
           "source": "{{ metaobjects.vp09_1[\"vp09-1-0sfclrlc\"] }}",
-          "settings": {}
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=JwXY0Lhm1k4",
+            "heading": "",
+            "date": "",
+            "description": ""
+          }
         },
         "video_item_X36qrb": {
           "type": "video_item",
