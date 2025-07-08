@@ -253,12 +253,8 @@
       "blocks": {
         "video_item_YjQzfH": {
           "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=A1HjPZJnr8k",
-            "heading": "heiyo VP05 Electric Mason Jar Vacuum Sealer Kit",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
-          }
+          "source": "{{ metaobjects.vp09_1[\"vp09-1-0sfclrlc\"] }}",
+          "settings": {}
         },
         "video_item_X36qrb": {
           "type": "video_item",
