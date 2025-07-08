@@ -361,21 +361,8 @@
                 {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
               </li>
             {%- endfor -%}
-          {% else %}
-            <li class="list-payment__item">
-              <img src="{{ 'visa.svg' | asset_url }}" alt="Visa" class="icon icon--full-color">
-            </li>
-            <li class="list-payment__item">
-              <img src="{{ 'mastercard.svg' | asset_url }}" alt="Mastercard" class="icon icon--full-color">
-            </li>
-            <li class="list-payment__item">
-              <img src="{{ 'amex.svg' | asset_url }}" alt="American Express" class="icon icon--full-color">
-            </li>
-            <li class="list-payment__item">
-              <img src="{{ 'paypal.svg' | asset_url }}" alt="PayPal" class="icon icon--full-color">
-            </li>
           {% endif %}
-        </ul>
+          </ul>
 
 
         </div>
