@@ -361,6 +361,13 @@
                 {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
               </li>
             {%- endfor -%}
+          {% else %}
+            {% assign icons = 'visa,mastercard,discover,amex,jcb,dinersclub,maestro,unionpay' | split: ',' %}
+            {% for icon in icons %}
+              <li class="list-payment__item">
+                <img src="{{ icon }}.svg | asset_url }}" alt="{{ icon | capitalize }}">
+              </li>
+            {% endfor %}
           {% endif %}
           </ul>
 
