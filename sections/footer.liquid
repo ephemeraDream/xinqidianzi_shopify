@@ -354,15 +354,30 @@
    <div class="footer__column footer__column--info">
       {%- if section.settings.payment_enable -%}
         <div class="footer__payment">
-          {% if shop.enabled_payment_types.size > 0 %}
-            <ul class="list-payment">
-              {% for type in shop.enabled_payment_types %}
-                <li class="list-payment__item">
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                </li>
-              {% endfor %}
-            </ul>
+          <ul class="list-payment">
+          {% assign types = shop.enabled_payment_types %}
+          {% if types.size > 0 %}
+            {%- for type in types -%}
+              <li class="list-payment__item">
+                {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+              </li>
+            {%- endfor -%}
+          {% else %}
+            <li class="list-payment__item">
+              <img src="{{ 'visa.svg' | asset_url }}" alt="Visa" class="icon icon--full-color">
+            </li>
+            <li class="list-payment__item">
+              <img src="{{ 'mastercard.svg' | asset_url }}" alt="Mastercard" class="icon icon--full-color">
+            </li>
+            <li class="list-payment__item">
+              <img src="{{ 'amex.svg' | asset_url }}" alt="American Express" class="icon icon--full-color">
+            </li>
+            <li class="list-payment__item">
+              <img src="{{ 'paypal.svg' | asset_url }}" alt="PayPal" class="icon icon--full-color">
+            </li>
           {% endif %}
+        </ul>
+
 
         </div>
       {%- endif -%}
