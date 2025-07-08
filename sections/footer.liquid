@@ -354,7 +354,6 @@
    <div class="footer__column footer__column--info">
       {%- if section.settings.payment_enable -%}
         <div class="footer__payment">
-          <!-- <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span> -->
           {% if shop.enabled_payment_types.size > 0 %}
             <ul class="list-payment">
               {% for type in shop.enabled_payment_types %}
