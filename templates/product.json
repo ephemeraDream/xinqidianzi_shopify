@@ -248,6 +248,10 @@
         "include_margins": true
       }
     },
+    "hot_video_1": {
+      "type": "product-hot-video",
+      "settings": {}
+    },
     "hot_video_cpih78": {
       "type": "hot-video",
       "blocks": {
@@ -303,6 +307,7 @@
     "product_faq_nUWLHm",
     "product_faq_TKNzWA",
     "17407367833c92a3af",
+    "hot_video_1",
     "hot_video_cpih78",
     "product_recommend_kRfdJq"
   ]
