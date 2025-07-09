@@ -1,38 +1,60 @@
 {{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
 
-{% if product.metafields.custom.product_videos.size > 0 %}
+{%- assign videos = product.metafields.custom.product_videos -%}
+
+{%- if videos.size > 0 -%}
 <section id="section-{{ section.id }}" class="hot-video padding-sider">
   <div class="blog-list">
-    {% for video in product.metafields.custom.product_videos %}
+    {%- for video in videos -%}
       <div class="blog-item">
-        {% if video.video_url %}
+        {%- if video.video_url -%}
           <iframe
             src="{{ video.video_url | replace: 'watch?v=', 'embed/' }}"
             class="blog-img"
             allow="autoplay; encrypted-media"
             allowfullscreen
-            title="{{ video.title | escape}}">
+            title="{{ video.title | escape }}">
           </iframe>
-        {% endif %}
+        {%- endif -%}
         <div class="flex-center">
-          {% if video.title %}
-          <h3 class="blog-title">
-            {{ video.title }}
-          </h3>
-          {% endif %}
-          {% if video.date %}
-          <span class="blog-date">{{  video.date }}</span>
-          {% endif %}
+          {%- if video.title -%}
+          <h3 class="blog-title">{{ video.title }}</h3>
+          {%- endif -%}
+          {%- if video.date -%}
+          <span class="blog-date">{{ video.date }}</span>
+          {%- endif -%}
         </div>
-        
-        {% if video.description %}
+        {%- if video.description -%}
           <div class="blog-excerpt">{{ video.description }}</div>
-        {% endif %}
+        {%- endif -%}
       </div>
-    {% endfor %}
+    {%- endfor -%}
   </div>
 </section>
-{% endif %}
+{%- else -%}
+{%- comment -%} 默认视频列表：URL::标题::日期::简介，用 "|" 分隔不同视频 {%- endcomment -%}
+{%- assign default_videos_raw = "https://www.youtube.com/watch?v=A1HjPZJnr8k::video 1::2024.09.01::video description 1|https://www.youtube.com/watch?v=EI6WCod953g::video 2::2025.05.02::video description 2|https://www.youtube.com/watch?v=A1HjPZJnr8k::video 3::2024.09.01::video description 3" -%}
+{%- assign default_videos = default_videos_raw | split: "|" -%}
+<section id="section-{{ section.id }}" class="hot-video padding-sider">
+  <div class="blog-list">
+    {%- for item in default_videos -%}
+      {%- assign parts = item | strip | split: "::" -%}
+      {%- assign video_url = parts[0] -%}
+      {%- assign title = parts[1] -%}
+      {%- assign date = parts[2] -%}
+      {%- assign description = parts[3] -%}
+      <div class="blog-item">
+        <iframe src="{{ video_url | replace: 'watch?v=', 'embed/' }}" class="blog-img" allow="autoplay; encrypted-media" allowfullscreen title="{{ title | escape }}"></iframe>
+        <div class="flex-center">
+          <h3 class="blog-title">{{ title }}</h3>
+          <span class="blog-date">{{ date }}</span>
+        </div>
+        <div class="blog-excerpt">{{ description }}</div>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
 
 {% schema %}
 {
@@ -50,4 +72,3 @@
   ]
 }
 {% endschema %}
-
