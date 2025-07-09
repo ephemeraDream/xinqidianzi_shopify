@@ -252,44 +252,6 @@
       "type": "product-hot-video",
       "settings": {}
     },
-    "hot_video_cpih78": {
-      "type": "hot-video",
-      "blocks": {
-        "video_item_YjQzfH": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=A1HjPZJnr8k",
-            "heading": "",
-            "date": "",
-            "description": ""
-          }
-        },
-        "video_item_X36qrb": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=EI6WCod953g",
-            "heading": "heiyo VP05 Electric Mason Jar Vacuum Sealer Kit",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
-          }
-        },
-        "video_item_NtmmNk": {
-          "type": "video_item",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=ZASH00K0b94&t=2s",
-            "heading": "heiyo VP05 Electric Mason Jar Vacuum Sealer Kit",
-            "date": "2024.09.01",
-            "description": "This position contains the description text This position contains the description text"
-          }
-        }
-      },
-      "block_order": [
-        "video_item_YjQzfH",
-        "video_item_X36qrb",
-        "video_item_NtmmNk"
-      ],
-      "settings": {}
-    },
     "product_recommend_kRfdJq": {
       "type": "product-recommend",
       "settings": {
@@ -308,7 +270,6 @@
     "product_faq_TKNzWA",
     "17407367833c92a3af",
     "hot_video_1",
-    "hot_video_cpih78",
     "product_recommend_kRfdJq"
   ]
 }
