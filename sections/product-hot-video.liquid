@@ -1,76 +1,53 @@
 {{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
 
+{% if product.metafields.custom.product_videos.size > 0 %}
 <section id="section-{{ section.id }}" class="hot-video padding-sider">
   <div class="blog-list">
-    {% for block in section.blocks %}
+    {% for video in product.metafields.custom.product_videos %}
       <div class="blog-item">
-
-        <iframe
-          src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1"
-          class="blog-img"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-          title="{{ block.settings.heading | escape }}"
-        ></iframe>
+        {% if video.video_url %}
+          <iframe
+            src="{{ video.video_url | replace: 'watch?v=', 'embed/' }}"
+            class="blog-img"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ video.title | escape}}">
+          </iframe>
+        {% endif %}
         <div class="flex-center">
+          {% if video.title %}
           <h3 class="blog-title">
-            {{ block.settings.heading }}
+            {{ video.title }}
           </h3>
-          <span class="blog-date">{{ block.settings.date }}</span>
+          {% endif %}
+          {% if video.date %}
+          <span class="blog-date">{{  video.date }}</span>
+          {% endif %}
         </div>
-        <div class="blog-excerpt">{{ block.settings.description }}</div>
+        
+        {% if video.description %}
+          <div class="blog-excerpt">{{ video.description }}</div>
+        {% endif %}
       </div>
     {% endfor %}
   </div>
 </section>
+{% endif %}
 
 {% schema %}
 {
-  "name": "hot video",
+  "name": "Hot Video (Metaobject)",
   "tag": "section",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
   "settings": [],
-  "blocks": [
-    {
-      "type": "video_item",
-      "name": "video_item",
-      "settings": [
-        {
-          "type": "video_url",
-          "id": "video_url",
-          "accept": ["youtube"],
-          "label": "video_url"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "heading"
-        },
-        {
-          "type": "text",
-          "id": "date",
-          "label": "date"
-        },
-        {
-          "type": "text",
-          "id": "description",
-          "label": "description"
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "hot video",
-      "blocks": [
-        {
-          "type": "video_item"
-        }
-      ]
+      "name": "Hot Video"
     }
   ]
 }
 {% endschema %}
+
