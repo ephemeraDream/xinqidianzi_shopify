@@ -33,7 +33,7 @@
 </section>
 {%- else -%}
 {%- comment -%} 默认视频列表：URL::标题::日期::简介，用 "|" 分隔不同视频 {%- endcomment -%}
-{%- assign default_videos_raw = "https://www.youtube.com/watch?v=A1HjPZJnr8k::video 1::2024.09.01::video description 1|https://www.youtube.com/watch?v=EI6WCod953g::video 2::2025.05.02::video description 2|https://www.youtube.com/watch?v=A1HjPZJnr8k::video 3::2024.09.01::video description 3" -%}
+{%- assign default_videos_raw = "https://www.youtube.com/watch?v=A1HjPZJnr8k::video 1::2024.09.01::video description 1|https://www.youtube.com/watch?v=EI6WCod953g::video 2::2025.05.02::video description 2|https://www.youtube.com/watch?v=ZASH00K0b94&t=2s::video 3::2024.09.01::video description 3" -%}
 {%- assign default_videos = default_videos_raw | split: "|" -%}
 <section id="section-{{ section.id }}" class="hot-video padding-sider">
   <div class="blog-list">
