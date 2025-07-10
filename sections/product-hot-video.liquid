@@ -1,7 +1,7 @@
 {{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
 
 {%- assign videos = product.metafields.custom.product_videos -%}
-
+{{ product.metafields.custom.product_videos | json }}
 {%- if videos.size > 0 -%}
 <section id="section-{{ section.id }}" class="hot-video padding-sider">
   <div class="blog-list">
