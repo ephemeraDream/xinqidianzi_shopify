@@ -1,5 +1,5 @@
 {{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
-{% assign videos = product.metafields.custom.product_videos %}
+{% assign videos = product.metafields.custom.product_videos.value %}
 <p>video count: {{ videos.size }}</p>
 {% for video in videos %}
   <p>video_url: {{ video.video_url }}</p>
