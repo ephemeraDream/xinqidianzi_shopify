@@ -1,7 +1,16 @@
 {{ 'section-hot-video.css' | asset_url | stylesheet_tag }}
 
 {%- assign videos = product.metafields.custom.product_videos -%}
-{{ product.metafields.custom.product_videos | json }}
+<ul>
+  {%- for video in videos -%}
+    <li>
+      url: {{ video.video_url }} <br>
+      title: {{ video.title }} <br>
+      date: {{ video.date }} <br>
+      desc: {{ video.description }}
+    </li>
+  {%- endfor -%}
+</ul>
 {%- if videos.size > 0 -%}
 <section id="section-{{ section.id }}" class="hot-video padding-sider">
   <div class="blog-list">
