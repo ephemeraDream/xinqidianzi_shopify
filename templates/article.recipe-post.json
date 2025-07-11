@@ -32,25 +32,25 @@
       "type": "recipe-post-content",
       "settings": {}
     },
-    "1739593051f8b34b5e": {
-      "type": "apps",
-      "blocks": {
-        "shxq_comment_prod_blog_comment_9QHRrg": {
-          "type": "shopify://apps/shxq-comment-prod/blocks/blog-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "shxq_comment_prod_blog_comment_9QHRrg"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    }
+    //"1739593051f8b34b5e": {
+    //  "type": "apps",
+    //  "blocks": {
+    //    "shxq_comment_prod_blog_comment_9QHRrg": {
+    //      "type": "shopify://apps/shxq-comment-prod/blocks/blog-comment/0fd7e676-f4fc-4e9c-87fe-6392261cc00e",
+    //      "settings": {}
+    //    }
+    //  },
+   //   "block_order": [
+    //    "shxq_comment_prod_blog_comment_9QHRrg"
+    //  ],
+    //  "settings": {
+    //    "include_margins": true
+    //  }
+    //}
   },
   "order": [
     "image_banner_hFbC4G",
     "recipe_post_content_AHJExY",
-    "1739593051f8b34b5e"
+    //"1739593051f8b34b5e"
   ]
 }
