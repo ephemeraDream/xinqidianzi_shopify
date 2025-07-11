@@ -32,6 +32,10 @@
       "type": "recipe-post-content",
       "settings": {}
     },
+    "judgeme_comments": {
+      "type": "judgeme-comments",
+      "settings": {}
+    },
     "1739593051f8b34b5e": {
       "type": "apps",
       "blocks": {
@@ -51,6 +55,7 @@
   "order": [
     "image_banner_hFbC4G",
     "recipe_post_content_AHJExY",
+    "judgeme_comments",
     "1739593051f8b34b5e"
   ]
 }
