@@ -1,6 +1,7 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+{% comment %}
+Judge.me 评论组件 Section for blog articles
+{% endcomment %}
+
+<div class="judgeme-comments">
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true %}
+</div>
