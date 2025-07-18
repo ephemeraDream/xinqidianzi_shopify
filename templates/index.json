@@ -331,7 +331,7 @@
         "blog_BGBAJE"
       ],
       "custom_css": [
-        ".home-blog {margin-top: 40px;}"
+        ".home-blog {margin-top: 80px;}"
       ],
       "settings": {
         "heading": "Smart Kitchen Tips & Tricks",
