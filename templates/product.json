@@ -68,6 +68,58 @@
       "type": "prodcut-introduce-two",
       "settings": {}
     },
+    "product_faq_QymQNC": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_HQYT4P": {
+          "type": "faq",
+          "settings": {
+            "question": "1、<strong>How do I connect to Wi-Fi?</strong>",
+            "answer": "Open the <strong>Meat App</strong>, select \"Device Connection,\" and follow the prompts to connect the EM09 to your Wi-Fi network for remote temperature monitoring."
+          }
+        },
+        "faq_BV3Kx3": {
+          "type": "faq",
+          "settings": {
+            "question": "2、<strong>How waterproof is the EM09?</strong>",
+            "answer": "The EM09 is IPX7 waterproof, resistant to steam and humidity, making it perfect for outdoor grilling and tough weather conditions."
+          }
+        },
+        "faq_8AHLp6": {
+          "type": "faq",
+          "settings": {
+            "question": "3、<strong>What is the battery life of the EM09?</strong>",
+            "answer": "It lasts up to 24 hours on a single charge, ideal for all-day cooking sessions, whether slow cooking or outdoor grilling."
+          }
+        },
+        "faq_qfgRpP": {
+          "type": "faq",
+          "settings": {
+            "question": "4、<strong>What is the temperature range of the EM05?</strong>",
+            "answer": "The EM09 monitors temperatures from -50°C to 300°C, perfect for grilling, roasting, and baking."
+          }
+        },
+        "faq_BPgwnz": {
+          "type": "faq",
+          "settings": {
+            "question": "5、<strong>How do I set alerts using the Meat App?</strong>",
+            "answer": "Set target temperatures in the <strong>Meat PRO App</strong>, and the EM09 will alert you when your food is perfectly cooked—no more guesswork!"
+          }
+        }
+      },
+      "block_order": [
+        "faq_HQYT4P",
+        "faq_BV3Kx3",
+        "faq_8AHLp6",
+        "faq_qfgRpP",
+        "faq_BPgwnz"
+      ],
+      "settings": {
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "text": "",
+        "product_handle": "em09"
+      }
+    },
     "product_faq_nUWLHm": {
       "type": "product-faq",
       "blocks": {
@@ -120,6 +172,58 @@
         "product_handle": "vp05"
       }
     },
+    "product_faq_TKNzWA": {
+      "type": "product-faq",
+      "blocks": {
+        "faq_q9fxiG": {
+          "type": "faq",
+          "settings": {
+            "question": "1. <strong>What types of Mason jar lids and brands work with heiyo vacuum sealers?</strong>",
+            "answer": "The heiyo Mason jar vacuum sealer is designed for universal compatibility. It works flawlessly with all standard Mason jar brands - including Ball, Kerr, and Bernardin - and requires no special lids. You can vacuum seal using any regular store-bought Mason jar lids, making food preservation simple and cost-effective."
+          }
+        },
+        "faq_7pnWLP": {
+          "type": "faq",
+          "settings": {
+            "question": "2. <strong>What upgrades does the heiyo VP09 feature on jar sealing technology?</strong>",
+            "answer": "The VP09's triple-action vacuum technology delivers flawless seals for both regular and wide-mouth Mason jars, standard wine stoppers, and reusable storage bags—all with just one device. Its innovative anti-warping design ensures jars stay reliably airtight even after repeated use, while food-grade silicone components resist stains and odors for long-lasting freshness."
+          }
+        },
+        "faq_P6X8J6": {
+          "type": "faq",
+          "settings": {
+            "question": "3. <strong>How do I switch between Mason jar, sous vide bag, and wine sealing modes?</strong>",
+            "answer": "You can easily switch heiyo’s VP09 3-in-1 vacuum sealer into different modes for different sealing situations with our included accessories:  For Mason jars & vacuum bags: Just align the sealer directly over the jar opening or bag valve. For wine bottles: Attach the included hose connector to the machine, insert your stopper into the bottle, then press to seal. All sealing modes use the same one-touch sealing button for effortless operation."
+          }
+        },
+        "faq_GCLMdD": {
+          "type": "faq",
+          "settings": {
+            "question": "4. <strong>Can I use the vacuum-sealed bags for Sous Vide cooking?</strong>",
+            "answer": "Absolutely! VP09 handheld vacuum sealer creates airtight seals perfect for Sous Vide. Just: 1. Vacuum-seal your ingredients in approved bags with VP09; 2. After the beep of VP09, chech if all air is removed (visual check through clear bags); 3. Submerge as usual - no leaks guaranteed. Tip: pair it with our smart meat thermometer for perfect doneness control."
+          }
+        },
+        "faq_q3MLky": {
+          "type": "faq",
+          "settings": {
+            "question": "5. <strong>How does the magnetic storage function work on the heiyo VP09?</strong>",
+            "answer": "The heiyo VP09 features built-in strong magnets in both the main device and accessories. Simply attach them to any metal surface - like your fridge or kitchen cabinets - for instant, space-saving storage. This smart magnetic design keeps your vacuum sealer accessible while maintaining a tidy countertop."
+          }
+        }
+      },
+      "block_order": [
+        "faq_q9fxiG",
+        "faq_7pnWLP",
+        "faq_P6X8J6",
+        "faq_GCLMdD",
+        "faq_q3MLky"
+      ],
+      "settings": {
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "text": "",
+        "product_handle": "vp09"
+      }
+    },
     "17407367833c92a3af": {
       "type": "apps",
       "blocks": {
@@ -153,7 +257,9 @@
     "product_icontext_tfrGJR",
     "product_highlight_intro_tNE3AG",
     "prodcut_introduce_two_6H8d7G",
+    "product_faq_QymQNC",
     "product_faq_nUWLHm",
+    "product_faq_TKNzWA",
     "17407367833c92a3af",
     "hot_video_1",
     "product_recommend_kRfdJq"
