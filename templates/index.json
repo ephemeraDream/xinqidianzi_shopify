@@ -330,6 +330,7 @@
         "blog_aNVMY8",
         "blog_BGBAJE"
       ],
+      "disabled": true,
       "custom_css": [
         ".home-blog {margin-top: 80px;}"
       ],
