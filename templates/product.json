@@ -16,15 +16,6 @@
       ],
       "settings": {}
     },
-    "product_highlight_intro_tNE3AG": {
-      "type": "product-highlight-intro",
-      "name": "product highlight intro",
-      "settings": {}
-    },
-    "prodcut_introduce_two_6H8d7G": {
-      "type": "prodcut-introduce-two",
-      "settings": {}
-    },
     "product_icontext_tfrGJR": {
       "type": "product-icontext",
       "blocks": {
@@ -68,60 +59,14 @@
         "text": ""
       }
     },
-    "product_faq_QymQNC": {
-      "type": "product-faq",
-      "blocks": {
-        "faq_HQYT4P": {
-          "type": "faq",
-          "settings": {
-            "question": "1、<strong>How do I connect to Wi-Fi?</strong>",
-            "answer": "Open the <strong>Meat App</strong>, select \"Device Connection,\" and follow the prompts to connect the EM09 to your Wi-Fi network for remote temperature monitoring."
-          }
-        },
-        "faq_BV3Kx3": {
-          "type": "faq",
-          "settings": {
-            "question": "2、<strong>How waterproof is the EM09?</strong>",
-            "answer": "The EM09 is IPX7 waterproof, resistant to steam and humidity, making it perfect for outdoor grilling and tough weather conditions."
-          }
-        },
-        "faq_8AHLp6": {
-          "type": "faq",
-          "settings": {
-            "question": "3、<strong>What is the battery life of the EM09?</strong>",
-            "answer": "It lasts up to 24 hours on a single charge, ideal for all-day cooking sessions, whether slow cooking or outdoor grilling."
-          }
-        },
-        "faq_qfgRpP": {
-          "type": "faq",
-          "settings": {
-            "question": "4、<strong>What is the temperature range of the EM05?</strong>",
-            "answer": "The EM09 monitors temperatures from -50°C to 300°C, perfect for grilling, roasting, and baking."
-          }
-        },
-        "faq_BPgwnz": {
-          "type": "faq",
-          "settings": {
-            "question": "5、<strong>How do I set alerts using the Meat App?</strong>",
-            "answer": "Set target temperatures in the <strong>Meat PRO App</strong>, and the EM09 will alert you when your food is perfectly cooked—no more guesswork!"
-          }
-        }
-      },
-      "block_order": [
-        "faq_HQYT4P",
-        "faq_BV3Kx3",
-        "faq_8AHLp6",
-        "faq_qfgRpP",
-        "faq_BPgwnz"
-      ],
-      "custom_css": [
-        ".product-faq-contain .product-faq-heading {text-transform: none; text-align: center;}"
-      ],
-      "settings": {
-        "heading": "<strong>Frequently Asked Questions</strong>",
-        "text": "",
-        "product_handle": "em09"
-      }
+    "product_highlight_intro_tNE3AG": {
+      "type": "product-highlight-intro",
+      "name": "product highlight intro",
+      "settings": {}
+    },
+    "prodcut_introduce_two_6H8d7G": {
+      "type": "prodcut-introduce-two",
+      "settings": {}
     },
     "product_faq_nUWLHm": {
       "type": "product-faq",
@@ -129,36 +74,36 @@
         "faq_mXRMVM": {
           "type": "faq",
           "settings": {
-            "question": "1、<strong>What lids and mason jar brands are heiyo products suitable for?</strong>",
-            "answer": "heiyo’s vacuum sealers are designed to fit universally to any and every mason jar brand and lid, saving you money by eliminating the need to buy special ones. You can use any mason jars, whether from Ball, Kerr, Bernardin, or any other brand! The same goes for lids - you can use any store-bought lids regardless of the brand."
+            "question": "1. <strong>What types of Mason jar lids and brands work with heiyo vacuum sealers?</strong>",
+            "answer": "The heiyo Mason jar vacuum sealer is designed for universal compatibility. It works flawlessly with all standard Mason jar brands - including Ball, Kerr, and Bernardin - and requires no special lids. You can vacuum seal using any regular store-bought Mason jar lids, making food preservation simple and cost-effective."
           }
         },
         "faq_UNJTf6": {
           "type": "faq",
           "settings": {
-            "question": "2、<strong>What jar sizes does heiyo’s VP05 fit?</strong>",
-            "answer": "The heiyo’s VP05 is designed to fit both regular and wide-mouth jars, providing versatility in preserving your favorite foods."
+            "question": "2. <strong>What Mason jar sizes are compatible with the heiyo VP05 vacuum sealer?</strong>",
+            "answer": "The heiyo’s VP05 jar sealer machine is designed to fit both regular and wide-mouth Mason jars, providing versatility in preserving your favorite foods."
           }
         },
         "faq_d7mVUc": {
           "type": "faq",
           "settings": {
-            "question": "3、<strong>How does the heiyo’s VP05 charge?</strong>",
-            "answer": "The VP05 features USB-C charging for quick and versatile power, with a single charge supporting up to 50 seals."
+            "question": "3. <strong>What charging method does the heiyo VP05 vacuum sealer use?</strong>",
+            "answer": "The heiyo VP05 Mason jar vacuum sealer features convenient USB-C charging - the same modern port used by most smartphones. A full charge delivers enough power for 50 seals, and the universal USB-C compatibility means you can charge anywhere using phone chargers, power banks, or laptops."
           }
         },
         "faq_kEyTGc": {
           "type": "faq",
           "settings": {
-            "question": "4、<strong>What is the battery life of the VP05?</strong>",
-            "answer": "A single charge supports up to 50 seals, making it ideal for extended use and a reliable kitchen companion."
+            "question": "4. <strong>How long does the heiyo VP05 vacuum sealer battery last per charge?</strong>",
+            "answer": "The heiyo VP05 electric Mason jar sealer machine delivers exceptional battery performance, with each full charge providing enough power for 50+ canning seals. Its efficient energy use makes it perfect for daily kitchen tasks, travel canning, or storing bulk ingredients - always ready when you need it."
           }
         },
         "faq_4twCWY": {
           "type": "faq",
           "settings": {
-            "question": "5、<strong>How do I clean and maintain the VP05?</strong>",
-            "answer": "Simply wipe the VP05 with a damp cloth, avoid direct contact with water near the charging port, and store it in a dry place."
+            "question": "5. <strong>How do I clean and maintain my heiyo VP05 vacuum sealer?</strong>",
+            "answer": "Keeping your heiyo VP05 Mason jar vacuum sealer in top condition is easy: gently wipe the exterior with a slightly damp cloth, being careful around the USB-C port. For optimal performance, store in a dry place and occasionally clean the sealing ring with a soft, dry brush to remove any food residue."
           }
         }
       },
@@ -169,68 +114,10 @@
         "faq_kEyTGc",
         "faq_4twCWY"
       ],
-      "custom_css": [
-        ".product-faq-contain .product-faq-heading {text-transform: none; text-align: center;}"
-      ],
       "settings": {
         "heading": "<strong>Frequently Asked Questions</strong>",
         "text": "",
         "product_handle": "vp05"
-      }
-    },
-    "product_faq_TKNzWA": {
-      "type": "product-faq",
-      "blocks": {
-        "faq_q9fxiG": {
-          "type": "faq",
-          "settings": {
-            "question": "1、<strong>What lids and mason jar brands are heiyo products suitable for?</strong>",
-            "answer": "heiyo’s vacuum sealers are designed to fit universally to any and every mason jar brand and lid, saving you money by eliminating the need to buy special ones. You can use any mason jars, whether from Ball, Kerr, Bernardin, or any other brand! The same goes for lids - you can use any store-bought lids regardless of the brand."
-          }
-        },
-        "faq_7pnWLP": {
-          "type": "faq",
-          "settings": {
-            "question": "2、<strong>Why choose our VP09 mason jar vacuum sealer?</strong>",
-            "answer": "Our vacuum sealer for jars can currently not only seal mason jars, but can also be used with external components to seal bags and wine bottles. The scenes are diverse while saving you and your family worry and effort."
-          }
-        },
-        "faq_P6X8J6": {
-          "type": "faq",
-          "settings": {
-            "question": "3、<strong>Which part of the upgraded VP09 mason jar vacuum sealer has been improved?</strong>",
-            "answer": "The biggest difference between our jar sealer and the mason jar sealer on the market is that we currently adopt an integrated design, which allows you to use it for both wide-mouth mason jars and regular-mouth mason jars without disassembly."
-          }
-        },
-        "faq_GCLMdD": {
-          "type": "faq",
-          "settings": {
-            "question": "4、<strong>Where is the main function of magnetic absorption?</strong>",
-            "answer": "There is a magnet installed on the side of the main unit and the cover of the external component cup. The components can be magnetically attached for storage. It does not take up too much space and is beautiful and practical."
-          }
-        },
-        "faq_q3MLky": {
-          "type": "faq",
-          "settings": {
-            "question": "5、<strong>Where are the upgrades in silicone mainly reflected?</strong>",
-            "answer": "The silicone of our cordless mason vacuum sealer is fixed, unlike the mason jar sealers on the market today, so the seal will not warp no matter how many times you use it, ensuring your sealing effect."
-          }
-        }
-      },
-      "block_order": [
-        "faq_q9fxiG",
-        "faq_7pnWLP",
-        "faq_P6X8J6",
-        "faq_GCLMdD",
-        "faq_q3MLky"
-      ],
-      "custom_css": [
-        ".product-faq-contain .product-faq-heading {text-transform: none; text-align: center;}"
-      ],
-      "settings": {
-        "heading": "<strong>Frequently Asked Questions</strong>",
-        "text": "",
-        "product_handle": "vp09"
       }
     },
     "17407367833c92a3af": {
@@ -263,12 +150,10 @@
   },
   "order": [
     "product_detail_UfijdK",
+    "product_icontext_tfrGJR",
     "product_highlight_intro_tNE3AG",
     "prodcut_introduce_two_6H8d7G",
-    "product_icontext_tfrGJR",
-    "product_faq_QymQNC",
     "product_faq_nUWLHm",
-    "product_faq_TKNzWA",
     "17407367833c92a3af",
     "hot_video_1",
     "product_recommend_kRfdJq"
