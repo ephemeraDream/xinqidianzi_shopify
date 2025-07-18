@@ -330,6 +330,9 @@
         "blog_aNVMY8",
         "blog_BGBAJE"
       ],
+      "custom_css": [
+        ".home-blog {margin-top: 40px;}"
+      ],
       "settings": {
         "heading": "Smart Kitchen Tips & Tricks",
         "text": "Explore expert guides on vacuum sealing, perfect cooking temps, and getting the most from your heiyo tools."
