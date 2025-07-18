@@ -17,8 +17,8 @@
           "settings": {
             "image": "shopify://shop_images/home_banner_1.webp",
             "image_pe": "shopify://shop_images/3.jpg",
-            "heading": "Where smart meets culinary perfection.",
-            "text": "Seal in freshness, savor precision, ",
+            "heading": "Smart kitchen tools for perfect cooking",
+            "text": "Seal freshness with heiyo, cook with precision",
             "button_label": "Discover More",
             "button_link": "",
             "position": "left"
@@ -29,8 +29,8 @@
           "settings": {
             "image": "shopify://shop_images/home_banner_2.webp",
             "image_pe": "shopify://shop_images/2.jpg",
-            "heading": "Elevate Your Convenient Use Experience",
-            "text": "\"heiyo Comfort\" The first Mason Jar Sealer",
+            "heading": "Elevate Your Storage Experience",
+            "text": "“heiyo Comfort”: Original designer of Mason jar Vacuum Sealer",
             "button_label": "Discover More",
             "button_link": "",
             "position": "left"
@@ -42,7 +42,7 @@
             "image": "shopify://shop_images/home_banner_3.webp",
             "image_pe": "shopify://shop_images/1_f7c4f59d-a1d5-4e65-8f7c-9bfa9c38154b.jpg",
             "heading": "Always on the Go",
-            "text": "Portable, Smart, Fresh",
+            "text": "heiyo Vacuum Sealer: Portable, Smart, Fresh",
             "button_label": "Discover More",
             "button_link": "",
             "position": "centere"
@@ -62,8 +62,8 @@
         "heading_kWXmyd": {
           "type": "heading",
           "settings": {
-            "heading": "Best Mason Jar Sealers for Sale",
-            "text": "heiyo's best-selling sealers create an airtight vacuum seal in just seconds"
+            "heading": "heiyo’s Top-Selling Vacuum Sealers",
+            "text": "Seal freshness in seconds – heiyo's high-performance vacuum sealers keep food fresher, longer."
           }
         }
       },
@@ -83,7 +83,7 @@
         "heading_JEdJkz": {
           "type": "heading",
           "settings": {
-            "heading": "New Arrival"
+            "heading": "New Arrivals"
           }
         },
         "buttons_trrjcg": {
@@ -117,8 +117,8 @@
           "settings": {
             "image": "shopify://shop_images/Smart-Food-Storage.webp",
             "title": "Smart Food Storage",
-            "heading": "Preserve Freshness, Anytime, Anywhere!",
-            "description": "heiyo Mason Jar Sealer — Compact and portable.Easily seals mason jars, wine bottles, and vacuum bags.Locks in freshness, prevents odors, and keeps food tasting great.Versatile and mess-free — perfect for jams, wine,mason jar meals, and more!",
+            "heading": "heiyo Handheld Vacuum Sealer: 3-in-1 Freshness, Zero Hassle",
+            "description": "The heiyo VP09 cordless vacuum sealer is your 3-in-1 solution for Mason jars, bags, and wine bottles. Compact, portable, and mess-free – lock in freshness anywhere, anytime with one simple tool.",
             "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09-black"
           }
         },
@@ -127,8 +127,8 @@
           "settings": {
             "image": "shopify://shop_images/product_collection_2.webp",
             "title": "Smart Cooking Devices",
-            "heading": "Cook Smarter, Taste Better!",
-            "description": "Take your cooking to the next level with our Smart Wireless Meat Thermometer! Connect via Bluetooth to the app for real-time temperature monitoring, ensuring your food is perfectly cooked every time. Whether you’re grilling, roasting, or baking, enjoy fresher, juicier results with ease.",
+            "heading": "heiyo Meat Thermometer: Cook with Wire-Free Precision",
+            "description": "The heiyo Wireless Meat Thermometer delivers instant, accurate temps without cords. Monitor your cook remotely on your smartphone with our app - ideal for grilling, roasting, and sous vide. Never over or undercook again!",
             "product": "heiyo-wireless-meat-thermometer-kit-one-ms8e-01-white"
           }
         }
@@ -138,53 +138,7 @@
         "category_UwmEfq"
       ],
       "settings": {
-        "heading": "<strong>Simplify Your Kitchen, One Tool at a Time</strong>"
-      }
-    },
-    "unique_selling_ci9cAL": {
-      "type": "unique-selling",
-      "blocks": {
-        "product_taJNnQ": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-wireless-meat-thermometer-kit-one-ms8e-01-white"
-          }
-        },
-        "product_yMr4QK": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09-black"
-          }
-        }
-      },
-      "block_order": [
-        "product_taJNnQ",
-        "product_yMr4QK"
-      ],
-      "settings": {
-        "heading": "Simplify Your Kitchen",
-        "text": "Explore Unique tools and start living smarter",
-        "image": "shopify://shop_images/ME8E-02.jpg"
-      }
-    },
-    "video_KwY9a9": {
-      "type": "video",
-      "custom_css": [
-        ".deferred-media__poster-button {opacity: 0;}",
-        ".video-section__media.deferred-media {--ratio-percent: 39% !important;}",
-        "@media screen and (max-width: 1024px) {.video-section__media.deferred-media {--ratio-percent: 56% !important; }}"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video_url": "",
-        "cover_image": "shopify://shop_images/home_video_cover_full.webp",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "heading": "Simplify Cooking with heiyo – Get Started with One Tool"
       }
     },
     "image_with_text_home_HeT87b": {
@@ -200,7 +154,7 @@
         "text_Cipc34": {
           "type": "text",
           "settings": {
-            "text": "<p>At Heiyo, we turn kitchens into joyful hubs where better living begins.<br/>Why choose us?<br/>➔ <strong>Self-designed smart tech</strong> – Born in our 20,000㎡ factories with end-to-end R&D control<br/>➔ <strong>Proven efficiency boosters</strong> – 5M+ home chefs trust our tools to slash prep time & food waste<br/>➔ <strong>Effortless cooking=happy moments</strong> – From sous vide to pantry organizing, we make every step simpler<br/>Start your upgrade today – because great meals deserve smarter tools.</p>",
+            "text": "<p>At heiyo, we believe the kitchen should be a place of joy, not stress.<br/>Why us?<br/>➔ <strong>Smart tech, fully owned</strong> – Designed in our 20,000㎡ factory with complete R&D control<br/>➔ <strong>Proven time-saver</strong> – Trusted by 5M+ home chefs to reduce prep time and minimize waste<br/>➔ <strong>Joy in every use</strong> – From sous vide to storage, we streamline every step<br/>Upgrade today – because better meals start with smarter tools.</p>",
             "text_style": "body"
           }
         },
@@ -232,6 +186,53 @@
         "mobile_content_alignment": "left",
         "padding_top": 100,
         "padding_bottom": 100
+      }
+    },
+    "user_feedback_tjLKzK": {
+      "type": "user-feedback",
+      "blocks": {
+        "product_Lx9mtw": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "heiyo-wireless-meat-thermometer-kit-dual-em09"
+          }
+        },
+        "product_6AdFM9": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09-black"
+          }
+        },
+        "product_7PFtd8": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-vacuum-sealer-kit-vp05-multiple-colors"
+          }
+        },
+        "product_PCt6aA": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-vacuum-sealer-nomal-kit-vp05-black"
+          }
+        },
+        "product_HKYJee": {
+          "type": "product",
+          "settings": {
+            "product": "heiyo-wireless-meat-thermometer-kit-one-ms8e-01-white"
+          }
+        }
+      },
+      "block_order": [
+        "product_Lx9mtw",
+        "product_6AdFM9",
+        "product_7PFtd8",
+        "product_PCt6aA",
+        "product_HKYJee"
+      ],
+      "settings": {
+        "heading": "Customer Reviews",
+        "text": "Hear Directly from Our Customers"
       }
     },
     "hot_video_YaF9t7": {
@@ -302,53 +303,6 @@
       ],
       "settings": {}
     },
-    "user_feedback_tjLKzK": {
-      "type": "user-feedback",
-      "blocks": {
-        "product_Lx9mtw": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "heiyo-wireless-meat-thermometer-kit-dual-em09"
-          }
-        },
-        "product_6AdFM9": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-3-in-1-vacuum-sealer-kit-vp09-black"
-          }
-        },
-        "product_7PFtd8": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-vacuum-sealer-kit-vp05-multiple-colors"
-          }
-        },
-        "product_PCt6aA": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-vacuum-sealer-nomal-kit-vp05-black"
-          }
-        },
-        "product_HKYJee": {
-          "type": "product",
-          "settings": {
-            "product": "heiyo-wireless-meat-thermometer-kit-one-ms8e-01-white"
-          }
-        }
-      },
-      "block_order": [
-        "product_Lx9mtw",
-        "product_6AdFM9",
-        "product_7PFtd8",
-        "product_PCt6aA",
-        "product_HKYJee"
-      ],
-      "settings": {
-        "heading": "Customer Reviews",
-        "text": "Hear Directly from Our Customers"
-      }
-    },
     "home_blog_yKBWMM": {
       "type": "home-blog",
       "blocks": {
@@ -377,8 +331,8 @@
         "blog_BGBAJE"
       ],
       "settings": {
-        "heading": "heiyo blog",
-        "text": "Discover tips, innovative recipes, and cuttingedge kitchen tech insights with heiyo's blog"
+        "heading": "Smart Kitchen Tips & Tricks",
+        "text": "Explore expert guides on vacuum sealing, perfect cooking temps, and getting the most from your heiyo tools."
       }
     }
   },
@@ -388,11 +342,9 @@
     "new_arrivals_RwMRGd",
     "image_comparison_PCE8ze",
     "hot_selling_qpWptB",
-    "unique_selling_ci9cAL",
-    "video_KwY9a9",
     "image_with_text_home_HeT87b",
-    "hot_video_YaF9t7",
     "user_feedback_tjLKzK",
+    "hot_video_YaF9t7",
     "home_blog_yKBWMM"
   ]
 }
