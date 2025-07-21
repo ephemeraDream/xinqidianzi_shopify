@@ -52,11 +52,18 @@
           "settings": {
             "blog_handle": "guide"
           }
+        },
+        "blogs_XQgrjj": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "使用小技巧"
+          }
         }
       },
       "block_order": [
         "blogs_b3zCir",
-        "blogs_QdzMtR"
+        "blogs_QdzMtR",
+        "blogs_XQgrjj"
       ],
       "settings": {
         "layout": "article"
