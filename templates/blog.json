@@ -58,12 +58,19 @@
           "settings": {
             "blog_handle": "use-tips"
           }
+        },
+        "blogs_8MhqGn": {
+          "type": "blogs",
+          "settings": {
+            "blog_handle": "food-creation"
+          }
         }
       },
       "block_order": [
         "blogs_b3zCir",
         "blogs_QdzMtR",
-        "blogs_XQgrjj"
+        "blogs_XQgrjj",
+        "blogs_8MhqGn"
       ],
       "settings": {
         "layout": "article"
