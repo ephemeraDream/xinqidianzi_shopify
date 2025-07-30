@@ -241,6 +241,7 @@
     },
     "hot_video_1": {
       "type": "product-hot-video",
+      "disabled": true,
       "settings": {}
     },
     "product_recommend_kRfdJq": {
