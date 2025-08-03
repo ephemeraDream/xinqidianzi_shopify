@@ -3814,7 +3814,7 @@ a {
   color: #ebb069;
 }
 
-.new-arrivals-button a {
+.xq_btn_36 a {
   border-radius: 41.6rem;
   background: #ebb069;
   display: inline-flex;
@@ -3830,14 +3830,17 @@ a {
   font-feature-settings: "kern" on;
   color: #ffffff;
 }
+.xq_btn_36 a:hover {
+  background: #e19942;
+}
 @media screen and (max-width: 1440px) {
-  .new-arrivals-button a {
+  .xq_btn_36 a {
     padding: 2rem 4rem;
     font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .new-arrivals-button a {
+  .xq_btn_36 a {
     padding: 1rem 2rem;
     font-size: 2rem;
   }
