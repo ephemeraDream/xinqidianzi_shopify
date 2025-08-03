@@ -44,7 +44,7 @@
   /* font-family: Blinker; */
   font-size: 4.2rem;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1em;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
@@ -52,14 +52,7 @@
   text-shadow: 0px 0.4rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
-  /* font-family: Blinker; */
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: 98%;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
+.home-banner-swiper_contain .home-banner-swiper_contain-body .h2_52 {
   color: #FFFFFF;
   text-shadow: 0px 0.4rem 1rem rgba(0, 0, 0, 0.3);
   margin-top: 1.4rem;
@@ -90,10 +83,10 @@
   }
 
   .home-banner-swiper_contain .home-banner-swiper_contain-body h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
-  .home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
+  .home-banner-swiper_contain .home-banner-swiper_contain-body .h2_52 {
     font-size: 4.2rem;
   }
 
@@ -116,7 +109,7 @@
     font-size: 2.6rem;
   }
 
-  .home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
+  .home-banner-swiper_contain .home-banner-swiper_contain-body .h2_52 {
     font-size: 3.6rem;
   }
 }
@@ -130,7 +123,7 @@
     font-size: 1.8rem;
   }
 
-  .home-banner-swiper_contain .home-banner-swiper_contain-body h1 {
+  .home-banner-swiper_contain .home-banner-swiper_contain-body .h2_52 {
     font-size: 2.8rem;
   }
 
