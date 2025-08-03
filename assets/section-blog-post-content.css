@@ -119,6 +119,9 @@
 .blog-post-content .blog-post-title {
   font-size:4.8rem;
 }
+.blog-post-content .blog-post-info {
+  font-size: 3rem;
+}
 }
 @media screen and (max-width: 1024px) {
   .blog-post-image_with_text,
@@ -132,7 +135,8 @@
     flex: 0 0 100%;
   }
   .blog-post-image_with_text .blog-post-image_with_text-content p,
-.blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content p,
+.blog-post-content .blog-post-info {
   font-size: 2.4rem;
 }
 .blog-post-content .blog-post-title {
@@ -146,7 +150,8 @@
   margin-bottom: 5rem;
 }
 .blog-post-image_with_text .blog-post-image_with_text-content p,
-.blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content p,
+.blog-post-content .blog-post-info {
   font-size: 2rem;
 }
 .blog-post-content .blog-post-title {
