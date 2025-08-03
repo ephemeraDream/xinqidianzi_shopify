@@ -3714,13 +3714,13 @@ a {
   line-height: 1.1em;
   letter-spacing: 0em;
 }
-.h4_36{
+.h4_36,h4{
   font-size: 3.6rem;
   font-weight: bold;
   line-height: 1.1em;
   letter-spacing: 0em;
 }
-.h5_28{
+.h5_28,h5{
   font-size: 2.8rem;
   line-height: 1.1em;
   letter-spacing: 0em;
@@ -3739,10 +3739,10 @@ a {
   .h3_48{
     font-size: 3.6rem;
   }
-  .h4_36{
+  .h4_36,h4{
     font-size: 2.8rem;
   }
-  .h5_28{
+  .h5_28,h5{
     font-size: 2.2rem;
   }
   .h6_22{
@@ -3758,10 +3758,10 @@ a {
   .h3_48{
     font-size: 2.8rem;
   }
-  .h4_36{
+  .h4_36,h4{
     font-size: 2.2rem;
   }
-  .h5_28{
+  .h5_28,h5{
     font-size: 2rem;
   }
   .h6_22{

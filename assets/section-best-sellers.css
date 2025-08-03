@@ -80,35 +80,17 @@
 }
 
 .best-sellers-swiper .product-title a {
-  /* font-family: Blinker; */
-  font-size: 3.6rem;
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #000000;
 }
 
 .best-sellers-swiper .product-price {
-  /* font-family: Blinker; */
-  font-size: 2.8rem;
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #1a1a1a;
 }
 
 .best-sellers-swiper .product-compareprice {
-  /* font-family: Blinker; */
-  font-size: 2.4rem;
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  text-decoration: line-through;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #767676;
   margin-left: 2rem;
 }
