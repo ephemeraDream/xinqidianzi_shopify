@@ -123,6 +123,13 @@
   .home-banner-box {
     width: 65vw;
   }
+  .home-banner-box-heading-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .home-banner-box-heading-icon+.home-banner-box-heading-icon {
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
