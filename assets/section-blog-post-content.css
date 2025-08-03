@@ -138,6 +138,7 @@
   .blog-post-text_with_two_images .blog-post-text_with_two_images-imgbox img {
     width: 100%;
     flex: 0 0 100%;
+    height: auto;
   }
   .blog-post-image_with_text .blog-post-image_with_text-content p,
 .blog-post-text_with_two_images .blog-post-text_with_two_images-content p,
