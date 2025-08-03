@@ -3730,7 +3730,8 @@ a {
   line-height: 1.1em;
   letter-spacing: 0em;
 }
-.text-body{font-size: 2rem;}
+.text_24{font-size: 2.4rem;line-height: 1.1em;}
+.text_20{font-size: 2rem;line-height: 1.1em;}
 @media screen and (max-width: 1440px) {
   .h2_52,h2{
     font-size: 4.8rem;
@@ -3747,7 +3748,8 @@ a {
   .h6_22{
     font-size: 2rem;
   }
-  .text-body{font-size: 1.8rem;}
+  .text_24{font-size: 2rem;}
+  .text_20{font-size: 1.8rem;}
 }
 @media screen and (max-width: 1024px) {
   .h2_52,h2{
@@ -3765,7 +3767,8 @@ a {
   .h6_22{
     font-size: 1.8rem;
   }
-  .text-body{font-size: 1.6rem;}
+  .text_24{font-size: 1.6rem;}
+  .text_20{font-size: 1.4rem;}
 }
 
 @media screen and (max-width: 767px) {
