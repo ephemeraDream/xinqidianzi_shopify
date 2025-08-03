@@ -3708,7 +3708,7 @@ a {
   letter-spacing: 0em;
   /* font-family: Poppins; */
 }
-.h3_48{
+.h3_48,h3{
   font-size: 4.8rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -3730,13 +3730,14 @@ a {
   line-height: 1.2em;
   letter-spacing: 0em;
 }
+.text_32{font-size: 3.2rem;line-height: 1.1em;}
 .text_24{font-size: 2.4rem;line-height: 1.2em;}
 .text_20{font-size: 2rem;line-height: 1.2em;}
 @media screen and (max-width: 1440px) {
   .h2_52,h2{
     font-size: 4.8rem;
   }
-  .h3_48{
+  .h3_48,h3{
     font-size: 3.6rem;
   }
   .h4_36,h4{
@@ -3748,6 +3749,7 @@ a {
   .h6_22{
     font-size: 2rem;
   }
+  .text_32{font-size: 2.8rem;}
   .text_24{font-size: 2rem;}
   .text_20{font-size: 1.8rem;}
 }
@@ -3755,7 +3757,7 @@ a {
   .h2_52,h2{
     font-size: 3.6rem;
   }
-  .h3_48{
+  .h3_48,h3{
     font-size: 2.8rem;
   }
   .h4_36,h4{
@@ -3767,6 +3769,7 @@ a {
   .h6_22{
     font-size: 1.8rem;
   }
+  .text_32{font-size: 2.4rem;}
   .text_24{font-size: 1.6rem;}
   .text_20{font-size: 1.4rem;}
 }
@@ -3775,10 +3778,19 @@ a {
   .h2_52,h2{
     font-size: 3.2rem;
   }
-  .h3_48{
+  .h3_48,h3{
     font-size: 2.2rem;
   }
-
+  .h4_36,h4{
+    font-size: 2rem;
+  }
+  .h5_28,h5{
+    font-size: 1.8rem;
+  }
+  .h6_22{
+    font-size: 1.6rem;
+  }
+  .text_32{font-size: 2rem;}
 }
 
 /****************************fxy-swiper******************************/
