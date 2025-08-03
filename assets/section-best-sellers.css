@@ -90,6 +90,8 @@
 }
 
 .best-sellers-swiper .product-compareprice {
+  /* font-family: Blinker; */
+  font-size: 2.4rem;
   font-weight: normal;
   text-decoration: line-through;
   color: #767676;
