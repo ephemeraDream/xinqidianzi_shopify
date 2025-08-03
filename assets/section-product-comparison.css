@@ -126,24 +126,10 @@
 }
 
 .product-comparison .product-card .product-info .flex-center .product-title {
-  /* font-family: Blinker; */
-  font-size: 3.6rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #3d3d3d;
 }
 
 .product-comparison .product-card .product-info .flex-center .product-price {
-  /* font-family: Blinker; */
-  font-size: 3.2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #1a1a1a;
 }
 
@@ -152,14 +138,7 @@
   .product-info
   .flex-center
   .product-compare_at_price {
-  /* font-family: Blinker; */
-  font-size: 2.8rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
   text-decoration: line-through;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #767676;
   margin-left: 2.4rem;
 }
@@ -169,13 +148,6 @@
   .product-info
   .flex-center
   .product-description {
-  /* font-family: Blinker; */
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #777777;
 }
 

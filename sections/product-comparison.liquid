@@ -124,14 +124,14 @@
 
             <div class="product-info">
               <div class="flex-center">
-                <h3 class="product-title">{{ product.title }}</h3>
+                <h4 class="product-title">{{ product.title }}</h4>
                 <div class="flex-center">
-                  <span class="product-price">{{ product.price | money }}</span>
-                  <span class="product-compare_at_price">{{ product.compare_at_price | money }}</span>
+                  <span class="product-price text_32">{{ product.price | money }}</span>
+                  <span class="product-compare_at_price text_24">{{ product.compare_at_price | money }}</span>
                 </div>
               </div>
               <div class="flex-center">
-                <div class="product-description">{{ product.description }}</div>
+                <div class="product-description text_24">{{ product.description }}</div>
                 <div class="swiper-navigation product-variant-navigation-{{ product.id }}"></div>
               </div>
             </div>
