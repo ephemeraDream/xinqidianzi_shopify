@@ -1,8 +1,8 @@
 {{ 'section-product-comparison.css' | asset_url | stylesheet_tag }}
 
 <div id="section-{{ section.id }}" class="product-comparison">
-  <h2 class="product-comparison-heading">{{ section.settings.heading }}</h2>
-  <div class="product-comparison-text">{{ section.settings.text }}</div>
+  <h3 class="product-comparison-heading">{{ section.settings.heading }}</h3>
+  <div class="product-comparison-text text_24">{{ section.settings.text }}</div>
 
   <div class="product-comparison-tab_btn_box">
     {% for block in section.blocks %}
