@@ -12,13 +12,7 @@
 }
 
 .about-history .about-history-heading {
-  /* font-family: Poppins; */
-  font-size: 6.2rem;
-  font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #000000;
 }
 
