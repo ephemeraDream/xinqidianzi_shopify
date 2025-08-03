@@ -36,24 +36,13 @@
 }
 
 .recipe-post-content .recipe-post-title {
-  /* font-family: Poppins; */
-  font-size: 3.2rem;
   font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #333333;
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
 }
 
 .recipe-post-content .recipe-post-content_info {
-  /* font-family: Poppins; */
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #333333;
 }
 
@@ -94,9 +83,7 @@
   /* font-family: Poppins; */
   font-size: 4.8rem;
   font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
+  line-height: 1.2em;
   color: #333333;
   margin-bottom: 3.8rem;
 }
@@ -106,9 +93,7 @@
   /* font-family: Poppins; */
   font-size: 2rem;
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
+  line-height: 1.2em;
   color: #333333;
 }
 
@@ -204,6 +189,16 @@
   .recipe-post-content .step_content_box .step_content_box-right {
     padding-left: 0;
   }
+
+  .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text h2,
+.recipe-post-content .recipe-post-content_info h2 {
+  font-size: 3rem;
+}
+
+.recipe-post-content .step_content_box .step_content_box-right .step_content_box-text p,
+.recipe-post-content .step_content_box .step_content_box-right .step_content_box-text li {
+  font-size: 1.8rem;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -233,5 +228,14 @@
 
   .recipe-post-content .step_content_box-product_info-btn {
     margin-right: 1.6rem;
+  }
+  .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text h2,
+  .recipe-post-content .recipe-post-content_info h2 {
+    font-size: 2.8rem;
+  }
+  
+  .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text p,
+  .recipe-post-content .step_content_box .step_content_box-right .step_content_box-text li {
+    font-size: 1.6rem;
   }
 }

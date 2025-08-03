@@ -46,8 +46,8 @@
     {% endif %}
   </div>
   <img src="{{ article.image | image_url }}" alt="{{ article.title }}" class="recipe-post-image">
-  <div class="recipe-post-title">{{ article.title }}</div>
-  <div class="recipe-post-content_info">{{ article.content }}</div>
+  <div class="recipe-post-title text_32">{{ article.title }}</div>
+  <div class="recipe-post-content_info text_20">{{ article.content }}</div>
   {% if article.metafields.custom.step_one_text != blank %}
     <div class="step_content_box">
       {% if article.metafields.custom.step_one_file != blank %}
