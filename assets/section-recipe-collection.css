@@ -103,23 +103,11 @@
 }
 
 .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-published_at {
-  /* font-family: Poppins; */
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #3d3d3d;
   margin-top: 2.4rem;
 }
 
 .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-title {
-  /* font-family: Poppins; */
-  font-size: 3.2rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #333333;
   margin-top: 2rem;
 }

@@ -38,8 +38,8 @@
               <div class="blog-content-grid_item" data-type="{{ article.metafields.custom.second_type.value.name }}">
                 <a href="{{ article.url }}">
                   <img src="{{ article.image.src | image_url }}" alt="{{ article.image.src.alt | escape }}">
-                  <div class="article-published_at">{{ article.published_at | time_tag: '%Y.%m.%d' }}</div>
-                  <div class="article-title">{{ article.title | truncate: 50 | escape }}</div>
+                  <div class="article-published_at text_24">{{ article.published_at | time_tag: '%Y.%m.%d' }}</div>
+                  <h4 class="article-title">{{ article.title | truncate: 50 | escape }}</h4>
                 </a>
               </div>
             {%- endfor -%}
