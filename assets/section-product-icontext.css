@@ -1,7 +1,8 @@
 .product-icontext {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .product-icontext .product-icontext-heading {
