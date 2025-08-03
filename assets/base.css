@@ -3801,14 +3801,14 @@ a {
 }
 @media screen and (max-width: 1440px) {
   .swiper-father .swiper-button-prev svg, .swiper-father .swiper-button-next svg{
-    width: 5rem;
-    height: 5rem;
+    width: 5rem!important;
+    height: 5rem!important;
   }
 }
 @media screen and (max-width: 1024px) {
   .swiper-father .swiper-button-prev svg, .swiper-father .swiper-button-next svg{
-    width: 4rem;
-    height: 4rem;
+    width: 4rem!important;
+    height: 4rem!important;
   }
 }
 
