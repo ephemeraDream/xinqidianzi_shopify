@@ -100,7 +100,8 @@
 
 .product-longtext .product-longtext-box .product-longtext-box-img {
   flex: 0 0 50%;
-  height: 41rem;
+  /* height: 41rem; */
+  height: auto;
   object-fit: cover;
   object-position: center center;
   border-radius: 1.6rem;
