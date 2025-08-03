@@ -156,4 +156,7 @@
   .home-blog {
     padding-bottom: 6rem;
   }
+  .home-blog .blog-contain .blog-item-left {
+    height: 55rem;
+  }
 }
