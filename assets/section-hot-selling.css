@@ -168,17 +168,17 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .hot-selling-swiper {
+  /* .hot-selling-swiper {
     padding-left: 6rem;
     padding-right: 6rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
-  .hot-selling-swiper {
+  /* .hot-selling-swiper {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
+  } */
 
   .hot-selling-swiper .swiper-slide {
     flex-wrap: wrap;
@@ -199,8 +199,8 @@
   }
 
   .hot-selling-swiper {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     margin-top: 4rem;
   }
 
