@@ -214,4 +214,8 @@
   .hot-selling-swiper .swiper-slide-left .carousel-image {
     height: auto;
   }
+  .hot-selling-swiper .swiper-slide-left .product-box .product-image {
+    width: 6rem;
+    height: 6rem;
+  }
 }

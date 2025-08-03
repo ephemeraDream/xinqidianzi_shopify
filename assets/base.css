@@ -3881,3 +3881,42 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/***************************** text truncate... /*****************************/
+.truncate-3-lines {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em; 
+  line-height: 1em;
+}
+.truncate-2-lines {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-line-clamp: 2;  
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 2em; 
+  line-height: 1em;
+}
+.truncate-1-lines {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 1em; 
+  line-height: 1em;
+}
+/***************************** text truncate end *****************************/
