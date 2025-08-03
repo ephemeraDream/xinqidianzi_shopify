@@ -34,10 +34,10 @@
 
 @media screen and (max-width: 767px) {
   .product-icontext .product-icontext-contain{
-    flex-wrap: wrap;
+    gap: 4rem 6%;
   }
 
   .product-icontext .product-icontext-box{
-    flex: 0 0 100%;
+    flex: 0 0 46%;
   }
 }
