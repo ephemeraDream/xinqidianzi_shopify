@@ -3701,7 +3701,7 @@ a {
 }
 
 /****************************fxy-font-size******************************/
-.h2_52{
+.h2_52,h2{
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -3732,7 +3732,7 @@ a {
 }
 .text-body{font-size: 2rem;}
 @media screen and (max-width: 1440px) {
-  .h2_52{
+  .h2_52,h2{
     font-size: 4.8rem;
   }
   .h3_48{
@@ -3750,7 +3750,7 @@ a {
   .text-body{font-size: 1.8rem;}
 }
 @media screen and (max-width: 1024px) {
-  .h2_52{
+  .h2_52,h2{
     font-size: 3.6rem;
   }
   .h3_48{
@@ -3769,7 +3769,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .h2_52{
+  .h2_52,h2{
     font-size: 3.2rem;
   }
   .h3_48{
