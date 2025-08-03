@@ -30,13 +30,14 @@
   padding-bottom: 4rem;
   z-index: 1;
   flex-wrap: wrap;
+  padding:6rem 1.6rem 4rem
 }
 
 .home-banner-box-heading {
   display: flex;
-  align-items: baseline;
   justify-content: center;
   flex: 1;
+  align-items: center;
 }
 
 .home-banner-box-heading h2 {
