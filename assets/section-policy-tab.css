@@ -56,20 +56,14 @@
 }
 
 .policy-tab .policy-tab-right .policy-tab-content h2 {
-  /* font-family: Poppins; */
-  font-size: 6.2rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #333333;
 }
 
 .policy-tab .policy-tab-right .policy-tab-content p {
   /* font-family: Poppins; */
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.3em;
   letter-spacing: 0px;
   font-variation-settings: "opsz" auto;
   color: #333333;
@@ -81,5 +75,8 @@
   }
   .policy-tab .policy-tab-left {
     width: 100%;
+  }
+  .policy-tab .policy-tab-right .policy-tab-content p {
+    font-size: 2rem;\
   }
 }
