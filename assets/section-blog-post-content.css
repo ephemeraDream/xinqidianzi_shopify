@@ -68,13 +68,14 @@
   margin-top: 6rem;
 }
 
-.blog-post-image_with_text img,.blog-post-content img{
+.blog-post-image_with_text img{
   flex: 1;
   width: calc(100% - 73rem);
   object-fit: cover;
   object-position: center center;
   border-radius: 1.6rem;
 }
+
 
 .blog-post-image_with_text .blog-post-image_with_text-content {
   flex: 0 0 60rem;
@@ -141,6 +142,9 @@
 }
 .blog-post-content .blog-post-title {
   font-size:3.8rem;
+}
+.blog-post-content img{
+  width: 100%;
 }
 }
 
