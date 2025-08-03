@@ -3780,3 +3780,21 @@ a {
   }
 
 }
+
+/****************************fxy-swiper******************************/
+.swiper-father .swiper-button-prev svg, .swiper-father .swiper-button-next svg{
+    width: 6rem;
+    height: 6rem;
+}
+@media screen and (max-width: 1440px) {
+  .swiper-father .swiper-button-prev svg, .swiper-father .swiper-button-next svg{
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-father .swiper-button-prev svg, .swiper-father .swiper-button-next svg{
+    width: 4rem;
+    height: 4rem;
+  }
+}
