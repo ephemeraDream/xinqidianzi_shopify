@@ -50,4 +50,11 @@
   .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item {
     flex: 0 0 100%;
   }
+  .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item h4 {
+    font-size: 2rem;
+  }
+  .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item p {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
 }
