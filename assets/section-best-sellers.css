@@ -98,22 +98,6 @@
   margin-left: 2rem;
 }
 
-.best-sellers-swiper .product-btn {
-  /* font-family: Blinker; */
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  text-decoration: underline;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
-  color: #000000;
-}
-
-.best-sellers-swiper .product-btn:hover {
-  color: #ebb069;
-}
-
 .best-sellers-swiper .product-image {
   position: relative;
 }
