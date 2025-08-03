@@ -5,26 +5,11 @@
 }
 
 .home-blog-heading {
-  /* font-family: Blinker; */
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: normal;
-  /* text-transform: capitalize; */
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #000000;
   text-align: center;
 }
 
 .home-blog-text {
-  /* font-family: Blinker; */
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #777777;
   margin-top: 2.6rem;
   text-align: center;
@@ -67,38 +52,22 @@
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info .blog-title {
-  /* font-family: Blinker; */
-  font-size: 3.2rem;
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #ffffff;
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info .blog-excerpt {
-  /* font-family: Blinker; */
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #ffffff;
   margin-top: 2.4rem;
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info a {
-  /* font-family: Poppins; */
-  font-size: 2rem;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 0em;
   text-decoration: underline;
-  font-variation-settings: "opsz" auto;
   color: #ffffff;
-  text-underline-offset: 0.4rem;
 }
 
 .home-blog .blog-contain .blog-item-left .blog-info a:hover,

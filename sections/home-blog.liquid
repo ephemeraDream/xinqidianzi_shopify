@@ -4,7 +4,7 @@
   <h2 class="home-blog-heading">
     {{ section.settings.heading }}
   </h2>
-  <div class="home-blog-text">{{ section.settings.text }}</div>
+  <div class="home-blog-text text_24">{{ section.settings.text }}</div>
 
     <div class="blog-contain">
       {% if section.blocks.size > 0 %}
@@ -16,12 +16,12 @@
               {% endif %}
               <div class="blog-info">
                 <div>
-                  <h3 class="blog-title">
+                  <h3 class="blog-title text_32">
                     {{ block.settings.article.title | truncate: 35 }}
                   </h3>
-                  <div class="blog-excerpt">{{ block.settings.article.excerpt | strip_html | truncate: 250 }}</div>
+                  <div class="blog-excerpt text_20">{{ block.settings.article.excerpt | strip_html | truncate: 250 }}</div>
                 </div>
-                <a href="{{ block.settings.article.url }}">Learn more</a>
+                <a href="{{ block.settings.article.url }}" class="text_btn_20">Learn more</a>
               </div>
             </div>
           {% else %}
@@ -34,12 +34,12 @@
               {% endif %}
               <div class="blog-info">
                 <div>
-                  <h3 class="blog-title">
+                  <h3 class="blog-title text_32">
                     {{ block.settings.article.title | truncate: 24 }}
                   </h3>
-                  <div class="blog-excerpt">{{ block.settings.article.excerpt | strip_html | truncate: 184 }}</div>
+                  <div class="blog-excerpt text_20">{{ block.settings.article.excerpt | strip_html | truncate: 184 }}</div>
                 </div>
-                <a href="{{ block.settings.article.url }}">Learn more</a>
+                <a href="{{ block.settings.article.url }}" class="text_btn_20">Learn more</a>
               </div>
             </div>
             {% if forloop.index0 == 2 %}
