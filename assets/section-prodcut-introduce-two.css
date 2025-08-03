@@ -10,12 +10,6 @@
 }
 
 .product-introduce-two .product-introduce-two-text h4 {
-  /* font-family: Blinker; */
-  font-size: 3.2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #333333;
   font-weight: 600;
 }
@@ -77,5 +71,9 @@
 
   .product-introduce-two .product-introduce-two-box.product-introduce-two-box-right {
     flex-direction: column-reverse;
+  }
+  .product-introduce-two .product-introduce-two-text p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
   }
 }
