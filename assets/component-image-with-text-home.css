@@ -405,7 +405,11 @@
   font-size: 2.8rem;
   margin-top: 11.3rem;
 }
-
+@media screen and (max-width: 1440px) {
+  .home-image-with-text .image-with-text__text-item {
+    padding-right: 4rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .home-image-with-text .image-with-text__grid {
     flex-wrap: wrap;
