@@ -8,7 +8,7 @@
       {% if blog_item %}
         <div class="recipe-collection-item">
           <div class="recipe-collection-item-head" data-blog-handle="{{ block.settings.blog_handle }}">
-            <h3>{{ blog_item.title }}</h3>
+            <h5>{{ blog_item.title }}</h5>
             {{- 'icon-plus.svg' | inline_asset_content -}}
           </div>
           {% if section.settings.layout == 'article' %}
