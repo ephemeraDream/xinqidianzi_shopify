@@ -3727,11 +3727,11 @@ a {
 }
 .h6_22{
   font-size: 2.2rem;
-  line-height: 1.1em;
+  line-height: 1.2em;
   letter-spacing: 0em;
 }
-.text_24{font-size: 2.4rem;line-height: 1.1em;}
-.text_20{font-size: 2rem;line-height: 1.1em;}
+.text_24{font-size: 2.4rem;line-height: 1.2em;}
+.text_20{font-size: 2rem;line-height: 1.2em;}
 @media screen and (max-width: 1440px) {
   .h2_52,h2{
     font-size: 4.8rem;
