@@ -144,6 +144,10 @@
   .blog-item-right-group {
     gap: 4.8rem;
   }
+  .home-blog .blog-contain .blog-item-left{
+    max-width: 100%;
+    width: 1024px;
+  }
 }
 
 @media screen and (max-width: 767px) {
