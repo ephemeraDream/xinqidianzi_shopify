@@ -68,7 +68,7 @@
   margin-top: 6rem;
 }
 
-.blog-post-image_with_text img {
+.blog-post-image_with_text img,.blog-post-content img{
   flex: 1;
   width: calc(100% - 73rem);
   object-fit: cover;
