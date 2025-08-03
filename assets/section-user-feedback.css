@@ -10,12 +10,13 @@
 
 .user-feedback-swiper .user-feedback-info {
   width: 35.6rem;
-  max-width: 30%;
   padding-right: 3.6rem;
   height: auto;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
+  max-width: 30%;
+  min-width: 21rem;
 }
 
 .user-feedback-swiper .user-feedback-info h2 {
@@ -137,6 +138,10 @@
 @media screen and (max-width: 1024px) {
   .user-feedback {
     padding-left: 4rem;
+  }
+  .user-feedback-swiper .user-feedback-info {
+    padding-right: 0rem;
+    min-width: 19rem;
   }
 }
 
