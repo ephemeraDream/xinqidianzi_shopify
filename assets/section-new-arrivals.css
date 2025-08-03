@@ -5,14 +5,6 @@
 
 .new-arrivals-heading {
   text-align: center;
-  /* font-family: Blinker; */
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: capitalize;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #000000;
 }
 
@@ -76,24 +68,10 @@
 }
 
 .new-arrivals-contain .product-info .product-title a {
-  /* font-family: Blinker; */
-  font-size: 3.6rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #1a1a1a;
 }
 
 .new-arrivals-contain .product-info .product-price {
-  /* font-family: Blinker; */
-  font-size: 2.8rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #1a1a1a;
   margin-top: 1.6rem;
 }

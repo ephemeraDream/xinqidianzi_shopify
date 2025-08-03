@@ -3813,6 +3813,35 @@ a {
 .text_btn_24:hover {
   color: #ebb069;
 }
+
+.new-arrivals-button a {
+  border-radius: 41.6rem;
+  background: #ebb069;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 6.35rem;
+  /* font-family: Blinker; */
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: 1em;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #ffffff;
+}
+@media screen and (max-width: 1440px) {
+  .new-arrivals-button a {
+    padding: 2rem 4rem;
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .new-arrivals-button a {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .text_btn_24{
     font-size: 2rem;
