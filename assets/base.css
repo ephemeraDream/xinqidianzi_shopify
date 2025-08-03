@@ -3841,7 +3841,7 @@ a {
   color: #ebb069;
 }
 
-.xq_btn_36 a {
+.xq_btn_36 a,.button.button--primary {
   border-radius: 41.6rem;
   background: #ebb069;
   display: inline-flex;
@@ -3857,17 +3857,17 @@ a {
   font-feature-settings: "kern" on;
   color: #ffffff;
 }
-.xq_btn_36 a:hover {
+.xq_btn_36 a:hover,.button.button--primary:hover {
   background: #e19942;
 }
 @media screen and (max-width: 1440px) {
-  .xq_btn_36 a {
+  .xq_btn_36 a,.button.button--primary {
     padding: 2rem 4rem;
     font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .xq_btn_36 a {
+  .xq_btn_36 a,.button.button--primary {
     padding: 1.5rem 2.4rem;
     font-size: 2rem;
   }

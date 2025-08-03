@@ -392,41 +392,16 @@
 }
 
 .home-image-with-text .image-with-text__text-item .image-with-text__heading {
-  /* font-family: Blinker; */
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #000000;
 }
 
 .home-image-with-text .image-with-text__text-item .image-with-text__text {
-  /* font-family: Blinker; */
-  font-size: 3.2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #767676;
   margin-top: 5rem;
 }
 
 .home-image-with-text .image-with-text__text-item .button.button--primary {
-  /* font-family: Poppins; */
   font-size: 2.8rem;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  color: #ffffff;
-  padding: 2.1rem 11.8rem;
-  border-radius: 36.1rem;
-  background: #ebb069;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 11.3rem;
 }
 
@@ -448,5 +423,7 @@
   .home-image-with-text .image-with-text__text-item .button.button--primary {
     padding: 2.1rem 0;
     width: 100%;
+    font-size: 2rem;
   }
+
 }
