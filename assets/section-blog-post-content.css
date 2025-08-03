@@ -151,6 +151,9 @@
   width: 100%;
   height: auto;
 }
+.blog-post-content .blog-post-image {
+  width: 100%;  height: auto;
+}
 }
 
 @media screen and (max-width: 767px) {
