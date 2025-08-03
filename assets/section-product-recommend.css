@@ -93,7 +93,7 @@
   /* font-family: Blinker; */
   font-size: 1.8rem;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.2em;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
@@ -171,4 +171,10 @@
   .product-recommend {
     padding-top: 6rem;
   }
+  .product-recommend .product-recommend-swiper .product-item .product-info .flex-center {
+    flex-direction: column;
+  }
+  .product-recommend .product-recommend-swiper .product-item .product-info .product-desc {
+    font-size: 1.4rem;
+}
 }
