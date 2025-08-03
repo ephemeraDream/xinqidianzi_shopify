@@ -1,8 +1,8 @@
 {{ 'section-product-list.css' | asset_url | stylesheet_tag }}
 
 <div id="section-{{ section.id }}" class="product-list">
-  <h2 class="product-list-heading">{{ section.settings.heading }}</h2>
-  <div class="product-list-text">{{ section.settings.text }}</div>
+  <h3 class="product-list-heading">{{ section.settings.heading }}</h3>
+  <div class="product-list-text text_24">{{ section.settings.text }}</div>
   <div class="swiper product-list-swiper">
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
