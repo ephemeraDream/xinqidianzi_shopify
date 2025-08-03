@@ -12,12 +12,12 @@
           title="{{ block.settings.heading | escape }}"
         ></iframe>
         <div class="flex-center">
-          <h3 class="blog-title">
+          <h5 class="blog-title">
             {{ block.settings.heading }}
-          </h3>
+          </h5>
           <span class="blog-date">{{ block.settings.date }}</span>
         </div>
-        <div class="blog-excerpt">{{ block.settings.description }}</div>
+        <div class="blog-excerpt text_20">{{ block.settings.description }}</div>
       </div>
     {% endfor %}
   </div>

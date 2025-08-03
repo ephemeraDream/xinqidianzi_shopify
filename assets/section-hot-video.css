@@ -29,14 +29,7 @@
 }
 
 .hot-video .blog-list .blog-item .blog-title {
-  /* font-family: Blinker; */
-  font-size: 2.8rem;
-  font-weight: 600;
-  line-height: normal;
   text-transform: capitalize;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #000000;
 }
 
@@ -52,12 +45,7 @@
 }
 
 .hot-video .blog-list .blog-item .blog-excerpt {
-  /* font-family: Blinker; */
-  font-size: 2rem;
-  font-weight: normal;
   line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #767676;
   margin-top: 1.6rem;
   word-break: break-word;
@@ -66,6 +54,9 @@
 @media screen and (max-width: 1024px) {
   .hot-video .blog-list .blog-item {
     flex: 0 0 calc((100% - 2.4rem) / 2);
+  }
+  .hot-video .blog-list .blog-item .blog-date {
+    font-size: 1.4rem;
   }
 }
 
