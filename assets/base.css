@@ -3704,25 +3704,25 @@ a {
 .h2_52,h2{
   font-size: 5.2rem;
   font-weight: bold;
-  line-height: 1.1em;
+  line-height: 1.2em;
   letter-spacing: 0em;
   /* font-family: Poppins; */
 }
 .h3_48,h3{
   font-size: 4.8rem;
   font-weight: bold;
-  line-height: 1.1em;
+  line-height: 1.2em;
   letter-spacing: 0em;
 }
 .h4_36,h4{
   font-size: 3.6rem;
   font-weight: bold;
-  line-height: 1.1em;
+  line-height: 1.2em;
   letter-spacing: 0em;
 }
 .h5_28,h5{
   font-size: 2.8rem;
-  line-height: 1.1em;
+  line-height: 1.2em;
   letter-spacing: 0em;
 }
 .h6_22{
@@ -3730,7 +3730,7 @@ a {
   line-height: 1.2em;
   letter-spacing: 0em;
 }
-.text_32{font-size: 3.2rem;line-height: 1.1em;}
+.text_32{font-size: 3.2rem;line-height: 1.2em;}
 .text_24{font-size: 2.4rem;line-height: 1.2em;}
 .text_20{font-size: 2rem;line-height: 1.2em;}
 @media screen and (max-width: 1440px) {
