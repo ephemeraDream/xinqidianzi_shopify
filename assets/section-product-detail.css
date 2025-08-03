@@ -120,11 +120,11 @@
   /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
-  line-height: normal;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
   color: #000000;
+  line-height: 1.3em;
 }
 
 .product-detail .product-detail-right .product-detail-compare_at_price {
