@@ -71,11 +71,11 @@
             <div class="product-info">
               <div class="product-desc">{{ product.description | truncate: 45 }}</div>
               <div class="flex-center">
-                <h3 class="product-title">
+                <h5 class="product-title">
                   <a href="{{ product.url }}">{{ product.title }}</a>
-                </h3>
+                </h5>
               </div>
-              <div class="product-price">{{ product.price | money }}</div>
+              <div class="product-price text_24">{{ product.price | money }}</div>
             </div>
           </div>
         {% endfor %}

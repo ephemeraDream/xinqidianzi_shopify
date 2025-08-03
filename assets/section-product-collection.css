@@ -155,24 +155,11 @@
 }
 
 .product-collection .product-grid .product-item .product-info .flex-center .product-title a {
-  /* font-family: Blinker; */
-  font-size: 2.8rem;
   font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #000000;
 }
 
 .product-collection .product-grid .product-item .product-info .product-price {
-  /* font-family: Blinker; */
-  font-size: 2.4rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #3d3d3d;
   flex: 0 0 auto;
   margin-top: 0.3rem;
@@ -235,6 +222,9 @@
   }
   .product-collection .categorize-group .categorize-group-btn {
     font-size: 2.4rem;
+  }
+  .product-collection .product-grid .product-item .product-info .product-desc {
+    font-size: 1.4rem;
   }
 }
 
