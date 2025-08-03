@@ -116,6 +116,10 @@
   object-fit: cover;
   object-position: center center;
 }
+.blog-post-content p img{
+  width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 1440px) {
 .blog-post-content .blog-post-title {
   font-size:4.8rem;
