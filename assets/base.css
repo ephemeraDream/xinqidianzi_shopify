@@ -3739,13 +3739,13 @@ a {
     font-size: 4.8rem;
   }
   .h3_48,h3{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
   .h4_36,h4{
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   .h5_28,h5{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
   .h6_22{
     font-size: 2rem;
@@ -3756,16 +3756,16 @@ a {
 }
 @media screen and (max-width: 1024px) {
   .h2_52,h2{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
   }
   .h3_48,h3{
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   .h4_36,h4{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
   .h5_28,h5{
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .h6_22{
     font-size: 1.8rem;
@@ -3777,16 +3777,16 @@ a {
 
 @media screen and (max-width: 767px) {
   .h2_52,h2{
-    font-size: 3.2rem;
+    font-size: 3.4rem;
   }
   .h3_48,h3{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
   .h4_36,h4{
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .h5_28,h5{
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .h6_22{
     font-size: 1.6rem;
