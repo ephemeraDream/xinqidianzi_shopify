@@ -4,13 +4,6 @@
 }
 
 .hot-selling-heading {
-  /* font-family: Blinker; */
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #000000;
   text-align: center;
 }
@@ -66,42 +59,21 @@
   object-position: center center;
 }
 
-.hot-selling-swiper .swiper-slide-left .product-box .product-info h3 {
-  /* font-family: Poppins; */
-  font-size: 2rem;
+.hot-selling-swiper .swiper-slide-left .product-box .product-info .text_20 {
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #ffffff;
 }
 
 .hot-selling-swiper .swiper-slide-left .product-box .product-info .product-price {
-  /* font-family: Poppins; */
-  font-size: 2rem;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #ffffff;
   margin-top: 1.2rem;
 }
 
 .hot-selling-swiper .swiper-slide-left .product-box .product-btn {
-  /* font-family: Poppins; */
-  font-size: 2rem;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  text-decoration: underline;
-  font-variation-settings: "opsz" auto;
   color: #ffffff;
-  text-underline-offset: 0.8rem;
   flex: 0 0 auto;
-}
-
-.hot-selling-swiper .swiper-slide-left .product-box .product-btn:hover {
-  color: #ebb069;
 }
 
 .hot-selling-swiper .carousel-text h2 {

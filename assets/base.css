@@ -3809,8 +3809,23 @@ a {
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
   color: #000;
+  text-underline-offset: 0.8rem;
 }
 .text_btn_24:hover {
+  color: #ebb069;
+}
+.text_btn_20{
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-decoration: underline;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #000;
+  text-underline-offset: 0.8rem;
+}
+.text_btn_20:hover {
   color: #ebb069;
 }
 
@@ -3848,5 +3863,8 @@ a {
 @media screen and (max-width: 767px) {
   .text_btn_24{
     font-size: 2rem;
+  }
+  .text_btn_20{
+    font-size: 1.6rem;
   }
 }
