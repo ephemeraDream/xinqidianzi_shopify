@@ -34,7 +34,7 @@
   /* font-family: Blinker; */
   font-size: 2.8rem;
   font-weight: normal;
-  line-height: 3rem;
+  line-height: 1.3em;
   text-transform: capitalize;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
@@ -77,6 +77,10 @@
     width: 100%;
   }
   .policy-tab .policy-tab-right .policy-tab-content p {
-    font-size: 2rem;\
+    font-size: 2rem;
+  }
+  .policy-tab .policy-tab-left .policy-tab-list-item {
+
+    font-size: 2rem;
   }
 }
