@@ -210,4 +210,8 @@
   .hot-selling-swiper .swiper-slide-left .product-box {
     padding-right: 1.6rem;
   }
+
+  .hot-selling-swiper .swiper-slide-left .carousel-image {
+    height: auto;
+  }
 }

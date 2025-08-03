@@ -102,4 +102,7 @@
   .new-arrivals-contain {
     margin-top: 4rem;
   }
+  .new-arrivals-contain .product-card .product-image {
+    height: 40rem;
+  }
 }
