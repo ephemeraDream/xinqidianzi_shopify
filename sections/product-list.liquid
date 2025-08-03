@@ -59,14 +59,14 @@
 
           <div class="product-info">
             <div class="flex-center">
-              <h3 class="product-title">{{ block.settings.product.title }}</h3>
+              <h4 class="product-title">{{ block.settings.product.title }}</h4>
               <div class="flex-center">
-                <span class="product-price">{{ block.settings.product.price | money }}</span>
-                <span class="product-compare_at_price">{{ block.settings.product.compare_at_price | money }}</span>
+                <span class="product-price text_32">{{ block.settings.product.price | money }}</span>
+                <span class="product-compare_at_price text_24">{{ block.settings.product.compare_at_price | money }}</span>
               </div>
             </div>
             <div class="flex-center">
-              <div class="product-description">{{ block.settings.product.description }}</div>
+              <div class="product-description text_24">{{ block.settings.product.description }}</div>
               <div class="swiper-navigation product-variant-navigation-{{ block.settings.product.id }}"></div>
             </div>
           </div>
