@@ -93,26 +93,14 @@
 }
 
 .user-feedback-swiper .product-card .product-box .product-info h3 {
-  /* font-family: Poppins; */
-  font-size: 2rem;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #000000;
   margin-bottom: 1.2rem;
 }
 
 .user-feedback-swiper .product-card .product-box .product-btn {
-  /* font-family: Poppins; */
-  font-size: 2rem;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  text-decoration: underline;
-  font-variation-settings: "opsz" auto;
   color: #212721;
-  text-underline-offset: 0.8rem;
   flex: 0 0 auto;
   margin-bottom: 1.3rem;
 }
