@@ -97,4 +97,10 @@
     flex: 0 0 100%;
     margin-top: 0;
   }
+  .contact-form .contact-form-field .field-label {
+    font-size: 1.8rem;
+}
+.contact-form .contact-form-field .field-input {
+  font-size: 1.8rem;
+}
 }
