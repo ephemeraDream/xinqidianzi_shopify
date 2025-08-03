@@ -42,6 +42,7 @@
   bottom: 0;
   padding-left: 1.6rem;
   padding-right: 6rem;
+  gap:1rem;
 }
 
 .hot-selling-swiper .swiper-slide-left .product-box .product-info {
