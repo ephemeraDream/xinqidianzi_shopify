@@ -1,27 +1,15 @@
 .product-icontext {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .product-icontext .product-icontext-heading {
-  /* font-family: Blinker; */
-  font-size: 4.8rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #333333;
   text-align: center;
 }
 
 .product-icontext .product-icontext-text {
-  /* font-family: Blinker; */
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #767676;
   margin-top: 2.4rem;
 }
@@ -34,12 +22,6 @@
 }
 
 .product-icontext .product-icontext-box {
-  /* font-family: Blinker; */
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  font-variation-settings: "opsz" auto;
   color: #767676;
   text-align: center;
 }

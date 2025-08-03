@@ -1,13 +1,13 @@
 {{ 'section-product-icontext.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="product-icontext">
-  <h2 class="product-icontext-heading">{{ section.settings.heading }}</h2>
-  <div class="product-icontext-text">{{ section.settings.text }}</div>
+<div id="section-{{ section.id }}" class="product-icontext padding-sider">
+  <h3 class="product-icontext-heading">{{ section.settings.heading }}</h3>
+  <div class="product-icontext-text text_20">{{ section.settings.text }}</div>
   <div class="product-icontext-contain">
     {% for block in section.blocks %}
       <div class="product-icontext-box">
         {{ block.settings.icon }}
-        <div>{{ block.settings.text }}</div>
+        <div class="text_20">{{ block.settings.text }}</div>
       </div>
     {% endfor %}
   </div>
