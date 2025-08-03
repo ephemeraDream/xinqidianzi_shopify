@@ -1,10 +1,10 @@
 {{ 'section-contact-form-new.css' | asset_url | stylesheet_tag }}
 
 <div id="section-{{ section.id }}" class="contact-form padding-sider">
-  <h2 class="contact-form-heading">
+  <h3 class="contact-form-heading">
     {{ section.settings.heading }}
-  </h2>
-  <div class="contact-form-text">{{ section.settings.text }}</div>
+  </h3>
+  <div class="contact-form-text text_24">{{ section.settings.text }}</div>
   <div class="contact-form-line"></div>
   {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
     <div class="flex-center">
