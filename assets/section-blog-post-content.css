@@ -9,7 +9,7 @@
   /* font-family: Blinker; */
   font-size: 6.8rem;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.2em;
   text-align: center;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
@@ -115,7 +115,11 @@
   object-fit: cover;
   object-position: center center;
 }
-
+@media screen and (max-width: 1440px) {
+.blog-post-content .blog-post-title {
+  font-size:4.8rem;
+}
+}
 @media screen and (max-width: 1024px) {
   .blog-post-image_with_text,
   .blog-post-text_with_two_images .blog-post-text_with_two_images-imgbox {
@@ -131,6 +135,9 @@
 .blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
   font-size: 2.4rem;
 }
+.blog-post-content .blog-post-title {
+  font-size:3.8rem;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -141,5 +148,8 @@
 .blog-post-image_with_text .blog-post-image_with_text-content p,
 .blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
   font-size: 2rem;
+}
+.blog-post-content .blog-post-title {
+  font-size:3.4rem;
 }
 }
