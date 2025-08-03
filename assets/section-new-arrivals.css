@@ -91,9 +91,6 @@
   .new-arrivals-contain .product-card {
     width: 100%;
   }
-  .new-arrivals-button a {
-    font-size: 2.5rem;
-  }
 }
 
 @media screen and (max-width: 767px) {
