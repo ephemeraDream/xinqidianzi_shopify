@@ -82,13 +82,6 @@
 
 .blog-post-image_with_text .blog-post-image_with_text-content h2,
 .blog-post-text_with_two_images .blog-post-text_with_two_images-content h2 {
-  /* font-family: Blinker; */
-  font-size: 6.8rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  font-feature-settings: "kern" on;
   color: #333333;
 }
 
@@ -97,7 +90,7 @@
   /* font-family: Blinker; */
   font-size: 3.6rem;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.3em;
   letter-spacing: 0px;
   font-variation-settings: "opsz" auto;
   color: #333333;
@@ -134,11 +127,19 @@
     width: 100%;
     flex: 0 0 100%;
   }
+  .blog-post-image_with_text .blog-post-image_with_text-content p,
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
+  font-size: 2.4rem;
+}
 }
 
 @media screen and (max-width: 767px) {
 .blog-post-content .blog-post-title {
   font-size: 5rem;
   margin-bottom: 5rem;
+}
+.blog-post-image_with_text .blog-post-image_with_text-content p,
+.blog-post-text_with_two_images .blog-post-text_with_two_images-content p {
+  font-size: 2rem;
 }
 }
