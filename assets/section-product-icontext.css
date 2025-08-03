@@ -35,6 +35,7 @@
 @media screen and (max-width: 767px) {
   .product-icontext .product-icontext-contain{
     gap: 4rem 6%;
+    flex-wrap: wrap;
   }
 
   .product-icontext .product-icontext-box{

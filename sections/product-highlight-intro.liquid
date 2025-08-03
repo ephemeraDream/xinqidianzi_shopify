@@ -1,7 +1,7 @@
 {{ 'section-product-highlight-intro.css' | asset_url | stylesheet_tag }}
 
 <div id="section-{{ section.id }}" class="product-highlight-intro padding-sider">
-  <h2 class="product-highlight-intro-title">{{ product.metafields.custom.highlight_intro_title }}</h2>
+  <h3 class="product-highlight-intro-title">{{ product.metafields.custom.highlight_intro_title }}</h3>
   <div class="product-highlight-intro-contain">
     <div class="product-highlight-intro-item">
       {{ product.metafields.custom.highlight_intro_one | metafield_tag }}

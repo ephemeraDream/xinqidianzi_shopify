@@ -1,16 +1,11 @@
 .product-highlight-intro {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
 }
 
 .product-highlight-intro .product-highlight-intro-title {
-  /* font-family: Blinker; */
-  font-size: 4.8rem;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #333333;
   text-align: center;
 }
