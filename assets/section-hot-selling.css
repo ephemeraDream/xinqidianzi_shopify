@@ -190,6 +190,7 @@
 
   .hot-selling-swiper .swiper-slide-left .carousel-image {
     width: 100%;
+    height: auto;
   }
 
   .hot-selling-swiper .carousel-text p {
