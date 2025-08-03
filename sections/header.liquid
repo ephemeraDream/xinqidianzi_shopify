@@ -57,7 +57,7 @@
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
     /* font-family: Poppins; */
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 3rem;
     {% comment %} text-transform: capitalize; {% endcomment %}
@@ -72,7 +72,11 @@
     padding-top: 1rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
   }
-
+  @media screen and (min-width: 1300px) {
+    .list-menu__item {
+      ont-size: 2rem;
+    }
+  }
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;

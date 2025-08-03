@@ -2,6 +2,9 @@
   font-size: 3.2rem;
   color: #ebb069;
   padding: 1.6rem 0;
+  font-weight: bold;
+  line-height: 1.1em;
+  letter-spacing: 0em;
 }
 
 .utility-bar.gradient {
