@@ -3703,18 +3703,31 @@ a {
 /****************************fxy-font-size******************************/
 .h2_52{
   font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 1.1em;
+  letter-spacing: 0em;
 }
 .h3_48{
   font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1.1em;
+  letter-spacing: 0em;
 }
 .h4_36{
   font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.1em;
+  letter-spacing: 0em;
 }
 .h5_28{
   font-size: 2.8rem;
+  line-height: 1.1em;
+  letter-spacing: 0em;
 }
 .h6_22{
   font-size: 2.2rem;
+  line-height: 1.1em;
+  letter-spacing: 0em;
 }
 .text-body{font-size: 2rem;}
 @media screen and (max-width: 1440px) {
@@ -3761,5 +3774,5 @@ a {
   .h3_48{
     font-size: 2.2rem;
   }
-  
+
 }
