@@ -168,12 +168,15 @@
 }
 
 @media screen and (max-width: 1600px) {
-  /* .hot-selling-swiper {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  } */
+  .hot-selling-swiper .swiper-slide {
+    gap: 4rem 8rem;
+  }
 }
-
+@media screen and (max-width: 1440px) {
+  .hot-selling-swiper .swiper-slide {
+    gap: 4rem 4rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   /* .hot-selling-swiper {
     padding-left: 4rem;
