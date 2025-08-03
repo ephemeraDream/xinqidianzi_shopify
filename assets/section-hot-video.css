@@ -31,6 +31,7 @@
 .hot-video .blog-list .blog-item .blog-title {
   text-transform: capitalize;
   color: #000000;
+  font-weight: 600;
 }
 
 .hot-video .blog-list .blog-item .blog-date {
