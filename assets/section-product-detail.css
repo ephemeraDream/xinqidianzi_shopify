@@ -424,6 +424,7 @@
 .product-detail .product-detail-right .recommendations-product-box .recommendations-product-info h3 {
   color: #3d3d3d;
   opacity: 0.8;
+  font-weight: 500;
 }
 
 .product-detail .product-detail-right .recommendations-product-box .recommendations-product-info .recommendations-product-price {
@@ -471,9 +472,8 @@
   align-items: center;
   /* font-family: Blinker; */
   font-size: 1.8rem;
-  line-height: 1.1em;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.1em;
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
