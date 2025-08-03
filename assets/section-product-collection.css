@@ -233,6 +233,9 @@
     width: 100%;
     flex-wrap: wrap;
   }
+  .product-collection .categorize-group .categorize-group-btn {
+    font-size: 2.4rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
