@@ -548,4 +548,12 @@
   .product-detail .product-detail-right .product-detail-title {
     font-size: 2.8rem;
   }
+  .product-detail .product-detail-right .product-detail-quantity {
+    width: 100%;
+    height: 5.8rem;
+  }
+  .product-detail .product-detail-right .product-detail-buybox .product-detail-add_cart_btn,
+  .product-detail .product-detail-right .product-detail-buybox .shopify-payment-button button{
+    height: 5.8rem;
+  }
 }
