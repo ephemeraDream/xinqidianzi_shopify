@@ -506,7 +506,11 @@
 .product-detail .product-detail-sale_word_box_text {
   color: #000;
 }
-
+#judgeme_product_reviews{
+  padding-top: 6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 @media screen and (max-width: 1024px) {
   .product-detail {
     flex-wrap: wrap;
@@ -533,6 +537,11 @@
 
   .product-detail .product-detail-left {
     position: relative;
+  }
+  #judgeme_product_reviews{
+    padding-top: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
