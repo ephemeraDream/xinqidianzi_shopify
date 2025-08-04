@@ -333,7 +333,7 @@
     </a>
 
     {%- if settings.cart_type == 'drawer' -%}
-      {%- sections 'cart-drawer-group' -%}
+      {%- sections 'cart-drawer' -%}
     {%- endif -%}
 
     {% sections 'header-group' %}
@@ -403,7 +403,6 @@
 
     <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
     {%- if settings.cart_type == 'drawer' -%}
-      {% section 'cart-drawer' %}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
