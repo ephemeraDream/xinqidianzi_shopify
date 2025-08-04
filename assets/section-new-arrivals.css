@@ -49,6 +49,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+    cursor: pointer;
 }
 
 .new-arrivals-contain .product-card .product-btn:hover {
