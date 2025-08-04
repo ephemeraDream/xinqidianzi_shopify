@@ -563,4 +563,12 @@
   .product-detail .product-detail-left .imgthumb-swiper-box .imgthumb-swiper-prev, .product-detail .product-detail-left .imgthumb-swiper-box .imgthumb-swiper-next {
     top: 6.5rem;
   }
+  .product-detail { 
+    gap: 0rem;
+}
+#judgeme_product_reviews{
+  padding-top: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 }
