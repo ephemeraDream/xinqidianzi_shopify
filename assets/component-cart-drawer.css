@@ -455,7 +455,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .cart-drawer .recommendations-complementary-swiper {
   padding: 2.4rem 1.2rem;
   margin: 0 -1.2rem;
-  height: 26rem;
+  height: 20rem;
 }
 
 .cart-drawer .recommendations-complementary-swiper .swiper-wrapper {
