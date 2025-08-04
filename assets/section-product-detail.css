@@ -124,7 +124,7 @@
   font-variation-settings: "opsz" auto;
   font-feature-settings: "kern" on;
   color: #000000;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .product-detail .product-detail-right .product-detail-compare_at_price {
@@ -544,5 +544,8 @@
     flex-direction: column;
     align-items: flex-end;
     padding: 1.6rem;
+  }
+  .product-detail .product-detail-right .product-detail-title {
+    font-size: 2.8rem;
   }
 }
