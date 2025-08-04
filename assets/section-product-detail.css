@@ -556,4 +556,8 @@
   .product-detail .product-detail-right .product-detail-buybox .shopify-payment-button button{
     height: 5.8rem;
   }
+  .product-detail .product-detail-left .imgthumb-swiper .swiper-slide{
+    width: 12rem;
+    height: 12rem;
+  }
 }
