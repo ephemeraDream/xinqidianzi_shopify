@@ -455,7 +455,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .cart-drawer .recommendations-complementary-swiper {
   padding: 2.4rem 1.2rem;
   margin: 0 -1.2rem;
-  height: 33rem;
+  /* height: 33rem; */
 }
 
 .cart-drawer .recommendations-complementary-swiper .swiper-wrapper {
@@ -487,12 +487,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 }
 
 .cart-drawer .recommendations-product-box .recommendations-product-info h3 {
-  /* font-family: Poppins; */
-  font-size: 2.4rem;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
   color: #3d3d3d;
   opacity: 0.8;
 }
