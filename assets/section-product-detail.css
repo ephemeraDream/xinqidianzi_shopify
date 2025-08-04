@@ -558,6 +558,9 @@
   }
   .product-detail .product-detail-left .imgthumb-swiper .swiper-slide{
     width: 12rem;
-    height: 12rem;
+    height: 11rem;
+  }
+  .product-detail .product-detail-left .imgthumb-swiper-box .imgthumb-swiper-prev, .product-detail .product-detail-left .imgthumb-swiper-box .imgthumb-swiper-next {
+    top: 5.5rem;
   }
 }
