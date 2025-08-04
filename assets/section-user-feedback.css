@@ -152,6 +152,8 @@
   }
   .mobile.user-feedback-info{
     display: block;
+    padding-top: 6rem;
+    text-align: center;
   }
   .user-feedback-swiper .product-card .feedback-info .feedback-info-text {
     font-size: 1.6rem;
