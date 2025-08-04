@@ -53,7 +53,7 @@
   /* font-family: Poppins; */
   font-size: 1.6rem;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.2em;
   text-align: center;
   letter-spacing: 0px;
   font-variation-settings: "opsz" auto;
@@ -140,5 +140,8 @@
   .user-feedback-swiper {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+  .user-feedback-swiper .product-card{
+    width: 36rem;
   }
 }
