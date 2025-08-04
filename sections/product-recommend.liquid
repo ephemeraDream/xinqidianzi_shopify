@@ -13,22 +13,7 @@
           <div class="product-item swiper-slide">
             <div class="product-image">
               <img src="{{ product.featured_media | image_url }}" alt="{{ product.title }}">
-              <form method="post" action="/cart/add">
-                <input
-                  type="hidden"
-                  name="id"
-                  value="{{ product.selected_or_first_available_variant.id }}"
-                >
-                <input
-                  type="hidden"
-                  name="quantity"
-                  value="1"
-                >
-                <button class="product-btn" type="submit">
-                  {{- 'shopping.svg' | inline_asset_content -}}
-                </button>
-              </form>
-              {% comment %} <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a> {% endcomment %}
+              <a href="{{ product.url }}" class="product-btn">{{- 'shopping.svg' | inline_asset_content -}}</a>
             </div>
             <div class="product-info">
               <div class="product-desc">{{ product.description | truncate: 45 }}</div>
@@ -87,62 +72,6 @@
     const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px 0px 400px 0px' });
 
     observer.observe(productRecommendationsSection);
-
-    bindAddToCartForm();
-
-    function bindAddToCartForm() {
-      const addToCartForms = document.querySelectorAll('form[action="/cart/add"]');
-      addToCartForms.forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          event.preventDefault();
-          const cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
-          const formData = new FormData(form);
-          const config = fetchConfig('javascript');
-          config.headers['X-Requested-With'] = 'XMLHttpRequest';
-          delete config.headers['Content-Type'];
-          if (cart) {
-            formData.append(
-              'sections',
-              cart.getSectionsToRender().map((section) => section.id)
-            );
-            formData.append('sections_url', window.location.pathname);
-            cart.setActiveElement(document.activeElement);
-          }
-          config.body = formData;
-          fetch(`${routes.cart_add_url}`, config)
-            .then((response) => response.json())
-            .then((response) => {
-              let error = null;
-              if (response.status) {
-                publish(PUB_SUB_EVENTS.cartError, {
-                  source: 'product-form',
-                  productVariantId: formData.get('id'),
-                  errors: response.errors || response.description,
-                  message: response.message,
-                });
-                error = true;
-                alert(response.message);
-                return;
-              }
-
-              if (!error)
-                publish(PUB_SUB_EVENTS.cartUpdate, {
-                  source: 'product-form',
-                  productVariantId: formData.get('id'),
-                  cartData: response,
-                });
-              error = false;
-              cart.renderContents(response);
-            })
-            .catch((e) => {
-              console.error(e);
-            })
-            .finally(() => {
-              if (cart && cart.classList.contains('is-empty')) cart.classList.remove('is-empty');
-            });
-        });
-      });
-    }
   });
 </script>
 
