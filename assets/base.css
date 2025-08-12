@@ -4225,4 +4225,14 @@ a {
   .recipe-collection-item-article{
     line-height: 1.2em;
   }
+  div.recipe-collection .recipe-collection-right .blog-content-grid{
+    margin-top:10px;
+  }
+  div.recipe-collection .recipe-collection-right .blog-content-title{
+    font-size:20px;
+  }
+  div.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-title{
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
 }
