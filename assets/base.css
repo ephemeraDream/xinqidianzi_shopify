@@ -4078,3 +4078,16 @@ a {
     margin-top:20px;
   }
 }
+
+@media (max-width: 670px) {
+  .user-feedback-info h2 {
+    font-size: 25px;
+  }
+  .user-feedback-info .text_24 {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .user-feedback-swiper {
+    padding-top: 20px;
+  }
+}
