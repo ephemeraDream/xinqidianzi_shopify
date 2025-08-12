@@ -4237,3 +4237,18 @@ a {
     font-size:20px;
   }
 }
+
+@media(max-width:670px){
+
+  .product-comparison .product-comparison-tab_btn_box{
+    margin-top:20px;
+  }
+  div.product-comparison .product-comparison-heading{
+    font-size:25px;
+  }
+  div.product-comparison .product-comparison-tab_btn_box .product-comparison-tab_btn{
+    font-size: 16px;
+    padding: 10px !important;
+  }
+
+}
