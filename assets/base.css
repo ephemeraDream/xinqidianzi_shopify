@@ -4524,4 +4524,7 @@ a {
   div.product-detail .product-detail-right .product-detail-sale_word ul li{
     font-size:16px;
   }
+  div.product-detail .product-detail-right .product-detail-sale_word ul{
+    margin:0;
+  }
 }
