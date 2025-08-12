@@ -1304,3 +1304,27 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+
+
+const headings = document.querySelectorAll('.footer-block__heading');
+
+headings.forEach(heading => {
+  const details = heading.nextElementSibling;
+
+  heading.addEventListener('click', () => {
+    // 只移动端生效
+    if (window.innerWidth <= 768) {
+      details.classList.toggle('active');
+    }
+  });
+
+  // 可选：键盘 focus 也触发
+  heading.addEventListener('keydown', (e) => {
+    if (window.innerWidth <= 768 && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      details.classList.toggle('active');
+    }
+  });
+});
+

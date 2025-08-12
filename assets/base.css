@@ -4156,16 +4156,17 @@ a {
 
 
 @media (max-width: 670px) {
-.footer-block__details-content {
-  display: none;       
-  transition: opacity .2s ease, transform .2s ease;
-}
+ .footer-block__details-content {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
 
-.footer-block__heading:hover + .footer-block__details-content,
-.footer-block__heading:focus + .footer-block__details-content { 
-  display: block !important;
-  transform: translateY(0) !important;
-}
+  .footer-block__details-content.active {
+    display: block !important;
+    transform: translateY(0) !important;
+  }
 
 
 }
