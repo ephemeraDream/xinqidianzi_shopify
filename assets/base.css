@@ -4443,7 +4443,7 @@ a {
 
 @media(max-width:670px){
   div.product-collection .categorize-group{
-    gap: 10px;
+    gap: 0px;
     margin-top: 10px;
   }
   div.product-collection .categorize-group .categorize-group-btn{
@@ -4451,5 +4451,8 @@ a {
   }
   div.product-collection .product-grid{
     padding-top:20px;
+  }
+  div.product-collection .product-grid .product-item .product-info{
+    padding:5px 0;
   }
 }
