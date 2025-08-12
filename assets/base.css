@@ -4023,7 +4023,7 @@ a {
   }
   .best-sellers-swiper .product-compareprice{
     font-size: 16px;
-    margin-left: 0;
+    margin-left: 0 !important;
   }
   .text_btn_24{
     font-size: 16px;
