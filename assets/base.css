@@ -3920,7 +3920,9 @@ a {
   line-height: 1em;
 }
 /***************************** text truncate end *****************************/
-
+#PBarNextFrameWrapper{
+ display:none !important; 
+}
 
 .announcement-bar__message {
             position: relative;
@@ -4048,6 +4050,7 @@ a {
     margin-right: 5px;
   }
 }
+
 
 
 @media (max-width: 670px) {
