@@ -4048,3 +4048,20 @@ a {
     margin-right: 5px;
   }
 }
+
+
+@media (max-width: 670px) {
+  .hot-selling-heading {
+    font-size: 25px;
+  }
+  .hot-selling-swiper {
+    margin-top: 15px;
+  }
+  .hot-selling-swiper .carousel-text h3 {
+    font-size: 20px;
+  }
+  .hot-selling-swiper .carousel-text .text_32 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
