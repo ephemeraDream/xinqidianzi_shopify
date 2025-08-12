@@ -4009,6 +4009,9 @@ a {
     font-size:16px;
     margin-top:10px;
   }
+  .new_best-sellers .swiper-father{
+    margin-top:15px;
+  }
   .new_best-sellers .best-sellers-swiper .product-card .product-image img {
     height: 200px;
     object-fit: contain;
