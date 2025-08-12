@@ -4156,42 +4156,15 @@ a {
 
 
 @media (max-width: 670px) {
-.footer-block__heading {
-  position: relative;
-  cursor: pointer;
-}
-
-.footer-block__heading::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-  font-size: 18px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid #333;
-  border-radius: 50%;
-  color: #333;
-  user-select: none;
-  transition: transform 0.3s ease;
-}
-
 .footer-block__details-content {
-  display: none;
-  margin-top: 10px;
+  display: none;       
+  transition: opacity .2s ease, transform .2s ease;
 }
 
-.footer-block__heading:hover::after {
-  transform: translateY(-50%) rotate(45deg); /* + 变成 x 的样式 */
-  color: red;
-}
-
-.footer-block__heading:hover + .footer-block__details-content {
-  display: block;
+.footer-block__heading:hover + .footer-block__details-content,
+.footer-block__heading:focus + .footer-block__details-content { 
+  display: block !important;
+  transform: translateY(0) !important;
 }
 
 
