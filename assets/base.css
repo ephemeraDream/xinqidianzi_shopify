@@ -4561,4 +4561,7 @@ a {
     font-size:16px;
     margin:0;
   }
+  div.product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item p{
+    margin-top:0;
+  }
 }
