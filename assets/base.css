@@ -4112,31 +4112,31 @@ a {
   margin-top: 80px;
 }
 @media (max-width: 670px) {
-  .home-blog {
+  div.home-blog {
     margin-top: 6rem !important;
   }
-  .home-blog-heading {
+  div.home-blog-heading {
     font-size: 25px !important;
   }
-  .home-blog-text {
+  div.home-blog-text {
     margin-top: 15px;
     font-size: 16px;
   }
-  .home-blog .blog-contain {
+  div.home-blog .blog-contain {
     margin-top: 20px;
   }
-  .home-blog .blog-contain .blog-item-right {
+  div.home-blog .blog-contain .blog-item-right {
     gap: 10px;
   }
-  .home-blog .blog-contain .blog-item-right .blog-info {
+  div.home-blog .blog-contain .blog-item-right .blog-info {
     padding: 10px 0;
   }
-  .home-blog .blog-contain .blog-item-right .blog-info .blog-excerpt {
+  div.home-blog .blog-contain .blog-item-right .blog-info .blog-excerpt {
     margin-top: 10px;
     font-size: 16px;
     line-height: 1.2em;
   }
-  .home-blog .blog-contain .blog-item-right .blog-info a{
+  div.home-blog .blog-contain .blog-item-right .blog-info a{
     font-size: 16px;
   }
 }
