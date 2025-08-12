@@ -4584,3 +4584,28 @@ a {
     width: 10rem;
   }
 }
+
+@media(max-width:670px){
+  .cart-drawer .drawer__inner gradient .drawer__header{
+    font-size:20px;
+    padding:10px 0;
+  }
+  .cart-drawer .drawer__inner gradient .drawer__header .drawer__heading{
+    margin:0;
+  }
+  .upsell-container{
+    margin-bottom:10px;
+  }
+  .upsell-container .shipping-message{
+    margin:0;
+  }
+  .cart-drawer .cart-items th{
+    padding:0 0 10px;
+  }
+  .drawer__footer{
+    padding:10px 0;
+  }
+  .cart-drawer .tax-note{
+    margin:5px 0;
+  }
+}
