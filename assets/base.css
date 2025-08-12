@@ -3944,7 +3944,13 @@ a {
             }
           }
 
+
+
+
+
 @media(max-width:670px){
+
+
   .utility-bar__grid{
     overflow:hidden;
     padding:0 !important;
@@ -3952,4 +3958,6 @@ a {
   .announcement-bar__message span {
     font-size:16px;
   }
+
+  
 }

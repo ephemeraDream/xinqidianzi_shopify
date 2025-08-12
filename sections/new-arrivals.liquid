@@ -1,6 +1,6 @@
 {{ 'section-new-arrivals.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="new-arrivals padding-sider">
+<div id="section-{{ section.id }}" class="new-arrivals padding-sider new_new-arrivals">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'heading' -%}
