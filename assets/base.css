@@ -4399,4 +4399,14 @@ a {
   div.product-longtext .product-longtext-box{
     margin-bottom:20px;
   }
+  div.section-template--18193978065063__rich_text_rYkPXk-padding{
+    padding-top:0;
+  }
+  div.product-longtext{
+    padding-top:40px;
+    padding-bottom:40px;
+  }
+  #shopify-section-template--18193978065063__rich_text_rYkPXk .isolate .rich-text .rich-text__wrapper strong{
+    font-size:20px;
+  }
 }
