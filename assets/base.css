@@ -4278,3 +4278,15 @@ a {
     font-size: 15px;
   }
 }
+
+@media(max-width:670px){
+  div.product-faq-contain .faq-list .flex-start{
+    padding: 10px 0;
+  }
+  div.product-faq-contain .faq-list .flex-start .faq-question{
+    font-size:18px;
+  }
+  div.product-faq-contain .faq-list .faq-answer{
+    font-size:16px;
+  }
+}
