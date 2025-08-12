@@ -4423,4 +4423,11 @@ a {
     font-size:16px;
     margin-top:10px;
   }
+
+  .menu-drawer__utility-links .list-social__item .icon path{
+    color:#fff;
+  }
+  .menu-drawer__utility-links .list-social .list-social__item{
+    background:#000;
+  }
 }
