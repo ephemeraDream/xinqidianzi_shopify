@@ -4393,4 +4393,7 @@ a {
     font-size:16px;
     margin-top:10px;
   }
+  div.product-longtext .long-text-content p{
+    margin:0;
+  }
 }
