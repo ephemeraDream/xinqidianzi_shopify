@@ -4323,6 +4323,6 @@ a {
     font-size:16px;
   }
   div.product-faq{
-    padding-bottom:60px;
+    margin-bottom:60px !important;
   }
 }
