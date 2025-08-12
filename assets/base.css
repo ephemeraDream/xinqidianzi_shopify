@@ -4316,4 +4316,7 @@ a {
     padding: 0;
     margin-bottom: 10px;
   }
+  div.home-banner-box-button a{
+    font-size:16px;
+  }
 }
