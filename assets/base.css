@@ -4156,6 +4156,16 @@ a {
 
 
 @media (max-width: 670px) {
+  h2.footer-block__heading{
+    margin-bottom:10px;
+  }
+ div.footer-block.grid__item{
+  margin:10px 0;
+ }
+  div.footer__blocks-wrapper.grid{
+    margin-top:20px;
+  }
+
  .footer-block__details-content {
     display: none;
     opacity: 0;
