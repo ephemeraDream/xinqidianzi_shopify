@@ -4451,6 +4451,8 @@ a {
   }
   div.product-collection .product-grid{
     padding-top:20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   div.product-collection .product-grid .product-item .product-info{
     padding:5px 0;
