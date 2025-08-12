@@ -4562,7 +4562,8 @@ a {
     margin:0;
   }
   div.product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item p{
-    margin-top:0;
+    margin:0;
+    margin-top:10px;
   }
   div.product-highlight-intro{
     padding-top:40px;
@@ -4573,5 +4574,9 @@ a {
   }
   div.product-introduce-two .product-introduce-two-text h4{
     font-size:20px;
+  }
+  div.product-introduce-two .product-introduce-two-text p{
+    margin:0;
+    margin-top:10px;
   }
 }
