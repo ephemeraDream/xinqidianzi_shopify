@@ -4512,4 +4512,7 @@ a {
   div.product-detail .product-detail-right .product-detail-compare_at_price,div.product-detail .product-detail-right .product-detail-price{
     font-size:16px;
   }
+  div.product-detail .product-detail-right .product-detail-description{
+    padding-top:10px;
+  }
 }
