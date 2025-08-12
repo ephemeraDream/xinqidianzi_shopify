@@ -4221,4 +4221,7 @@ a {
     font-size: 15px;
     line-height: 1em;
   }
+  .recipe-collection-item-article{
+    line-height: 1.2em;
+  }
 }
