@@ -4457,4 +4457,7 @@ a {
   div.product-collection .product-grid .product-item .product-info{
     padding:5px 0;
   }
+  div.product-collection .product-grid .product-item .product-info .flex-center a{
+    font-size:16px;
+  }
 }
