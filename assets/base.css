@@ -3947,6 +3947,6 @@ a {
 @media(max-width:670px){
   .utility-bar__grid{
     overflow:hidden;
-    padding:0;
+    padding:0 !important;
   }
 }
