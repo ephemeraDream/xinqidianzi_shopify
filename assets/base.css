@@ -4115,7 +4115,7 @@ a {
   div.home-blog {
     margin-top: 6rem !important;
   }
-  div.home-blog-heading {
+  h2.home-blog-heading {
     font-size: 25px !important;
   }
   div.home-blog-text {
