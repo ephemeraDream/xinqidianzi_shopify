@@ -4535,7 +4535,7 @@ a {
     height:35px;
   }
   div.product-detail .product-detail-right .product-detail-content .product-detail-color-circle{
-    width:30px;
+    width:30px !important;
     height:30px;
   }
   div.product-detail .product-detail-right .product-detail-content{
