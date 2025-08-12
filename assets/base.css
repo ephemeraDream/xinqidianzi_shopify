@@ -4603,12 +4603,14 @@ a {
     padding:0 0 10px;
   }
   .drawer__footer{
-    padding:10px 0;
+    padding:5px 0;
   }
   .cart-drawer .tax-note{
     margin:5px 0;
   }
   div.cart-drawer .recommendations-complementary-swiper{
     height:auto;
+    margin:0;
+    padding:5px;
   }
 }
