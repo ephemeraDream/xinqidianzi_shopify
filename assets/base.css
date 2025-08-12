@@ -3999,7 +3999,7 @@ a {
 
 
 @media (max-width: 670px) {
-  .best-sellers-swiper .product-card .product-image img {
+  .new_best-sellers .best-sellers-swiper .product-card .product-image img {
     height: 200px;
     object-fit: contain;
   }
