@@ -4515,4 +4515,7 @@ a {
   div.product-detail .product-detail-right .product-detail-description{
     margin-top:10px;
   }
+  div.product-detail .product-detail-right .product-detail-sale_word{
+    margin-top:0;
+  }
 }
