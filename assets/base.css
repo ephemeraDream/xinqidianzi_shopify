@@ -4440,3 +4440,16 @@ a {
     padding-top:40px;
   }
 }
+
+@media(max-width:670px){
+  div.product-collection .categorize-group{
+    gap: 10px;
+    margin-top: 10px;
+  }
+  div.product-collection .categorize-group .categorize-group-btn{
+    font-size:20px;
+  }
+  div.product-collection .product-grid{
+    padding-top:20px;
+  }
+}
