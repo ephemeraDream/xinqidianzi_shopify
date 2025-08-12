@@ -4231,7 +4231,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item img{
+  div.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item img{
     height:150px;
     object-fit:cover;
   }
@@ -4239,12 +4239,12 @@ a {
     margin-top:10px;
   }
   div.recipe-collection .recipe-collection-right .blog-content-title{
-    font-size:18px;
+    font-size:20px;
   }
   div.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-title{
     margin-top: 15px;
     margin-bottom: 0;
-    font-size:20px;
+    font-size:18px;
   }
   
 }
