@@ -4166,6 +4166,7 @@ a {
   .footer-block__details-content.active {
     display: block !important;
     transform: translateY(0) !important;
+    opacity: 1 !important;
   }
 
 
