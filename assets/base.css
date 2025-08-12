@@ -4191,6 +4191,7 @@ a {
   div.recipe-collection {
     padding-top: 25px;
     padding-bottom: 25px;
+    gap: 20px;
   }
   div.recipe-collection .recipe-collection-left .recipe-collection-left_head {
     font-size: 25px;
