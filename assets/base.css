@@ -4527,4 +4527,19 @@ a {
   div.product-detail .product-detail-right .product-detail-sale_word ul{
     margin:0;
   }
+  div.product-detail .product-detail-right .product-detail-label{
+    font-size:20px;
+  }
+  div.product-detail .product-detail-right .product-detail-content .product-detail-color.active{
+    width:35px;
+    height:35px;
+  }
+  div.product-detail .product-detail-right .product-detail-content .product-detail-color-circle{
+    width:30px;
+    height:30px;
+  }
+  div.product-detail .product-detail-right .product-detail-content{
+    gap: 10px;
+    margin-top:10px;
+  }
 }
