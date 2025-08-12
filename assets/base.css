@@ -4501,3 +4501,15 @@ a {
     height:50px;
   }
 }
+
+@media(max-width:670px){
+  div.product-detail .product-detail-right{
+    padding:0;
+  }
+  div.product-detail .product-detail-right .product-detail-title{
+    font-size:20px;
+  }
+  div.product-detail .product-detail-right .product-detail-compare_at_price,div.product-detail .product-detail-right .product-detail-price{
+    font-size:16px;
+  }
+}
