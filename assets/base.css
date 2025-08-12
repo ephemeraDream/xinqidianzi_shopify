@@ -4430,4 +4430,7 @@ a {
   .menu-drawer__utility-links .list-social .list-social__item{
     background:#000;
   }
+  h2.about-history .about-history-heading{
+    font-size:20px;
+  }
 }
