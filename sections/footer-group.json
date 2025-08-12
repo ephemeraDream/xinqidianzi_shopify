@@ -34,6 +34,13 @@
             "menu": "footer-support"
           }
         },
+        "link_list_CiGhLL": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer-privacy-policy"
+          }
+        },
         "contact_us_8ryPmr": {
           "type": "contact_us",
           "settings": {
@@ -49,6 +56,7 @@
         "brand_information_UqzacG",
         "link_list_J8mijc",
         "link_list_jnkrBc",
+        "link_list_CiGhLL",
         "contact_us_8ryPmr"
       ],
       "custom_css": [],
