@@ -3965,6 +3965,9 @@ a {
 
 
   @media (max-width: 670px) {
+  .new_new-arrivals .new-arrivals-heading{
+    font-size:25px;
+  }
   .new_new-arrivals .new-arrivals-contain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
