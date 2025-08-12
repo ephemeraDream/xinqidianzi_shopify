@@ -249,6 +249,14 @@
         "heading": "You May Also Like",
         "text": ""
       }
+    },
+    "contact_form_pm4iRV": {
+      "type": "contact-form",
+      "name": "contact form new",
+      "settings": {
+        "heading": "",
+        "text": ""
+      }
     }
   },
   "order": [
@@ -261,6 +269,7 @@
     "product_faq_TKNzWA",
     "17407367833c92a3af",
     "hot_video_1",
-    "product_recommend_kRfdJq"
+    "product_recommend_kRfdJq",
+    "contact_form_pm4iRV"
   ]
 }
