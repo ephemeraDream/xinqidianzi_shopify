@@ -4548,4 +4548,17 @@ a {
   div.product-icontext .product-icontext-contain{
     margin-top:10px;
   }
+  div.product-highlight-intro .product-highlight-intro-title{
+    font-size:20px;
+  }
+  div.product-highlight-intro .product-highlight-intro-contain{
+    margin-top:10px;
+  }
+  div.product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item h4{
+    margin0;
+  }
+  .product-highlight-intro .product-highlight-intro-contain .product-highlight-intro-item p{
+    font-size:16px;
+    margin:0;
+  }
 }
