@@ -4158,6 +4158,7 @@ a {
 @media (max-width: 670px) {
   h2.footer-block__heading{
     margin-bottom:10px;
+    font-size:16px !important;
   }
  div.footer-block.grid__item{
   margin:10px 0;
