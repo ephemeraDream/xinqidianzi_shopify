@@ -4416,4 +4416,11 @@ a {
   div.about-history .about-history-swiper .history-card{
     min-height:auto;
   }
+  div.about-history .about-history-swiper .history-card .history-box .history-heading{
+    font-size:20px;
+  }
+  div.about-history .about-history-swiper .history-card .history-box .history-description{
+    font-size:16px;
+    margin-top:10px;
+  }
 }
