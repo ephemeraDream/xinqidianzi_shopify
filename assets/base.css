@@ -4409,4 +4409,8 @@ a {
   #shopify-section-template--18193978065063__rich_text_rYkPXk .isolate .rich-text .rich-text__wrapper strong{
     font-size:20px;
   }
+  div.about-history .about-history-swiper .history-card .history-image{
+    object-fit:contain;
+    width:80vw;
+  }
 }
