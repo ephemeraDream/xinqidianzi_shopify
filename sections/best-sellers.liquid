@@ -1,6 +1,6 @@
 {{ 'section-best-sellers.css' | asset_url | stylesheet_tag }}
 
-<div id="section-{{ section.id }}" class="best-sellers padding-sider">
+<div id="section-{{ section.id }}" class="best-sellers padding-sider new_best-sellers">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'heading' -%}
