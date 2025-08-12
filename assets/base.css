@@ -4586,11 +4586,11 @@ a {
 }
 
 @media(max-width:670px){
-  .cart-drawer .drawer__inner gradient .drawer__header{
+  .cart-drawer .drawer__inner  .drawer__header{
     font-size:20px !important;
     padding:10px 0;
   }
-  .cart-drawer .drawer__inner gradient .drawer__header .drawer__heading{
+  .cart-drawer .drawer__inner .drawer__header .drawer__heading{
     margin:0;
   }
   .upsell-container{
