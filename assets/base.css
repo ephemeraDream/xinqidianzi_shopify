@@ -4396,4 +4396,7 @@ a {
   div.product-longtext .long-text-content p{
     margin:0;
   }
+  div.product-longtext .product-longtext-box{
+    margin-bottom:10px;
+  }
 }
