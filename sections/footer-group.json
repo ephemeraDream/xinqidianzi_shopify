@@ -61,7 +61,7 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.footer__blocks-wrapper {display: grid; grid-template-columns: repeat(5, 1fr); } .grid--4-col-tablet .grid__item {width: 100% !important; }}",
-        "@media(max-width:670px){.footer-block__details-content{display: none; }}"
+        "@media (max-width: 670px) {.footer-block__details-content {display: none; }}"
       ],
       "settings": {
         "color_scheme": "accent-1",
@@ -72,7 +72,7 @@
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
-        "show_policy": true,
+        "show_policy": false,
         "margin_top": 0,
         "padding_top": 44,
         "padding_bottom": 40,
