@@ -4188,24 +4188,24 @@ a {
 
 
 @media (max-width: 670px) {
-  .recipe-collection {
+  div.recipe-collection {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .recipe-collection .recipe-collection-left .recipe-collection-left_head {
+  div.recipe-collection .recipe-collection-left .recipe-collection-left_head {
     font-size: 25px;
     padding-bottom: 10px;
   }
-  .recipe-collection .recipe-collection-left .recipe-collection-item {
+  div.recipe-collection .recipe-collection-left .recipe-collection-item {
     padding: 5px 0;
   }
-  .recipe-collection
+  div.recipe-collection
     .recipe-collection-left
     .recipe-collection-item
     .recipe-collection-item-head {
     margin-bottom: 5px;
   }
-  .recipe-collection
+  div.recipe-collection
     .recipe-collection-left
     .recipe-collection-item
     .recipe-collection-item-head
@@ -4213,11 +4213,11 @@ a {
     font-size: 18px;
     line-height: 1.5em;
   }
-.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head svg{
+ div.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-head svg{
     width: 20px;
     height: 20px;
   }
-  .recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-article a{
+  div.recipe-collection .recipe-collection-left .recipe-collection-item .recipe-collection-item-article a{
     font-size: 15px;
     line-height: 1em;
   }
