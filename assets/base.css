@@ -3920,7 +3920,9 @@ a {
   line-height: 1em;
 }
 /***************************** text truncate end *****************************/
-
+#op_icons_manager{
+  display:none !important;
+}
 
 .announcement-bar__message {
             position: relative;
