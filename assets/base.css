@@ -4587,7 +4587,7 @@ a {
 
 @media(max-width:670px){
   .cart-drawer .drawer__inner gradient .drawer__header{
-    font-size:20px;
+    font-size:20px !important;
     padding:10px 0;
   }
   .cart-drawer .drawer__inner gradient .drawer__header .drawer__heading{
