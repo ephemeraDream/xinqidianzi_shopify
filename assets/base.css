@@ -4374,5 +4374,6 @@ a {
   }
   .isolate p{
     font-size:16px !important;
+    line-height:1.2em;
   }
 }
