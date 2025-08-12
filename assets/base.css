@@ -4227,15 +4227,26 @@ a {
   }
   div.recipe-collection .recipe-collection-right .blog-content-grid{
     margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item img{
+    height:150px;
+    object-fit:cover;
+  }
+  div.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-published_at{
+    margin-top:10px;
   }
   div.recipe-collection .recipe-collection-right .blog-content-title{
-    font-size:20px;
+    font-size:18px;
   }
   div.recipe-collection .recipe-collection-right .blog-content-grid .blog-content-grid_item .article-title{
     margin-top: 15px;
     margin-bottom: 0;
     font-size:20px;
   }
+  
 }
 
 @media(max-width:670px){
