@@ -3949,4 +3949,7 @@ a {
     overflow:hidden;
     padding:0 !important;
   }
+  .announcement-bar__message span {
+    font-size:16px;
+  }
 }
