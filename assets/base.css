@@ -4348,3 +4348,17 @@ a {
   }
   
 }
+
+@media(max-width:670px){
+  div.blog-post-content{
+    padding-top:60px;
+  }
+  div.blog-post-content .blog-post-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  div.buying-guide-richtext{
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
