@@ -4277,6 +4277,9 @@ a {
   div.product-comparison .product-card .product-info .flex-center .product-description{
     font-size: 15px;
   }
+  div.product-comparison .product-card .product-image img{
+    height:250px;
+  }
 }
 
 @media(max-width:670px){
@@ -4304,6 +4307,9 @@ a {
     width:20px;
     height:20px;
   }
+  div.product-faq{
+    margin-bottom:60px !important;
+  }
 }
 
 @media(max-width:670px){
@@ -4322,7 +4328,5 @@ a {
   div.home-banner-box-button a{
     font-size:16px;
   }
-  div.product-faq{
-    margin-bottom:60px !important;
-  }
+  
 }
