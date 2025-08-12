@@ -4067,14 +4067,14 @@ a {
 }
 
 @media (max-width: 670px) {
-  .home-image-with-text .image-with-text__text-item .image-with-text__heading {
+  div.home-image-with-text .image-with-text__text-item .image-with-text__heading {
     font-size: 25px;
   }
-  .home-image-with-text .image-with-text__text-item .image-with-text__text {
+  div.home-image-with-text .image-with-text__text-item .image-with-text__text {
     margin-top: 10px;
     font-size: 16px;
   }
-.home-image-with-text .image-with-text__text-item .button.button--primary{
+  div.home-image-with-text .image-with-text__text-item .button.button--primary{
     margin-top:20px;
   }
 }
