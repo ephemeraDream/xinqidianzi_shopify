@@ -4252,3 +4252,29 @@ a {
   }
 
 }
+
+@media(max-width:670px){
+  div.product-comparison-swiper .product-card{
+    padding:10px;
+    min-height:auto;
+  }
+  div.product-comparison .product-card .product-info{
+    padding-top:5px;
+  }
+  div.product-comparison .product-card .product-info .flex-center .product-title{
+    font-size: 18px !important;
+    margin: 5px 0;
+  }
+  div.product-comparison .product-card .product-info .flex-center .product-price{
+    font-size: 16px;
+  }
+  div.product-comparison .product-card .product-info .flex-center .product-compare_at_price{
+    font-size: 16px;
+  }
+  div.product-comparison .product-card .product-info .flex-center+.flex-center{
+    margin-top: 10px;
+  }
+  div.product-comparison .product-card .product-info .flex-center .product-description{
+    font-size: 15px;
+  }
+}
