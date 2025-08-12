@@ -4288,8 +4288,8 @@ a {
   }
   div.product-faq-contain .faq-list .faq-answer{
     font-size:16px;
-    padding: 10px;
-    margin-top: 10px;
+    padding:5px 10px;
+    margin-top: 5px;
   }
   div.product-faq-contain .faq-list .flex-start svg{
     width:20px;
