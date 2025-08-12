@@ -4433,4 +4433,10 @@ a {
   h2.about-history .about-history-heading{
     font-size:20px;
   }
+  div.about-history .about-history-swiper{
+    padding-top:10px;
+  }
+  div.about-history{
+    padding-top:40px;
+  }
 }
