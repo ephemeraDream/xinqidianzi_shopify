@@ -4580,4 +4580,7 @@ a {
     margin:0;
     margin-top:10px;
   }
+  div.product-detail .product-detail-left .imgthumb-swiper .swiper-slide{
+    width: 10rem;
+  }
 }
