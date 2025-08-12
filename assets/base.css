@@ -4470,4 +4470,30 @@ a {
   div.product-collection .product-grid .product-item .product-image{
     height:250px;
   }
+  div.product-list .product-list-swiper{
+    padding:20px 2rem;
+  }
+  div.product-list .product-list-heading, .product-list .product-list-text{
+    font-size:20px;
+  }
+  div.product-list .product-card{
+    min-height: auto;
+    padding: 10px;
+  }
+  div.product-list .product-card .product-image img{
+    height:250px;
+  }
+  div.product-list .product-card .product-info{
+    padding-top:10px;
+  }
+  div.product-list .product-card .product-info .flex-center .product-title{
+    margin:5px 0 ;
+    font-size:18px;
+  }
+  div.product-list .product-card .product-info .flex-center .product-price,div.product-list .product-card .product-info .flex-center .product-compare_at_price{
+    font-size:16px;
+  }
+  div.product-list .product-card .product-info .flex-center .product-description p{
+    font-size:15px;
+  }
 }
