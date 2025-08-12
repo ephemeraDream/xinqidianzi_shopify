@@ -241,6 +241,9 @@
     },
     "hot_video_1": {
       "type": "product-hot-video",
+      "custom_css": [
+        "h3 {font-size: 20px}"
+      ],
       "settings": {}
     },
     "product_recommend_kRfdJq": {
