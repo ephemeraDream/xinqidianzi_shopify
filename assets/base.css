@@ -4608,4 +4608,7 @@ a {
   .cart-drawer .tax-note{
     margin:5px 0;
   }
+  div.cart-drawer .recommendations-complementary-swiper{
+    height:auto;
+  }
 }
