@@ -36,7 +36,6 @@
         },
         "link_list_CiGhLL": {
           "type": "link_list",
-          "disabled": true,
           "settings": {
             "heading": "Quick links",
             "menu": "footer-privacy-policy"
@@ -60,7 +59,10 @@
         "link_list_CiGhLL",
         "contact_us_8ryPmr"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.footer__blocks-wrapper {display: grid; grid-template-columns: repeat(5, 1fr); } .grid--4-col-tablet .grid__item {width: 100% !important; }}",
+        "@media(max-width:670px){.footer-block__details-content{display: none; }}"
+      ],
       "settings": {
         "color_scheme": "accent-1",
         "newsletter_enable": true,
