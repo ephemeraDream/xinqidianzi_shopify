@@ -4094,3 +4094,16 @@ a {
     padding-left: 10px !important;
   }
 }
+
+
+@media (max-width: 670px) {
+  .hot-video .blog-list .blog-item .blog-img {
+    height: auto !important;
+  }
+  .hot-video .blog-list {
+    gap: 20px 10px;
+  }
+  .hot-video .blog-list .blog-item .blog-excerpt{
+    margin-top:10px;
+  }
+}
