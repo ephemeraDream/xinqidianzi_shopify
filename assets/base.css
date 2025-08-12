@@ -4286,6 +4286,9 @@ a {
   div.product-faq-contain .product-faq-text{
     margin-top:15px;
   }
+  div.product-faq-contain .faq-list{
+    margin-top:15px;
+  }
   div.product-faq-contain .faq-list .flex-start{
     padding: 10px 0;
   }
