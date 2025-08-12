@@ -4460,4 +4460,10 @@ a {
   div.product-collection .product-grid .product-item .product-info .flex-center a{
     font-size:16px;
   }
+  div.product-collection .product-grid .product-item .product-image .product-btn{
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+  }
 }
