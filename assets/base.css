@@ -3959,5 +3959,38 @@ a {
     font-size:16px;
   }
 
+
+  @media (max-width: 670px) {
+  .new_new-arrivals .new-arrivals-contain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .new_new-arrivals .new-arrivals-contain .product-card .product-image {
+    height: auto;
+  }
+  .new_new-arrivals .new-arrivals-contain .product-card .product-image img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .new_new-arrivals .product-title {
+    font-size: 16px;
+    margin: 0;
+  }
+  .new_new-arrivals .new-arrivals-contain .product-info .product-title a {
+    font-size: 16px;
+    line-height: 1em;
+  }
+  .new_new-arrivals .new-arrivals-contain .product-info .product-price {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .new_new-arrivals .new-arrivals-contain .product-card .product-btn{
+    width: 35px;
+    height: 35px;
+  }
+}
+
   
 }
