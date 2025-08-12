@@ -4331,6 +4331,9 @@ a {
   div.home-banner-box-heading{
     font-size: 30px;
   }
+  .home-banner-box-heading h2{
+    font-size: 30px;
+  }
   h5.home-banner-box-text{
     font-size: 16px;
     margin-top: 10px;
