@@ -4291,4 +4291,8 @@ a {
     padding: 10px;
     margin-top: 10px;
   }
+  div.product-faq-contain .faq-list .flex-start svg{
+    width:20px;
+    height:20px;
+  }
 }
