@@ -4143,3 +4143,40 @@ a {
     font-size: 16px;
   }
 }
+
+@media screen and (min-width: 750px) {
+  .footer__blocks-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid--4-col-tablet .grid__item {
+    width: 100% !important;
+  }
+}
+@media (max-width: 670px) {
+.footer-block__details-content {
+  display: none;       
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.footer-block__heading:hover + .footer-block__details-content,
+.footer-block__heading:focus + .footer-block__details-content { 
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-block__details-content {
+  display: block;           
+  opacity: 0;
+  transform: translateY(-6px);
+  height: auto;
+  pointer-events: none;     
+}
+.footer-block__heading:hover + .footer-block__details-content,
+.footer-block__heading:focus + .footer-block__details-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+}
