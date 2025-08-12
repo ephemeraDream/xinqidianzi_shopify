@@ -4305,3 +4305,12 @@ a {
     height:20px;
   }
 }
+
+@media(max-width:670px){
+  h5.home-banner-box-text{
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
