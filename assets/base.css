@@ -4413,4 +4413,7 @@ a {
     object-fit:contain;
     width:93vw;
   }
+  div.about-history .about-history-swiper .history-card{
+    min-height:auto;
+  }
 }
