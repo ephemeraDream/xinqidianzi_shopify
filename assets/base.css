@@ -4165,6 +4165,9 @@ a {
   div.footer__blocks-wrapper.grid{
     margin-top:20px;
   }
+  .footer-block__details-content .list-menu__item--link{
+    line-height:1.5em !important;
+  }
 
  .footer-block__details-content {
     display: none;
