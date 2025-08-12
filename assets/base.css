@@ -4496,4 +4496,8 @@ a {
   div.product-list .product-card .product-info .flex-center .product-description p{
     font-size:15px;
   }
+  div.product-list .product-card .product-image .product-btn{
+    width:50px;
+    height:50px;
+  }
 }
