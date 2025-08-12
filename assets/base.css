@@ -4013,19 +4013,19 @@ a {
     font-size: 16px;
     margin: 5px 0;
   }
-  .best-sellers .product-color {
+  .new_best-sellers .best-sellers .product-color {
     width: 15px !important;
     height: 15px !important;
     margin: 0 0 0 5px;
   }
-  .best-sellers-swiper .product-price {
+  .new_best-sellers .best-sellers-swiper .product-price {
     font-size: 16px;
   }
-  .best-sellers-swiper .product-compareprice{
+  .new_best-sellers .best-sellers-swiper .product-compareprice{
     font-size: 16px;
     margin-left: 0 !important;
   }
-  .text_btn_24{
+  .new_best-sellers .text_btn_24{
     font-size: 16px;
   }
   .new_best-sellers .product-star svg {
