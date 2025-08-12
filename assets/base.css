@@ -4453,6 +4453,7 @@ a {
     padding-top:20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
   }
   div.product-collection .product-grid .product-item .product-info{
     padding:5px 0;
