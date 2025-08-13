@@ -4614,3 +4614,28 @@ a {
     padding:5px;
   }
 }
+
+
+@media(max-width:670px){
+
+  div.product-detail .product-detail-sale_word_box{
+    margin-top:10px !important;
+  }
+  div.product-icontext .product-icontext-box svg{
+    width: 40px;
+    height: 40px;
+  }
+  div.product-icontext .product-icontext-box .text_20{
+    font-size: 14px;
+  }
+  div.product-icontext .product-icontext-contain{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  div.product-icontext{
+    padding-bottom:10px;
+    padding-bottom:10px;
+  }
+}
