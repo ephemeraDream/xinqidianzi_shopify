@@ -72,7 +72,7 @@
       ],
       "settings": {
         "product_list": [
-          "heiyo-vacuum-sealer-kit-vp05-multiple-colors",
+          "heiyo-vacuum-sealer-kit-vp05-multicolored",
           "heiyo-vacuum-sealer-nomal-kit-vp05-black"
         ]
       }
@@ -147,8 +147,7 @@
         "heading_dFarBM": {
           "type": "heading",
           "settings": {
-            "heading": "Our Philosophy",
-            "heading_size": "h1"
+            "heading": "Our Philosophy"
           }
         },
         "text_Cipc34": {
@@ -207,7 +206,7 @@
         "product_7PFtd8": {
           "type": "product",
           "settings": {
-            "product": "heiyo-vacuum-sealer-kit-vp05-multiple-colors"
+            "product": "heiyo-vacuum-sealer-kit-vp05-multicolored"
           }
         },
         "product_PCt6aA": {
