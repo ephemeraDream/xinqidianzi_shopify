@@ -281,7 +281,7 @@ class CartItems extends HTMLElement {
 
         if (recommendations && recommendations.innerHTML.trim().length) {
           productRecommendationsSection.innerHTML = recommendations.innerHTML;
-          this.initializeSwiper();  // 初始化 Swiper 轮播图
+          // this.initializeSwiper();  // 初始化 Swiper 轮播图
         }
       })
       .catch((e) => {

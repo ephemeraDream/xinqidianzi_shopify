@@ -652,8 +652,9 @@
             prevEl: '.cart-drawer .recommendations-complementary-swiper-prev',
           }, {% endcomment %}
           spaceBetween: 12,
-          direction: 'vertical',
-          nested:true,
+          {% comment %} direction: 'vertical',
+          nested:true, {% endcomment %}
+          direction: 'horizontal',
           slidesPerView: 'auto',
           freeMode: true,
           scrollbar: {
